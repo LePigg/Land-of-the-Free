@@ -18,6 +18,9 @@ japanese_influence_and_collaboration = {
 		original_tag = CAL
 		not={ has_country_flag = CAL_shotgundivorce }
 	}
+	allowed = {
+		original_tag = CAL
+	}
 }
 california_cdlp_development = {
 	priority = 120
@@ -27,6 +30,9 @@ california_cdlp_development = {
 		tag = CAL
 		has_country_flag = founded_the_cdlp
 	}
+	allowed = {
+		original_tag = CAL
+	}
 }
 breaking_away = {
 	priority = 150
@@ -34,5 +40,9 @@ breaking_away = {
 	icon =  GFX_decision_category_usa_congress
 	visible = {
 		original_tag = CAL
-		has_country_flag = CAL_shotgundivorce }
+		has_country_flag = CAL_shotgundivorce
 	}
+	allowed = {
+		original_tag = CAL
+	}
+}
