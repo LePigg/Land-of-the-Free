@@ -1,0 +1,112 @@
+music = {
+	name = "solidarity_forever"
+	file = "solidarity_forever.ogg"
+}
+music = {
+	name = "hail_to_the_chief"
+	file = "hail_to_the_chief.ogg"
+}
+music = {
+	name = "yankee_doodle"
+	file = "yankee_doodle.ogg"
+}
+music = {
+	name = "over_there"
+	file = "over_there.ogg"
+}
+music = {
+	name = "praise_the_lord_and_pass_the_ammunition"
+	file = "praise_the_lord_and_pass_the_ammunition.ogg"
+}
+music = {
+	name = "semper_fidelis"
+	file = "semper_fidelis.ogg"
+}
+music = {
+	name = "dixie_land"
+	file = "dixie_land.ogg"
+}
+music = {
+	name = "when_johnny_comes_marching_home"
+	file = "when_johnny_comes_marching_home.ogg"
+}
+music = {
+	name = "battle_hymn_of_the_republic"
+	file = "battle_hymn_of_the_republic.ogg"
+}
+music = {
+	name = "which_side_are_you_on"
+	file = "which_side_are_you_on.ogg"
+}
+music = {
+	name = "soviet_anthem_in_english"
+	file = "soviet_anthem_in_english.ogg"
+}
+music = {
+	name = "i_ain't_got_no_home_in_this_world_anymore"
+	file = "i_ain't_got_no_home_in_this_world_anymore.ogg"
+}
+music = {
+	name = "the_marines'_hymn"
+	file = "the_marines'_hymn.ogg"
+}
+music = {
+	name = "blood_upon_the_risers"
+	file = "blood_upon_the_risers.ogg"
+}
+music = {
+	name = "the_star_spangled_banner"
+	file = "the_star_spangled_banner.ogg"
+}
+music = {
+	name = "union_dixie"
+	file = "union_dixie.ogg"
+}
+music = {
+	name = "this_land_is_your_land"
+	file = "this_land_is_your_land.ogg"
+}
+music = {
+	name = "national_emblem"
+	file = "national_emblem.ogg"
+}
+music = {
+	name = "the_stars_and_stripes_forever"
+	file = "the_stars_and_stripes_forever.ogg"
+}
+music = {
+	name = "marching_through_georgia"
+	file = "marching_through_georgia.ogg"
+}
+music = {
+	name = "america_the_beautiful"
+	file = "america_the_beautiful.ogg"
+}
+music = {
+	name = "i_don't_want_your_millions_mister"
+	file = "i_don't_want_your_millions_mister.ogg"
+}
+music = {
+	name = "farmer_labor_train"
+	file = "farmer_labor_train.ogg"
+}
+music = {
+	name = "workers_of_the_world_awaken"
+	file = "workers_of_the_world_awaken.ogg"
+}
+music = {
+	name = "my_country_tis_of_thee"
+	file = "my_country_tis_of_thee.ogg"
+}
+music = {
+	name = "hail_columbia"
+	file = "hail_columbia.ogg"
+}
+music = {
+	name = "youre_a_grand_old_flag"
+	file = "youre_a_grand_old_flag.ogg"
+}
+music = {
+	name = "i_love_you_california"
+	file = "i_love_you_california.ogg"
+}

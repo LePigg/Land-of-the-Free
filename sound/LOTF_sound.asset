@@ -1,0 +1,5 @@
+sound = {
+	name = "lotf_se_bismark_unification_super"
+	file = "menu/lotf_se_bismark_unification_super.wav"
+	always_load = no
+}

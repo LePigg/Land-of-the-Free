@@ -1,0 +1,309 @@
+music_station = "lotf_radio"
+music = {
+	song = "solidarity_forever"
+	chance = {
+		modifier = {
+		factor = 1
+		OR = {
+			has_government = revolutionary_socialist
+			has_government = democratic_socialism
+			has_government = communism
+			has_government = Anarchism
+			}
+		}
+	}
+}
+music = {
+	song = "hail_to_the_chief"
+	chance = {
+		modifier = {
+		factor = 1
+		OR = {
+			has_government = despotism
+			has_government = stratocracy
+			has_government = guided_democracy
+			}
+		}
+	}
+}
+music = {
+	song = "yankee_doodle"
+	chance = {
+		modifier = {
+		factor = 1
+		}
+	}
+}
+music = {
+	song = "over_there"
+	chance = {
+		modifier = {
+		factor = 1
+		has_war = yes
+		}
+	}
+}
+music = {
+	song = "praise_the_lord_and_pass_the_ammunition"
+	chance = {
+		modifier = {
+		factor = 1
+		has_war = yes
+		}
+	}
+}
+music = {
+	song = "semper_fidelis"
+	chance = {
+		modifier = {
+		factor = 1
+		}
+	}
+}
+music = {
+	song = "dixie_land"
+	chance = {
+		factor = 1
+		modifier = {
+		OR = {
+			tag = ARA
+			tag = SRT
+			tag = TEX
+			tag = DIX
+			tag = TXL
+		}
+		}
+	}
+}
+music = {
+	song = "when_johnny_comes_marching_home"
+	chance = {
+		modifier = {
+		factor = 1
+		has_war = yes
+		}
+	}
+}
+music = {
+	song = "battle_hymn_of_the_republic"
+	chance = {
+		factor = 1
+		has_war = yes
+	}
+}
+music = {
+	song = "which_side_are_you_on"
+	chance = {
+		modifier = {
+		factor = 1
+		OR = {
+			has_government = revolutionary_socialist
+			has_government = democratic_socialism
+			has_government = communism
+			has_government = Anarchism
+			}
+		}
+	}
+}
+music = {
+	song = "soviet_anthem_in_english"
+	chance = {
+		modifier = {
+		factor = 1
+		has_government = communism
+		}
+	}
+}
+music = {
+	song = "i_ain't_got_no_home_in_this_world_anymore"
+	chance = {
+		modifier = {
+		factor = 1
+		OR = {
+			has_government = revolutionary_socialist
+			has_government = democratic_socialism
+			has_government = communism
+			has_government = Anarchism
+			}
+		}
+	}
+}
+music = {
+	song = "the_marines'_hymn"
+	chance = {
+		modifier = {
+		factor = 1
+		}
+	}
+}
+music = {
+	song = "blood_upon_the_risers"
+	chance = {
+		factor = 1
+		modifier = {
+		OR = {
+			has_war = yes
+			tag = ARA
+			}
+		}
+	}
+}
+music = {
+	song = "the_star_spangled_banner"
+	chance = {
+		modifier = {
+		factor = 1
+		has_war = no
+		}
+	}
+}
+music = {
+	song = "union_dixie"
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				tag = ARA
+				tag = TXL
+				tag = DIX
+				tag = SRT
+				tag = TEX
+			}
+		}
+		modifier = {
+		factor = 1
+		has_war = yes
+		}
+	}
+}
+music = {
+	song = "this_land_is_your_land"
+	chance = {
+		factor = 1
+		modifier = {
+		OR = {
+			has_government = revolutionary_socialist
+			has_government = democratic_socialism
+			has_government = communism
+			has_government = Anarchism
+			}
+		}
+	}
+}
+music = {
+	song = "national_emblem"
+	chance = {
+		modifier = {
+		factor = 1
+		}
+	}
+}
+music = {
+	song = "the_stars_and_stripes_forever"
+	chance = {
+		modifier = {
+		factor = 1
+		OR = {
+			tag = WDC
+			tag = ERR
+			tag = SRR
+			tag = CAL
+			tag = GPS
+			tag = ELK
+			tag = IWA
+		}
+		}
+	}
+}
+music = {
+	song = "marching_through_georgia"
+	chance = {
+		modifier = {
+		factor = 1
+		has_war = yes
+		}
+	}
+}
+music = {
+	song = "america_the_beautiful"
+	chance = {
+		modifier = {
+		factor = 1
+		}
+	}
+}
+music = {
+	song = "i_love_you_california"
+	chance = {
+		modifier = {
+		factor = 1
+		OR = {
+			tag = SRR
+			tag = CAL
+			tag = LAC
+			tag = MJV
+			tag = ORC
+			tag = EUR
+			tag = MTY
+		}
+		}
+	}
+}
+music = {
+	song = "i_don't_want_your_millions_mister"
+	chance = {
+		factor = 1
+		modifier = {
+		OR = {
+			has_government = revolutionary_socialist
+			has_government = democratic_socialism
+			has_government = communism
+			has_government = Anarchism
+			}
+		}
+	}
+}
+music = {
+	song = "farmer_labor_train"
+	chance = {
+		factor = 1
+		modifier = {
+		OR = {
+			has_government = democratic_socialism
+			tag = MIN
+		}
+	}
+	}
+}
+music = {
+	song = "workers_of_the_world_awaken"
+	chance = {
+		factor = 1
+		modifier = {
+		OR = {
+			has_government = revolutionary_socialist
+			has_government = democratic_socialism
+			has_government = communism
+			has_government = Anarchism
+		}
+		}
+	}
+}
+music = {
+	song = "hail_columbia"
+	chance = {
+		modifier = {
+		factor = 1
+		has_war = no
+		}
+	}
+}
+music = {
+	song = "youre_a_grand_old_flag"
+	chance = {
+		modifier = {
+		factor = 1
+		has_war = no
+		}
+	}
+}
