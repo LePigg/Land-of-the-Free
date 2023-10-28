@@ -1,0 +1,34 @@
+TEX_abq_decisions = {
+	TEX_abq_decisions1 = {                           
+        
+        icon = GFX_decision_revolt
+
+        allowed = { 
+            tag = ABQ
+        }                 
+
+        available = {  
+			NOT = {
+				owns_state = 180
+			}                         
+        }
+        activation = {                          # The mission appears and starts counting down under these circumstances:
+            has_country_flag = TEX_abq_decisions1_flag
+        }
+        is_good = yes                     # This mission is color coded to be a positive thing (not a crisis)
+        selectable_mission = no
+        fire_only_once = yes               # This mission will complete when the player selects the mission rather than completing automatically
+        days_mission_timeout = 120              # How many days before the mission fails?
+
+        timeout_effect = {                      # What happens when we fail the mission?
+			add_political_power = 100
+            white_peace = MEX
+        }
+
+        complete_effect = {                    # What happens when we activate the mission i.e. mission success?
+        }
+        ai_will_do = {
+            base = 10000
+        }      
+    }
+}

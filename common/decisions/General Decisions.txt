@@ -1,0 +1,623 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+# Decisions MUST be visible for the AI to execute them, if in doubt, switch tag to the AI country and check if they can see/execute the mission.
+#####################################################################################################################
+simple_category1 = {
+war_propaganda = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			NOT = { has_country_flag = war_propaganda_campaign_running }
+			has_war = yes 
+		}
+
+		visible = {
+            OR = {
+                has_country_flag = great_lakes_country
+                has_country_flag = south_mississippi_country
+                has_country_flag = texas_country
+                has_country_flag = rockies_country
+                has_country_flag = cascadian_country
+                has_country_flag = california_country
+                }
+            NOT = {
+                has_country_flag = governmental_strain
+                original_tag = MJV
+            }
+		}
+
+		fire_only_once = no
+
+		days_remove = 60
+		days_re_enable = 380
+
+		cost = 20
+
+		modifier = {
+			war_support_weekly = 0.005
+		}
+
+		complete_effect = {
+			set_country_flag = war_propaganda_campaign_running
+		}
+		remove_effect = {
+			clr_country_flag = war_propaganda_campaign_running
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+				add = 1
+				has_war_support < 0.4
+				has_war = yes
+			}
+		}
+	}
+	simple_decision1 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_industry		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {	
+			has_stability < 0.5 #Conditions that will allow the player/AI to click the decision and execute its effect.
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {
+            OR = {
+                has_country_flag = great_lakes_country
+                has_country_flag = south_mississippi_country
+                has_country_flag = texas_country
+                has_country_flag = rockies_country
+                has_country_flag = cascadian_country
+                has_country_flag = california_country
+                }
+            NOT = {
+                has_country_flag = governmental_strain
+                original_tag = MJV
+            }
+		}	
+
+		cost = 70		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 70
+
+		days_re_enable = 750
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			
+		}
+		modifier = {
+			stability_weekly = 0.005
+			industrial_capacity_factory = -0.1
+			consumer_goods_factor = 0.05
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			base = 5
+			modifier = {
+				has_stability < 0.4
+				add = 10
+			}	
+		}
+	}
+	simple_decision2 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_industry		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {
+            OR = {
+                has_country_flag = great_lakes_country
+                has_country_flag = south_mississippi_country
+                has_country_flag = texas_country
+                has_country_flag = rockies_country
+                has_country_flag = cascadian_country
+                has_country_flag = california_country
+                }
+            NOT = {
+                has_country_flag = governmental_strain
+                original_tag = MJV
+            }
+		}	
+
+		cost = 70		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 70
+
+		days_re_enable = 700
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			
+		}
+		modifier = {
+			war_support_weekly = 0.005
+			political_power_gain = -0.1
+			stability_factor = -0.05
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}	
+	} 
+	
+	
+	simple_decision3 = {
+	 
+		icon = generic_political_discourse
+		
+		visible = {
+            OR = {
+                has_country_flag = great_lakes_country
+                has_country_flag = south_mississippi_country
+                has_country_flag = texas_country
+                has_country_flag = rockies_country
+                has_country_flag = cascadian_country
+                has_country_flag = california_country
+                }
+            NOT = {
+                has_country_flag = governmental_strain
+                original_tag = MJV
+            }
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				has_manpower < 10000
+				factor = 50
+			}
+		}
+
+		days_remove = 60
+
+		days_re_enable = 600
+
+		cost = 50
+
+		modifier = {
+			weekly_manpower = 100
+			political_power_gain = -0.1
+			war_support_factor = -0.1
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_manpower = 6000
+			army_experience = 5
+		}
+	}
+}
+simple_category = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
+	
+	simple_decision7 = {
+	 
+		icon = GFX_decision_icon_default
+		
+		visible = {
+            OR = {
+                has_country_flag = great_lakes_country
+                has_country_flag = south_mississippi_country
+                has_country_flag = texas_country
+                has_country_flag = rockies_country
+                has_country_flag = cascadian_country
+                has_country_flag = california_country
+                }
+            NOT = {
+                has_country_flag = governmental_strain
+                original_tag = MJV
+            }
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		days_remove = 20
+
+		days_re_enable = 0
+
+		cost = 15
+
+		complete_effect = {
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	simple_decision11 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {
+            OR = {
+                has_country_flag = great_lakes_country
+                has_country_flag = south_mississippi_country
+                has_country_flag = texas_country
+                has_country_flag = rockies_country
+                has_country_flag = cascadian_country
+                has_country_flag = california_country
+                }
+            NOT = {
+                has_country_flag = governmental_strain
+                original_tag = MJV
+            }
+		}	
+
+		cost = 70		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 120
+
+		days_re_enable = 0
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			
+		}
+		modifier = {
+			political_power_gain = -0.05
+			production_speed_buildings_factor = 0.15
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	simple_decision5 = {
+	 
+		icon = generic_construction
+		
+		visible = {
+            OR = {
+                has_country_flag = great_lakes_country
+                has_country_flag = south_mississippi_country
+                has_country_flag = texas_country
+                has_country_flag = rockies_country
+                has_country_flag = cascadian_country
+                has_country_flag = california_country
+                }
+            NOT = {
+                has_country_flag = governmental_strain
+                original_tag = MJV
+            }
+		}
+
+		modifier = {
+			political_power_gain = -0.1
+			production_speed_buildings_factor = -0.1
+			consumer_goods_factor = 0.1
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				has_manpower < 1000
+				factor = 10
+			}
+		}
+
+		days_remove = 120
+
+		days_re_enable = 780
+
+		cost = 150
+
+		complete_effect = {
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	simple_decision6 = {
+	 
+		icon = generic_construction
+		
+		visible = {
+            OR = {
+                has_country_flag = great_lakes_country
+                has_country_flag = south_mississippi_country
+                has_country_flag = texas_country
+                has_country_flag = rockies_country
+                has_country_flag = cascadian_country
+                has_country_flag = california_country
+                }
+            NOT = {
+                has_country_flag = governmental_strain
+                original_tag = MJV
+            }
+		}
+
+		modifier = {
+			political_power_gain = -0.1
+			production_speed_buildings_factor = -0.1
+			consumer_goods_factor = 0.1
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		days_remove = 120
+
+		days_re_enable = 780
+
+		cost = 200
+
+		complete_effect = {
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+simple_category3 = {
+	simple_decision4 = {
+	 
+		icon = generic_research
+		
+		visible = {
+            OR = {
+                has_country_flag = great_lakes_country
+                has_country_flag = south_mississippi_country
+                has_country_flag = texas_country
+                has_country_flag = rockies_country
+                has_country_flag = cascadian_country
+                has_country_flag = california_country
+                }
+            NOT = {
+                has_country_flag = governmental_strain
+                original_tag = MJV
+            }
+		}
+
+		modifier = {
+			political_power_gain = -0.25
+			research_speed_factor = 0.2
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		days_remove = 120
+
+		days_re_enable = 0
+
+		cost = 75
+
+		complete_effect = {
+		}
+	}
+	simple_decision10 = {
+	 
+		icon = generic_research
+		
+		visible = {
+            OR = {
+                has_country_flag = great_lakes_country
+                has_country_flag = south_mississippi_country
+                has_country_flag = texas_country
+                has_country_flag = rockies_country
+                has_country_flag = cascadian_country
+                has_country_flag = california_country
+                }
+            NOT = {
+                has_country_flag = governmental_strain
+                original_tag = MJV
+            }
+		}
+
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		days_remove = 60
+
+		days_re_enable = 180
+
+		cost = 75
+
+		complete_effect = {
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.75
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+	simple_decision8 = {
+	 
+		icon = generic_research
+		
+		visible = {
+            OR = {
+                has_country_flag = great_lakes_country
+                has_country_flag = south_mississippi_country
+                has_country_flag = texas_country
+                has_country_flag = rockies_country
+                has_country_flag = cascadian_country
+                has_country_flag = california_country
+                }
+            NOT = {
+                has_country_flag = governmental_strain
+                original_tag = MJV
+            }
+		}
+
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		days_remove = 60
+
+		days_re_enable = 180
+
+		cost = 100
+
+		complete_effect = {
+		}
+		remove_effect = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+                cost_reduction = 0.75
+                uses = 1
+                category = land_doctrine
+            }
+		}
+	}
+	simple_decision9 = {
+	 
+		icon = generic_research
+		
+		visible = {
+            OR = {
+                has_country_flag = great_lakes_country
+                has_country_flag = south_mississippi_country
+                has_country_flag = texas_country
+                has_country_flag = rockies_country
+                has_country_flag = cascadian_country
+                has_country_flag = california_country
+                }
+            NOT = {
+                has_country_flag = governmental_strain
+                original_tag = MJV
+            }
+		}
+
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		days_remove = 60
+
+		days_re_enable = 180
+
+		cost = 120
+
+		complete_effect = {
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+}
+
+	###################################################################################################################
+				#### TARGETED DECISIONS WILL PUT THE FLAG OF THE TARGET WITH THE DECISION ICON ####
+	#### SCOPING FOR THE TARGET OF THE DECISION IS DONE WITH "FROM" and the country currently being played is ROOT ####
+	###################################################################################################################	
+	
+
+

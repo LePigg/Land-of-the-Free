@@ -1,0 +1,323 @@
+skn_election_decisions_r = {
+	skn_elections_decisions_1r = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_nationalism		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			has_country_flag = skn_election
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 1	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			has_country_flag = skn_election
+		}		
+		modifier = {
+			political_power_gain = -0.1
+		}
+		allowed = {
+			OR = {
+				tag = SKN
+			}
+		}
+
+		cost = 30		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 30
+
+		days_re_enable = 14
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.02
+			}
+		}
+		
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 1000
+			}
+		}
+	}
+	skn_elections_decisions_2r = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_nationalism		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			has_country_flag = skn_election
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 1	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			has_country_flag = skn_election
+		}		
+		modifier = {
+			political_power_gain = -0.1
+		}
+		allowed = {
+			OR = {
+				tag = SKN
+			}
+		}
+
+		cost = 30		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 30
+
+		days_re_enable = 14
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_popularity = {
+				ideology = conservatism
+				popularity = -0.02
+			}
+		}
+		
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 1000
+			}
+		}
+	}
+	simple_timeout_mission1r = {		#ID of the mission, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this mission.
+		days_mission_timeout = 30	#The amount of days remaining until the mission is removed.
+		is_good = no		#Determines if the timeout bar will be red or green, cosmetic setting only, has no actual impact on the mission
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the mission and execute its effect.
+			has_completed_focus = SKN_the_peoples_duty
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		allowed = {	
+			always = no
+		}
+		
+		# EFFECTS OF THIS DECISION/MISSION
+
+		timeout_effect = {		#The effects to execute once the mission timer expires.
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.015
+			}
+			activate_mission = simple_timeout_mission1r 
+		}
+		cancel_trigger = {
+			
+		}
+		complete_effect  = {
+			
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the mission.
+			factor = 0
+		}
+	}
+	
+}
+skn_election_decisions_d = {
+	skn_elections_decisions_1d = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_nationalism		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			has_country_flag = skn_election
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 1	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			has_country_flag = skn_election
+		}		
+		modifier = {
+			political_power_gain = -0.1
+		}
+		allowed = {
+			OR = {
+				tag = SKN
+			}
+		}
+
+		cost = 30		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 30
+
+		days_re_enable = 14
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.02
+			}
+		}
+		
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 1000
+			}
+		}
+	}
+	skn_elections_decisions_2d = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_nationalism		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			has_country_flag = skn_election
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 1	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			has_country_flag = skn_election
+		}		
+		modifier = {
+			political_power_gain = -0.1
+		}
+		allowed = {
+			OR = {
+				tag = SKN
+			}
+		}
+
+		cost = 30		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 30
+
+		days_re_enable = 14
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_popularity = {
+				ideology = liberalism
+				popularity = -0.02
+			}
+		}
+		
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 1000
+			}
+		}
+	}
+	simple_timeout_mission1d = {		#ID of the mission, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this mission.
+		days_mission_timeout = 30	#The amount of days remaining until the mission is removed.
+		is_good = no		#Determines if the timeout bar will be red or green, cosmetic setting only, has no actual impact on the mission
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the mission and execute its effect.
+			has_completed_focus = SKN_the_peoples_duty
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		allowed = {	
+			always = no
+		}
+		
+		# EFFECTS OF THIS DECISION/MISSION
+
+		timeout_effect = {		#The effects to execute once the mission timer expires.
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.015
+			}
+			activate_mission = simple_timeout_mission1r 
+		}
+		cancel_trigger = {
+			#OR = {
+			#	has_completed_focus = SKN_the_peoples_duty
+			#}
+		}
+		complete_effect  = {
+			has_completed_focus = SKN_the_peoples_duty
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the mission.
+			factor = 0
+		}
+	}
+	
+}
+skn_shoshone = {
+	skn_shoshone_timeout = {		#ID of the mission, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this mission.
+		days_mission_timeout = 90	#The amount of days remaining until the mission is removed.
+		is_good = no		#Determines if the timeout bar will be red or green, cosmetic setting only, has no actual impact on the mission
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the mission and execute its effect.
+			owns_state = 387
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		allowed = {	
+			always = no
+		}
+		
+		# EFFECTS OF THIS DECISION/MISSION
+
+
+		cancel_trigger = {
+			
+		}
+		complete_effect  = {
+			custom_effect_tooltip = skn_victory
+			add_political_power = 100
+			set_country_flag = skn_success	
+		}
+		timeout_effect = {		#The effects to execute once the mission timer expires.
+			set_country_flag = skn_fail
+			custom_effect_tooltip = skn_failure
+			custom_effect_tooltip = skn_whitepeace
+			add_war_support = -0.15
+			hidden_effect = {
+				white_peace = SHO
+			}
+		}	
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the mission.
+			factor = 10000
+		}
+	}
+	
+}

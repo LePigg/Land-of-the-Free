@@ -1,0 +1,627 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+#####################################################################################################################
+Min_election_1936_decisions = {		#ID of category
+	priority = 100		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_generic_propaganda	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	picture = GFX_stassen_talking
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+ARA_stalemate_failsafe = {
+	priority = 30
+	icon = GFX_decision_category_eng_move_to_secure_the_dominions
+	allowed = {
+		always = yes
+	}
+	visible = {
+		
+	}
+}
+COM_army_reform_decisions = {
+	priority = 100
+	icon = GFX_decision_category_sov_great_patriotic_war
+	allowed = {
+		always = yes
+	}
+	visible = {
+	}
+}
+chicago_unrest = {
+	priority = 90
+	icon = GFX_decision_category_generic_crisis
+	allowed = {
+		always = yes
+	}
+	visible = {
+	}
+}
+Min_election_1936_decisionsdfl = {		#ID of category
+	priority = 100		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_generic_propaganda	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	picture = GFX_olson_talking
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+BMK_gold_spending = {		#ID of category
+	priority = 99		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_generic_arms_trade	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+COM_funding_iowa_decisions = {		#ID of category
+	priority = 99		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_generic_arms_trade	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+Min_funding_iowa_decisions = {		#ID of category
+	priority = 99		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_generic_arms_trade	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+
+development_industry_category = {		#ID of category
+	priority = 9		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  generic_political_actions	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+development_social_category = {		#ID of category
+	priority = 9		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+1simple_category3 = {		#ID of category
+	priority = 9		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon = generic_research	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+lac_sgv_category = {		#ID of category
+	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_border_war	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+        has_country_flag = LAC_sgv_kill
+	}
+}
+elk_panic_category = {		#ID of category
+	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_generic_crisis	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+        has_country_flag = elk_crisis
+	}
+}
+wdc_invasion_1 = {		#ID of category
+	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+CAS_invasion_1 = {		#ID of category
+	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+CAL_invasion_1 = {		#ID of category
+	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+CAS1_invasion_1 = {		#ID of category
+	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+bmk_invasion_1 = {		#ID of category
+	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+err_invasion = {		#ID of category
+	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+ara_min_invasion1 = {
+	priority = 19
+	icon = GFX_decision_category_military_operation
+
+	allowed = {
+		always = yes
+	}
+	visible = {
+	}
+}
+IEF_invasion1 = {
+	priority = 19
+	icon = GFX_decision_category_military_operation
+	allowed = {
+		always = yes
+	}
+	visible = {
+	}
+}
+kan_invasion_1 = {		#ID of category
+	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+#kan1_invasion_1 = {		#ID of category
+#	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+#	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+#	allowed = {
+#		always = yes
+#	}
+#	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+#	}
+#}
+kan2_invasion_1 = {		#ID of category
+	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+kan3_invasion_1 = {		#ID of category
+	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+tex_invasion_1 = {		#ID of category
+	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+com_purchases = {		#ID of category
+	priority = 10		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon = generic_research	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+min_invasion = {		#ID of category
+	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+kan_invasion = {		#ID of category
+	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+min_invasion1 = {		#ID of category
+	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+mil_invasion1 = {		#ID of category
+	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+min_invasion2 = {		#ID of category
+	priority = 19		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+simple_category = {		#ID of category
+	priority = 9		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon = generic_political_actions	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+simple_category1 = {		#ID of category
+	priority = 9		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_military_operation	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+simple_category3 = {		#ID of category
+	priority = 9		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon = generic_research	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+sea_soviet = {		#ID of category
+	priority = 10		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon = generic_research	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+stl_alcoholism_decisions = {
+	priority = 10
+	icon = GFX_decision_category_saf_anti_colonialist_crusade
+	
+	allowed = {
+		always = yes 
+	}
+	visible = {
+	}
+}
+tcw_sabotage_decisions = {
+	priority = 10
+	icon = generic_crisis
+	
+	allowed = {
+		always = yes 
+	}
+	visible = {
+	}
+}
+cal_japanese_decisions = {
+	priority = 11
+	icon = generic_crisis
+	
+	allowed = {
+		always = yes 
+	}
+	visible = {
+	}
+}
+cal_japanese_decisions_pro = {
+	priority = 10
+	icon = generic_crisis
+	
+	allowed = {
+		always = yes 
+	}
+	visible = {
+	}
+}
+skn_election_decisions_d = {
+	priority = 10
+	icon = generic_crisis
+	
+	allowed = {
+		always = yes 
+	}
+	visible = {
+	}
+}
+skn_election_decisions_r = {
+	priority = 10
+	icon = generic_crisis
+	
+	allowed = {
+		always = yes 
+	}
+	visible = {
+	}
+}
+skn_shoshone = {
+	priority = 12
+	icon = generic_crisis
+	
+	allowed = {
+		always = yes 
+	}
+	visible = {
+	}
+}
+simple_category_with_picture = {
+	icon = GFX_decision_eng_trade_unions_support
+	picture = GFX_category_USA		#Left side picture to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create. Category MUST have a description localisation for the image to show up.
+	priority = 15		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+	}
+}
+ara_rebellion_decision = {
+	icon = GFX_decision_category_border_war
+	#picture = GFX_category_USA		#Left side picture to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create. Category MUST have a description localisation for the image to show up.
+	priority = 15		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+	}
+}
+mjv_food_decisions = {
+	icon = GFX_decision_category_border_war
+	#picture = GFX_category_USA		#Left side picture to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create. Category MUST have a description localisation for the image to show up.
+	priority = 16		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+	}
+}
+mjv_gold_decisions = {
+	icon = GFX_decision_category_generic_arms_trade
+	#picture = GFX_category_USA		#Left side picture to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create. Category MUST have a description localisation for the image to show up.
+	priority = 15		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+	}
+}
+mjv_water_decisions = {
+	icon = GFX_decision_category_hol_war_on_pacifism
+	#picture = GFX_category_USA		#Left side picture to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create. Category MUST have a description localisation for the image to show up.
+	priority = 15		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+        has_country_flag = mjv_unlock_raiding
+	}
+}
+mjv_troll_decisions = {
+	icon = GFX_decision_category_border_conflicts
+	#picture = GFX_category_USA		#Left side picture to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create. Category MUST have a description localisation for the image to show up.
+	priority = 15		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+        has_country_flag = MJV_start
+	}
+}
+mex_invasion_decisions = {
+	icon = GFX_decision_category_border_conflicts
+	#picture = GFX_category_USA		#Left side picture to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create. Category MUST have a description localisation for the image to show up.
+	priority = 15		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+        has_country_flag = MEX_beatdowntime
+	}
+}
+mex_snd_decisions = {
+	icon = GFX_decision_category_generic_political_actions
+	#picture = GFX_category_USA		#Left side picture to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create. Category MUST have a description localisation for the image to show up.
+	priority = 16		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+        original_tag = MEX
+        SND = {
+            exists = yes
+        }
+	}
+}
+reunification_category = {
+	icon = GFX_decision_category_border_conflicts
+	#picture = GFX_category_USA		#Left side picture to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create. Category MUST have a description localisation for the image to show up.
+	priority = 100		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+        owns_state = 261
+        owns_state = 372
+        owns_state = 373
+        owns_state = 374
+        owns_state = 375
+        owns_state = 376
+        owns_state = 377
+        owns_state = 378
+        owns_state = 379
+        owns_state = 380
+        owns_state = 381
+        owns_state = 382
+        owns_state = 383
+        owns_state = 384
+        owns_state = 385
+        owns_state = 386
+        owns_state = 387
+        owns_state = 388
+        owns_state = 389
+        owns_state = 390
+        owns_state = 391
+        owns_state = 392
+        owns_state = 393
+        owns_state = 394
+        owns_state = 385
+        owns_state = 386
+        owns_state = 807
+        owns_state = 808
+        owns_state = 809
+        owns_state = 810
+        owns_state = 811
+        owns_state = 812
+        owns_state = 813
+        owns_state = 814
+        owns_state = 815
+        owns_state = 816
+        owns_state = 817
+        owns_state = 818
+        owns_state = 820
+        owns_state = 821
+        owns_state = 822
+        owns_state = 823
+        owns_state = 824
+        owns_state = 825
+        owns_state = 826
+        owns_state = 827
+        owns_state = 828
+        owns_state = 829
+        owns_state = 830
+        owns_state = 831
+        owns_state = 832
+        owns_state = 833
+        owns_state = 835
+        owns_state = 836
+        owns_state = 837
+        owns_state = 838
+        owns_state = 839
+        owns_state = 840
+        owns_state = 841
+        owns_state = 842
+        owns_state = 843
+        owns_state = 844
+        owns_state = 845
+        owns_state = 846
+        owns_state = 847
+        owns_state = 853
+        owns_state = 854
+		OR = {
+        	original_tag = SRR
+			original_tag = EUR
+			original_tag = BMK
+			original_tag = MIN
+			original_tag = IWA
+			original_tag = COM
+			original_tag = ERR
+			original_tag = KAN
+			original_tag = TXL
+			original_tag = ANR
+			original_tag = SRT
+			original_tag = CHR
+			original_tag = MSS
+			original_tag = GPS
+			original_tag = ELK
+			original_tag = SEA
+			original_tag = ARA
+			original_tag = CAL
+			original_tag = LAC
+			original_tag = SKN
+			original_tag = MIL
+		}
+	}
+}

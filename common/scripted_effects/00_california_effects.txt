@@ -1,0 +1,9 @@
+placerville_peace = {
+	CAL = {
+		white_peace = {
+			tag = SRR
+			message = pushing_placerville_peace
+		}             
+		transfer_state = 345
+    }
+}

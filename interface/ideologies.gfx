@@ -1,0 +1,48 @@
+spriteTypes = {	
+#Minnesota Ideas
+########################################
+#Warlord Ideas
+	SpriteType = {
+		name = "GFX_ideology_communism_group"
+		texturefile = "gfx/interface/ideologies/communism_group.dds"	
+	}
+	SpriteType = {
+		name = "GFX_ideology_revolutionary_socialist_group"
+		texturefile = "gfx/interface/ideologies/revolutionary_socialist_group.dds"	
+	}
+	SpriteType = {
+		name = "GFX_ideology_democratic_socialism_group"
+		texturefile = "gfx/interface/ideologies/democratic_socialism_group.dds"	
+	}
+	SpriteType = {
+		name = "GFX_ideology_liberalism_group"
+		texturefile = "gfx/interface/ideologies/liberalism_group.dds"	
+	}
+	SpriteType = {
+		name = "GFX_ideology_Anarchism_group"
+		texturefile = "gfx/interface/ideologies/Anarchism_group.dds"	
+	}
+	SpriteType = {
+		name = "GFX_ideology_total_anarchy"
+		texturefile = "gfx/interface/ideologies/total_anarchy.dds"	
+	}
+	SpriteType = {
+		name = "GFX_ideology_conservatism_group"
+		texturefile = "gfx/interface/ideologies/conservatism_group.dds"	
+	}
+	SpriteType = {
+		name = "GFX_ideology_guided_democracy_group"
+		texturefile = "gfx/interface/ideologies/guided_democracy_group.dds"	
+	}SpriteType = {
+		name = "GFX_ideology_despotism_group"
+		texturefile = "gfx/interface/ideologies/despotism_group.dds"	
+	}
+	SpriteType = {
+		name = "GFX_ideology_stratocracy_group"
+		texturefile = "gfx/interface/ideologies/stratocracy_group.dds"	
+	}
+	SpriteType = {
+		name = "GFX_ideology_fascism_group"
+		texturefile = "gfx/interface/ideologies/fascism_group.dds"	
+	}
+}

@@ -1,0 +1,41 @@
+fix_sexas = {
+
+	IF = {
+		limit = {
+			has_idea = tex_devastation4
+		}
+		remove_ideas = tex_devastation4
+		add_timed_idea = {
+			idea = tex_devastation5
+			days = 80
+		}
+	}		
+			
+	IF = {
+		limit = {
+			has_idea = tex_devastation3
+		}
+		swap_ideas = {
+			remove_idea = tex_devastation3
+			add_idea = tex_devastation4
+		}
+	}	
+	IF = {
+		limit = {
+			has_idea = tex_devastation2
+		}
+		swap_ideas = {
+			remove_idea = tex_devastation2
+			add_idea = tex_devastation3
+		}
+	}
+	IF = {
+		limit = {
+			has_idea = tex_devastation
+		}
+		swap_ideas = {
+			remove_idea = tex_devastation
+			add_idea = tex_devastation2
+		}
+	}
+}

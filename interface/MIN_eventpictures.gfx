@@ -1,0 +1,46 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_olson_spitting_facts_event_image"
+		texturefile = "gfx/event_pictures/report_olson_spitting_facts.dds"
+	}
+	spriteType = {
+		name = "GFX_ball_talking"
+		texturefile = "gfx/interface/decisions/ball_talking.dds"
+	}
+	spriteType = {
+		name = "GFX_stassen_talking"
+		texturefile = "gfx/interface/decisions/stassen_talking.dds"
+	}
+	spriteType = {
+		name = "GFX_olson_talking"
+		texturefile = "gfx/interface/decisions/olson_talking.dds"
+	}
+	spriteType = {
+		name = "GFX_clyde_image"
+		texturefile = "gfx/event_pictures/report_Clyde.dds"
+	}
+	spriteType = {
+		name = "GFX_Macnider_writing"
+		texturefile = "gfx/event_pictures/report_MacNider_writing.dds"
+	}
+	spriteType = {
+		name = "GFX_Macnider_writing"
+		texturefile = "gfx/event_pictures/report_MacNider_writing.dds"
+	}
+	spriteType = {
+		name = "GFX_report_macarthur"
+		texturefile = "gfx/event_pictures/report_macarthur.dds"
+	}
+	spriteType = {
+		name = "GFX_report_smith"
+		texturefile = "gfx/event_pictures/report_smith.dds"
+	}
+	spriteType = {
+		name = "GFX_report_thomas"
+		texturefile = "gfx/event_pictures/report_thomas.dds"
+	}
+	spriteType = {
+		name = "GFX_report_spam_event"
+		texturefile = "gfx/event_pictures/report_spam.dds"
+	}
+}

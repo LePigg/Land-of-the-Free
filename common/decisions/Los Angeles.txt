@@ -1,0 +1,261 @@
+lac_sgv_category = {
+	lac_sgv1 = {
+
+			icon = GFX_decision_infiltrate_state
+
+			available = {
+				NOT = {
+                    has_country_flag = lac_decide2
+                    has_country_flag = lac_decide3
+                }
+			}
+			complete_effect = {
+                set_country_flag = lac_decide1
+				hidden_effect = {
+                    add_command_power = -15
+                }
+			}
+			visible = {
+				
+			}
+
+			fire_only_once = yes
+
+			days_remove = 7
+			#days_re_enable = 180
+
+			custom_cost_trigger = {
+                command_power > 14.99
+            }
+            custom_cost_text = 15_cp_equipment_1
+
+
+			remove_effect = {
+				random_list = {
+                    90 = {
+                        custom_effect_tooltip = lac_sgv1_fail
+                        clr_country_flag = LAC_sgv_kill
+                        hidden_effect = {
+                            157 = {
+                                set_demilitarized_zone = no
+                            }
+                            SGV = { 
+                                load_oob = SGV_1936
+                            }
+                            declare_war_on = { type = annex_everything    target = SGV }
+                            add_state_core = 157
+                        }
+                    }
+                    10 = {
+                        add_manpower = -2047
+                        add_stability = -0.1
+                        add_state_core = 157
+                        157 = {
+                            set_demilitarized_zone = no
+                        }
+                        hidden_effect = {
+                            SGV = {
+                                remove_state_core = 157
+                            }
+                        }
+                    }
+                }
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}	
+        lac_sgv2 = {
+
+			icon = GFX_decision_generic_political_discourse
+
+			available = {
+				NOT = {
+                    has_country_flag = lac_decide1
+                    has_country_flag = lac_decide3
+                }
+			}
+			complete_effect = {
+				set_country_flag = lac_decide2
+			}
+			visible = {
+				
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 7
+
+			cost = 20
+
+
+			remove_effect = {
+				157 = {
+                    add_compliance = -5
+                    add_resistance = 2
+                }
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+        lac_sgv3 = {
+
+			icon = GFX_decision_eng_trade_unions_support
+
+			available = {
+				NOT = {
+                    has_country_flag = lac_decide1
+                    has_country_flag = lac_decide2
+                }
+			}
+			complete_effect = {
+				set_country_flag = lac_decide3
+			}
+			visible = {
+				
+			}
+
+			fire_only_once = yes
+
+			days_remove = 30
+
+			cost = 150
+
+
+			remove_effect = {
+                custom_effect_tooltip = lac_sgv3_concessions
+				#add_political_power = -150
+                add_war_support = -0.2
+                add_stability = -0.15
+                add_state_core = 157
+                clr_country_flag = LAC_sgv_kill
+                157 = {
+                    set_demilitarized_zone = no
+                }
+                hidden_effect = {
+                    add_popularity = { 
+                        ideology = democratic_socialism
+                        popularity = 0.02
+                    }
+                    add_popularity = { 
+                        ideology = liberalism 
+                        popularity = 0.04
+                    }
+                    add_popularity = { 
+                        ideology = conservatism
+                        popularity = 0.07
+                    }
+                    add_popularity = { 
+                        ideology = guided_democracy
+                        popularity = 0.07
+                    }
+                    SGV = {
+                        remove_state_core = 157
+                    }
+                }
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+        lac_sgv4 = {
+
+			icon = GFX_decision_generic_political_discourse
+
+			available = {
+				NOT = {
+                    has_country_flag = lac_decide1
+                    has_country_flag = lac_decide3
+                }
+			}
+			complete_effect = {
+				set_country_flag = lac_decide2
+                hidden_effect = {
+                    add_command_power = -15
+                }
+			}
+			visible = {
+				
+			}
+
+            custom_cost_trigger = {
+                command_power > 14.99
+            }
+            custom_cost_text = 15_cp_equipment_1
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 7
+
+			cost = 20
+
+
+			remove_effect = {
+				157 = {
+                    add_compliance = -2
+                    add_resistance = 5
+                }
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+        lac_sgv5 = {
+
+			icon = GFX_decision_generic_political_discourse
+
+			available = {
+				NOT = {
+                    has_country_flag = lac_decide1
+                    has_country_flag = lac_decide3
+                }
+                157 = {
+                    resistance < 40
+                    compliance > 10
+                }
+			}
+			complete_effect = {
+				set_country_flag = lac_decide2
+				add_state_core = 157
+                hidden_effect = {
+                    add_command_power = -15
+                }
+			}
+			visible = {
+				
+			}
+
+            custom_cost_trigger = {
+                command_power > 14.99
+            }
+            custom_cost_text = 15_cp_equipment_1
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 7
+
+			cost = 20
+
+
+			remove_effect = {
+				add_stability = 0.05
+                add_state_core = 157
+                157 = {
+                    set_demilitarized_zone = no
+                }
+                clr_country_flag = LAC_sgv_kill
+			}
+
+			ai_will_do = {
+				base = 2000
+			}
+		}
+}

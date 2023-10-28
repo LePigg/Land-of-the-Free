@@ -1,0 +1,2185 @@
+simple_category_with_picture = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
+	core_wi = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 40
+			owns_state = 187			
+			NOT = {	40 = {is_core_of = ROOT } }
+			NOT = {	187 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 15	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 40
+			add_state_core = 187			
+		}
+		days_remove = 25
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}
+	core_su = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 161
+			NOT = {	161 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 161			
+		}
+		days_remove = 25
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}
+	core_mi = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 42
+			owns_state = 185
+			NOT = {	42 = {is_core_of = ROOT } }
+			NOT= { 185 = { is_core_of = ROOT } }
+		}		
+
+		cost = 75	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 42
+			add_state_core = 185
+			add_state_core = 164
+		}
+		days_remove = 100
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_il = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 182
+			owns_state = 162
+			owns_state = 183
+			NOT = {	182 = {is_core_of = ROOT } }
+			NOT = {	162 = {is_core_of = ROOT } }
+			NOT = {	183 = {is_core_of = ROOT } }
+		}		
+
+		cost = 100	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 182
+			add_state_core = 162
+			add_state_core = 183
+		}
+		days_remove = 150
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}
+	core_il2 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 53
+			owns_state = 191
+			owns_state = 190
+			NOT = {	190 = {is_core_of = ROOT } }
+			NOT = {	53 = {is_core_of = ROOT } }
+			NOT = {	191 = {is_core_of = ROOT } }
+			NOT = { tag = ARA }
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 190
+			add_state_core = 53
+			add_state_core = 191
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_in = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 189
+			owns_state = 55
+			owns_state = 188
+			NOT = {	189 = {is_core_of = ROOT } }
+			NOT = {	55 = {is_core_of = ROOT } }
+			NOT = {	188 = {is_core_of = ROOT } }
+		}		
+
+		cost = 100	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 189
+			add_state_core = 55
+			add_state_core = 188
+		}
+		days_remove = 150
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}
+	core_in2 = {		#ID of the decision, must not contain spaces!
+
+	icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+	
+	fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+	days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+	visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+		owns_state = 163
+		owns_state = 184
+		NOT = {	163 = {is_core_of = ROOT } }
+		NOT = {	184 = {is_core_of = ROOT } }
+	}		
+
+	cost = 50	#The cost to execute the decision, by default its political power.
+
+	# EFFECTS OF THIS DECISION/MISSION
+	modifier = { war_support_weekly = -0.002
+		political_power_gain = -0.15
+	}
+	remove_effect = {		#The effects to execute once the envelope icon is clicked.
+		add_state_core = 163
+		add_state_core = 184
+	}
+	days_remove = 15
+	# AI LOGIC FOR THIS DECISION/MISSION
+
+	ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+		factor = 1000			
+	}
+}
+    core_id= {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 144
+            owns_state = 200
+			NOT = {	144 = {is_core_of = ROOT } }
+            NOT = {	200 = {is_core_of = ROOT } }
+		}		
+
+		cost = 75	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 144
+            add_state_core = 200
+		}
+		days_remove = 100
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}
+	core_id2 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 29
+			NOT = {	29 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 29			
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}
+	core_oh = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 51
+			owns_state = 186
+			NOT = {	51 = {is_core_of = ROOT } }
+			NOT = {	186 = {is_core_of = ROOT } }
+		}		
+
+		cost = 100	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 51
+			add_state_core = 186
+		}
+		days_remove = 150
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_oh2 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 169
+			owns_state = 192
+			NOT = {	169 = {is_core_of = ROOT } }
+			NOT = {	192 = {is_core_of = ROOT } }
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 169
+			add_state_core = 192
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_mn = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 32	
+			owns_state = 159
+			owns_state = 160
+			NOT = {	32 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 32
+			add_state_core = 159
+			add_state_core = 160		
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_mn2 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 151	
+			NOT = {	151 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 15	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 151		
+		}
+		days_remove = 25
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_nd = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 33	
+			owns_state = 219
+			owns_state = 220
+			NOT = { 33 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 33
+			add_state_core = 219
+			add_state_core = 220		
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_sd = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 46	
+			owns_state = 217
+			owns_state = 218
+			NOT = {	46 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 46
+			add_state_core = 217
+			add_state_core = 218		
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_ia = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 52	
+			owns_state = 158
+			owns_state = 166
+			owns_state = 165
+			owns_state = 167
+			NOT = {	52 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 52
+			add_state_core = 158
+			add_state_core = 165
+			add_state_core = 166
+			add_state_core = 167	
+			
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_mo = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 170
+			owns_state = 244	
+			#owns_state = 168
+			NOT = {	170 = {is_core_of = ROOT } }		
+			#NOT = {	168 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 170
+			add_state_core = 244
+			#add_state_core = 168
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_mo1 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 168	
+			NOT = {	168 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 168
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_kc = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 67	
+			owns_state = 243
+			NOT = {	67 = {is_core_of = ROOT } }		
+			NOT = {	243 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 67
+			add_state_core = 243
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_gp = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 70	
+			owns_state = 261
+			NOT = {	70 = {is_core_of = ROOT } }		
+			NOT = {	261 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 70
+			add_state_core = 261
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}
+	core_gp2 = {		#ID of the decision, must not contain spaces!
+
+	icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+	
+	fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+	days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+	visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+		owns_state = 260
+		owns_state = 242
+		owns_state = 171
+		NOT = {	260 = {is_core_of = ROOT } }		
+		NOT = {	242 = {is_core_of = ROOT } }			
+	}		
+
+	cost = 50	#The cost to execute the decision, by default its political power.
+
+	# EFFECTS OF THIS DECISION/MISSION
+	modifier = { war_support_weekly = -0.002
+		political_power_gain = -0.15
+	}
+	remove_effect = {		#The effects to execute once the envelope icon is clicked.
+		add_state_core = 260
+		add_state_core = 242
+		add_state_core = 171
+	}
+	days_remove = 75
+	# AI LOGIC FOR THIS DECISION/MISSION
+
+	ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+		factor = 1000			
+	}
+	}
+	core_ar = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 56
+			owns_state = 172
+			NOT = {	56 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 56
+			owns_state = 172		
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_ok = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 245
+			owns_state = 61
+			owns_state = 223
+			NOT = {	61 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 245	
+			add_state_core = 61
+			add_state_core = 223	
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_tx = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 173
+			owns_state = 271
+			NOT = {	173 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 173
+			add_state_core = 271		
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_tx1 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 176
+			owns_state = 175
+			NOT = {	176 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 176
+			add_state_core = 175		
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_tx2 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 24
+			NOT = {	24 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 15	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 24		
+		}
+		days_remove = 25
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_tx3 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 177
+			owns_state = 241
+			NOT = {	177 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 177
+			add_state_core = 241		
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_tx4 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 38
+			owns_state = 238
+			owns_state = 239
+			owns_state = 240
+			NOT = {	38 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 38
+			add_state_core = 238
+			add_state_core = 289
+			add_state_core = 240		
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_tx5 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 179
+			owns_state = 178
+			NOT = {	179 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 179
+			add_state_core = 178		
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_tx6 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 181
+			owns_state = 250
+			owns_state = 44
+			NOT = {	181 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 181
+			add_state_core = 250
+			add_state_core = 44		
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_nm = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 249
+			NOT = {	249 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 15	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 249		
+		}
+		days_remove = 25
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_co = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 382	
+			owns_state = 832
+			NOT = {	382 = {is_core_of = ROOT } }		
+			NOT = {	832 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 382
+			add_state_core = 832
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_co1 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 826	
+			owns_state = 823
+			NOT = {	826 = {is_core_of = ROOT } }		
+			NOT = {	823 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 826
+			add_state_core = 823
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_ut = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 380			
+			NOT = {	380 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 380
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_wy = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 381			
+			NOT = {	381 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 15	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 381
+		}
+		days_remove = 25
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_ne = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 825			
+			NOT = {	825 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 15	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 825
+		}
+		days_remove = 25
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_sd1 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 824			
+			NOT = {	824 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 15	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 824
+		}
+		days_remove = 25
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_ab = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 822		
+			NOT = {	822 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 15	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 822
+		}
+		days_remove = 25
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}			
+	core_lak = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 831		
+			NOT = {	831 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 15	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 831
+		}
+		days_remove = 25
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_mt = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 830
+			owns_state = 388
+			NOT = {	830 = {is_core_of = ROOT } }			
+			NOT = {	388 = {is_core_of = ROOT } }	
+		}		
+
+		cost = 15	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 830
+			add_state_core = 388
+		}
+		days_remove = 25
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_nv = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 820		
+			NOT = {	820 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 15	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 820
+		}
+		days_remove = 25
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_az = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 377		
+			NOT = {	377 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 15	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 377
+		}
+		days_remove = 25
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_ut1 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 821		
+			NOT = {	821 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 15	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 821
+		}
+		days_remove = 25
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_nv1 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 817
+			owns_state = 844
+			owns_state = 379
+			owns_state = 818
+			NOT = {	817 = {is_core_of = ROOT } }		
+			NOT = {	844 = {is_core_of = ROOT } }	
+			NOT = {	379 = {is_core_of = ROOT } }	
+			NOT = {	818 = {is_core_of = ROOT } }	
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 817
+			add_state_core = 844
+			add_state_core = 379
+			add_state_core = 818
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_nca = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 813
+			owns_state = 814
+			NOT = {	813 = {is_core_of = ROOT } }		
+			NOT = {	814 = {is_core_of = ROOT } }	
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 813
+			add_state_core = 814
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_or = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 385
+			owns_state = 827
+			NOT = {	385 = {is_core_of = ROOT } }		
+			NOT = {	827 = {is_core_of = ROOT } }	
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 385
+			add_state_core = 827
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_wa = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 829
+			owns_state = 828
+			owns_state = 845
+			NOT = {	829 = {is_core_of = ROOT } }		
+			NOT = {	828 = {is_core_of = ROOT } }	
+			NOT = {	845 = {is_core_of = ROOT } }
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 829
+			add_state_core = 828
+			add_state_core = 845
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_srr = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 812		
+			NOT = {	812 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 15	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 812
+		}
+		days_remove = 25
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_ca = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 816		
+			NOT = {	816 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 816
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_ca1 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 815		
+			NOT = {	815 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 815
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_ca2 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 810		
+			NOT = {	810 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 810
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_ca3 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 378		
+			NOT = {	378 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 378
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_ca4 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 811		
+			NOT = {	811 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 811
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_ca5 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 809		
+			NOT = {	809 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 50	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 809
+			add_state_core = 859
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_ca6 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 808		
+			NOT = {	808 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 808
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_ca7 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 807		
+			NOT = {	807 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 25	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 807
+		}
+		days_remove = 75
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_la1 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 371	
+			NOT = {	371 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 75	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 371
+		}
+		days_remove = 100
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_ms = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 370	
+			NOT = {	370 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 75	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 370
+		}
+		days_remove = 100
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_al = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 367	
+			NOT = {	367 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 75	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 367
+		}
+		days_remove = 100
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_fl = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 366	
+			NOT = {	366 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 75	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 366
+		}
+		days_remove = 100
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_ga = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 365	
+			NOT = {	365 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 75	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 365
+		}
+		days_remove = 100
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_sc = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 364	
+			NOT = {	364 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 75	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 364
+		}
+		days_remove = 100
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_nc = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 363	
+			NOT = {	363 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 75	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 363
+		}
+		days_remove = 100
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}
+	core_tn = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 368	
+			NOT = {	368 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 75	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 368
+		}
+		days_remove = 100
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_kt = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 369	
+			NOT = {	369 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 75	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 369
+		}
+		days_remove = 100
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_va = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 362
+			NOT = {	362 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 75	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 362
+		}
+		days_remove = 100
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}
+	core_wv = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 848	
+			NOT = {	848 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 75	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 848
+		}
+		days_remove = 100
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_md = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 361	
+			NOT = {	361 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 75	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 361
+		}
+		days_remove = 100
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_pa = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 360	
+			NOT = {	360 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 100	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 360
+		}
+		days_remove = 150
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_nj = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 359	
+			NOT = {	359 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 75	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 359
+		}
+		days_remove = 100
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}	
+	core_ny = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 358	
+			NOT = {	358 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 100	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 358
+		}
+		days_remove = 150
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_ne = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 849
+			owns_state = 850
+			owns_state = 851
+			NOT = {	849 = {is_core_of = ROOT } }		
+			NOT = {	850 = {is_core_of = ROOT } }
+			NOT = {	851 = {is_core_of = ROOT } }			
+		}		
+
+		cost = 100	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 849
+			add_state_core = 850
+			add_state_core = 851
+		}
+		days_remove = 150
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}		
+	core_ma = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_infiltrate_state		#The left side icon to show for this decision.
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = { NOT = { original_tag = CAN original_tag = MIA original_tag = SOU original_tag = MEX }		#Conditions to make this decision visible, can be left blank to make it always appear.
+			owns_state = 357
+			owns_state = 852
+			NOT = {	357 = {is_core_of = ROOT } }		
+			NOT = {	852 = {is_core_of = ROOT } }		
+		}		
+
+		cost = 100	#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+		modifier = { war_support_weekly = -0.002
+			political_power_gain = -0.15
+		}
+		remove_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_state_core = 357
+			add_state_core = 852
+		}
+		days_remove = 150
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000			
+		}
+	}			
+}

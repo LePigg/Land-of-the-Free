@@ -1,0 +1,1984 @@
+mjv_food_decisions = {
+    mjv_food_exchange = {
+
+        icon = GFX_decision_hol_exchange_intelligence_data
+
+        available = {
+            
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            original_tag = MJV
+            has_country_flag = MJV_start
+        }
+
+        fire_only_once = no
+
+        #days_remove = 2
+        days_re_enable = 180
+
+        custom_cost_trigger = {
+            check_variable = { mjvgoldsupply > 4.99 }
+        }
+        custom_cost_text = 5_gold_equipment_1
+
+        complete_effect = {
+            custom_effect_tooltip = mjv_food_exchange_tooltip
+            add_to_variable = { mjvfoodsupply = 180 }
+            add_to_variable = { mjvgoldsupply = -5 }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }    
+	mjv_food_scavenge = {
+
+			icon = GFX_decision_hol_inundate_water_lines
+
+			available = {
+				#check_variable = { ARARebellionPreparedness > 29.99 }
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				original_tag = MJV
+                has_country_flag = MJV_start
+			}
+
+			fire_only_once = no
+
+			#days_remove = 2
+			days_re_enable = 90
+
+			cost = 15
+
+
+			remove_effect = {
+                custom_effect_tooltip = mjv_foodsupply_90
+				add_to_variable = { mjvfoodsupply = 90 }
+                add_stability = -0.05
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}
+    mjv_food_orc = {
+
+        icon = generic_political_discourse
+
+        available = {
+            NOT = {
+                has_country_flag = mjv_raiding_already
+            }
+            check_variable = { mjvgoldsupply > 3 }
+        }
+        visible = {
+            original_tag = MJV
+            ORC = { exists = yes }
+            has_country_flag = MJV_start
+        }
+
+        fire_only_once = no
+
+        #days_remove = 2
+        days_re_enable = 180
+
+        cost = 15
+
+
+        complete_effect = {
+            ORC = {
+                country_event = { days = 5 id = mjv.3}
+            }
+            custom_effect_tooltip = mjv_foodsupply_bargain
+            set_country_flag = mjv_raiding_already 
+            hidden_effect = {
+				add_command_power = -30
+			}
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mjv_food_eur = {
+
+        icon = generic_political_discourse
+
+        available = {
+            NOT = {
+                has_country_flag = mjv_raiding_already
+            }
+            check_variable = { mjvgoldsupply > 3 }
+        }  
+        complete_effect = {
+            
+        }
+        visible = {
+            original_tag = MJV
+            EUR = { exists = yes }
+            has_country_flag = MJV_start
+        }
+
+        fire_only_once = no
+
+        #days_remove = 2
+        days_re_enable = 180
+
+        cost = 15
+
+
+        complete_effect = {
+            EUR = {
+                country_event = { days = 5 id = mjv.3}
+            }
+            custom_effect_tooltip = mjv_foodsupply_bargain
+            set_country_flag = mjv_raiding_already 
+            hidden_effect = {
+				add_command_power = -30
+			}
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }    
+    mjv_raid_snd = {
+
+        icon = GFX_decision_infiltrate_state
+
+        available = {
+            NOT = {
+                has_country_flag = mjv_raiding_already
+            }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            original_tag = MJV
+            SND = { exists = yes }
+            has_country_flag = MJV_start
+        }
+
+        fire_only_once = no
+
+        #days_remove = 2
+        days_re_enable = 180
+
+        custom_cost_trigger = {
+            command_power > 29.99 
+        }
+        custom_cost_text = 30_cp_equipment_1
+
+        complete_effect = {
+            hidden_effect = {
+				add_command_power = -30
+			}
+            custom_effect_tooltip = mjv_raid_prize_snd
+            random_list = {
+                50 = {
+                    SND = {
+                        country_event = { days = 5 id = mjv.7}
+                    }
+                }
+                50 = {
+                    SND = {
+                        country_event = { days = 5 id = mjv.6}
+                    }
+                }
+            }
+            set_country_flag = mjv_raiding_already 
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mjv_raid_orc = {
+
+        icon = GFX_decision_infiltrate_state
+
+        available = {
+            NOT = {
+                has_country_flag = mjv_raiding_already
+            }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            original_tag = MJV
+            ORC = { exists = yes }
+            has_country_flag = MJV_start
+        }
+
+        fire_only_once = no
+
+        #days_remove = 2
+        days_re_enable = 180
+
+        custom_cost_trigger = {
+            command_power > 29.99
+        }
+        custom_cost_text = 30_cp_equipment_1
+
+        complete_effect = {
+            hidden_effect = {
+				add_command_power = -30
+			}
+            custom_effect_tooltip = mjv_raid_prize_orc
+            random_list = {
+                70 = {
+                    ORC = {
+                        country_event = { days = 5 id = mjv.7 }
+                    }
+                }
+                30 = {
+                    ORC = {
+                        country_event = { days = 5 id = mjv.10}
+                    }
+                }
+            }
+            set_country_flag = mjv_raiding_already 
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mjv_raid_EUR = {
+
+        icon = GFX_decision_infiltrate_state
+
+        available = {
+            NOT = {
+                has_country_flag = mjv_raiding_already
+            }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            original_tag = MJV
+            EUR = { exists = yes }
+            has_country_flag = MJV_start
+        }
+
+        fire_only_once = no
+
+        #days_remove = 2
+        days_re_enable = 180
+
+        custom_cost_trigger = {
+            command_power > 29.99
+        }
+        custom_cost_text = 30_cp_equipment_1
+
+        complete_effect = {
+            custom_effect_tooltip = mjv_raid_prize_orc
+            random_list = {
+                70 = {
+                    EUR = {
+                        country_event = { days = 5 id = mjv.7 }
+                    }
+                }
+                30 = {
+                    EUR = {
+                        country_event = { days = 5 id = mjv.10}
+                    }
+                }
+            }
+            set_country_flag = mjv_raiding_already 
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mjv_raid_des = {
+
+        icon = GFX_decision_infiltrate_state
+
+        available = {
+            NOT = {
+                has_country_flag = mjv_raiding_already
+            }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            original_tag = MJV
+            DES = { exists = yes }
+            has_country_flag = MJV_start
+        }
+
+        fire_only_once = no
+
+        #days_remove = 2
+        days_re_enable = 180
+
+        custom_cost_trigger = {
+            command_power > 29.99
+        }
+        custom_cost_text = 30_cp_equipment_1
+
+        complete_effect = {
+            custom_effect_tooltip = mjv_raid_prize_des
+            random_list = {
+                40 = {
+                    DES = {
+                        country_event = { days = 5 id = mjv.7 }
+                    }
+                }
+                60 = {
+                    DES = {
+                        country_event = { days = 5 id = mjv.12}
+                    }
+                }
+            }
+            set_country_flag = mjv_raiding_already 
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mjv_raid_phe = {
+
+        icon = GFX_decision_infiltrate_state
+
+        available = {
+            NOT = {
+                has_country_flag = mjv_raiding_already
+            }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            original_tag = MJV
+            PHE = { exists = yes }
+            has_country_flag = MJV_start
+        }
+
+        fire_only_once = no
+
+        #days_remove = 2
+        days_re_enable = 180
+
+        custom_cost_trigger = {
+            command_power > 29.99
+        }
+        custom_cost_text = 30_cp_equipment_1
+
+        complete_effect = {
+            custom_effect_tooltip = mjv_raid_prize_des
+            random_list = {
+                40 = {
+                    PHE = {
+                        country_event = { days = 5 id = mjv.7 }
+                    }
+                }
+                60 = {
+                    PHE = {
+                        country_event = { days = 5 id = mjv.12}
+                    }
+                }
+            }
+            set_country_flag = mjv_raiding_already 
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }    
+    mjv_raid_lac = {
+
+        icon = GFX_decision_infiltrate_state
+
+        available = {
+            NOT = {
+                has_country_flag = mjv_raiding_already
+            }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            original_tag = MJV
+            LAC = { exists = yes }
+            has_country_flag = MJV_start
+        }
+
+        fire_only_once = no
+
+        #days_remove = 2
+        days_re_enable = 180
+
+        custom_cost_trigger = {
+            command_power > 29.99
+        }
+        custom_cost_text = 30_cp_equipment_1
+
+        complete_effect = {
+            custom_effect_tooltip = mjv_raid_prize_des
+            random_list = {
+                40 = {
+                    LAC = {
+                        country_event = { days = 5 id = mjv.7 }
+                    }
+                }
+                60 = {
+                    LAC = {
+                        country_event = { days = 5 id = mjv.12}
+                    }
+                }
+            }
+            set_country_flag = mjv_raiding_already 
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }    
+    mjv_no_food  = {
+
+		priority = 10
+
+		icon = GFX_decision_revolt
+
+		allowed = { 
+			original_tag = MJV
+            has_country_flag = MJV_start
+		}
+
+		available = {
+			check_variable = { mjvfoodsupply > 0 }
+		}
+
+		days_mission_timeout = 7
+
+		fire_only_once = no
+
+		activation = {
+			check_variable = { mjvfoodsupply < 0 }
+            has_country_flag = MJV_start
+		}
+
+		visible = { 
+			check_variable = { mjvfoodsupply < 0 }
+            has_country_flag = MJV_start
+		}
+
+		cancel_if_not_visible = yes
+
+		days_remove = 7
+
+		is_good = no
+
+		timeout_effect = {
+            add_stability = -0.35
+            add_war_support = -0.35
+            country_event = { days = 1 id = mjv.14 }
+		}
+	}
+}
+mjv_gold_decisions = {
+    mjv_gold_infra = {
+
+        icon = GFX_decision_generic_operation
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            original_tag = MJV
+        }
+
+        fire_only_once = yes
+
+        days_remove = 90
+        days_re_enable = 180
+
+
+        custom_cost_trigger = {
+            check_variable = { mjvgoldsupply > 4.99 }
+        }
+        custom_cost_text = 5_gold_equipment_1
+
+        complete_effect = {
+            add_to_variable = { mjvgoldsupply = -5 }
+        }
+        remove_effect = {
+            195 = {
+				add_building_construction = {
+					type =infrastructure
+					level = 1
+					instant_build = yes
+				}
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    } 
+    mjv_gold_merc = {
+
+        icon = GFX_decision_eng_blackshirt_march
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            original_tag = MJV
+        }
+
+        fire_only_once = yes
+
+        days_remove = 30
+        days_re_enable = 90
+
+
+        custom_cost_trigger = {
+            check_variable = { mjvgoldsupply > 4.99 }
+        }
+        custom_cost_text = 5_gold_equipment_1
+
+        complete_effect = {
+            add_to_variable = { mjvgoldsupply = -5 }
+        }
+        remove_effect = {
+            add_manpower = 250
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }   
+    mjv_gold_motor = {
+
+        icon = GFX_decision_rubber
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            original_tag = MJV
+        }
+
+        fire_only_once = yes
+
+        days_remove = 7
+        days_re_enable = 120
+
+
+        custom_cost_trigger = {
+            check_variable = { mjvgoldsupply > 4.99 }
+        }
+        custom_cost_text = 5_gold_equipment_1
+
+        complete_effect = {
+            add_to_variable = { mjvgoldsupply = -5 }
+        }
+        remove_effect = {
+            add_equipment_to_stockpile = {
+                type = motorized_equipment
+                amount = 15
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    } 
+    mjv_gold_motor_div = {
+
+        icon = GFX_decision_rubber
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            original_tag = MJV
+        }
+
+        fire_only_once = yes
+
+        #days_remove = 15
+        days_re_enable = 180
+
+
+        custom_cost_trigger = {
+            check_variable = { mjvgoldsupply > 15 }
+        }
+        custom_cost_text = 15_gold_equipment_1
+
+        complete_effect = {
+            add_to_variable = { mjvgoldsupply = -15 }
+            hidden_effect = {
+                load_oob = "MJV_1937"
+            }
+            custom_effect_tooltip = mjv_gold_motor_div_tooltip
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }         
+    mjv_gold_donate = {
+
+        icon = GFX_decision_hol_attract_foreign_investors
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            original_tag = MJV
+        }
+
+        fire_only_once = yes
+
+        #days_remove = 15
+        days_re_enable = 90
+
+
+        custom_cost_trigger = {
+            check_variable = { mjvgoldsupply > 4.99 }
+        }
+        custom_cost_text = 5_gold_equipment_1
+
+        complete_effect = {
+            add_to_variable = { mjvgoldsupply = -5 }
+            add_stability = 0.05
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }  
+    mjv_guns_1 = {		#ID of the decision, must not contain spaces!
+
+    icon = GFX_decision_ger_military_buildup		#The left side icon to show for this decision.
+    
+    # CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+    
+    available = {
+        NOT = { has_country_flag = mjv_purchasing_something }
+        ELP = {
+            has_war = no
+        }
+    }
+    fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+    days_re_enable = 180	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+    visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+        ROOT = {
+            is_ai = no
+        }
+        ELP = {
+            exists = yes 
+        }
+        
+    }		
+    allowed = {
+        tag = MJV
+    }		
+    custom_cost_trigger = {
+        check_variable = { mjvgoldsupply > 4.99 }
+    }
+    custom_cost_text = 5_gold_equipment_1
+
+    # EFFECTS OF THIS DECISION/MISSION
+
+    complete_effect = {		#The effects to execute once the envelope icon is clicked.
+        set_country_flag = mjv_purchased_guns
+        set_country_flag = mjv_purchasing_something
+        random_list = {
+            30 = {
+                country_event = { days = 5 id = mjv.22 }
+            }
+            30 = {
+                country_event = { days = 5 id = mjv.23 }
+            }
+            40 = {
+                country_event = { days = 5 id = mjv.24 }
+            }
+        }
+        add_to_variable = { mjvgoldsupply = -5 }
+    }
+    
+
+    ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+        factor = 0			
+    }
+}    
+    mjv_guns_2 = {		#ID of the decision, must not contain spaces!
+
+    icon = GFX_decision_ger_military_buildup		#The left side icon to show for this decision.
+    
+    # CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+    
+    available = {
+        NOT = { has_country_flag = mjv_purchasing_something }
+        ELP = {
+            has_war = no
+        }
+    }
+    fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+    days_re_enable = 180	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+    visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+        NOT = { has_country_flag = mjv_purchasing_something }
+        ROOT = {
+            is_ai = no
+        }
+        ELP = {
+            exists = yes 
+        }
+        
+    }		
+    allowed = {
+        tag = MJV
+    }		
+    custom_cost_trigger = {
+        check_variable = { mjvgoldsupply > 4.99 }
+    }
+    custom_cost_text = 5_gold_equipment_1
+
+    # EFFECTS OF THIS DECISION/MISSION
+
+    complete_effect = {		#The effects to execute once the envelope icon is clicked.
+        set_country_flag = mjv_purchased_support
+        set_country_flag = mjv_purchasing_something
+        random_list = {
+            30 = {
+                country_event = { days = 5 id = mjv.22 }
+            }
+            30 = {
+                country_event = { days = 5 id = mjv.23 }
+            }
+            40 = {
+                country_event = { days = 5 id = mjv.24 }
+            }
+        }
+        add_to_variable = { mjvgoldsupply = -5 }
+    }
+    
+
+    ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+        factor = 0			
+    }
+}
+    mjv_guns_3 = {		#ID of the decision, must not contain spaces!
+
+    icon = GFX_decision_ger_military_buildup		#The left side icon to show for this decision.
+    
+    # CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+    
+    available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+        NOT = { has_country_flag = mjv_purchasing_something }
+        ELP = {
+            has_war = no
+        }
+    }
+    
+    fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+    days_re_enable = 180	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+    visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+        ROOT = {
+            is_ai = no
+        }
+        ELP = {
+            exists = yes 
+        }
+        #is_debug = yes
+    }	
+    allowed = {
+        tag = MJV
+    }		
+    custom_cost_trigger = {
+        check_variable = { mjvgoldsupply > 4.99 }
+    }
+    custom_cost_text = 5_gold_equipment_1
+
+    # EFFECTS OF THIS DECISION/MISSION
+
+    complete_effect = {		#The effects to execute once the envelope icon is clicked.
+            set_country_flag = mjv_purchased_art
+            set_country_flag = mjv_purchasing_something
+            random_list = {
+                30 = {
+                    country_event = { days = 5 id = mjv.22 }
+                }
+                30 = {
+                    country_event = { days = 5 id = mjv.23 }
+                }
+                40 = {
+                    country_event = { days = 5 id = mjv.24 }
+                }
+            }
+            add_to_variable = { mjvgoldsupply = -5 }
+    }
+    
+
+    ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+        factor = 0			
+    }
+}     
+    mjv_gold_mine = {
+
+        icon = GFX_decision_generic_factory
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+            has_manpower > 0
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            original_tag = MJV
+        }
+
+        fire_only_once = yes
+
+        days_remove = 90
+        #days_re_enable = 1
+
+        cost = 30
+
+
+        remove_effect = {
+            custom_effect_tooltip = mjv_goldsupply_2
+            add_to_variable = { mjvgoldsupply = 2 }
+            add_manpower = -87
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }            
+    mjv_gold_orc = {
+
+        icon = GFX_decision_border_war
+
+        available = {
+            NOT = {
+                has_country_flag = mjv_raiding_already
+            }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_unlock_raiding
+            original_tag = MJV
+            ORC = { exists = yes }
+        }
+
+        fire_only_once = yes
+
+        #days_remove = 90
+        days_re_enable = 180
+
+        custom_cost_trigger = {
+            command_power > 29.99 
+        }
+        custom_cost_text = 30_cp_equipment_1
+
+        complete_effect = {
+            set_country_flag = mjv_raiding_already
+            random_list = {
+                70 = {
+                    ORC = {
+                        country_event = { days = 5 id = mjv.16 }
+                    }
+                }
+                15 = {
+                    ORC = {
+                        country_event = { days = 5 id = mjv.17 }
+                    }
+                }
+                15 = {
+                    ORC = {
+                        country_event = { days = 5 id = mjv.18 }
+                    }
+                }
+            }
+            hidden_effect = {
+				add_command_power = -30
+			}
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    } 
+    mjv_gold_snd = {
+
+        icon = GFX_decision_border_war
+
+        available = {
+            NOT = {
+                has_country_flag = mjv_raiding_already
+            }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_unlock_raiding
+            original_tag = MJV
+            SND = { exists = yes }
+        }
+
+        fire_only_once = yes
+
+        #days_remove = 90
+        days_re_enable = 180
+
+        custom_cost_trigger = {
+            command_power > 29.99 
+        }
+        custom_cost_text = 30_cp_equipment_1
+
+        complete_effect = {
+            set_country_flag = mjv_raiding_already
+            random_list = {
+                70 = {
+                    SND = {
+                        country_event = { days = 5 id = mjv.16 }
+                    }
+                }
+                15 = {
+                    SND = {
+                        country_event = { days = 5 id = mjv.17 }
+                    }
+                }
+                15 = {
+                    SND = {
+                        country_event = { days = 5 id = mjv.18 }
+                    }
+                }
+            }
+            hidden_effect = {
+				add_command_power = -30
+			}
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    } 
+    mjv_gold_lac = {
+
+        icon = GFX_decision_border_war
+
+        available = {
+            NOT = {
+                has_country_flag = mjv_raiding_already
+            }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_unlock_raiding
+            original_tag = MJV
+            LAC = { exists = yes }
+        }
+
+        fire_only_once = yes
+
+        #days_remove = 90
+        days_re_enable = 180
+
+        custom_cost_trigger = {
+            command_power > 29.99 
+        }
+        custom_cost_text = 30_cp_equipment_1
+
+        complete_effect = {
+            set_country_flag = mjv_raiding_already
+            random_list = {
+                70 = {
+                    LAC = {
+                        country_event = { days = 5 id = mjv.16 }
+                    }
+                }
+                15 = {
+                    LAC = {
+                        country_event = { days = 5 id = mjv.17 }
+                    }
+                }
+                15 = {
+                    LAC = {
+                        country_event = { days = 5 id = mjv.18 }
+                    }
+                }
+            }
+            hidden_effect = {
+				add_command_power = -30
+			}
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }  
+    mjv_gold_eur = {
+
+        icon = GFX_decision_border_war
+
+        available = {
+            NOT = {
+                has_country_flag = mjv_raiding_already
+            }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_unlock_raiding
+            original_tag = MJV
+            EUR = { exists = yes }
+        }
+
+        fire_only_once = yes
+
+        #days_remove = 90
+        days_re_enable = 180
+
+        custom_cost_trigger = {
+            command_power > 29.99 
+        }
+        custom_cost_text = 30_cp_equipment_1
+
+        complete_effect = {
+            set_country_flag = mjv_raiding_already
+            random_list = {
+                70 = {
+                    EUR = {
+                        country_event = { days = 5 id = mjv.16 }
+                    }
+                }
+                15 = {
+                    EUR = {
+                        country_event = { days = 5 id = mjv.17 }
+                    }
+                }
+                15 = {
+                    EUR = {
+                        country_event = { days = 5 id = mjv.18 }
+                    }
+                }
+            }
+            hidden_effect = {
+				add_command_power = -30
+			}
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }   
+    mjv_gold_phe = {
+
+        icon = GFX_decision_border_war
+
+        available = {
+            NOT = {
+                has_country_flag = mjv_raiding_already
+            }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_unlock_raiding
+            original_tag = MJV
+            PHE = { exists = yes }
+        }
+
+        fire_only_once = yes
+
+        #days_remove = 90
+        days_re_enable = 180
+
+        custom_cost_trigger = {
+            command_power > 29.99 
+        }
+        custom_cost_text = 30_cp_equipment_1
+
+        complete_effect = {
+            set_country_flag = mjv_raiding_already
+            random_list = {
+                70 = {
+                    PHE = {
+                        country_event = { days = 5 id = mjv.16 }
+                    }
+                }
+                15 = {
+                    PHE = {
+                        country_event = { days = 5 id = mjv.17 }
+                    }
+                }
+                15 = {
+                    PHE = {
+                        country_event = { days = 5 id = mjv.18 }
+                    }
+                }
+            }
+            hidden_effect = {
+				add_command_power = -30
+			}
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }       
+    mjv_gold_srr = {
+
+        icon = GFX_decision_border_war
+
+        available = {
+            NOT = {
+                has_country_flag = mjv_raiding_already
+            }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_unlock_raiding
+            original_tag = MJV
+            SRR = { exists = yes }
+        }
+
+        fire_only_once = yes
+
+        #days_remove = 90
+        days_re_enable = 180
+
+        custom_cost_trigger = {
+            command_power > 29.99 
+        }
+        custom_cost_text = 30_cp_equipment_1
+
+        complete_effect = {
+            set_country_flag = mjv_raiding_already
+            random_list = {
+                70 = {
+                    SRR = {
+                        country_event = { days = 5 id = mjv.16 }
+                    }
+                }
+                15 = {
+                    SRR = {
+                        country_event = { days = 5 id = mjv.17 }
+                    }
+                }
+                15 = {
+                    SRR = {
+                        country_event = { days = 5 id = mjv.18 }
+                    }
+                }
+            }
+            hidden_effect = {
+				add_command_power = -30
+			}
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }     
+}
+mjv_water_decisions = {
+    mjv_water_snd = {
+
+        icon = GFX_decision_oppression
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_water_start
+            original_tag = MJV
+            NOT = {
+                SND = {
+                    has_idea = MJV_nowater
+                }
+            }
+            SND = {
+                exists = yes
+            }
+        }
+
+        fire_only_once = no
+
+        #days_remove = 90
+        days_re_enable = 1
+
+        complete_effect = {
+            SND = {
+                add_ideas = MJV_nowater
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    } 
+    mjv_water_snd2 = {
+
+        icon = GFX_decision_eng_trade_unions_support
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_water_start
+            original_tag = MJV
+            SND = {
+                has_idea = MJV_nowater
+                exists = yes
+            }
+        }
+
+        fire_only_once = no
+
+        #days_remove = 90
+        days_re_enable = 1
+
+        complete_effect = {
+            SND = {
+                remove_ideas = MJV_nowater
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }     
+    mjv_water_orc = {
+
+        icon = GFX_decision_oppression
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_water_start
+            original_tag = MJV
+            NOT = {
+                ORC = {
+                    has_idea = MJV_nowater
+                }
+            }
+            ORC = {
+                exists = yes
+            }
+        }
+
+        fire_only_once = no
+
+        #days_remove = 90
+        days_re_enable = 1
+
+        complete_effect = {
+            ORC = {
+                add_ideas = MJV_nowater
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    } 
+    mjv_water_orc2 = {
+
+        icon = GFX_decision_eng_trade_unions_support
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_water_start
+            original_tag = MJV
+            ORC = {
+                has_idea = MJV_nowater
+                exists = yes
+            }
+        }
+
+        fire_only_once = no
+
+        #days_remove = 90
+        days_re_enable = 1
+
+        complete_effect = {
+            ORC = {
+                remove_ideas = MJV_nowater
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    } 
+    mjv_water_lac = {
+
+        icon = GFX_decision_oppression
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_water_start
+            original_tag = MJV
+            NOT = {
+                LAC = {
+                    has_idea = MJV_nowater
+                }
+            }
+            LAC = {
+                exists = yes
+            }
+        }
+
+        fire_only_once = no
+
+        #days_remove = 90
+        days_re_enable = 1
+
+        complete_effect = {
+            LAC = {
+                add_ideas = MJV_nowater
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    } 
+    mjv_water_lac2 = {
+
+        icon = GFX_decision_eng_trade_unions_support
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_water_start
+            original_tag = MJV
+            LAC = {
+                has_idea = MJV_nowater
+                exists = yes
+            }
+        }
+
+        fire_only_once = no
+
+        #days_remove = 90
+        days_re_enable = 1
+
+        complete_effect = {
+            LAC = {
+                remove_ideas = MJV_nowater
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }   
+    mjv_water_eur = {
+
+        icon = GFX_decision_oppression
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_water_start
+            original_tag = MJV
+            NOT = {
+                EUR = {
+                    has_idea = MJV_nowater
+                }
+            }
+            EUR = {
+                exists = yes
+            }
+        }
+
+        fire_only_once = no
+
+        #days_remove = 90
+        days_re_enable = 1
+
+        complete_effect = {
+            EUR = {
+                add_ideas = MJV_nowater
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    } 
+    mjv_water_eur2 = {
+
+        icon = GFX_decision_eng_trade_unions_support
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_water_start
+            original_tag = MJV
+            EUR = {
+                has_idea = MJV_nowater
+                exists = yes
+            }
+        }
+
+        fire_only_once = no
+
+        #days_remove = 90
+        days_re_enable = 1
+
+        complete_effect = {
+            EUR = {
+                remove_ideas = MJV_nowater
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }      
+    mjv_water_cal = {
+
+        icon = GFX_decision_oppression
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_water_start
+            original_tag = MJV
+            NOT = {
+                CAL = {
+                    has_idea = MJV_nowater
+                }
+            }
+            CAL = {
+                exists = yes
+            }
+        }
+
+        fire_only_once = no
+
+        #days_remove = 90
+        days_re_enable = 1
+
+        complete_effect = {
+            CAL = {
+                add_ideas = MJV_nowater
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    } 
+    mjv_water_cal2 = {
+
+        icon = GFX_decision_eng_trade_unions_support
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_water_start
+            original_tag = MJV
+            CAL = {
+                has_idea = MJV_nowater
+                exists = yes
+            }
+        }
+
+        fire_only_once = no
+
+        #days_remove = 90
+        days_re_enable = 1
+
+        complete_effect = {
+            CAL = {
+                remove_ideas = MJV_nowater
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }    
+    mjv_water_mty = {
+
+        icon = GFX_decision_oppression
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_water_start
+            original_tag = MJV
+            NOT = {
+                MTY = {
+                    has_idea = MJV_nowater
+                }
+            }
+            MTY = {
+                exists = yes
+            }
+        }
+
+        fire_only_once = no
+
+        #days_remove = 90
+        days_re_enable = 1
+
+        complete_effect = {
+            MTY = {
+                add_ideas = MJV_nowater
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    } 
+    mjv_water_mty2 = {
+
+        icon = GFX_decision_eng_trade_unions_support
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_water_start
+            original_tag = MJV
+            MTY = {
+                has_idea = MJV_nowater
+                exists = yes
+            }
+        }
+
+        fire_only_once = no
+
+        #days_remove = 90
+        days_re_enable = 1
+
+        complete_effect = {
+            MTY = {
+                remove_ideas = MJV_nowater
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }   
+    mjv_water_srr = {
+
+        icon = GFX_decision_oppression
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_water_start
+            original_tag = MJV
+            NOT = {
+                SRR = {
+                    has_idea = MJV_nowater
+                }
+            }
+            SRR = {
+                exists = yes
+            }
+        }
+
+        fire_only_once = no
+
+        #days_remove = 90
+        days_re_enable = 1
+
+        complete_effect = {
+            SRR = {
+                add_ideas = MJV_nowater
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    } 
+    mjv_water_srr2 = {
+
+        icon = GFX_decision_eng_trade_unions_support
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = mjv_water_start
+            original_tag = MJV
+            SRR = {
+                has_idea = MJV_nowater
+                exists = yes
+            }
+        }
+
+        fire_only_once = no
+
+        #days_remove = 90
+        days_re_enable = 1
+
+        complete_effect = {
+            SRR = {
+                remove_ideas = MJV_nowater
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }   
+}  
+mjv_troll_decisions = {
+    mjv_troll_snd = {
+    
+        icon = GFX_decision_revolt
+    
+        available = {
+            has_war = no
+            has_border_war = no
+            SND = {
+                has_war = no
+            }
+        }
+        complete_effect = {
+                
+        }
+        visible = {
+            has_country_flag = mjv_troll_start
+            original_tag = MJV
+            SND = {
+                exists = yes
+            }
+        }
+    
+        fire_only_once = no
+    
+        #days_remove = 90
+        days_re_enable = 1
+    
+        complete_effect = {
+            start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 142
+					num_provinces = 2
+					on_win = min.9
+					on_lose = mjv.28
+					on_cancel = mjv.28
+				}
+				defender = {
+					state = 118
+					num_provinces = 2
+					on_win = min.9
+					on_lose = mjv.27						
+					on_cancel = mjv.27
+				}
+			}
+        }
+    
+        ai_will_do = {
+            base = 1000
+        }
+    } 
+    mjv_troll_orc = {
+    
+        icon = GFX_decision_revolt
+    
+        available = {
+            has_war = no
+            has_border_war = no
+            ORC = {
+                has_war = no
+            }
+        }
+        complete_effect = {
+                
+        }
+        visible = {
+            has_country_flag = mjv_troll_start
+            original_tag = MJV
+            ORC = {
+                exists = yes
+            }
+        }
+    
+        fire_only_once = no
+    
+        #days_remove = 90
+        days_re_enable = 1
+    
+        complete_effect = {
+            start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 195
+					num_provinces = 3
+					on_win = min.9
+					on_lose = mjv.28
+					on_cancel = mjv.28
+				}
+				defender = {
+					state = 117
+					num_provinces = 3
+					on_win = min.9
+					on_lose = mjv.27						
+					on_cancel = mjv.27
+				}
+			}
+        }
+    
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mjv_troll_lac = {
+    
+        icon = GFX_decision_revolt
+    
+        available = {
+            has_war = no
+            has_border_war = no
+            SND = {
+                has_war = no
+            }
+        }
+        complete_effect = {
+                
+        }
+        visible = {
+            has_country_flag = mjv_troll_start
+            original_tag = MJV
+            LAC = {
+                exists = yes
+            }
+        }
+    
+        fire_only_once = no
+    
+        #days_remove = 90
+        days_re_enable = 1
+    
+        complete_effect = {
+            start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 195
+					num_provinces = 2
+					on_win = min.9
+					on_lose = mjv.28
+					on_cancel = mjv.28
+				}
+				defender = {
+					state = 157
+					num_provinces = 3
+					on_win = min.9
+					on_lose = mjv.27						
+					on_cancel = mjv.27
+				}
+			}
+        }
+    
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mjv_troll_EUR = {
+    
+        icon = GFX_decision_revolt
+    
+        available = {
+            has_war = no
+            has_border_war = no
+            EUR = {
+                has_war = no
+            }
+        }
+        complete_effect = {
+                
+        }
+        visible = {
+            has_country_flag = mjv_troll_start
+            original_tag = MJV
+            EUR = {
+                exists = yes
+            }
+        }
+    
+        fire_only_once = no
+    
+        #days_remove = 90
+        days_re_enable = 1
+    
+        complete_effect = {
+            start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 193
+					num_provinces = 2
+					on_win = min.9
+					on_lose = mjv.28
+					on_cancel = mjv.28
+				}
+				defender = {
+					state = 154
+					num_provinces = 2
+					on_win = min.9
+					on_lose = mjv.27						
+					on_cancel = mjv.27
+				}
+			}
+        }
+    
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mjv_troll_srr = {
+    
+        icon = GFX_decision_revolt
+    
+        available = {
+            has_war = no
+            has_border_war = no
+            SRR = {
+                has_war = no
+            }
+        }
+        complete_effect = {
+                
+        }
+        visible = {
+            has_country_flag = mjv_troll_start
+            original_tag = MJV
+            SRR = {
+                exists = yes
+            }
+        }
+    
+        fire_only_once = no
+    
+        #days_remove = 90
+        days_re_enable = 1
+    
+        complete_effect = {
+            start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 194
+					num_provinces = 2
+					on_win = min.9
+					on_lose = mjv.28
+					on_cancel = mjv.28
+				}
+				defender = {
+					state = 143
+					num_provinces = 2
+					on_win = min.9
+					on_lose = mjv.27						
+					on_cancel = mjv.27
+				}
+			}
+        }
+    
+        ai_will_do = {
+            base = 1000
+        }
+    }
+}

@@ -1,0 +1,3179 @@
+BMK_gold_spending = {
+	BMK_gold_spending1 = {
+
+			icon = GFX_decision_hol_attract_foreign_investors
+
+			available = {
+			}
+			complete_effect = {
+				add_to_variable = { bmkgoldreserves = -2 }
+				add_to_variable = { bmkcorruptionlevels = 1 }
+				IF = {
+					limit = {
+						check_variable = { bmkcorruptionlevels < 1.99 }
+						has_idea = bmk_corruption1
+					}
+					remove_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption1
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					add_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption1
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption1
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption4
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption4
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 7.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption4
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption4
+					}
+				}
+			}
+			visible = {
+				has_country_flag = bmk_unlock_rcmpsmuggle_flag
+				NOT = {
+					has_country_flag = BMK_cheaper_gold
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 31
+			days_re_enable = 31
+
+			custom_cost_trigger = {
+				check_variable = { bmkgoldreserves > 1 }
+			}
+			custom_cost_text = 2_gold_equipment_1
+
+
+			remove_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 150
+				}	
+			}
+
+			ai_will_do = {
+				base = 10
+				modifier = {
+					add = -10
+					has_idea = bmk_corruption1
+				}
+				modifier = {
+					factor = 10
+					stockpile_ratio = {
+						archetype = infantry_equipment
+						ratio < 0.5
+					}
+				}
+			}
+		}
+		BMK_gold_spending2 = {
+
+			icon = GFX_decision_hol_attract_foreign_investors
+
+			available = {
+			}
+			complete_effect = {
+				add_to_variable = { bmkgoldreserves = -2 }
+				add_to_variable = { bmkcorruptionlevels = 1 }
+				IF = {
+					limit = {
+						check_variable = { bmkcorruptionlevels < 1.99 }
+						has_idea = bmk_corruption1
+					}
+					remove_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption1
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					add_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption1
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption1
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption4
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption4
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 7.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption4
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption4
+					}
+				}
+			}
+			visible = {
+				has_country_flag = bmk_unlock_rcmpsmuggle_flag
+				NOT = {
+					has_country_flag = BMK_cheaper_gold
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 31
+			days_re_enable = 31
+
+			custom_cost_trigger = {
+				check_variable = { bmkgoldreserves > 1 }
+			}
+			custom_cost_text = 2_gold_equipment_1
+
+
+			remove_effect = {
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 25
+				}	
+			}
+
+			ai_will_do = {
+				base = 10
+				modifier = {
+					add = -10
+					has_idea = bmk_corruption1
+				}
+				modifier = {
+					factor = 9
+					stockpile_ratio = {
+						archetype = support_equipment
+						ratio < 0.5
+					}
+				}
+			}
+		}
+		BMK_gold_spending3 = {
+
+			icon = GFX_decision_hol_attract_foreign_investors
+
+			available = {
+			}
+			complete_effect = {
+				add_to_variable = { bmkgoldreserves = -2 }
+				add_to_variable = { bmkcorruptionlevels = 1 }
+				IF = {
+					limit = {
+						check_variable = { bmkcorruptionlevels < 1.99 }
+						has_idea = bmk_corruption1
+					}
+					remove_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption1
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					add_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption1
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption1
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption4
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption4
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 7.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption4
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption4
+					}
+				}
+			}
+			visible = {
+				has_country_flag = bmk_unlock_rcmpsmuggle_flag
+				NOT = {
+					has_country_flag = BMK_cheaper_gold
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 31
+			days_re_enable = 31
+
+			custom_cost_trigger = {
+				check_variable = { bmkgoldreserves > 1 }
+			}
+			custom_cost_text = 2_gold_equipment_1
+
+
+			remove_effect = {
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 25
+				}	
+			}
+
+			ai_will_do = {
+				base = 10
+				modifier = {
+					add = -10
+					has_idea = bmk_corruption1
+				}
+				modifier = {
+					factor = 9
+					stockpile_ratio = {
+						archetype = artillery_equipment
+						ratio < 0.5
+					}
+				}
+			}
+		}
+		BMK_gold_spending4 = {
+
+			icon = GFX_decision_hol_attract_foreign_investors
+
+			available = {
+			}
+			complete_effect = {
+				add_to_variable = { bmkgoldreserves = -2 }
+				add_to_variable = { bmkcorruptionlevels = 1 }
+				IF = {
+					limit = {
+						check_variable = { bmkcorruptionlevels < 1.99 }
+						has_idea = bmk_corruption1
+					}
+					remove_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption1
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					add_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption1
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption1
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption4
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption4
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 7.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption4
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption4
+					}
+				}
+			}
+			visible = {
+				has_country_flag = bmk_unlock_rcmpsmuggle_flag
+				NOT = {
+					has_country_flag = BMK_cheaper_gold
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 31
+			days_re_enable = 31
+
+			custom_cost_trigger = {
+				check_variable = { bmkgoldreserves > 1 }
+			}
+			custom_cost_text = 2_gold_equipment_1
+
+
+			remove_effect = {
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 25
+				}	
+			}
+
+			ai_will_do = {
+				base = 5
+				modifier = {
+					add = -10
+					has_idea = bmk_corruption1
+				}
+				modifier = {
+					factor = 9
+					stockpile_ratio = {
+						archetype = motorized_equipment
+						ratio < 0.5
+					}
+				}
+			}
+		}
+		BMK_gold_spending5 = {
+
+			icon = GFX_decision_hol_attract_foreign_investors
+
+			available = {
+			}
+			complete_effect = {
+				add_to_variable = { bmkgoldreserves = -2 }
+				add_to_variable = { bmkcorruptionlevels = 1 }
+				IF = {
+					limit = {
+						check_variable = { bmkcorruptionlevels < 1.99 }
+						has_idea = bmk_corruption1
+					}
+					remove_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption1
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					add_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption1
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption1
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption4
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption4
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 7.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption4
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption4
+					}
+				}
+			}
+			visible = {
+				has_country_flag = bmk_unlock_rcmpsmuggle_flag
+				NOT = {
+					has_country_flag = BMK_cheaper_gold
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 31
+			days_re_enable = 31
+
+			custom_cost_trigger = {
+				check_variable = { bmkgoldreserves > 1 }
+			}
+			custom_cost_text = 2_gold_equipment_1
+
+
+			remove_effect = {
+				army_experience = 25
+			}
+
+			ai_will_do = {
+				base = 10
+				modifier = {
+					add = -10
+					has_idea = bmk_corruption1
+				}
+			}
+		}
+		BMK_gold_spending8 = {
+
+			icon = GFX_decision_hol_attract_foreign_investors
+
+			available = {
+			}
+			complete_effect = {
+				add_to_variable = { bmkgoldreserves = -2 }
+				add_to_variable = { bmkcorruptionlevels = 1 }
+				IF = {
+					limit = {
+						check_variable = { bmkcorruptionlevels < 1.99 }
+						has_idea = bmk_corruption1
+					}
+					remove_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption1
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					add_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption1
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption1
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption4
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption4
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 7.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption4
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption4
+					}
+				}
+			}
+			visible = {
+				has_country_flag = bmk_unlock_rcmpsmuggle_mercanaryflag
+				NOT = {
+					has_country_flag = BMK_cheaper_gold
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 31
+			days_re_enable = 31
+
+			custom_cost_trigger = {
+				check_variable = { bmkgoldreserves > 1 }
+			}
+			custom_cost_text = 2_gold_equipment_1
+
+
+			remove_effect = {
+				add_manpower = 3000
+				army_experience = 10
+			}
+
+			ai_will_do = {
+				base = 10
+				modifier = {
+					has_manpower < 20000
+					factor = 10
+				}
+				modifier = {
+					add = -10
+					has_idea = bmk_corruption1
+				}
+			}
+		}
+		BMK_gold_spending9 = {
+
+			icon = GFX_decision_hol_attract_foreign_investors
+
+			available = {
+			}
+			complete_effect = {
+				add_to_variable = { bmkgoldreserves = -10 }
+				add_to_variable = { bmkcorruptionlevels = 1 }
+				IF = {
+					limit = {
+						check_variable = { bmkcorruptionlevels < 1.99 }
+						has_idea = bmk_corruption1
+					}
+					remove_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption1
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					add_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption1
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption1
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption4
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption4
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 7.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption4
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption4
+					}
+				}
+			}
+			visible = {
+				has_country_flag = bmk_unlock_rcmpsmuggle_mercanaryflag
+				NOT = {
+					has_country_flag = BMK_cheaper_gold
+				}
+			}
+
+			fire_only_once = yes
+
+			days_remove = 31
+			days_re_enable = 700
+
+			custom_cost_trigger = {
+				check_variable = { bmkgoldreserves > 9 }
+			}
+			custom_cost_text = 10_gold_equipment_1
+
+
+			remove_effect = {
+				custom_effect_tooltip = bmkhiremercenarydivtooltip
+				hidden_effect = {
+					load_oob = BMK_1937
+				}
+			}
+
+			ai_will_do = {
+				base = 30
+				modifier = {
+					add = -10
+					has_idea = bmk_corruption1
+				}
+			}
+		}
+		BMK_gold_spending10 = {
+
+			icon = GFX_decision_generic_army_support
+
+			available = {
+			}
+			complete_effect = {
+				add_to_variable = { bmkgoldreserves = -5 }
+			}
+			visible = {
+				has_country_flag = bmk_unlock_rcmpsmuggle_flag
+				owns_state = 32
+			}
+
+			fire_only_once = yes
+
+			days_remove = 7
+			days_re_enable = 90
+
+			custom_cost_trigger = {
+				check_variable = { bmkgoldreserves > 4}
+			}
+			custom_cost_text = 5_gold_equipment_1
+
+
+			remove_effect = {
+				custom_effect_tooltip = BMK_gold_spending10tp
+				hidden_effect = {
+					MIN = {
+						MIN_carlos_brewer = {
+							set_nationality = BMK
+						}
+						MIN_ben_lear = {
+							set_nationality = BMK
+						}
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 3
+			}
+		}
+		BMK_gold_spending11 = {
+
+			icon = GFX_decision_generic_army_support
+
+			available = {
+			}
+			complete_effect = {
+				add_to_variable = { bmkgoldreserves = -2 }
+			}
+			visible = {
+				has_country_flag = bmk_unlock_rcmpsmuggle_flag
+				owns_state = 52
+			}
+
+			fire_only_once = yes
+
+			days_remove = 7
+			days_re_enable = 90
+
+			custom_cost_trigger = {
+				check_variable = { bmkgoldreserves > 1 }
+			}
+			custom_cost_text = 2_gold_equipment_1
+
+
+			remove_effect = {
+				custom_effect_tooltip = BMK_gold_spending11tp
+				hidden_effect = {
+					IWA = {
+						IWA_george_parker = {
+							set_nationality = BMK
+						}
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 3
+			}
+		}
+		BMK_gold_spending12 = {
+
+			icon = GFX_decision_hol_attract_foreign_investors
+
+			available = {
+			}
+			complete_effect = {
+				add_to_variable = { bmkgoldreserves = -1 }
+				add_to_variable = { bmkcorruptionlevels = 1 }
+				IF = {
+					limit = {
+						check_variable = { bmkcorruptionlevels < 1.99 }
+						has_idea = bmk_corruption1
+					}
+					remove_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption1
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					add_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption1
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption1
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption4
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption4
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 7.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption4
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption4
+					}
+				}
+			}
+			visible = {
+				has_country_flag = BMK_cheaper_gold
+			}
+
+			fire_only_once = no
+
+			days_remove = 31
+			days_re_enable = 31
+
+			custom_cost_trigger = {
+				check_variable = { bmkgoldreserves > 0 }
+			}
+			custom_cost_text = 1_gold_equipment_1
+
+
+			remove_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 250
+				}	
+			}
+
+			ai_will_do = {
+				base = 10
+				modifier = {
+					add = -10
+					has_idea = bmk_corruption1
+				}
+				modifier = {
+					factor = 10
+					stockpile_ratio = {
+						archetype = infantry_equipment
+						ratio < 0.5
+					}
+				}
+			}
+		}
+		BMK_gold_spending13 = {
+
+			icon = GFX_decision_hol_attract_foreign_investors
+
+			available = {
+			}
+			complete_effect = {
+				add_to_variable = { bmkgoldreserves = -1 }
+				add_to_variable = { bmkcorruptionlevels = 1 }
+				IF = {
+					limit = {
+						check_variable = { bmkcorruptionlevels < 1.99 }
+						has_idea = bmk_corruption1
+					}
+					remove_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption1
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					add_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption1
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption1
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption4
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption4
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 7.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption4
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption4
+					}
+				}
+			}
+			visible = {
+				has_country_flag = BMK_cheaper_gold
+			}
+
+			fire_only_once = no
+
+			days_remove = 31
+			days_re_enable = 31
+
+			custom_cost_trigger = {
+				check_variable = { bmkgoldreserves > 0 }
+			}
+			custom_cost_text = 1_gold_equipment_1
+
+
+			remove_effect = {
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 40
+				}	
+			}
+
+			ai_will_do = {
+				base = 10
+				modifier = {
+					add = -10
+					has_idea = bmk_corruption1
+				}
+				modifier = {
+					factor = 9
+					stockpile_ratio = {
+						archetype = support_equipment
+						ratio < 0.5
+					}
+				}
+			}
+		}
+		BMK_gold_spending14 = {
+
+			icon = GFX_decision_hol_attract_foreign_investors
+
+			available = {
+			}
+			complete_effect = {
+				add_to_variable = { bmkgoldreserves = -1 }
+				add_to_variable = { bmkcorruptionlevels = 1 }
+				IF = {
+					limit = {
+						check_variable = { bmkcorruptionlevels < 1.99 }
+						has_idea = bmk_corruption1
+					}
+					remove_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption1
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					add_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption1
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption1
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption4
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption4
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 7.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption4
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption4
+					}
+				}
+			}
+			visible = {
+				has_country_flag = BMK_cheaper_gold
+			}
+
+			fire_only_once = no
+
+			days_remove = 31
+			days_re_enable = 31
+
+			custom_cost_trigger = {
+				check_variable = { bmkgoldreserves > 0 }
+			}
+			custom_cost_text = 1_gold_equipment_1
+
+
+			remove_effect = {
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 40
+				}	
+			}
+
+			ai_will_do = {
+				base = 10
+				modifier = {
+					add = -10
+					has_idea = bmk_corruption1
+				}
+				modifier = {
+					factor = 9
+					stockpile_ratio = {
+						archetype = artillery_equipment
+						ratio < 0.5
+					}
+				}
+			}
+		}
+		BMK_gold_spending15 = {
+
+			icon = GFX_decision_hol_attract_foreign_investors
+
+			available = {
+			}
+			complete_effect = {
+				add_to_variable = { bmkgoldreserves = -1 }
+				add_to_variable = { bmkcorruptionlevels = 1 }
+				IF = {
+					limit = {
+						check_variable = { bmkcorruptionlevels < 1.99 }
+						has_idea = bmk_corruption1
+					}
+					remove_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption1
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					add_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption1
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption1
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption4
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption4
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 7.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption4
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption4
+					}
+				}
+			}
+			visible = {
+				has_country_flag = BMK_cheaper_gold
+			}
+
+			fire_only_once = no
+
+			days_remove = 31
+			days_re_enable = 31
+
+			custom_cost_trigger = {
+				check_variable = { bmkgoldreserves > 0 }
+			}
+			custom_cost_text = 1_gold_equipment_1
+
+
+			remove_effect = {
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 50
+				}	
+			}
+
+			ai_will_do = {
+				base = 10
+				modifier = {
+					add = -10
+					has_idea = bmk_corruption1
+				}
+				modifier = {
+					factor = 9
+					stockpile_ratio = {
+						archetype = motorized_equipment
+						ratio < 0.5
+					}
+				}
+			}
+		}
+		BMK_gold_spending17 = {
+
+			icon = GFX_decision_hol_attract_foreign_investors
+
+			available = {
+			}
+			complete_effect = {
+				add_to_variable = { bmkgoldreserves = -1 }
+				add_to_variable = { bmkcorruptionlevels = 1 }
+				IF = {
+					limit = {
+						check_variable = { bmkcorruptionlevels < 1.99 }
+						has_idea = bmk_corruption1
+					}
+					remove_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption1
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					add_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption1
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption1
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption4
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption4
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 7.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption4
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption4
+					}
+				}
+			}
+			visible = {
+				has_country_flag = BMK_cheaper_gold
+			}
+
+			fire_only_once = no
+
+			days_remove = 31
+			days_re_enable = 31
+
+			custom_cost_trigger = {
+				check_variable = { bmkgoldreserves > 0 }
+			}
+			custom_cost_text = 1_gold_equipment_1
+
+
+			remove_effect = {
+				army_experience = 40
+			}
+
+			ai_will_do = {
+				base = 10
+				modifier = {
+					add = -10
+					has_idea = bmk_corruption1
+				}
+			}
+		}
+		BMK_gold_spending16 = {
+
+			icon = GFX_decision_hol_attract_foreign_investors
+
+			available = {
+			}
+			complete_effect = {
+				add_to_variable = { bmkgoldreserves = -1 }
+				add_to_variable = { bmkcorruptionlevels = 1 }
+				IF = {
+					limit = {
+						check_variable = { bmkcorruptionlevels < 1.99 }
+						has_idea = bmk_corruption1
+					}
+					remove_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption1
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					add_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption1
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption1
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption4
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption4
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 7.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption4
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption4
+					}
+				}
+			}
+			visible = {
+				has_country_flag = bmk_unlock_rcmpsmuggle_mercanaryflag
+				has_country_flag = BMK_cheaper_gold
+			}
+
+			fire_only_once = no
+
+			days_remove = 31
+			days_re_enable = 31
+
+			custom_cost_trigger = {
+				check_variable = { bmkgoldreserves > 1 }
+			}
+			custom_cost_text = 1_gold_equipment_1
+
+
+			remove_effect = {
+				add_manpower = 3500
+				army_experience = 15
+			}
+
+			ai_will_do = {
+				base = 10
+				modifier = {
+					add = -10
+					has_idea = bmk_corruption1
+				}
+			}
+		}
+		BMK_gold_spending18 = {
+
+			icon = GFX_decision_hol_attract_foreign_investors
+
+			available = {
+			}
+			complete_effect = {
+				add_to_variable = { bmkgoldreserves = -5 }
+				add_to_variable = { bmkcorruptionlevels = 1 }
+				IF = {
+					limit = {
+						check_variable = { bmkcorruptionlevels < 1.99 }
+						has_idea = bmk_corruption1
+					}
+					remove_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption1
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					add_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption1
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption1
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption4
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption4
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 7.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption4
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption4
+					}
+				}
+			}
+			visible = {
+				has_country_flag = bmk_unlock_rcmpsmuggle_mercanaryflag
+				has_country_flag = BMK_cheaper_gold
+			}
+
+			fire_only_once = yes
+
+			days_remove = 31
+			days_re_enable = 90
+
+			custom_cost_trigger = {
+				check_variable = { bmkgoldreserves > 4 }
+			}
+			custom_cost_text = 5_gold_equipment_1
+
+
+			remove_effect = {
+				custom_effect_tooltip = bmkhiremercenarydivtooltip
+				hidden_effect = {
+					load_oob = BMK_1937
+				}
+			}
+
+			ai_will_do = {
+				base = 30
+				modifier = {
+					add = -10
+					has_idea = bmk_corruption1
+				}
+			}
+		}
+		BMK_gold_spending6 = {
+
+			icon = GFX_decision_oppression
+
+			available = {
+				check_variable = { bmkcorruptionlevels > 0.99 }
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = bmk_unlock_rcmpsmuggle_flag
+			}
+
+			fire_only_once = no
+
+			days_remove = 31
+			days_re_enable = 60
+
+			cost = 30
+
+
+			remove_effect = {
+				custom_effect_tooltip = lowerbmkcorruption1
+				add_to_variable = { bmkcorruptionlevels = -1 }
+				IF = {
+					limit = {
+						check_variable = { bmkcorruptionlevels < 1.99 }
+						has_idea = bmk_corruption1
+					}
+					remove_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption1
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					add_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption1
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption1
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption4
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption4
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 7.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption4
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption4
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 10
+			}
+		}
+		BMK_gold_spending7 = {
+
+			icon = GFX_decision_oppression
+
+			available = {
+				check_variable = { bmkcorruptionlevels > 1.99 }
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = bmk_unlock_rcmpsmuggle_flag
+			}
+
+			fire_only_once = no
+
+			days_remove = 31
+			days_re_enable = 60
+
+			cost = 45
+
+
+			remove_effect = {
+				custom_effect_tooltip = lowerbmkcorruption2
+				add_to_variable = { bmkcorruptionlevels = -2 }
+				IF = {
+					limit = {
+						check_variable = { bmkcorruptionlevels < 1.99 }
+						has_idea = bmk_corruption1
+					}
+					remove_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption1
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 1.99 }
+							check_variable = { bmkcorruptionlevels < 3.99 }
+							NOT = {
+								has_idea = bmk_corruption1
+							}
+						}
+					}
+					add_ideas = bmk_corruption1
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption1
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption1
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 3.99 }
+							check_variable = { bmkcorruptionlevels < 5.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption2
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption2
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption2
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption2
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 5.99 }
+							check_variable = { bmkcorruptionlevels < 7.99 }
+							has_idea = bmk_corruption4
+							NOT = {
+								has_idea = bmk_corruption3
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption4
+						add_idea = bmk_corruption3
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							check_variable = { bmkcorruptionlevels > 7.99 }
+							has_idea = bmk_corruption3
+							NOT = {
+								has_idea = bmk_corruption4
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = bmk_corruption3
+						add_idea = bmk_corruption4
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 3
+				modifier = {
+					factor = 25 
+					check_variable = {
+						var = bmkcorruptionlevels
+						value = 1
+						compare = more_than
+					}
+				}
+			}
+		}
+}
+min_invasion = {
+	fart1 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied 
+			}
+			visible = {
+				has_country_flag = min_invasion_flag
+				MIL = { 	
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				declare_war_on = { type = annex_everything    target = MIL }
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+	fart2 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = ERR
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = min_invasion_flag			
+				ERR = { 	
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				declare_war_on = { type = annex_everything    target = ERR }
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}		
+	fart3 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				#is_neighbor_of = com
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+			visible = {
+				has_country_flag = min_invasion_flag			
+				COM = {
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				declare_war_on = { type = annex_everything    target = com }
+				clr_country_flag = war_occupied 
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+	fart4 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = ara
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = min_invasion_flag			
+				ARA = {
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				declare_war_on = { type = annex_everything    target = ara }
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}	
+	fart6 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = ief
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+					has_country_flag = min_invasion_flag			
+					IEF = {
+						exists = yes 
+					}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				declare_war_on = { type = annex_everything    target = ief }
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}			
+	fart5 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = mic
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = min_invasion_flag			
+				MIC = {
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				declare_war_on = { type = annex_everything    target = mic }
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}		
+}
+bmk_invasion_1 = {
+	bmk_invasion_2 = {
+
+			icon = GFX_decision_icon_default
+
+			available = {
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = BMK1_unification1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 70
+			days_re_enable = 180
+
+			cost = 30
+
+
+			remove_effect = {
+				add_manpower = 150000
+				add_to_variable = { RUSWarPreparedness = 10 }
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}
+	bmk_invasion_3 = {
+
+			icon = generic_construction
+
+			available = {
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = BMK1_unification1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 70
+			days_re_enable = 180
+
+			cost = 30
+
+
+			remove_effect = {
+				add_to_variable = { RUSWarPreparedness = 10 }
+				custom_effect_tooltip = BMK_fallback
+				hidden_effect = {
+					847 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 7831
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 12305
+							instant_build = yes
+						}
+					}
+					396 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 10457
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 12497
+							instant_build = yes
+						}
+					}
+					395 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 7611
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9682
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}
+	bmk_invasion_4 = {
+
+			icon = generic_industry	
+
+			available = {
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = BMK1_unification1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 70
+			days_re_enable = 180
+
+			cost = 30
+
+
+			remove_effect = {
+				add_to_variable = { RUSWarPreparedness = 10 }
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+		bmk_invasion_5 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = war_preparation_kan
+					check_variable = { RUSWarPreparedness > 29.99 }
+				}
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = BMK1_unification1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 31
+			days_re_enable = 180
+
+			cost = 1
+
+
+			remove_effect = {
+				custom_effect_tooltip = kill_great_lakes_region1
+				hidden_effect = {
+					every_country = {
+						limit = {
+							OR = {
+								has_country_flag = south_mississippi_country
+								has_country_flag = texas_country
+							}
+						}
+						ROOT = {
+							declare_war_on = {
+								target = PREV
+								type = annex_everything
+							}
+						}
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}	
+}

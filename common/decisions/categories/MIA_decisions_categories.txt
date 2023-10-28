@@ -1,0 +1,84 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+#####################################################################################################################
+MIA_wva_decisions = {		#ID of category
+	priority = 110		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_generic_crisis	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	#picture = GFX_stassen_talking
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+MIA_wva_coring_decisions = {		#ID of category
+	priority = 110		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_generic_political_actions	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	#picture = GFX_stassen_talking
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+MIA_corruption_fighting_decisions = {		#ID of category
+	priority = 100		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_SOV_propaganda	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	#picture = GFX_stassen_talking
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+MIA_puerto_rico_decisions = {		#ID of category
+	priority = 120		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_generic_crisis	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	#picture = GFX_stassen_talking
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+MIA_congress_decisions = {		#ID of category
+	priority = 100		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_usa_congress	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	#picture = GFX_stassen_talking
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+MIA_unemployment_decisions = {		#ID of category
+	priority = 90		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_generic_industry	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	#picture = GFX_stassen_talking
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+MIA_IEF_tomfoolery_decisions = {		#ID of category
+	priority = 70		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_generic_arms_trade	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	#picture = GFX_stassen_talking
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}
+MIA_war_support_decisions= {		#ID of category
+	priority = 80		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon =  GFX_decision_category_SOV_propaganda	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	#picture = GFX_stassen_talking
+	allowed = {
+		always = yes
+	}
+	visible = {		#Determines what makes this category visible, if a category is invisible decisions under that category also will not be visible to the AI/player.
+	}
+}

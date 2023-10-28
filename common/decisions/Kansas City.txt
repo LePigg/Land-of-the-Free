@@ -1,0 +1,866 @@
+kan_invasion_1 = {
+	kan_invasion_2 = {
+
+			icon = GFX_decision_icon_default
+
+			available = {
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = LMS_unification
+			}
+
+			fire_only_once = yes
+
+			days_remove = 70
+			days_re_enable = 180
+
+			cost = 30
+
+
+			remove_effect = {
+				add_manpower = 150000
+				add_to_variable = { RUSWarPreparedness = 10 }
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}
+	kan_invasion_3 = {
+
+			icon = generic_construction
+
+			available = {
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = LMS_unification
+			}
+
+			fire_only_once = yes
+
+			days_remove = 70
+			days_re_enable = 180
+
+			cost = 30
+
+
+			remove_effect = {
+				add_to_variable = { RUSWarPreparedness = 10 }
+				custom_effect_tooltip = KAN_fallback
+				hidden_effect = {
+					383 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 12024
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 7894
+							instant_build = yes
+						}
+					}
+					835 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 4811
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 1806
+							instant_build = yes
+						}
+					}
+					837 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 4567
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 4597
+							instant_build = yes
+						}
+					}
+					372 = {
+						add_building_construction = {
+								type = bunker
+								level = 1
+								province = 12024
+								instant_build = yes
+							}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 4444
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 1646
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}
+	kan_invasion_4 = {
+
+			icon = generic_industry	
+
+			available = {
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = LMS_unification
+			}
+
+			fire_only_once = yes
+
+			days_remove = 70
+			days_re_enable = 180
+
+			cost = 30
+
+
+			remove_effect = {
+				add_to_variable = { RUSWarPreparedness = 10 }
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+		kan_invasion_5 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = war_preparation_kan
+					check_variable = { RUSWarPreparedness > 29.99 }
+				}
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = LMS_unification
+			}
+
+			fire_only_once = yes
+
+			days_remove = 31
+			days_re_enable = 180
+
+			cost = 1
+
+
+			remove_effect = {
+				custom_effect_tooltip = kill_texas_region
+				hidden_effect = {
+					every_country = {
+						limit = {
+							has_country_flag = texas_country
+						}
+						ROOT = {
+							declare_war_on = {
+								target = PREV
+								type = annex_everything
+							}
+						}
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}	
+}
+kan1_invasion_1 = {
+	kan1_invasion_2 = {
+
+			icon = GFX_decision_icon_default
+
+			available = {
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = LMS_unification1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 70
+			days_re_enable = 180
+
+			cost = 30
+
+
+			remove_effect = {
+				add_manpower = 150000
+				add_to_variable = { RUSWarPreparedness = 10 }
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}
+	kan1_invasion_3 = {
+
+			icon = generic_construction
+
+			available = {
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = LMS_unification1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 70
+			days_re_enable = 180
+
+			cost = 30
+
+
+			remove_effect = {
+				add_to_variable = { RUSWarPreparedness = 10 }
+				custom_effect_tooltip = KAN_fallback
+				hidden_effect = {
+					383 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 12024
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 7894
+							instant_build = yes
+						}
+					}
+					835 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 4811
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 1806
+							instant_build = yes
+						}
+					}
+					837 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 4567
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 4597
+							instant_build = yes
+						}
+					}
+					372 = {
+						add_building_construction = {
+								type = bunker
+								level = 1
+								province = 12024
+								instant_build = yes
+							}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 4444
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 1646
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}
+	kan1_invasion_4 = {
+
+			icon = generic_industry	
+
+			available = {
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = LMS_unification1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 70
+			days_re_enable = 180
+
+			cost = 30
+
+
+			remove_effect = {
+				add_to_variable = { RUSWarPreparedness = 10 }
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+		kan1_invasion_5 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = war_preparation_kan
+					check_variable = { RUSWarPreparedness > 29.99 }
+				}
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = LMS_unification1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 31
+			days_re_enable = 180
+
+			cost = 1
+
+
+			remove_effect = {
+				custom_effect_tooltip = kill_great_lakes_region
+				hidden_effect = {
+					every_country = {
+						limit = {
+							has_country_flag = great_lakes_country
+						}
+						ROOT = {
+							declare_war_on = {
+								target = PREV
+								type = annex_everything
+							}
+						}
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}	
+}
+kan2_invasion_1 = {
+	kan2_invasion_2 = {
+
+			icon = GFX_decision_icon_default
+
+			available = {
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = LMS_unification2
+			}
+
+			fire_only_once = yes
+
+			days_remove = 70
+			days_re_enable = 180
+
+			cost = 30
+
+
+			remove_effect = {
+				add_manpower = 150000
+				add_to_variable = { RUSWarPreparedness = 10 }
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}
+		kan2_invasion_5 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = war_preparation_kan
+					check_variable = { RUSWarPreparedness > 9.99 }
+				}
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = LMS_unification2
+			}
+
+			fire_only_once = yes
+
+			days_remove = 31
+			days_re_enable = 180
+
+			cost = 1
+
+
+			remove_effect = {
+				custom_effect_tooltip = kill_great_lakes_region2
+				hidden_effect = {
+					every_country = {
+						limit = {
+							OR = {
+								has_country_flag = rockies_country
+								has_country_flag = cascadian_country
+								has_country_flag = california_country
+							}
+						}
+						ROOT = {
+							declare_war_on = {
+								target = PREV
+								type = annex_everything
+							}
+						}
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}	
+}
+kan3_invasion_1 = {
+	kan3_invasion_2 = {
+
+			icon = GFX_decision_icon_default
+
+			available = {
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = LMS_unification3
+			}
+
+			fire_only_once = yes
+
+			days_remove = 70
+			days_re_enable = 180
+
+			cost = 30
+
+
+			remove_effect = {
+				add_manpower = 150000
+				add_to_variable = { RUSWarPreparedness = 10 }
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}
+		kan3_invasion_5 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = war_preparation_kan
+					check_variable = { RUSWarPreparedness > 9.99 }
+				}
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = LMS_unification3
+			}
+
+			fire_only_once = yes
+
+			days_remove = 31
+			days_re_enable = 180
+
+			cost = 1
+
+
+			remove_effect = {
+				custom_effect_tooltip = kill_great_lakes_region2
+				#hidden_effect = {
+					every_country = {
+						limit = {
+							OR = {
+								has_country_flag = great_lakes_country
+								has_country_flag = texas_country
+								has_country_flag = south_mississippi_country
+							}
+						}
+						ROOT = {
+							declare_war_on = {
+								target = PREV
+								type = annex_everything
+							}
+						}
+					}
+				#}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}	
+}

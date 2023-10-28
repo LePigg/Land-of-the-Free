@@ -1,0 +1,127 @@
+spriteTypes = {	
+	SpriteType = {
+	name = "GFX_focus_Texas_Civil_War_Icon"
+	texturefile = "gfx/interface/goals/focus_Texas_Civil_War_Icon.png"			
+	}
+    
+	SpriteType = {
+	name = "GFX_focus_Generic_Election_Icon"
+	texturefile = "gfx/interface/goals/focus_Generic_Election_Icon.png"			
+	}
+	SpriteType = {
+	name = "GFX_focus_Generic_Equipment_Icon"
+	texturefile = "gfx/interface/goals/focus_Generic_Equipment_Icon.png"			
+	}
+    SpriteType = {
+        name = "GFX_focus_texan_beg_saintlouis_Icon"
+        texturefile = "gfx/interface/goals/focus_texan_beg_saintlouis_Icon.png"			
+    }
+    SpriteType = {
+         name = "GFX_focus_Texas_defend_Capital_Icon"
+         texturefile = "gfx/interface/goals/focus_Texas_defend_Capital_Icon.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_Texas_give_it_all_weve_got_Icon"
+        texturefile = "gfx/interface/goals/focus_Texas_give_it_all_weve_got_Icon.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texan_gun_cashe_Icon"
+        texturefile = "gfx/interface/goals/focus_texan_gun_cashe_Icon.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texangunsfromcitizens_Icon"
+        texturefile = "gfx/interface/goals/texangunsfromcitizens.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texanleeveenmasse_Icon"
+        texturefile = "gfx/interface/goals/texanleeveenmasse.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texanmartiallaw_Icon"
+        texturefile = "gfx/interface/goals/texanmartiallaw.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texanminefields_Icon"
+        texturefile = "gfx/interface/goals/texanminefields.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texanpromisequickvictory_Icon"
+        texturefile = "gfx/interface/goals/texanpromisequickvictory.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texanrations_Icon"
+        texturefile = "gfx/interface/goals/texanrations.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texanrepairfocus_Icon"
+        texturefile = "gfx/interface/goals/texanrepairfocus.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texanrestoringorder_Icon"
+        texturefile = "gfx/interface/goals/texanrestoringorder.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texanrevivingtheland_Icon"
+        texturefile = "gfx/interface/goals/texanrevivingtheland.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texansecurehoustan_Icon"
+        texturefile = "gfx/interface/goals/texansecurehoustan.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texansecuringdallas_Icon"
+        texturefile = "gfx/interface/goals/texansecuringdallas.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texansecuringlubbock_Icon"
+        texturefile = "gfx/interface/goals/texansecuringlubbock.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texanshelterfactories_Icon"
+        texturefile = "gfx/interface/goals/texanshelterfactories.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texanstatepropaganda_Icon"
+        texturefile = "gfx/interface/goals/texanstatepropaganda.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texanstealtechnology_Icon"
+        texturefile = "gfx/interface/goals/texanstealtechnology.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texansecuringaustin_Icon"
+        texturefile = "gfx/interface/goals/texansecuringaustin.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texandestiny_Icon"
+        texturefile = "gfx/interface/goals/texandestiny.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texanholdingon_Icon"
+        texturefile = "gfx/interface/goals/texanholdingon.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texannewmexicanultimatum_Icon"
+        texturefile = "gfx/interface/goals/texannewmexicanultimatum.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texansecuringlouisiana_Icon"
+        texturefile = "gfx/interface/goals/texansecuringlouisiana.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texansecuringnewmexico_Icon"
+        texturefile = "gfx/interface/goals/texansecuringnewmexico.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texanthetraitorsfate_Icon"
+        texturefile = "gfx/interface/goals/texanthetraitorsfate.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texanwarwithcollaboraters_Icon"
+        texturefile = "gfx/interface/goals/texanwarwithcollaboraters.png"			
+    }
+    SpriteType = {
+        name = "GFX_focus_texanacadianultimatum_Icon"
+        texturefile = "gfx/interface/goals/texanacadianultimatum.png"			
+    }
+}

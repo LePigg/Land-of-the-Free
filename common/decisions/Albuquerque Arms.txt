@@ -1,0 +1,886 @@
+abq_manpower_searching = {
+	abq_manpower_searching1 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prepare_civil_war		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			NOT = {
+				has_country_flag = abq_im_selling_guns_rn
+			}
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = ELP
+			has_country_flag = elp_tma_tomfoolery_tooltip
+		}		
+		modifier = {
+			industrial_capacity_factory = -0.15
+			set_country_flag = abq_im_selling_guns_rn
+		}
+		allowed = {
+			
+		}
+
+		custom_cost_trigger = {
+            has_equipment = { infantry_equipment > 49 }
+        }
+        custom_cost_text = 50_infantry_equipment_1
+		
+		days_remove = 31
+		# EFFECTS OF THIS DECISION/MISSION
+		highlight_states = {
+			highlight_state_targets = { state = 44 }
+		}
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_manpower = 2000
+			clr_country_flag = abq_im_selling_guns_rn
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1			
+		}
+	}
+	abq_manpower_searching2 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prepare_civil_war		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			NOT = {
+				has_country_flag = abq_im_selling_guns_rn
+			}
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = ELP
+			has_country_flag = elp_tma_tomfoolery_tooltip
+		}		
+		modifier = {
+			industrial_capacity_factory = -0.15
+			set_country_flag = abq_im_selling_guns_rn
+		}
+		allowed = {
+			
+		}
+
+		custom_cost_trigger = {
+            has_equipment = { infantry_equipment > 49 }
+        }
+        custom_cost_text = 50_infantry_equipment_1
+		
+		days_remove = 31
+		# EFFECTS OF THIS DECISION/MISSION
+		highlight_states = {
+			highlight_state_targets = { state = 279 }
+		}
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_manpower = 2000
+			clr_country_flag = abq_im_selling_guns_rn
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1			
+		}
+	}
+	abq_manpower_searching3 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prepare_civil_war		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			NOT = {
+				has_country_flag = abq_im_selling_guns_rn
+			}
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = ELP
+			has_country_flag = elp_tma_tomfoolery_tooltip
+		}		
+		modifier = {
+			industrial_capacity_factory = -0.15
+			set_country_flag = abq_im_selling_guns_rn
+		}
+		allowed = {
+			
+		}
+
+		custom_cost_trigger = {
+            has_equipment = { infantry_equipment > 49 }
+        }
+        custom_cost_text = 50_infantry_equipment_1
+		
+		days_remove = 31
+		# EFFECTS OF THIS DECISION/MISSION
+		highlight_states = {
+			highlight_state_targets = { state = 181 }
+		}
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_manpower = 1500
+			clr_country_flag = abq_im_selling_guns_rn
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1			
+		}
+	}
+	abq_manpower_searching4 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prepare_civil_war		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			NOT = {
+				has_country_flag = abq_im_selling_guns_rn
+			}
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = ELP
+			has_country_flag = elp_tma_tomfoolery_tooltip
+		}		
+		modifier = {
+			industrial_capacity_factory = -0.15
+			set_country_flag = abq_im_selling_guns_rn
+		}
+		allowed = {
+			
+		}
+
+		custom_cost_trigger = {
+            has_equipment = { infantry_equipment > 49 }
+        }
+        custom_cost_text = 50_infantry_equipment_1
+		
+		days_remove = 31
+		# EFFECTS OF THIS DECISION/MISSION
+		highlight_states = {
+			highlight_state_targets = { state = 278 }
+		}
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_manpower = 2000
+			clr_country_flag = abq_im_selling_guns_rn
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1			
+		}
+	}
+	abq_manpower_searching5	 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prepare_civil_war		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			NOT = {
+				has_country_flag = abq_im_selling_guns_rn
+			}
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = ELP
+			has_country_flag = elp_tma_tomfoolery_tooltip
+		}		
+		modifier = {
+			industrial_capacity_factory = -0.15
+			set_country_flag = abq_im_selling_guns_rn
+		}
+		allowed = {
+			
+		}
+
+		custom_cost_trigger = {
+            has_equipment = { infantry_equipment > 49 }
+        }
+        custom_cost_text = 50_infantry_equipment_1
+		
+		days_remove = 31
+		# EFFECTS OF THIS DECISION/MISSION
+		highlight_states = {
+			highlight_state_targets = { state = 238 }
+		}
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_manpower = 1000
+			clr_country_flag = abq_im_selling_guns_rn
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1			
+		}
+	}
+	abq_manpower_searching6	 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prepare_civil_war		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			NOT = {
+				has_country_flag = abq_im_selling_guns_rn
+			}
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = ELP
+			has_country_flag = elp_tma_tomfoolery_tooltip
+		}		
+		modifier = {
+			industrial_capacity_factory = -0.15
+			set_country_flag = abq_im_selling_guns_rn
+		}
+		allowed = {
+			
+		}
+
+		custom_cost_trigger = {
+            has_equipment = { infantry_equipment > 49 }
+        }
+        custom_cost_text = 50_infantry_equipment_1
+		
+		days_remove = 31
+		# EFFECTS OF THIS DECISION/MISSION
+		highlight_states = {
+			highlight_state_targets = { state = 176 }
+		}
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_manpower = 1000
+			clr_country_flag = abq_im_selling_guns_rn
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1			
+		}
+	}
+	abq_manpower_searching10	 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prepare_civil_war		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			NOT = {
+				has_country_flag = abq_im_selling_guns_rn
+			}
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = ELP
+			has_country_flag = elp_tma_tomfoolery_tooltip
+		}		
+		modifier = {
+			industrial_capacity_factory = -0.15
+			set_country_flag = abq_im_selling_guns_rn
+		}
+		allowed = {
+			
+		}
+
+		custom_cost_trigger = {
+            has_equipment = { infantry_equipment > 49 }
+        }
+        custom_cost_text = 50_infantry_equipment_1
+		
+		days_remove = 31
+		# EFFECTS OF THIS DECISION/MISSION
+		highlight_states = {
+			highlight_state_targets = { state = 282 }
+		}
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_manpower = 500
+			clr_country_flag = abq_im_selling_guns_rn
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1			
+		}
+	}
+	abq_manpower_searching7	 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prepare_civil_war		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			NOT = {
+				has_country_flag = abq_im_selling_guns_rn
+			}
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = ELP
+			has_country_flag = elp_tma_tomfoolery_tooltip
+		}		
+		modifier = {
+			industrial_capacity_factory = -0.15
+			set_country_flag = abq_im_selling_guns_rn
+		}
+		allowed = {
+			
+		}
+
+		custom_cost_trigger = {
+            has_equipment = { infantry_equipment > 49 }
+        }
+        custom_cost_text = 50_infantry_equipment_1
+		
+		days_remove = 31
+		# EFFECTS OF THIS DECISION/MISSION
+		highlight_states = {
+			highlight_state_targets = { state = 283 }
+		}
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_manpower = 500
+			clr_country_flag = abq_im_selling_guns_rn
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1			
+		}
+	}
+	abq_manpower_searching8	 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prepare_civil_war		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			NOT = {
+				has_country_flag = abq_im_selling_guns_rn
+			}
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = ELP
+			has_country_flag = elp_tma_tomfoolery_tooltip
+		}		
+		modifier = {
+			industrial_capacity_factory = -0.15
+			set_country_flag = abq_im_selling_guns_rn
+		}
+		allowed = {
+			
+		}
+
+		custom_cost_trigger = {
+            has_equipment = { infantry_equipment > 49 }
+        }
+        custom_cost_text = 50_infantry_equipment_1
+		
+		days_remove = 31
+		# EFFECTS OF THIS DECISION/MISSION
+		highlight_states = {
+			highlight_state_targets = { state = 241 }
+		}
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_manpower = 500
+			clr_country_flag = abq_im_selling_guns_rn
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1			
+		}
+	}
+	abq_manpower_searching9 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prepare_civil_war		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			NOT = {
+				has_country_flag = abq_im_selling_guns_rn
+			}
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = ELP
+			has_country_flag = elp_tma_tomfoolery_tooltip
+		}		
+		modifier = {
+			industrial_capacity_factory = -0.15
+			set_country_flag = abq_im_selling_guns_rn
+		}
+		allowed = {
+			
+		}
+
+		custom_cost_trigger = {
+            has_equipment = { infantry_equipment > 49 }
+        }
+        custom_cost_text = 50_infantry_equipment_1
+		
+		days_remove = 31
+		# EFFECTS OF THIS DECISION/MISSION
+		highlight_states = {
+			highlight_state_targets = { state = 175 }
+		}
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_manpower = 500
+			clr_country_flag = abq_im_selling_guns_rn
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1			
+		}
+	}
+	abq_manpower_searching11 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prepare_civil_war		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			NOT = {
+				has_country_flag = abq_im_selling_guns_rn
+			}
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = ELP
+			has_country_flag = elp_tma_tomfoolery_tooltip
+		}		
+		modifier = {
+			industrial_capacity_factory = -0.15
+			set_country_flag = abq_im_selling_guns_rn
+		}
+		allowed = {
+			
+		}
+
+		custom_cost_trigger = {
+            has_equipment = { infantry_equipment > 49 }
+        }
+        custom_cost_text = 50_infantry_equipment_1
+		
+		days_remove = 31
+		# EFFECTS OF THIS DECISION/MISSION
+		highlight_states = {
+			highlight_state_targets = { state = 38 }
+		}
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_manpower = 500
+			clr_country_flag = abq_im_selling_guns_rn
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1			
+		}
+	}
+	abq_manpower_searching12 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prepare_civil_war		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			NOT = {
+				has_country_flag = abq_im_selling_guns_rn
+			}
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = ELP
+			has_country_flag = elp_tma_tomfoolery_tooltip
+		}		
+		modifier = {
+			industrial_capacity_factory = -0.15
+			set_country_flag = abq_im_selling_guns_rn
+		}
+		allowed = {
+			
+		}
+
+		custom_cost_trigger = {
+            has_equipment = { infantry_equipment > 49 }
+        }
+        custom_cost_text = 50_infantry_equipment_1
+		
+		days_remove = 31
+		# EFFECTS OF THIS DECISION/MISSION
+		highlight_states = {
+			highlight_state_targets = { state = 177 }
+		}
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_manpower = 500
+			clr_country_flag = abq_im_selling_guns_rn
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1			
+		}
+	}
+	abq_manpower_searching13 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prepare_civil_war		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			NOT = {
+				has_country_flag = abq_im_selling_guns_rn
+			}
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = ELP
+			has_country_flag = elp_tma_tomfoolery_tooltip
+		}		
+		modifier = {
+			industrial_capacity_factory = -0.15
+			set_country_flag = abq_im_selling_guns_rn
+		}
+		allowed = {
+			
+		}
+
+		custom_cost_trigger = {
+            has_equipment = { infantry_equipment > 49 }
+        }
+        custom_cost_text = 50_infantry_equipment_1
+		
+		days_remove = 31
+		# EFFECTS OF THIS DECISION/MISSION
+		highlight_states = {
+			highlight_state_targets = { state = 285 }
+		}
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_manpower = 500
+			clr_country_flag = abq_im_selling_guns_rn
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1			
+		}
+	}
+	abq_manpower_searching14 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prepare_civil_war		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			NOT = {
+				has_country_flag = abq_im_selling_guns_rn
+			}
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = ELP
+			has_country_flag = elp_tma_tomfoolery_tooltip
+		}		
+		modifier = {
+			industrial_capacity_factory = -0.15
+			set_country_flag = abq_im_selling_guns_rn
+		}
+		allowed = {
+			
+		}
+
+		custom_cost_trigger = {
+            has_equipment = { infantry_equipment > 49 }
+        }
+        custom_cost_text = 50_infantry_equipment_1
+		
+		days_remove = 31
+		# EFFECTS OF THIS DECISION/MISSION
+		highlight_states = {
+			highlight_state_targets = { state = 24 }
+		}
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_manpower = 500
+			clr_country_flag = abq_im_selling_guns_rn
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1			
+		}
+	}
+}
+abq_guns = {
+	abq_guns_1 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prepare_civil_war		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			ELP = {
+				has_equipment = {
+					infantry_equipment > 449
+				}	
+			}
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ELP = {
+				exists = yes 
+				has_country_flag = elp_goodwill_opens
+			}
+			NOT = {
+				has_country_flag = tmanomoreguns_flag
+			}
+		}		
+		modifier = {
+			political_power_gain = -0.15
+		}
+		allowed = {
+			OR = {
+				tag = WDC
+				tag = PBL
+				tag = LAK
+				tag = ABS
+				tag = DAB
+				tag = DES
+				tag = NVJ
+				tag = PHE
+				tag = ANR
+				tag = DIX
+				tag = CHR
+				tag = SRT
+				tag = TXL
+				tag = GPS
+				tag = SEQ
+				tag = KAN
+				tag = STL
+				tag = MSS
+				tag = TEX
+			}
+		}
+
+		cost = 70		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 70
+
+		days_re_enable = 70
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 450
+			}	
+			ELP = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -450
+				}	
+				set_country_flag = elp_babys_first_sale
+			}
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	abq_guns_2 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prepare_civil_war		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			ELP = {
+				has_equipment = {
+					support_equipment > 44
+				}	
+			}
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ELP = {
+				exists = yes 
+				has_country_flag = elp_goodwill_opens
+			}
+			NOT = {
+				has_country_flag = tmanomoreguns_flag
+			}
+		}	
+		modifier = {
+			political_power_gain = -0.15
+		}		
+		allowed = {
+			OR = {
+				tag = WDC
+				tag = PBL
+				tag = BIL
+				tag = HEL
+				tag = LAK
+				tag = ABS
+				tag = DES
+				tag = NVJ
+				tag = PHE
+				tag = ANR
+				tag = DIX
+				tag = CHR
+				tag = SRT
+				tag = TXL
+				tag = GPS
+				tag = SEQ
+				tag = KAN
+				tag = STL
+				tag = MSS
+				tag = TEX
+			}
+		}		
+
+		cost = 50		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 70
+
+		days_re_enable = 70
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 45
+			}
+			ELP = {			
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = -45
+				}	
+				set_country_flag = elp_babys_first_sale
+			}
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	abq_guns_3 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_prepare_civil_war		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			ELP = {
+				has_equipment = {
+					artillery_equipment > 34
+				}	
+			}
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ELP = {
+				exists = yes 
+				has_country_flag = elp_goodwill_opens
+			}
+			NOT = {
+				has_country_flag = tmanomoreguns_flag
+			}
+		}		
+		modifier = {
+			political_power_gain = -0.15
+		}
+		allowed = {
+			OR = {
+				tag = WDC
+				tag = PBL
+				tag = BIL
+				tag = HEL
+				tag = LAK
+				tag = ABS
+				tag = DES
+				tag = NVJ
+				tag = PHE
+				tag = ANR
+				tag = DIX
+				tag = CHR
+				tag = SRT
+				tag = TXL
+				tag = GPS
+				tag = SEQ
+				tag = KAN
+				tag = STL
+				tag = MSS
+				tag = TEX
+			}
+		}
+		cost = 40		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 70
+
+		days_re_enable = 70
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 35
+			}	
+			ELP = {
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = -35
+				}
+				set_country_flag = elp_babys_first_sale
+			}
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+}

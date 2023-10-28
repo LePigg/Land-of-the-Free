@@ -2,72 +2,217 @@ bookmarks = {
 	bookmark = {
 		name = "GATHERING_STORM_NAME"
 		desc = "GATHERING_STORM_DESC"
-		date = 2000.1.1.12
+		date = 1936.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "USA"
+		default_country = "COM"
 		default = yes
 		
-		"USA"={
-			history = "OTHER_GATHERING_STORM_DESC"
-			ideology = democratic
+		"BMK"={
+			history = "BMK_GATHERING_STORM_DESC"
+			ideology = fascism
 			ideas = {
+				BMK_businessmen
+				BMK_unpopular
 			}
 			focuses = {
-			
+				BMK_men_of_manhattan
+				BMK_enlist_the_working_class
+				BMK_new_age_for_america
 			}
 		}
-        
-        "CAN"={
-			history = "OTHER_GATHERING_STORM_DESC"
-			ideology = democratic
+		"MIN"={
+		    history = "MIN_GATHERING_STORM_DESC"
+		   ideology = democratic_socialism
 			ideas = {
+				MIN_milita_force
+				MIN_democratic_bastion
+				MIN_breadbasket_country
 			}
 			focuses = {
-			
+	    		MIN_last_bastion_of_democracy
+				MIN_review_the_plan_of_action
+				MIN_into_the_fray
 			}
 		}
-        
-        "MEX"={
-			history = "OTHER_GATHERING_STORM_DESC"
-			ideology = democratic
+		"IWA"={
+			history = "IWA_GATHERING_STORM_DESC"
+			ideology = stratocracy
 			ideas = {
+				IWA_divided_government
+				IWA_martial_law
 			}
 			focuses = {
-			
+				IWA_restore_the_state_government
+				IWA_looking_onwards
+				IWA_down_with_the_traitors
 			}
 		}
-        
-        "VEN"={
-			history = "OTHER_GATHERING_STORM_DESC"
-			ideology = democratic
+		"MIL"={
+			history = "MIL_GATHERING_STORM_DESC"
+			ideology = despotism
 			ideas = {
+				MIL_king
+				MIL_rebellions
+				MIL_mandatory_draft
 			}
 			focuses = {
-			
+				MIL_superior_question
+				MIL_pass_the_succesion_act
+				MIL_hall_of_the_milwaukee_king
 			}
 		}
-        
-        "COL"={
-			history = "OTHER_GATHERING_STORM_DESC"
-			ideology = democratic
+		"COM"={
+			history = "COM_GATHERING_STORM_DESC"
+			ideology = revolutionary_socialist
 			ideas = {
+				COM_revolution
+				COM_frequent_sabotage
+				COM_
 			}
 			focuses = {
-			
+				COM_cross_the_maumee_river
+				COM_election_of_1936
+				COM_just_the_beginning
 			}
-		}
-        
+		}	
+		"ERR"={
+			history = "ERR_GATHERING_STORM_DESC"
+			ideology = stratocracy
+			ideas = {
+				ERR_low_legitamacy
+				ERR_disgrunted_army
+				ERR_macarthur
+			}
+			focuses = {
+				err_the_true_patriots
+				err_return_ohio_to_the_fold
+				err_one_nation_indivisible
+			}
+		}	
+		"IEF"={
+			history = "IEF_GATHERING_STORM_DESC"
+			ideology = stratocracy
+			ideas = {
+				IEF_professional_army
+				IEF_angry_population
+			}
+			focuses = {
+				IEF_for_the_good_of_our_nation
+				IEF_peace_in_the_north
+				IEF_destiny
+			}
+		}	
 		
+
+	
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
-		
-		# minors from DLC ####
+		###Hopefully for the next update
+		"TEX"={
+			minor = yes
+			history = "TEX_GATHERING_STORM_DESC"
+			ideology = guided_democracy
+			ideas = {
+				tex_rotten
+                tex_sabotage
+				tex_disloyal_army
+			}
+			focuses = {
+                TMA_intro
+				TMA_cannon
+				
+			}
+		}	
+		"MIA"={
+			minor = yes
+			history = "MIA_GATHERING_STORM_DESC"
+			ideology = guided_democracy
+			ideas = {
+				LON_trade_ports
+				LON_peacekeeping
+				LON_mia_helping
+			}
+			focuses = {
+                MIA_selecting_a_suitable_president
+				MIA_recovering_from_the_depression
+			}
+		}	
+		"CAL"={
+			minor = yes
+			history = "CAL_GATHERING_STORM_DESC"
+			ideology = guided_democracy
+			ideas = {
+				CAL_influence
+				CAL_chinese_exclusion_act
+				CAL_webb_haney_act
+			}
+			focuses = {
+                patton_trolled_pearl_of_the_occident
+				CAL_deal_with_a_devil
+				patton_trolled_the_tourchbearer_of_democracy
+			}
+		}
 
-		
-
+		# NEW CONTENT WARLORDS ####
+		"EUR"={
+			minor = yes
+			history = "EUR_GATHERING_STORM_DESC"
+			ideology = democratic_socialism
+			ideas = {
+				MIN_breadbasket_country
+                EUR_promises
+			}
+			focuses = {
+                EUR_in_the_valley
+                EUR_reclaim_california
+                EUR_golden_era_for_the_golden_state
+			}
+		}	
+        "SRR"={
+			minor = yes
+			history = "SRR_GATHERING_STORM_DESC"
+			ideology = stratocracy
+			ideas = {
+				srr_unpopular_administration
+	            srr_american_professionalism
+			}
+			focuses = {
+                sierra_army_the_federal_bastion
+                sierra_army_into_the_wild_blue_yonder
+                sierra_army_the_army_will_go_rolling_along
+			}
+		}	
+        "ELK"={
+			minor = yes
+			history = "ELK_GATHERING_STORM_DESC"
+			ideology = guided_democracy
+			ideas = {
+				elk_aviation
+                elk_desert
+			}
+			focuses = {
+				ELK_reuniting_the_state
+                ELK_operation_i_hate_communists
+                ELK_senator_from_reno
+			}
+		}
+		"MJV"={
+			minor = yes
+			history = "MJV_GATHERING_STORM_DESC"
+			ideology = despotism
+			ideas = {
+				MJV_raids
+			}
+			focuses = {
+				MJV_escape_from_alcatraz
+                MJV_reopening_las_vegas
+                MJV_complete_the_hoover_dam
+			}
+		}
+        
 		effect = {
-			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
 		}
 	}

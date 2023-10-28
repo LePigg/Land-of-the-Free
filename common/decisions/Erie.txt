@@ -1,0 +1,321 @@
+err_invasion = {
+	bigmac1 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = BMK
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied 
+			}
+			visible = {
+				has_country_flag = err_invasion_flag
+				BMK = { 	
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				will_lead_to_war_with = BMK
+				declare_war_on = { type = annex_everything    target = BMK }
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+	bigmac2 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = OJB
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = err_invasion_flag			
+				OJB = { 	
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				will_lead_to_war_with = OJB
+				declare_war_on = { type = annex_everything    target = OJB }
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}		
+	bigmac3 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = NDA
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+			visible = {
+				has_country_flag = err_invasion_flag			
+				NDA = {
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				will_lead_to_war_with = NDA
+				declare_war_on = { type = annex_everything    target = NDA }
+				clr_country_flag = war_occupied 
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+		bigmac6 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				NOT = {
+					country_exists = IWA
+					has_country_flag = war_occupied
+					has_country_flag = annexed_iwa
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = err_invasion_flag			
+				MIN = {
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				MIN = {
+					country_event = { id =  err.9 days = 7 }
+				}
+			}
+
+
+			ai_will_do = {
+				base = 1000
+			}
+		}	
+	bigmac4 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = err_invasion_flag			
+				MIN = {
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				will_lead_to_war_with = MIN
+				declare_war_on = { type = annex_everything    target = MIN }
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}			
+	bigmac5 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				#is_neighbor_of = IWA
+				NOT = {
+					has_country_flag = war_occupied
+					has_country_flag = annexed_min
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = err_invasion_flag			
+				IWA = {
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				country_event = { id = iwa.18 }
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}	
+	bigmac7 = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_war = no
+			#is_neighbor_of = DIA
+			NOT = {
+				has_country_flag = war_occupied
+			}
+		}
+		complete_effect = {
+			set_country_flag = war_occupied
+		}
+
+		visible = {
+			has_country_flag = err_invasion_flag			
+			DIA = {
+				exists = yes 
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 7
+		days_re_enable = 180
+
+		cost = 5
+
+
+		remove_effect = {
+			will_lead_to_war_with = DIA
+			declare_war_on = { type = annex_everything    target = DIA }
+			clr_country_flag = war_occupied
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	bigmac8 = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_war = no
+			#is_neighbor_of = DBQ
+			NOT = {
+				has_country_flag = war_occupied
+			}
+		}
+		complete_effect = {
+			set_country_flag = war_occupied
+		}
+
+		visible = {
+			has_country_flag = err_invasion_flag			
+			DBQ = {
+				exists = yes 
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 7
+		days_re_enable = 180
+
+		cost = 5
+
+
+		remove_effect = {
+			will_lead_to_war_with = DBQ
+			declare_war_on = { type = annex_everything    target = DBQ }
+			clr_country_flag = war_occupied
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+	}
+}
+

@@ -1,0 +1,13 @@
+idea_categories = {
+	societial_laws = {
+		slot = segregation
+		slot = religion
+		slot = voting
+		slot = womens_rights
+		slot = media
+		slot = welfare
+
+		ledger = civilian
+		removal_cost = -1
+	}
+}

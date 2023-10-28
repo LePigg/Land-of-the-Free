@@ -1,0 +1,51 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_category_image_template"
+		texturefile = "gfx/interface/decisions/category_image_template.dds"
+	}
+	spriteType = {
+		name = "GFX_category_icon"
+		texturefile = "gfx/interface/decisions/category_icon_template.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_default"
+		texturefile = "gfx/interface/decisions/decision_icon_default.dds"
+	}
+	#Ideologies
+	SpriteType = {
+		name = "GFX_ideology_revolutionary_socialist_group"
+		texturefile = "gfx/interface/ideologies/communism_group.dds"	
+	}	
+	SpriteType = {
+		name = "GFX_ideology_democratic_socialism_group"
+		texturefile = "gfx/interface/ideologies/democratic_group.dds"	
+	}
+	SpriteType = {
+		name = "GFX_ideology_liberalism_group"
+		texturefile = "gfx/interface/ideologies/democratic_group.dds"	
+	}
+	SpriteType = {
+		name = "GFX_ideology_conservatism_group"
+		texturefile = "gfx/interface/ideologies/democratic_group.dds"	
+	}
+	SpriteType = {
+		name = "GFX_ideology_Anarchism_group"
+		texturefile = "gfx/interface/ideologies/democratic_group.dds"	
+	}
+	SpriteType = {
+		name = "GFX_ideology_guided_democracy_group"
+		texturefile = "gfx/interface/ideologies/neutrality_group.dds"	
+	}
+	SpriteType = {
+		name = "GFX_ideology_stratocracy_group"
+		texturefile = "gfx/interface/ideologies/neutrality_group.dds"	
+	}
+	SpriteType = {
+		name = "GFX_ideology_despotism_group"
+		texturefile = "gfx/interface/ideologies/neutrality_group.dds"	
+	}
+	SpriteType= {
+		name = "GFX_category_USA"
+		texturefile = "gfx/interface/decisions/USA_Basic.dds"
+	}
+}

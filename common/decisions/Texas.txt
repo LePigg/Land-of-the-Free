@@ -1,0 +1,1473 @@
+TEX_its_texing_time = {
+	TEX_its_texan_time_recruit_children1 = {
+
+		icon = GFX_decision_generic_military
+
+		available = {
+			NOT = {
+				has_country_flag = TEX_recruiting_children_rn
+			}
+		}
+		complete_effect = {
+			set_country_flag = TEX_recruiting_children_rn
+		}
+		visible = {
+			OR = {
+				tag = TEX
+				tag = TRG
+				tag = CHR
+				tag = DIX
+				tag = SRT
+			}
+			has_country_flag = TEX_civilwar_time
+			controls_state = 177
+		}
+
+		fire_only_once = yes
+
+		days_remove = 10
+
+	
+		highlight_states = {
+			highlight_state_targets = { state = 177 }
+		}
+		
+		remove_effect = {
+			clr_country_flag = TEX_recruiting_children_rn
+			hidden_effect = {
+				load_oob = "TCW_1"
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TEX_its_texan_time_recruit_children2 = {
+
+		icon = GFX_decision_generic_military
+
+		available = {
+			NOT = {
+				has_country_flag = TEX_recruiting_children_rn
+			}
+		}
+		complete_effect = {
+			set_country_flag = TEX_recruiting_children_rn
+		}
+		visible = {
+			OR = {
+				tag = TEX
+				tag = TRG
+				tag = CHR
+				tag = DIX
+				tag = SRT
+			}
+			has_country_flag = TEX_civilwar_time
+			controls_state = 285
+		}
+
+		fire_only_once = yes
+
+		days_remove = 10
+
+	
+		highlight_states = {
+			highlight_state_targets = { state = 285 }
+		}
+		
+		remove_effect = {
+			clr_country_flag = TEX_recruiting_children_rn
+			hidden_effect = {
+				load_oob = "TCW_2"
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TEX_its_texan_time_recruit_children3 = {
+
+		icon = GFX_decision_generic_military
+
+		available = {
+			NOT = {
+				has_country_flag = TEX_recruiting_children_rn
+			}
+		}
+		complete_effect = {
+			set_country_flag = TEX_recruiting_children_rn
+		}
+		visible = {
+			OR = {
+				tag = TEX
+				tag = TRG
+				tag = CHR
+				tag = DIX
+				tag = SRT
+			}
+			has_country_flag = TEX_civilwar_time
+			controls_state = 38
+		}
+
+		fire_only_once = yes
+
+		days_remove = 10
+
+	
+		highlight_states = {
+			highlight_state_targets = { state = 38 }
+		}
+		
+		remove_effect = {
+			clr_country_flag = TEX_recruiting_children_rn
+			hidden_effect = {
+				load_oob = "TCW_3"
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TEX_its_texan_time_recruit_children4 = {
+
+		icon = GFX_decision_generic_military
+
+		available = {
+			NOT = {
+				has_country_flag = TEX_recruiting_children_rn
+			}
+		}
+		complete_effect = {
+			set_country_flag = TEX_recruiting_children_rn
+		}
+		visible = {
+			OR = {
+				tag = TEX
+				tag = TRG
+				tag = CHR
+				tag = DIX
+				tag = SRT
+			}
+			has_country_flag = TEX_civilwar_time
+			controls_state = 283
+		}
+
+		fire_only_once = yes
+
+		days_remove = 10
+
+	
+		highlight_states = {
+			highlight_state_targets = { state = 283 }
+		}
+		
+		remove_effect = {
+			clr_country_flag = TEX_recruiting_children_rn
+			hidden_effect = {
+				load_oob = "TCW_4"
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TEX_its_texan_time_recruit_children5 = {
+
+		icon = GFX_decision_generic_military
+
+		available = {
+			NOT = {
+				has_country_flag = TEX_recruiting_children_rn
+			}
+		}
+		complete_effect = {
+			set_country_flag = TEX_recruiting_children_rn
+		}
+		visible = {
+			OR = {
+				tag = TEX
+				tag = TRG
+				tag = CHR
+				tag = DIX
+				tag = SRT
+			}
+			has_country_flag = TEX_civilwar_time
+			controls_state = 282
+		}
+
+		fire_only_once = yes
+
+		days_remove = 10
+
+	
+		highlight_states = {
+			highlight_state_targets = { state = 282 }
+		}
+		
+		remove_effect = {
+			clr_country_flag = TEX_recruiting_children_rn
+			hidden_effect = {
+				load_oob = "TCW_5"
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TEX_its_texan_time_recruit_children6 = {
+
+		icon = GFX_decision_generic_military
+
+		available = {
+			NOT = {
+				has_country_flag = TEX_recruiting_children_rn
+			}
+		}
+		complete_effect = {
+			set_country_flag = TEX_recruiting_children_rn
+		}
+		visible = {
+			OR = {
+				tag = TEX
+				tag = TRG
+				tag = CHR
+				tag = DIX
+				tag = SRT
+			}
+			has_country_flag = TEX_civilwar_time
+			controls_state = 175
+		}
+
+		fire_only_once = yes
+
+		days_remove = 10
+
+	
+		highlight_states = {
+			highlight_state_targets = { state = 175 }
+		}
+		
+		remove_effect = {
+			clr_country_flag = TEX_recruiting_children_rn
+			hidden_effect = {
+				load_oob = "TCW_6"
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TEX_its_texan_time_recruit_children7 = {
+
+		icon = GFX_decision_generic_military
+
+		available = {
+			NOT = {
+				has_country_flag = TEX_recruiting_children_rn
+			}
+		}
+		complete_effect = {
+			set_country_flag = TEX_recruiting_children_rn
+		}
+		visible = {
+			OR = {
+				tag = TEX
+				tag = TRG
+				tag = CHR
+				tag = DIX
+				tag = SRT
+			}
+			has_country_flag = TEX_civilwar_time
+			controls_state = 241
+		}
+
+		fire_only_once = yes
+
+		days_remove = 10
+
+	
+		highlight_states = {
+			highlight_state_targets = { state = 241 }
+		}
+		
+		remove_effect = {
+			clr_country_flag = TEX_recruiting_children_rn
+			hidden_effect = {
+				load_oob = "TCW_7"
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TEX_its_texan_time_recruit_children8 = {
+
+		icon = GFX_decision_generic_military
+
+		available = {
+			NOT = {
+				has_country_flag = TEX_recruiting_children_rn
+			}
+		}
+		complete_effect = {
+			set_country_flag = TEX_recruiting_children_rn
+		}
+		visible = {
+			OR = {
+				tag = TEX
+				tag = TRG
+				tag = CHR
+				tag = DIX
+				tag = SRT
+			}
+			has_country_flag = TEX_civilwar_time
+			controls_state = 176
+		}
+
+		fire_only_once = yes
+
+		days_remove = 10
+
+	
+		highlight_states = {
+			highlight_state_targets = { state = 176 }
+		}
+		
+		remove_effect = {
+			clr_country_flag = TEX_recruiting_children_rn
+			hidden_effect = {
+				load_oob = "TCW_8"
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TEX_its_texan_time_recruit_children9 = {
+
+		icon = GFX_decision_generic_military
+
+		available = {
+			NOT = {
+				has_country_flag = TEX_recruiting_children_rn
+			}
+		}
+		complete_effect = {
+			set_country_flag = TEX_recruiting_children_rn
+		}
+		visible = {
+			OR = {
+				tag = TEX
+				tag = TRG
+				tag = CHR
+				tag = DIX
+				tag = SRT
+			}
+			has_country_flag = TEX_civilwar_time
+			controls_state = 238
+		}
+
+		fire_only_once = yes
+
+		days_remove = 10
+
+	
+		highlight_states = {
+			highlight_state_targets = { state = 238 }
+		}
+		
+		remove_effect = {
+			clr_country_flag = TEX_recruiting_children_rn
+			hidden_effect = {
+				load_oob = "TCW_9"
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TEX_its_texan_time_recruit_children10 = {
+
+		icon = GFX_decision_generic_military
+
+		available = {
+			NOT = {
+				has_country_flag = TEX_recruiting_children_rn
+			}
+		}
+		complete_effect = {
+			set_country_flag = TEX_recruiting_children_rn
+		}
+		visible = {
+			OR = {
+				tag = TEX
+				tag = TRG
+				tag = CHR
+				tag = DIX
+				tag = SRT
+			}
+			has_country_flag = TEX_civilwar_time
+			controls_state = 278
+		}
+
+		fire_only_once = yes
+
+		days_remove = 10
+
+	
+		highlight_states = {
+			highlight_state_targets = { state = 278 }
+		}
+		
+		remove_effect = {
+			clr_country_flag = TEX_recruiting_children_rn
+			hidden_effect = {
+				load_oob = "TCW_10"
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TEX_its_texan_time_recruit_children11 = {
+
+		icon = GFX_decision_generic_military
+
+		available = {
+			NOT = {
+				has_country_flag = TEX_recruiting_children_rn
+			}
+		}
+		complete_effect = {
+			set_country_flag = TEX_recruiting_children_rn
+		}
+		visible = {
+			OR = {
+				tag = TEX
+				tag = TRG
+				tag = CHR
+				tag = DIX
+				tag = SRT
+			}
+			has_country_flag = TEX_civilwar_time
+			controls_state = 181
+		}
+
+		fire_only_once = yes
+
+		days_remove = 10
+
+	
+		highlight_states = {
+			highlight_state_targets = { state = 181 }
+		}
+		
+		remove_effect = {
+			clr_country_flag = TEX_recruiting_children_rn
+			hidden_effect = {
+				load_oob = "TCW_11"
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TEX_its_texan_time_recruit_children12 = {
+
+		icon = GFX_decision_generic_military
+
+		available = {
+			NOT = {
+				has_country_flag = TEX_recruiting_children_rn
+			}
+		}
+		complete_effect = {
+			set_country_flag = TEX_recruiting_children_rn
+		}
+		visible = {
+			OR = {
+				tag = TEX
+				tag = TRG
+				tag = CHR
+				tag = DIX
+				tag = SRT
+			}
+			has_country_flag = TEX_civilwar_time
+			controls_state = 279
+		}
+
+		fire_only_once = yes
+
+		days_remove = 10
+
+	
+		highlight_states = {
+			highlight_state_targets = { state = 279 }
+		}
+		
+		remove_effect = {
+			clr_country_flag = TEX_recruiting_children_rn
+			hidden_effect = {
+				load_oob = "TCW_12"
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TEX_its_texan_time_recruit_children13 = {
+
+		icon = GFX_decision_generic_military
+
+		available = {
+			NOT = {
+				has_country_flag = TEX_recruiting_children_rn
+			}
+		}
+		complete_effect = {
+			set_country_flag = TEX_recruiting_children_rn
+		}
+		visible = {
+			OR = {
+				tag = TEX
+				tag = TRG
+				tag = CHR
+				tag = DIX
+				tag = SRT
+			}
+			has_country_flag = TEX_civilwar_time
+			controls_state = 44
+		}
+
+		fire_only_once = yes
+
+		days_remove = 10
+
+	
+		highlight_states = {
+			highlight_state_targets = { state = 44 }
+		}
+		
+		remove_effect = {
+			clr_country_flag = TEX_recruiting_children_rn
+			hidden_effect = {
+				load_oob = "TCW_13"
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TEX_its_texan_time_recruit_children14 = {
+
+		icon = GFX_decision_generic_military
+
+		available = {
+			NOT = {
+				has_country_flag = TEX_recruiting_children_rn
+			}
+		}
+		complete_effect = {
+			set_country_flag = TEX_recruiting_children_rn
+		}
+		visible = {
+			OR = {
+				tag = TEX
+				tag = TRG
+				tag = CHR
+				tag = DIX
+				tag = SRT
+			}
+			has_country_flag = TEX_civilwar_time
+			controls_state = 24
+		}
+
+		fire_only_once = yes
+
+		days_remove = 10
+
+	
+		highlight_states = {
+			highlight_state_targets = { state = 24 }
+		}
+		
+		remove_effect = {
+			clr_country_flag = TEX_recruiting_children_rn
+			hidden_effect = {
+				load_oob = "TCW_14"
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	TEX_its_texing_time1 = {  
+
+			icon = GFX_decision_revolt
+
+			visible = {
+				OR = {
+					tag = TEX
+					tag = TRG
+					tag = CHR
+					tag = DIX
+					tag = SRT
+				}
+				
+			}
+
+			available = {                
+				always = no 
+			}
+			activation = {                          # The mission appears and starts counting down under these circumstances:
+				has_country_flag = TEX_civilwar_time 
+			}
+			is_good = no                     # This mission is color coded to be a positive thing (not a crisis)
+			selectable_mission = no
+			fire_only_once = yes             # This mission will complete when the player selects the mission rather than completing automatically
+			days_mission_timeout = 14             # How many days before the mission fails?
+	
+			timeout_effect = {                      # What happens when we fail the mission?
+				custom_effect_tooltip = TEX_civil_war_begins
+				IF = {
+					limit = {
+						tag = TEX
+					}
+					hidden_effect = {
+						TRG = {
+							declare_war_on = {
+								target = TEX
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = DIX
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = SRT
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = CHR
+								type = annex_everything
+							}
+						}
+						SRT = {
+							declare_war_on = {
+								target = TEX
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = DIX
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = TRG
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = CHR
+								type = annex_everything
+							}
+						}
+						CHR = {
+							declare_war_on = {
+								target = TEX
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = DIX
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = SRT
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = TRG
+								type = annex_everything
+							}
+						}
+						DIX = {
+							declare_war_on = {
+								target = TEX
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = CHR
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = SRT
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = TRG
+								type = annex_everything
+							}
+						}
+						TEX = {
+							declare_war_on = {
+								target = DIX
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = CHR
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = SRT
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = TRG
+								type = annex_everything
+							}
+						}
+					}
+				}
+			}
+	
+			complete_effect = {                    # What happens when we activate the mission i.e. mission success?
+				
+			}
+			ai_will_do = {
+				base = 10000
+			}      
+	}
+}
+TEX_destruction_decisions = {
+	TEX_destruction_decisions1 = {
+
+			icon = GFX_decision_generic_nationalism
+
+			available = {
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				tag = TEX
+				NOT = {
+					has_country_flag = TEX_before_the_civil_war
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 31
+
+			cost = 40
+
+
+			remove_effect = {
+				custom_effect_tooltip = Texgovernmentpointsadd
+				add_to_variable = { Texgovernmentpoints = 10 }
+			}
+
+			ai_will_do = {
+				base = 1
+				modifier = {
+					factor = 100
+					check_variable = { Texgovernmentpoints < 60 }
+				}
+			}
+		}
+	TEX_destruction_decisions2 = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+		}
+		complete_effect = {
+			
+		}
+		visible = {
+			tag = TEX
+			NOT = {
+				has_country_flag = TEX_before_the_civil_war
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 7
+		days_re_enable = 31
+
+		cost = 40
+
+
+		remove_effect = {
+			custom_effect_tooltip = Texdemocratspointsadd
+			add_to_variable = { Texgovernmentpoints = -10 }
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 100
+				check_variable = { Texdemocratspointsadd > 80 }
+			}
+		}
+	}
+	TEX_destruction_decisions3 = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+		}
+		complete_effect = {
+			
+		}
+		visible = {
+			tag = TEX
+			NOT = {
+				has_country_flag = TEX_before_the_civil_war
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 7
+		days_re_enable = 31
+
+		cost = 40
+
+
+		remove_effect = {
+			custom_effect_tooltip = Texdixiecratspointsadd
+			add_to_variable = { Texdixiecratspoints = -10 }
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 100
+				check_variable = { Texdixiecratspoints > 80 }
+			}
+		}
+	}
+	TEX_destruction_decisions4 = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+		}
+		complete_effect = {
+			
+		}
+		visible = {
+			tag = TEX
+			NOT = {
+				has_country_flag = TEX_before_the_civil_war
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 7
+		days_re_enable = 31
+
+		cost = 40
+
+
+		remove_effect = {
+			custom_effect_tooltip = Texchristianpointsadd
+			add_to_variable = { Texchristianpoints = -10 }
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 100
+				check_variable = { Texchristianpoints > 80 }
+			}
+		}
+	}
+	TEX_destruction_decisions5 = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+		}
+		complete_effect = {
+			
+		}
+		visible = {
+			tag = TEX
+			NOT = {
+				has_country_flag = TEX_before_the_civil_war
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 7
+		days_re_enable = 31
+
+		cost = 40
+
+
+		remove_effect = {
+			custom_effect_tooltip = Texrangerpointsadd
+			add_to_variable = { Texrangerpoints = -10 }
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 100
+				check_variable = { Texrangerpointsadd > 80 }
+			}
+		}
+	}
+	TEX_destruction_decisions6 = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+		}
+		complete_effect = {
+			
+		}
+		visible = {
+			tag = TEX
+			NOT = {
+				has_country_flag = TEX_before_the_civil_war
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 7
+		days_re_enable = 31
+
+		cost = 40
+
+
+		remove_effect = {
+			custom_effect_tooltip = Texcmppointsadd
+			add_to_variable = { Texcmppoints = -10 }
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 100
+				check_variable = { Texcmppoints > 80 }
+			}
+		}
+	}
+	TEX_destruction_decisions7 = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+		}
+		complete_effect = {
+			
+		}
+		visible = {
+			tag = TEX
+			NOT = {
+				has_country_flag = TEX_before_the_civil_war
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 7
+		days_re_enable = 31
+
+		cost = 40
+
+
+		remove_effect = {
+			custom_effect_tooltip = Texabqpointsadd
+			add_to_variable = { Texabqpoints = -10 }
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 100
+				check_variable = { Texabqpoints > 80 }
+			}
+		}
+	}
+	TEX_destruction_tma = {                           
+        
+        icon = GFX_decision_generic_nationalism
+
+        allowed = { 
+            tag = TEX
+        }                 
+
+        available = {               
+			custom_trigger_tooltip = {
+				tooltip = TEX_influenceistoodamnhigh1
+				check_variable = {
+					var = Texgovernmentpoints
+					value = 49.99
+					compare = greater_than
+				}
+			}
+        }
+        activation = {                          # The mission appears and starts counting down under these circumstances:
+			check_variable = { Texgovernmentpoints < 50 } 
+			NOT = {
+				has_country_flag = TEX_before_the_civil_war
+			}
+        }
+        is_good = no                     # This mission is color coded to be a positive thing (not a crisis)
+        selectable_mission = no
+        fire_only_once = no             # This mission will complete when the player selects the mission rather than completing automatically
+        days_mission_timeout = 14             # How many days before the mission fails?
+
+        timeout_effect = {                      # What happens when we fail the mission?
+		country_event = { id = tma.19 }
+        }
+
+        complete_effect = {                    # What happens when we activate the mission i.e. mission success?
+            
+        }
+        ai_will_do = {
+            base = 10000
+        }      
+    }
+	TEX_destruction_srt = {                           
+        
+        icon = GFX_decision_generic_nationalism
+
+        allowed = { 
+            tag = TEX
+        }                 
+
+        available = {               
+			custom_trigger_tooltip = {
+				tooltip = TEX_influenceistoodamnhigh
+				check_variable = {
+					var = Texdemocratspoints
+					value = 99.99
+					compare = less_than
+				}
+			}
+        }
+        activation = {                          # The mission appears and starts counting down under these circumstances:
+			check_variable = { Texdemocratspoints > 99 }
+			NOT = {
+				has_country_flag = TEX_before_the_civil_war
+			}
+        }
+        is_good = no                     # This mission is color coded to be a positive thing (not a crisis)
+        selectable_mission = no
+        fire_only_once = no             # This mission will complete when the player selects the mission rather than completing automatically
+        days_mission_timeout = 14             # How many days before the mission fails?
+
+        timeout_effect = {                      # What happens when we fail the mission?
+			country_event = { id = tma.25 }
+        }
+
+        complete_effect = {                    # What happens when we activate the mission i.e. mission success?
+            
+        }
+        ai_will_do = {
+            base = 10000
+        }      
+    }
+	TEX_destruction_dix = {                           
+        
+        icon = GFX_decision_generic_nationalism
+
+        allowed = { 
+            tag = TEX
+        }                 
+
+        available = {               
+			custom_trigger_tooltip = {
+				tooltip = TEX_influenceistoodamnhigh
+				check_variable = {
+					var = Texdixiecratspoints
+					value = 99.99
+					compare = less_than
+				}
+			}
+        }
+        activation = {                          # The mission appears and starts counting down under these circumstances:
+			check_variable = { Texdixiecratspoints > 99 }
+			NOT = {
+				has_country_flag = TEX_before_the_civil_war
+			}
+        }
+        is_good = no                     # This mission is color coded to be a positive thing (not a crisis)
+        selectable_mission = no
+        fire_only_once = no             # This mission will complete when the player selects the mission rather than completing automatically
+        days_mission_timeout = 14             # How many days before the mission fails?
+
+        timeout_effect = {                      # What happens when we fail the mission?
+			country_event = { id = tma.24 }
+        }
+
+        complete_effect = {                    # What happens when we activate the mission i.e. mission success?
+            
+        }
+        ai_will_do = {
+            base = 10000
+        }      
+    }
+	TEX_destruction_chr = {                           
+        
+        icon = GFX_decision_generic_nationalism
+
+        allowed = { 
+            tag = TEX
+        }                 
+
+        available = {               
+			custom_trigger_tooltip = {
+				tooltip = TEX_influenceistoodamnhigh
+				check_variable = {
+					var = Texchristianpoints
+					value = 99.99
+					compare = less_than
+				}
+			}
+        }
+        activation = {                          # The mission appears and starts counting down under these circumstances:
+			check_variable = { Texchristianpoints > 99 }
+			NOT = {
+				has_country_flag = TEX_before_the_civil_war
+			}
+        }
+        is_good = no                     # This mission is color coded to be a positive thing (not a crisis)
+        selectable_mission = no
+        fire_only_once = no             # This mission will complete when the player selects the mission rather than completing automatically
+        days_mission_timeout = 14             # How many days before the mission fails?
+
+        timeout_effect = {                      # What happens when we fail the mission?
+			country_event = { id = tma.22 }
+        }
+
+        complete_effect = {                    # What happens when we activate the mission i.e. mission success?
+            
+        }
+        ai_will_do = {
+            base = 10000
+        }      
+    }
+	TEX_destruction_trg = {                           
+        
+        icon = GFX_decision_generic_nationalism
+
+        allowed = { 
+            tag = TEX
+        }                 
+
+        available = {               
+			custom_trigger_tooltip = {
+				tooltip = TEX_influenceistoodamnhigh
+				check_variable = {
+					var = Texrangerpoints
+					value = 99.99
+					compare = less_than
+				}
+			}
+        }
+        activation = {                          # The mission appears and starts counting down under these circumstances:
+			check_variable = { Texrangerpoints > 99 }
+			NOT = {
+				has_country_flag = TEX_before_the_civil_war
+			}
+        }
+        is_good = no                     # This mission is color coded to be a positive thing (not a crisis)
+        selectable_mission = no
+        fire_only_once = no             # This mission will complete when the player selects the mission rather than completing automatically
+        days_mission_timeout = 14             # How many days before the mission fails?
+
+        timeout_effect = {                      # What happens when we fail the mission?
+		country_event = { id = tma.23 }
+        }
+
+        complete_effect = {                    # What happens when we activate the mission i.e. mission success?
+            
+        }
+        ai_will_do = {
+            base = 10000
+        }      
+    }
+	TEX_destruction_cmp = {                           
+        
+        icon = GFX_decision_generic_nationalism
+
+        allowed = { 
+            tag = TEX
+        }                 
+
+        available = {               
+			custom_trigger_tooltip = {
+				tooltip = TEX_influenceistoodamnhigh
+				check_variable = {
+					var = Texcmppoints
+					value = 99.99
+					compare = less_than
+				}
+			}
+        }
+        activation = {                          # The mission appears and starts counting down under these circumstances:
+			check_variable = { Texcmppoints > 99 }
+			NOT = {
+				has_country_flag = TEX_before_the_civil_war
+			}
+        }
+        is_good = no                     # This mission is color coded to be a positive thing (not a crisis)
+        selectable_mission = no
+        fire_only_once = no             # This mission will complete when the player selects the mission rather than completing automatically
+        days_mission_timeout = 14             # How many days before the mission fails?
+
+        timeout_effect = {                      # What happens when we fail the mission?
+			country_event = { id = tma.21 }
+        }
+
+        complete_effect = {                    # What happens when we activate the mission i.e. mission success?
+            
+        }
+        ai_will_do = {
+            base = 10000
+        }      
+    }
+	TEX_destruction_abq = {                           
+        
+        icon = GFX_decision_generic_nationalism
+
+        allowed = { 
+            tag = TEX
+        }                 
+
+        available = {               
+			custom_trigger_tooltip = {
+				tooltip = TEX_influenceistoodamnhigh
+				check_variable = {
+					var = Texabqpoints
+					value = 99.99
+					compare = less_than
+				}
+			}
+        }
+        activation = {                          # The mission appears and starts counting down under these circumstances:
+			check_variable = { Texabqpoints > 99 }
+			NOT = {
+				has_country_flag = TEX_before_the_civil_war
+			}
+        }
+        is_good = no                     # This mission is color coded to be a positive thing (not a crisis)
+        selectable_mission = no
+        fire_only_once = no             # This mission will complete when the player selects the mission rather than completing automatically
+        days_mission_timeout = 14             # How many days before the mission fails?
+
+        timeout_effect = {                      # What happens when we fail the mission?
+			country_event = { id = tma.20 }
+        }
+
+        complete_effect = {                    # What happens when we activate the mission i.e. mission success?
+            
+        }
+        ai_will_do = {
+            base = 10000
+        }      
+    }
+	TEX_destruction_decisions9 = {                           
+        
+        icon = GFX_decision_generic_political_rally
+
+        allowed = { 
+            tag = TEX
+        }                 
+
+        available = {                           
+            has_completed_focus = TMA_lol_you_thought
+        }
+        activation = {                          # The mission appears and starts counting down under these circumstances:
+			NOT = {
+				has_country_flag = TEX_before_the_civil_war
+			}
+        }
+        is_good = no                     # This mission is color coded to be a positive thing (not a crisis)
+        selectable_mission = no
+        fire_only_once = no             # This mission will complete when the player selects the mission rather than completing automatically
+        days_mission_timeout = 7             # How many days before the mission fails?
+
+        timeout_effect = {                      # What happens when we fail the mission?
+			custom_effect_tooltip = TEX_destruction_decisions9_tooltip
+			add_to_variable = { Texdemocratspoints = 3 }
+			add_to_variable = { Texdixiecratspoints = 3 }
+			add_to_variable = { Texchristianpoints = 3 }
+			add_to_variable = { Texrangerpoints = 3 }
+			add_to_variable = { Texcmppoints = 3 }
+			add_to_variable = { Texabqpoints = 3 }
+        }
+
+        complete_effect = {                    # What happens when we activate the mission i.e. mission success?
+            custom_effect_tooltip = TEX_destruction_decisions8_tooltip3
+			
+        }
+        ai_will_do = {
+            base = 10000
+        }      
+    }
+	TEX_destruction_decisions8 = {                           
+        
+        icon = GFX_decision_generic_nationalism
+
+        allowed = { 
+            tag = TEX
+        }                 
+
+        available = {                           
+            has_completed_focus = TMA_lol_you_thought
+        }
+        activation = {                          # The mission appears and starts counting down under these circumstances:
+			NOT = {
+				has_country_flag = TEX_before_the_civil_war
+			}
+        }
+        is_good = no                     # This mission is color coded to be a positive thing (not a crisis)
+        selectable_mission = no
+        fire_only_once = no             # This mission will complete when the player selects the mission rather than completing automatically
+        days_mission_timeout = 14             # How many days before the mission fails?
+
+        timeout_effect = {                      # What happens when we fail the mission?
+			custom_effect_tooltip = TEX_destruction_decisions8_tooltip2
+			hidden_effect = {
+				random_list = {
+					5 = {
+						country_event = { id = tma.3 }
+					}
+					8 = {
+						country_event = { id = tma.4 }
+					}
+					7 = {
+						country_event = { id = tma.16 }
+					}
+					5 = {
+						country_event = { id = tma.5 }
+					}
+					7 = {
+						country_event = { id = tma.6 }
+					}
+					7 = {
+						country_event = { id = tma.15 }
+					}
+					8 = {
+						country_event = { id = tma.7 }
+					}
+					7 = {
+						country_event = { id = tma.13 }
+					}
+					5 = {
+						country_event = { id = tma.8 }
+					}
+					8 = {
+						country_event = { id = tma.9 }
+					}
+					8 = {
+						country_event = { id = tma.18 }
+					}
+					5 = {
+						country_event = { id = tma.10 }
+					}
+					5 = {
+						country_event = { id = tma.11 }
+					}
+					5 = {
+						country_event = { id = tma.17 }
+					}
+					5 = {
+						country_event = { id = tma.12 }
+					}
+					5 = {
+						country_event = { id = tma.14 }
+					}
+				}
+			}
+        }
+
+        complete_effect = {                    # What happens when we activate the mission i.e. mission success?
+            custom_effect_tooltip = TEX_destruction_decisions8_tooltip3
+        }
+        ai_will_do = {
+            base = 10000
+        }      
+    }
+	TEX_destruction_decisions10 = {                           
+        
+        icon = GFX_decision_revolt
+
+        allowed = { 
+            tag = TEX
+        }                 
+
+        available = {                           
+            has_stability > 0.85
+        }
+        activation = {                          # The mission appears and starts counting down under these circumstances:
+			NOT = {
+				has_country_flag = TEX_before_the_civil_war
+			}
+			check_variable = {
+				TexasRebellionCounter > 9
+			}
+        }
+        is_good = no                     # This mission is color coded to be a positive thing (not a crisis)
+        selectable_mission = no
+        fire_only_once = yes             # This mission will complete when the player selects the mission rather than completing automatically
+        days_mission_timeout = 14             # How many days before the mission fails?
+
+        timeout_effect = {                      # What happens when we fail the mission?
+			custom_effect_tooltip = TEX_destruction_decisions10_the_end
+			set_country_flag = TEX_before_the_civil_war
+			ABQ ={ 
+				set_country_flag = TEX_before_the_civil_war
+			}
+			country_event = { days = 1 id = tma.27}
+			country_event = { days = 4 id = tma.28 }
+			country_event = { days = 7 id = tma.29 }
+			country_event = { days = 11 id = tma.30 } 
+			country_event = { days = 13 id = tma.33 }
+			hidden_effect = {
+				country_event = { days = 15 id = tma.32 }
+				remove_ideas = tex_sabotage
+				remove_ideas = tex_sabotage1
+				remove_ideas = tex_sabotage2
+				remove_ideas = tex_sabotage3
+				remove_ideas = tex_sabotage4
+				remove_ideas = tex_sabotage5
+				remove_ideas = tex_rotten
+				add_ideas = tex_devastation
+				cancel_border_war = {
+					dont_fire_events = yes
+					defender = 249
+					attacker = 44
+				}
+			}
+        }
+
+        ai_will_do = {
+            base = 10000
+        }      
+    }
+}

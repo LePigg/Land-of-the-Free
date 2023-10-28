@@ -1,0 +1,785 @@
+cal_japanese_decisions = {
+	cal_japanese_decisions_1 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_nationalism		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			has_government = guided_democracy
+			has_country_flag = test123
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 1	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			has_government = guided_democracy
+			#has_country_flag = test123
+			#is_debug = yes
+		}		
+		modifier = {
+			political_power_gain = -3
+		}
+		allowed = {
+			OR = {
+				tag = CAL
+			}
+		}
+
+		cost = 40		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 7
+
+		days_re_enable = 30
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.15
+			}
+		}
+		
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 1000
+				#has_war_support < 0.4
+				fascism > 0.15
+			}
+		}
+	}
+	cal_japanese_decisions_2 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_nationalism		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			has_government = guided_democracy
+			has_country_flag = test123
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 1	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			has_government = guided_democracy
+			#has_country_flag = test134
+			#is_debug = yes
+		}		
+		modifier = {
+			political_power_gain = -2
+		}
+		allowed = {
+			OR = {
+				tag = CAL
+			}
+		}
+
+		cost = 30		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 7
+
+		days_re_enable = 30
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+		}
+		
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 1000
+				#has_war_support < 0.4
+				fascism > 0.15
+			}
+		}
+	}
+	cal_japanese_decisions_3 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_nationalism		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			has_government = guided_democracy
+			has_country_flag = test123
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 1	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			has_government = guided_democracy
+		
+			#is_debug = yes
+		}		
+		modifier = {
+			political_power_gain = -1
+		}
+		allowed = {
+			OR = {
+				tag = CAL
+			}
+		}
+
+		cost = 20		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 7
+
+		days_re_enable = 30
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+		}
+		
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 100
+				#has_war_support < 0.4
+				fascism > 0.15
+			}
+		}
+	}
+	simple_timeout_mission1 = {		#ID of the mission, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this mission.
+		days_mission_timeout = 30	#The amount of days remaining until the mission is removed.
+		is_good = no		#Determines if the timeout bar will be red or green, cosmetic setting only, has no actual impact on the mission
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the mission and execute its effect.
+			fascism > 0.5
+			#has_completed_focus = CAL_surrounding_the_bay
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		allowed = {	
+			always = no 
+		}
+		
+		# EFFECTS OF THIS DECISION/MISSION
+
+		timeout_effect = {		#The effects to execute once the mission timer expires.
+			country_event = { days = 5 id = cal.10 }
+		}
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = CAL_californias_prestige
+			}
+		}
+		complete_effect  = {
+			add_stability = -0.35
+			country_event = { days = 5 id = cal.1 }
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the mission.
+			factor = 0
+		}
+	}
+	
+}
+cal_japanese_decisions_pro = {
+	cal_weapons1 = {		#ID of the decision, must not contain spaces!
+
+			icon = generic_industry		#The left side icon to show for this decision.
+			
+			# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+			
+			available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			}
+			
+			fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+			days_re_enable = 1	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+			visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+				original_tag = CAL
+			}		
+
+			cost = 20		#The cost to execute the decision, by default its political power.
+			
+			days_remove = 40
+
+			days_re_enable = 30
+			# EFFECTS OF THIS DECISION/MISSION
+
+			complete_effect = {		#The effects to execute once the envelope icon is clicked.
+				
+			}
+			remove_effect = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 275
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.02
+					}
+			}
+			
+			# AI LOGIC FOR THIS DECISION/MISSION
+
+			ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+				factor = 0			
+			}
+		}
+		cal_weapons2 = {		#ID of the decision, must not contain spaces!
+
+			icon = generic_industry		#The left side icon to show for this decision.
+			
+			# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+			
+			available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+				
+			}
+			
+			fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+			days_re_enable = 1	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+			visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+				original_tag = CAL
+			}		
+
+			cost = 15		#The cost to execute the decision, by default its political power.
+			
+			days_remove = 40
+
+			days_re_enable = 30
+			# EFFECTS OF THIS DECISION/MISSION
+
+			complete_effect = {		#The effects to execute once the envelope icon is clicked.
+				
+			}
+			remove_effect = {
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 50
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.02
+					}
+			}
+			modifier = {
+			#	stability_weekly = 0.005
+			#	industrial_capacity_factory = -0.1
+			}
+			
+			# AI LOGIC FOR THIS DECISION/MISSION
+
+			ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+				factor = 0			
+			}
+		}
+		cal_weapons3 = {		#ID of the decision, must not contain spaces!
+
+			icon = generic_industry		#The left side icon to show for this decision.
+			
+			# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+			
+			available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+				
+			}
+			
+			fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+			days_re_enable = 1	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+			visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+				original_tag = CAL
+			}		
+
+			cost = 15		#The cost to execute the decision, by default its political power.
+			
+			days_remove = 40
+
+			days_re_enable = 30
+			# EFFECTS OF THIS DECISION/MISSION
+
+			complete_effect = {		#The effects to execute once the envelope icon is clicked.
+				
+			}
+			remove_effect = {
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 60
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.02
+					}
+			}
+			modifier = {
+			#	stability_weekly = 0.005
+			#	industrial_capacity_factory = -0.1
+			}
+			
+			# AI LOGIC FOR THIS DECISION/MISSION
+
+			ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+				factor = 0			
+			}
+		}
+		cal_manpower = {		#ID of the decision, must not contain spaces!
+
+			icon = generic_political_discourse		#The left side icon to show for this decision.
+			
+			# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+			
+			available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+				has_equipment = { convoy > 14 }
+			}
+			
+			fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+			days_re_enable = 1	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+			visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+                original_tag = CAL
+			}		
+
+			cost = 30		#The cost to execute the decision, by default its political power.
+			
+			days_remove = 70
+
+			days_re_enable = 30
+			# EFFECTS OF THIS DECISION/MISSION
+
+			complete_effect = {		#The effects to execute once the envelope icon is clicked.
+				
+			}
+			remove_effect = {
+				add_manpower = 2500
+					add_equipment_to_stockpile = {
+						type = convoy
+						amount = -15
+					}
+			}
+			modifier = {
+			#	stability_weekly = 0.005
+			#	industrial_capacity_factory = -0.1
+			}
+			
+			# AI LOGIC FOR THIS DECISION/MISSION
+
+			ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+				factor = 0			
+			}
+		}
+	}
+CAL_invasion_1 = {
+	CAL_invasion_2 = {
+
+			icon = GFX_decision_icon_default
+
+			available = {
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = CAL_unification
+			}
+
+			fire_only_once = yes
+
+			days_remove = 70
+			days_re_enable = 180
+
+			cost = 30
+
+
+			remove_effect = {
+				add_manpower = 150000
+				add_to_variable = { RUSWarPreparedness = 10 }
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}
+	CAL_invasion_3 = {
+
+			icon = generic_construction
+
+			available = {
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = CAL_unification
+			}
+
+			fire_only_once = yes
+
+			days_remove = 70
+			days_re_enable = 180
+
+			cost = 30
+
+
+			remove_effect = {
+				add_to_variable = { RUSWarPreparedness = 10 }
+				custom_effect_tooltip = CAL_fallback
+				hidden_effect = {
+					812 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 1601
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 1432
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 710
+							instant_build = yes
+						}
+					}
+					378 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11763
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 941
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}
+	CAL_invasion_4 = {
+
+			icon = generic_industry	
+
+			available = {
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = CAL_unification
+			}
+
+			fire_only_once = yes
+
+			days_remove = 70
+			days_re_enable = 180
+
+			cost = 30
+
+
+			remove_effect = {
+				add_to_variable = { RUSWarPreparedness = 10 }
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+		CAL_invasion_5 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = war_preparation_kan
+					check_variable = { RUSWarPreparedness > 29.99 }
+				}
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+				has_country_flag = CAL_unification
+			}
+
+			fire_only_once = yes
+
+			days_remove = 31
+			days_re_enable = 180
+
+			cost = 1
+
+
+			remove_effect = {
+				custom_effect_tooltip = kill_rockies_region1
+				hidden_effect = {
+					every_country = {
+						limit = {
+							OR = {
+								has_country_flag = rockies_country
+								has_country_flag = cascadian_country
+							}
+						}
+						ROOT = {
+							declare_war_on = {
+								target = PREV
+								type = annex_everything
+							}
+						}
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}	
+}	
+CAL_centralization = {
+	cal_centralization_mission = {
+		activation = {
+			any_owned_state = {
+				check_variable = {
+					centralizationvar < 100
+				}
+			}
+		}
+		priority = 150
+		days_mission_timeout = 5
+		is_good = yes
+		fire_only_once = no
+		icon = GFX_decision_SOV_place_hq
+		available = { hidden_trigger = { always = no } }
+		timeout_effect = { 
+			hidden_effect = {	
+				FROM = {
+					add_to_variable = {
+						var = centralizationvar
+						value = 10
+					}
+				}
+				remove_mission = cal_centralization_mission
+			}
+		}
+	}
+	cal_increase_centralization_decision = {
+		target_array = controlled_states
+		state_target = yes
+		days_remove = 30
+		days_re_enable = 90
+		priority = 100
+		icon = GFX_decision_eng_propaganda_campaigns
+		target_trigger = {
+			FROM = {
+				check_variable = {
+					centralizationvar < 100
+				}
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		cost = 100
+		remove_effect = {
+			FROM = {
+				add_to_variable = {
+					var = centralizationvar
+					value = 10
+				}
+			}
+		}
+	}
+	cal_integration_decision = {
+		icon = GFX_decision_infiltrate_state
+		target_array = controlled_states
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				check_variable = {
+					centralizationvar > 99
+				}
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		cost = 100
+		remove_effect = {
+
+		}
+	}
+}

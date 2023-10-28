@@ -1,0 +1,774 @@
+
+min_invasion1 = {
+	min_deal_decisions = {
+
+		icon = GFX_decision_generic_political_discourse
+
+		available = {
+			has_war = no
+			is_neighbor_of = ARA
+		}
+		complete_effect = {
+			set_country_flag = war_occupied
+		}
+
+		visible = {
+			has_country_flag = bmk_invasion_flag1			
+			ARA = {
+				exists = yes 
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 14
+		days_re_enable = 180
+
+		cost = 5
+
+
+		remove_effect = {
+			custom_effect_tooltip = bmk_pactwithara
+			ARA = { 
+				country_event { id = bmk.27 }
+			}
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+	}	
+	min_attack_decisions1 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied 
+			}
+			visible = {
+				has_country_flag = min_invasion_flag1
+				MIL = { 	
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 14
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				will_lead_to_war_with = MIL
+				declare_war_on = { type = annex_everything    target = MIL }
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}	
+	min_attack_decisions3 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = com
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+			visible = {
+				has_country_flag = min_invasion_flag1		
+                NOT = {
+                    has_country_flag = min_prochicagodecision
+                }
+				COM = {
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 14
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				will_lead_to_war_with = COM
+				declare_war_on = { type = annex_everything    target = COM }
+				clr_country_flag = war_occupied 
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+	min_attack_decisions4 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = ara
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = min_invasion_flag1			
+				ARA = {
+					exists = yes 
+				}
+				NOT = {
+					has_country_flag = bmk_invasion_flag1
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 14
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				will_lead_to_war_with = ARA
+				declare_war_on = { type = annex_everything    target = ara }
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}	
+		min_attack_decisions11 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = ara
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = min_invasion_flag1		
+				has_country_flag = bmk_arahasrejectedpact	
+				ARA = {
+					exists = yes 
+				}
+				
+			}
+
+			fire_only_once = no
+
+			days_remove = 14
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				will_lead_to_war_with = ARA
+				declare_war_on = { type = annex_everything    target = ara }
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}		
+	min_attack_decisions6 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = ief
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+					has_country_flag = min_invasion_flag1			
+					IEF = {
+						exists = yes 
+					}
+			}
+
+			fire_only_once = no
+
+			days_remove = 14
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				will_lead_to_war_with = IEF
+				declare_war_on = { type = annex_everything    target = ief }
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}			
+	
+        min_attack_decisions7 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = ERR
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = min_invasion_flag1		
+                NOT = {
+                    has_country_flag = min_proeriedecision
+                    has_country_flag = iwa_unificationdecisions
+                }	
+				ERR = {
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 14
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				will_lead_to_war_with = ERR
+				declare_war_on = { type = annex_everything    target = ERR }
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}	
+        min_attack_decisions9 = {
+
+			icon = GFX_decision_generic_political_discourse
+
+			available = {
+				has_war = no
+				NOT = {
+					has_country_flag = war_occupied
+				}
+                AND = {
+                    COM = { exists = no }
+                    MIL = { exists = no }
+                    IEF = { exists = no }
+                    ARA = { exists = no }
+                    MIC = { exists = no }
+                    AMC = { exists = no }
+                }
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = min_invasion_flag1	
+                has_country_flag = iwa_unificationdecisions
+				ERR = { 	
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 14
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				country_event = { id = iwa.18 days = 7 }
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}	
+		min_attack_decisions5 = {
+
+			icon = GFX_decision_generic_political_discourse
+
+			available = {
+				has_war = no
+				is_neighbor_of = mic
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = min_invasion_flag1			
+				MIC = {
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 14
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				annex_country = { 
+                    target = MIC 
+                    transfer_troops = yes
+                }
+                MIC = {
+                    every_unit_leader = { set_nationality = ROOT }
+                }
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}	
+        min_attack_decisions2 = {
+
+			icon = GFX_decision_generic_political_discourse
+
+			available = {
+				has_war = no
+				NOT = {
+					has_country_flag = war_occupied
+				}
+                AND = {
+                    COM = { exists = no }
+                    MIL = { exists = no }
+                    IEF = { exists = no }
+                    ARA = { exists = no }
+                    MIC = { exists = no }
+                    AMC = { exists = no }
+                }
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = min_invasion_flag1	
+                has_country_flag = min_proeriedecision
+				ERR = { 	
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 14
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				ERR = {
+					country_event = { id = minnesota.21 days = 7 }
+				}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}	
+        min_attack_decisions8 = {
+
+			icon = GFX_decision_generic_political_discourse
+
+			available = {
+				has_war = no
+				NOT = {
+					has_country_flag = war_occupied
+				}
+                AND = {
+                    ERR = { exists = no }
+                    MIL = { exists = no }
+                    IEF = { exists = no }
+                    ARA = { exists = no }
+                    MIC = { exists = no }
+                    AMC = { exists = no }
+                }
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = min_invasion_flag1	
+                has_country_flag = min_prochicagodecision
+				COM = { 	
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 14
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				COM = {
+					country_event = { id = minnesota.21 days = 7 }
+				}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}	
+		min_attack_decisions10 = {
+
+			icon = GFX_decision_generic_political_discourse
+
+			available = {
+				has_war = no
+				NOT = {
+					has_country_flag = war_occupied
+				}
+                AND = {
+                    ERR = { exists = no }
+                    MIL = { exists = no }
+                    IEF = { exists = no }
+                    COM = { exists = no }
+                    MIC = { exists = no }
+                    AMC = { exists = no }
+                }
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = min_invasion_flag1	
+                has_country_flag = bmk_arahasacceptedpact
+				ARA = { 	
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 14
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				country_event = { id = bmk.30 }
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}	
+		min_attack_decisions12 = {
+
+			icon = GFX_decision_generic_ignite_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = COM
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = DBQ_invasion_flag1			
+				COM = {
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 14
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				country_event = { id = COM.32 days = 2 }
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+		min_attack_decisions14 = {
+
+			icon = GFX_decision_generic_ignite_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = ERR
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = DBQ_invasion_flag1			
+				ERR = {
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 14
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				declare_war_on = {
+					target = ERR
+					type = annex_everything
+				}
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+		min_attack_decisions15 = {
+
+			icon = GFX_decision_generic_ignite_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = MIL
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = DBQ_invasion_flag1			
+				MIL = {
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 14
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				declare_war_on = {
+					target = MIL
+					type = annex_everything
+				}
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+		min_attack_decisions16 = {
+
+			icon = GFX_decision_generic_ignite_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = IEF
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = DBQ_invasion_flag1			
+				IEF = {
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 14
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				declare_war_on = {
+					target = IEF
+					type = annex_everything
+				}
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+		min_attack_decisions17 = {
+
+			icon = GFX_decision_generic_ignite_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = ARA
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = DBQ_invasion_flag1			
+				ARA = {
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 14
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				declare_war_on = {
+					target = ARA
+					type = annex_everything
+				}
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+		min_attack_decisions18 = {
+
+			icon = GFX_decision_generic_ignite_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = MIC
+				NOT = {
+					has_country_flag = war_occupied
+				}
+				ERR = {
+					exists = no
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = DBQ_invasion_flag1			
+				MIC = {
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 14
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				MIC = {
+					country_event = DBQ.4
+				}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}																														
+}

@@ -1,0 +1,14 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_idea_HaroldIckes"
+		texturefile = "gfx/interface/ideas/HaroldIckes.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_RonaldLindsay"
+		texturefile = "gfx/interface/ideas/RonaldLindsay.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_warevellharriam"
+		texturefile = "gfx/interface/ideas/warevellharriam.png"
+	}
+}

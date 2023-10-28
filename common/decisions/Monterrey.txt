@@ -1,0 +1,951 @@
+MTY_council_decisions = {
+    MTY_council_decisionsss = {
+
+        icon = GFX_decision_generic_political_discourse
+
+        visible = {
+            OR = {
+                tag = CAL
+                tag = LAC
+            }
+            has_country_flag = MTY_council_decisions1_flag
+        }
+
+        fire_only_once = yes
+
+        days_remove = 7
+        days_re_enable = 31
+
+        cost = 30
+
+        remove_effect = {
+            custom_effect_tooltip = MTYsocialist15L
+            CAL = {
+                add_to_variable = {
+                    var = MTYSocialist
+                    value = -15
+                }
+            }
+            MTY = {
+                add_to_variable = {
+                    var = MTYSocialist
+                    value = -15
+                }
+            }
+            EUR = {
+                add_to_variable = {
+                    var = MTYSocialist
+                    value = -15
+                }
+            }
+            LAC = {
+                add_to_variable = {
+                    var = MTYSocialist
+                    value = -15
+                }
+            }
+        }
+        
+        ai_will_do = {
+            base = 1
+        }
+    }
+    MTY_council_decisionstt = {
+
+        icon = GFX_decision_generic_political_discourse
+
+        visible = {
+            OR = {
+                tag = CAL
+                tag = EUR
+            }
+            has_country_flag = MTY_council_decisions1_flag
+        }
+
+        fire_only_once = yes
+
+        days_remove = 7
+        days_re_enable = 31
+
+        cost = 30
+
+        remove_effect = {
+            custom_effect_tooltip = MTYtechnocrat15L
+            CAL = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = -15
+                }
+            }
+            MTY = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = -15
+                }
+            }
+            EUR = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = -15
+                }
+            }
+            LAC = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = -15
+                }
+            }
+        }
+        
+        ai_will_do = {
+            base = 1
+        }
+    }
+    MTY_council_decisionstt = {
+
+        icon = GFX_decision_generic_political_discourse
+
+        visible = {
+            OR = {
+                tag = CAL
+                tag = EUR
+            }
+            has_country_flag = MTY_council_decisions1_flag
+        }
+
+        fire_only_once = yes
+
+        days_remove = 7
+        days_re_enable = 31
+
+        cost = 30
+
+        remove_effect = {
+            custom_effect_tooltip = MTYtechnocrat15L
+            CAL = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = -15
+                }
+            }
+            MTY = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = -15
+                }
+            }
+            EUR = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = -15
+                }
+            }
+            LAC = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = -15
+                }
+            }
+        }
+        
+        ai_will_do = {
+            base = 1
+        }
+    }
+    MTY_council_decisionsll = {
+
+        icon = GFX_decision_generic_political_discourse
+
+        visible = {
+            OR = {
+                tag = LAC
+                tag = EUR
+            }
+            has_country_flag = MTY_council_decisions1_flag
+        }
+
+        fire_only_once = yes
+
+        days_remove = 7
+        days_re_enable = 31
+
+        cost = 30
+
+        remove_effect = {
+            custom_effect_tooltip = MTYliberal15L
+            CAL = {
+                add_to_variable = {
+                    var = MTYLiberal
+                    value = -15
+                }
+            }
+            MTY = {
+                add_to_variable = {
+                    var = MTYLiberal
+                    value = -15
+                }
+            }
+            EUR = {
+                add_to_variable = {
+                    var = MTYLiberal
+                    value = -15
+                }
+            }
+            LAC = {
+                add_to_variable = {
+                    var = MTYLiberal
+                    value = -15
+                }
+            }
+        }
+        
+        ai_will_do = {
+            base = 1
+        }
+    }
+    MTY_council_decisions1L = {
+
+        icon = GFX_decision_eng_propaganda_campaigns
+
+        visible = {
+            OR = {
+                tag = CAL
+                tag = MTY
+            }
+            has_country_flag = MTY_council_decisions1_flag
+        }
+
+        fire_only_once = yes
+
+        days_remove = 7
+        days_re_enable = 7
+
+        cost = 15
+
+        remove_effect = {
+            custom_effect_tooltip = MTYliberal10
+            CAL = {
+                add_to_variable = {
+                    var = MTYLiberal
+                    value = 10
+                }
+            }
+            MTY = {
+                add_to_variable = {
+                    var = MTYLiberal
+                    value = 10
+                }
+            }
+            EUR = {
+                add_to_variable = {
+                    var = MTYLiberal
+                    value = 10
+                }
+            }
+            LAC = {
+                add_to_variable = {
+                    var = MTYLiberal
+                    value = 10
+                }
+            }
+        }
+        
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1
+                has_political_power > 50
+            }
+        }
+    }
+    MTY_council_decisions2L = {
+
+        icon = GFX_decision_ger_military_buildup
+
+        visible = {
+            tag = CAL
+            has_country_flag = MTY_council_decisions1_flag
+        }
+
+        fire_only_once = no
+
+        days_remove = 7
+        days_re_enable = 31
+
+        custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 99 }
+		}
+        custom_cost_text = 100_infantry_equipment_1
+
+        remove_effect = {
+            custom_effect_tooltip = MTYliberal20
+            CAL = {
+                add_to_variable = {
+                    var = MTYLiberal
+                    value = 20
+                }
+            }
+            MTY = {
+                add_to_variable = {
+                    var = MTYLiberal
+                    value = 20
+                }
+            }
+            EUR = {
+                add_to_variable = {
+                    var = MTYLiberal
+                    value = 20
+                }
+            }
+            LAC = {
+                add_to_variable = {
+                    var = MTYLiberal
+                    value = 20
+                }
+            }
+            send_equipment = { target = MTY type = infantry_equipment amount = 100 }  
+        }
+        
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1
+                has_equipment = { infantry_equipment > 299 }
+            }
+        }
+    }
+    MTY_council_decisions3L = {
+
+        icon = GFX_decision_infiltrate_state
+
+        visible = {
+            tag = CAL
+            has_country_flag = MTY_council_decisions1_flag
+        }
+
+        fire_only_once = no
+
+        days_remove = 7
+        days_re_enable = 31
+
+        custom_cost_trigger = {
+			has_army_experience > 4.99
+		}
+		custom_cost_text = 5_xp_equipment_1 
+
+        remove_effect = {
+            custom_effect_tooltip = MTYliberal30
+            CAL = {
+                add_to_variable = {
+                    var = MTYLiberal
+                    value = 30
+                }
+            }
+            MTY = {
+                add_to_variable = {
+                    var = MTYLiberal
+                    value = 30
+                }
+            }
+            EUR = {
+                add_to_variable = {
+                    var = MTYLiberal
+                    value = 30
+                }
+            }
+            LAC = {
+                add_to_variable = {
+                    var = MTYLiberal
+                    value = 30
+                }
+            }
+            MTY = { 
+                add_stability = -0.01
+            }
+            hidden_effect = {
+                army_experience = -5
+            }
+            
+        }
+        
+        ai_will_do = {
+            base = 1
+        }
+    }
+    MTY_council_decisions4L = {
+
+        icon = GFX_decision_revolt
+
+        visible = {
+            tag = CAL
+            has_country_flag = MTY_council_decisions1_flag
+        }
+
+        fire_only_once = yes
+
+        days_remove = 14
+        days_re_enable = 31
+
+        custom_cost_trigger = {
+			check_variable = {
+                MTYLiberal > 300
+            }
+		}
+
+        available = {
+            check_variable = {
+                MTYLiberal > 300
+            }
+        }
+
+        custom_cost_text = 300_MTYLiberal_equipment_1
+
+        remove_effect = {
+            random_list = {
+                50 = {
+                    country_event = { id = mty.5 hours = 6 }
+                }
+                50 = {
+                    country_event = { id = mty.6 hours = 6 }
+                }
+            }
+        }
+        
+        ai_will_do = {
+            base = 1
+        }
+    }
+    MTY_council_decisions1S = {
+
+        icon = GFX_decision_eng_propaganda_campaigns
+
+        visible = {
+            OR = {
+                tag = EUR
+                tag = MTY
+            }
+            has_country_flag = MTY_council_decisions1_flag
+        }
+
+        fire_only_once = yes
+
+        days_remove = 7
+        days_re_enable = 7
+
+        cost = 15
+
+        remove_effect = {
+            custom_effect_tooltip = MTYsocialist10
+            CAL = {
+                add_to_variable = {
+                    var = MTYSocialist
+                    value = 10
+                }
+            }
+            MTY = {
+                add_to_variable = {
+                    var = MTYSocialist
+                    value = 10
+                }
+            }
+            EUR = {
+                add_to_variable = {
+                    var = MTYSocialist
+                    value = 10
+                }
+            }
+            LAC = {
+                add_to_variable = {
+                    var = MTYSocialist
+                    value = 10
+                }
+            }
+        }
+        
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1
+                has_political_power > 50
+            }
+        }
+    }
+    MTY_council_decisions2S = {
+
+        icon = GFX_decision_ger_military_buildup
+
+        visible = {
+            tag = EUR
+            has_country_flag = MTY_council_decisions1_flag
+        }
+
+        fire_only_once = no
+
+        days_remove = 7
+        days_re_enable = 31
+
+        custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 99 }
+		}
+        custom_cost_text = 100_infantry_equipment_1
+
+        remove_effect = {
+            custom_effect_tooltip = MTYsocialist20
+            CAL = {
+                add_to_variable = {
+                    var = MTYSocialist
+                    value = 20
+                }
+            }
+            MTY = {
+                add_to_variable = {
+                    var = MTYSocialist
+                    value = 20
+                }
+            }
+            EUR = {
+                add_to_variable = {
+                    var = MTYSocialist
+                    value = 20
+                }
+            }
+            LAC = {
+                add_to_variable = {
+                    var = MTYSocialist
+                    value = 20
+                }
+            }
+            send_equipment = { target = MTY type = infantry_equipment amount = 100 }  
+        }
+        
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1
+                has_equipment = { infantry_equipment > 299 }
+            }
+        }
+    }
+    MTY_council_decisions3S = {
+
+        icon = GFX_decision_infiltrate_state
+
+        visible = {
+            tag = EUR
+            has_country_flag = MTY_council_decisions1_flag
+        }
+
+        fire_only_once = no
+
+        days_remove = 7
+        days_re_enable = 31
+
+        custom_cost_trigger = {
+			has_army_experience > 4.99
+		}
+		custom_cost_text = 5_xp_equipment_1 
+
+        remove_effect = {
+            custom_effect_tooltip = MTYsocialist30
+            CAL = {
+                add_to_variable = {
+                    var = MTYsocialist
+                    value = 30
+                }
+            }
+            MTY = {
+                add_to_variable = {
+                    var = MTYsocialist
+                    value = 30
+                }
+            }
+            EUR = {
+                add_to_variable = {
+                    var = MTYsocialist
+                    value = 30
+                }
+            }
+            LAC = {
+                add_to_variable = {
+                    var = MTYsocialist
+                    value = 30
+                }
+            }
+            MTY = { 
+                add_stability = -0.01
+            }
+            hidden_effect = {
+                army_experience = -5
+            }
+            
+        }
+        
+        ai_will_do = {
+            base = 1
+        }
+    }
+    MTY_council_decisions4S = {
+
+        icon = GFX_decision_revolt
+
+        visible = {
+            tag = EUR
+            has_country_flag = MTY_council_decisions1_flag
+        }
+
+        fire_only_once = yes
+
+        days_remove = 14
+        days_re_enable = 31
+
+        custom_cost_trigger = {
+			check_variable = {
+                MTYSocialist > 300
+            }
+		}
+
+        available = {
+            check_variable = {
+                MTYSocialist > 300
+            }
+        }
+
+        custom_cost_text = 300_MTYSocialist_equipment_1
+
+        remove_effect = {
+            random_list = {
+                50 = {
+                    country_event = { id = mty.5 hours = 6 }
+                }
+                50 = {
+                    country_event = { id = mty.6 hours = 6 }
+                }
+            }
+        }
+        
+        ai_will_do = {
+            base = 1
+        }
+    }
+    MTY_council_decisions1T = {
+
+        icon = GFX_decision_eng_propaganda_campaigns
+
+        visible = {
+            OR = {
+                tag = LAC
+                tag = MTY
+            }
+            has_country_flag = MTY_council_decisions1_flag
+        }
+
+        fire_only_once = yes
+
+        days_remove = 7
+        days_re_enable = 7
+
+        cost = 15
+
+        remove_effect = {
+            custom_effect_tooltip = MTYtechnocrat10
+            CAL = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = 10
+                }
+            }
+            MTY = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = 10
+                }
+            }
+            EUR = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = 10
+                }
+            }
+            LAC = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = 10
+                }
+            }
+        }
+        
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1
+                has_political_power > 50
+            }
+        }
+    }
+    MTY_council_decisions2T = {
+
+        icon = GFX_decision_ger_military_buildup
+
+        visible = {
+            tag = LAC
+            has_country_flag = MTY_council_decisions1_flag
+        }
+
+        fire_only_once = no
+
+        days_remove = 7
+        days_re_enable = 31
+
+        custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 99 }
+		}
+        custom_cost_text = 100_infantry_equipment_1
+
+        remove_effect = {
+            custom_effect_tooltip = MTYtechnocrat20
+            CAL = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = 20
+                }
+            }
+            MTY = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = 20
+                }
+            }
+            EUR = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = 20
+                }
+            }
+            LAC = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = 20
+                }
+            }
+            send_equipment = { target = MTY type = infantry_equipment amount = 100 }  
+        }
+        
+        ai_will_do = {
+            base = 1
+        }
+    }
+    MTY_council_decisions3T = {
+
+        icon = GFX_decision_infiltrate_state
+
+        visible = {
+            tag = LAC
+            has_country_flag = MTY_council_decisions1_flag
+        }
+
+        fire_only_once = no
+
+        days_remove = 7
+        days_re_enable = 31
+
+        custom_cost_trigger = {
+			has_army_experience > 4.99
+		}
+		custom_cost_text = 5_xp_equipment_1 
+
+        remove_effect = {
+            custom_effect_tooltip = MTYtechnocrat30
+            CAL = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = 30
+                }
+            }
+            MTY = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = 30
+                }
+            }
+            EUR = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = 30
+                }
+            }
+            LAC = {
+                add_to_variable = {
+                    var = MTYTechnocrat
+                    value = 30
+                }
+            }
+            MTY = { 
+                add_stability = -0.01
+            }
+            hidden_effect = {
+                army_experience = -5
+            }
+            
+        }
+        
+        ai_will_do = {
+            base = 1
+        }
+    }
+    MTY_council_decisions4T = {
+
+        icon = GFX_decision_revolt
+
+        visible = {
+            tag = LAC
+            has_country_flag = MTY_council_decisions1_flag
+        }
+
+        fire_only_once = yes
+
+        days_remove = 14
+        days_re_enable = 31
+
+        custom_cost_trigger = {
+			check_variable = {
+                MTYTechnocrat > 300
+            }
+		}
+
+        available = {
+            check_variable = {
+                MTYTechnocrat > 300
+            }
+        }
+
+        custom_cost_text = 300_MTYTechnocrat_equipment_1
+
+        remove_effect = {
+            random_list = {
+                50 = {
+                    country_event = { id = mty.5 hours = 6 }
+                }
+                50 = {
+                    country_event = { id = mty.6 hours = 6 }
+                }
+            }
+        }
+        
+        ai_will_do = {
+            base = 1
+        }
+    }
+    MTY_council_decisions2 = {
+        
+        icon = GFX_decision_eng_trade_unions_support
+
+        allowed = { 
+            OR  = {
+                tag = MTY
+                tag = CAL
+                tag = EUR
+                tag = LAC
+            }
+           
+        }                 
+
+        available = {                           
+            MTY = { 
+                has_country_flag = MTY_got_couped
+            }
+        }
+        activation = {                          # The mission appears and starts counting down under these circumstances:
+            has_country_flag = MTY_council_decisions1_flag      
+        }
+        is_good = yes                     # This mission is color coded to be a positive thing (not a crisis)
+        selectable_mission = no
+        fire_only_once = yes               # This mission will complete when the player selects the mission rather than completing automatically
+        days_mission_timeout = 275              # How many days before the mission fails?
+
+        timeout_effect = {                      # What happens when we fail the mission?
+            IF = {
+                limit = {
+                    tag = MTY
+                    check_variable = { MTYLiberal > MTYSocialist }
+                    check_variable = { MTYLiberal > MTYTechnocrat }
+                }
+                MTY = {
+                    country_event = { id = mty.3 hours = 6 }
+                }
+            }
+                IF = {
+                    limit = {
+                        tag = MTY
+                        check_variable = { MTYLiberal = MTYSocialist }
+                        check_variable = { MTYLiberal > MTYTechnocrat }
+                    }
+                    MTY = {
+                        random_list = {
+                            50 = {
+                                country_event = { id = mty.2 hours = 6 }
+                            }
+                            50 = {
+                                country_event = { id = mty.3 hours = 6 }
+                            }
+                        }
+                    }
+                }
+                IF = {
+                    limit = {
+                        check_variable = { MTYSocialist > MTYLiberal }
+                        check_variable = { MTYSocialist > MTYTechnocrat }
+                    }
+                    MTY = {
+                        country_event = { id = mty.2 hours = 6 }
+                    }
+                }
+                IF = {
+                    limit = {
+                        check_variable = { MTYLiberal > MTYSocialist }
+                        check_variable = { MTYLiberal = MTYTechnocrat }
+                    }
+                    MTY = {
+                        random_list = {
+                            50 = {
+                                country_event = { id = mty.3 hours = 6 }
+                            }
+                            50 = {
+                                country_event = { id = mty.4 hours = 6 }
+                            }
+                        }
+                    }
+                }
+                IF = {
+                    limit = {
+                        check_variable = { MTYTechnocrat > MTYLiberal }
+                        check_variable = { MTYTechnocrat > MTYSocialist }
+                    }
+                    MTY = {
+                        country_event = { id = mty.4 hours = 6 }
+                    }
+                }
+                IF = {
+                    limit = {
+                        check_variable = { MTYLiberal < MTYSocialist }
+                        check_variable = { MTYSocialist = MTYTechnocrat }
+                    }
+                    MTY = {
+                        random_list = {
+                            50 = {
+                                country_event = { id = mty.2 hours = 6 }
+                            }
+                            50 = {
+                                country_event = { id = mty.4 hours = 6 }
+                            }
+                        }
+                    }
+                }
+            }
+
+        complete_effect = {                    # What happens when we activate the mission i.e. mission success?
+        }
+        ai_will_do = {
+            base = 10
+        }      
+    }
+}

@@ -1,0 +1,38 @@
+#CAL_centralization = {
+#	priority = 150
+#	visible_when_empty = no
+#	icon =  GFX_decision_category_usa_congress
+#	allowed = {
+#		always = yes
+#		original_tag = CAL
+#	}
+#	visible = {
+#		original_tag = CAL
+#	}
+#}
+japanese_influence_and_collaboration = {
+	priority = 160
+	visible_when_empty = no
+	icon =  GFX_decision_category_usa_congress
+	visible = {
+		original_tag = CAL
+		not={ has_country_flag = CAL_shotgundivorce }
+	}
+}
+california_cdlp_development = {
+	priority = 120
+	visible_when_empty = yes
+	icon =  GFX_decision_category_usa_congress
+	visible = {
+		tag = CAL
+		has_country_flag = founded_the_cdlp
+	}
+}
+breaking_away = {
+	priority = 150
+	visible_when_empty = no
+	icon =  GFX_decision_category_usa_congress
+	visible = {
+		original_tag = CAL
+		has_country_flag = CAL_shotgundivorce }
+	}

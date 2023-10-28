@@ -1,0 +1,582 @@
+Min_election_1936_decisions = {
+    Min_election_1936_decisions3 = {
+
+        icon = GFX_decision_generic_political_discourse
+
+        available = {
+            NOT = {
+                has_country_flag = mincampaignalready
+            }
+        }
+        complete_effect = {
+            set_country_flag = mincampaignalready
+            set_country_flag = minrndcoalition
+        }
+        visible = {
+            has_country_flag = Min_election_1936_decisions_flag
+        }
+
+        fire_only_once = yes
+
+        days_remove = 14
+        days_re_enable = 28123124124213 #should be good enough
+
+        cost = 40
+
+        remove_effect = {
+            add_to_variable = { 36rpopularity = 6 }
+            add_to_variable = { 36ndpopularity = 3 }
+            custom_effect_tooltip = 36rndpopularityboost5
+            clr_country_flag = mincampaignalready   
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+	Min_election_1936_decisions1 = {
+
+			icon = GFX_decision_generic_speech
+
+			available = {
+                NOT = {
+                    has_country_flag = mincampaignalready
+                }
+			}
+			complete_effect = {
+                set_country_flag = mincampaignalready
+            }
+			visible = {
+				has_country_flag = Min_election_1936_decisions_flag
+			}
+
+			fire_only_once = no
+
+			days_remove = 2
+			days_re_enable = 14
+
+			cost = 5
+
+
+			remove_effect = {
+                clr_country_flag = mincampaignalready 
+				random_list = {
+                    15 = {
+                        custom_effect_tooltip = 36rpopularityboost1
+                        add_to_variable = { 36rpopularity = 1 }
+                    }
+                    
+                    35 = {
+                        custom_effect_tooltip = 36rpopularityboost2
+                        add_to_variable = { 36rpopularity = 2 }
+                    }
+                    35 = {
+                        custom_effect_tooltip = 36rpopularityboost3
+                        add_to_variable = { 36rpopularity = 3 }
+                    }
+                    15 = {
+                        custom_effect_tooltip = 36rpopularityboost4
+                        add_to_variable = { 36rpopularity = 4 }
+                    }
+                }
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+	Min_election_1936_decisions2 = {
+
+        icon = GFX_decision_generic_speech
+
+        available = {
+            NOT = {
+                has_country_flag = mincampaignalready
+            }
+            custom_trigger_tooltip = {
+                tooltip = 36dflpopularity10
+                check_variable = { 36dflpopularity > 10 }
+            }
+        }
+        
+        complete_effect = {
+            set_country_flag = mincampaignalready
+        }
+        visible = {
+            has_country_flag = Min_election_1936_decisions_flag
+        }
+
+        fire_only_once = no
+
+        days_remove = 14
+        days_re_enable = 28
+
+        cost = 35
+
+
+        remove_effect = {
+            clr_country_flag = mincampaignalready 
+            random_list = {
+                50 = {
+                    custom_effect_tooltip = 36rpopularitysteal1
+                    add_to_variable = { 36rpopularity = 1 }
+                    add_to_variable = { 36dflpopularity = -1 }
+                }
+                30 = {
+                    custom_effect_tooltip = 36rpopularitysteal2
+                    add_to_variable = { 36rpopularity = 2 }
+                    add_to_variable = { 36dflpopularity = -2 }
+                }
+                15 = {
+                    custom_effect_tooltip = 36rpopularitysteal3
+                    add_to_variable = { 36rpopularity = 3 }
+                    add_to_variable = { 36dflpopularity = -3 }
+                }
+                5 = {
+                    custom_effect_tooltip = 36rpopularitycaughtstealing
+                    add_to_variable = { 36rpopularity = 4 }
+                    add_to_variable = { 36dflpopularity = -4 }
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    Min_election_1936_decisions4 = {
+
+        icon = GFX_decision_generic_speech
+
+        available = {
+            NOT = {
+                has_country_flag = mincampaignalready
+            }
+            custom_trigger_tooltip = {
+                tooltip = minrndcoalition_tooltip
+                NOT = {
+                    has_country_flag = minrndcoalition
+                }
+            }
+            custom_trigger_tooltip = {
+                tooltip = 36ndpopularity10
+                check_variable = { 36ndpopularity > 10 }
+            }
+        }
+        
+        complete_effect = {
+            set_country_flag = mincampaignalready
+        }
+        visible = {
+            has_country_flag = Min_election_1936_decisions_flag
+        }
+
+        fire_only_once = no
+
+        days_remove = 14
+        days_re_enable = 28
+
+        cost = 35
+
+
+        remove_effect = {
+            clr_country_flag = mincampaignalready 
+            random_list = {
+                50 = {
+                    custom_effect_tooltip = 36rpopularitysteal1nd
+                    add_to_variable = { 36rpopularity = 1 }
+                    add_to_variable = { 36ndpopularity = -1 }
+                }
+                30 = {
+                    custom_effect_tooltip = 36rpopularitysteal2nd
+                    add_to_variable = { 36rpopularity = 2 }
+                    add_to_variable = { 36ndpopularity = -2 }
+                }
+                15 = {
+                    custom_effect_tooltip = 36rpopularitysteal3nd
+                    add_to_variable = { 36rpopularity = 3 }
+                    add_to_variable = { 36ndpopularity = -3 }
+                }
+                5 = {
+                    custom_effect_tooltip = 36rpopularitycaughtstealingnd
+                    add_to_variable = { 36rpopularity = 4 }
+                    add_to_variable = { 36ndpopularity = -4 }
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+}
+Min_election_1936_decisionsdfl = {
+    Min_election_1936_decisionsdfl5 = {
+
+        icon = GFX_decision_generic_speech
+
+        available = {
+            NOT = {
+                has_country_flag = mincampaignalready
+            }
+        }
+        complete_effect = {
+            set_country_flag = mincampaignalready
+        }
+        visible = {
+            has_country_flag = Min_election_1936_decisions_flag1
+        }
+
+        fire_only_once = yes
+
+        days_remove = 14
+        days_re_enable = 14
+
+        cost = 20
+
+
+        remove_effect = {
+            clr_country_flag = mincampaignalready 
+            random_list = {
+                15 = {
+                    custom_effect_tooltip = 36dflpopularityboost2
+                    add_to_variable = { 36dflpopularity = 2 }
+                }
+                
+                35 = {
+                    custom_effect_tooltip = 36dflpopularityboost4
+                    add_to_variable = { 36dflpopularity = 4 }
+                }
+                35 = {
+                    custom_effect_tooltip = 36dflpopularityboost6
+                    add_to_variable = { 36dflpopularity = 6 }
+                }
+                15 = {
+                    custom_effect_tooltip = 36dflpopularityboost8
+                    add_to_variable = { 36dflpopularity = 8 }
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+	Min_election_1936_decisionsdfl1 = {
+
+			icon = GFX_decision_generic_speech
+
+			available = {
+                NOT = {
+                    has_country_flag = mincampaignalready
+                }
+			}
+			complete_effect = {
+                set_country_flag = mincampaignalready
+            }
+			visible = {
+				has_country_flag = Min_election_1936_decisions_flag1
+			}
+
+			fire_only_once = no
+
+			days_remove = 2
+			days_re_enable = 14
+
+			cost = 5
+
+
+			remove_effect = {
+                clr_country_flag = mincampaignalready 
+				random_list = {
+                    15 = {
+                        custom_effect_tooltip = 36dflpopularityboost1
+                        add_to_variable = { 36dflpopularity = 1 }
+                    }
+                    
+                    35 = {
+                        custom_effect_tooltip = 36dflpopularityboost2
+                        add_to_variable = { 36dflpopularity = 2 }
+                    }
+                    35 = {
+                        custom_effect_tooltip = 36dflpopularityboost3
+                        add_to_variable = { 36dflpopularity = 3 }
+                    }
+                    15 = {
+                        custom_effect_tooltip = 36dflpopularityboost4
+                        add_to_variable = { 36dflpopularity = 4 }
+                    }
+                }
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+	Min_election_1936_decisionsdfl2 = {
+
+        icon = GFX_decision_generic_speech
+
+        available = {
+            NOT = {
+                has_country_flag = mincampaignalready
+            }
+            custom_trigger_tooltip = {
+                tooltip = 36rpopularity10
+                check_variable = { 36rpopularity > 10 }
+            }
+        }
+        
+        complete_effect = {
+            set_country_flag = mincampaignalready
+        }
+        visible = {
+            has_country_flag = Min_election_1936_decisions_flag1
+        }
+
+        fire_only_once = no
+
+        days_remove = 14
+        days_re_enable = 28
+
+        cost = 35
+
+
+        remove_effect = {
+            clr_country_flag = mincampaignalready 
+            random_list = {
+                50 = {
+                    custom_effect_tooltip = 36dflpopularitysteal1
+                    add_to_variable = { 36rpopularity = -1 }
+                    add_to_variable = { 36dflpopularity = 1 }
+                }
+                30 = {
+                    custom_effect_tooltip = 36dflpopularitysteal2
+                    add_to_variable = { 36rpopularity = -2 }
+                    add_to_variable = { 36dflpopularity = 2 }
+                }
+                15 = {
+                    custom_effect_tooltip = 36dflpopularitysteal3
+                    add_to_variable = { 36rpopularity = -3 }
+                    add_to_variable = { 36dflpopularity = 3 }
+                }
+                5 = {
+                    custom_effect_tooltip = 36dflpopularitycaughtstealing
+                    add_to_variable = { 36rpopularity = -4 }
+                    add_to_variable = { 36dflpopularity = 4 }
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    Min_election_1936_decisionsdfl4 = {
+
+        icon = GFX_decision_generic_speech
+
+        available = {
+            NOT = {
+                has_country_flag = mincampaignalready
+            }
+            custom_trigger_tooltip = {
+                tooltip = minrndcoalition_tooltip
+                NOT = {
+                    has_country_flag = minrndcoalition
+                }
+            }
+            custom_trigger_tooltip = {
+                tooltip = 36ndpopularity10
+                check_variable = { 36ndpopularity > 10 }
+            }
+        }
+        
+        complete_effect = {
+            set_country_flag = mincampaignalready
+        }
+        visible = {
+            has_country_flag = Min_election_1936_decisions_flag1
+        }
+
+        fire_only_once = no
+
+        days_remove = 14
+        days_re_enable = 28
+
+        cost = 35
+
+
+        remove_effect = {
+            clr_country_flag = mincampaignalready 
+            random_list = {
+                50 = {
+                    custom_effect_tooltip = 36dflpopularitysteal1nd
+                    add_to_variable = { 36dflpopularity = 1 }
+                    add_to_variable = { 36ndpopularity = -1 }
+                }
+                30 = {
+                    custom_effect_tooltip = 36dflpopularitysteal2nd
+                    add_to_variable = { 36dflpopularity = 2 }
+                    add_to_variable = { 36ndpopularity = -2 }
+                }
+                15 = {
+                    custom_effect_tooltip = 36dflpopularitysteal3nd
+                    add_to_variable = { 36dflpopularity = 3 }
+                    add_to_variable = { 36ndpopularity = -3 }
+                }
+                5 = {
+                    custom_effect_tooltip = 36dflpopularitycaughtstealingnd
+                    add_to_variable = { 36dflpopularity = 4 }
+                    add_to_variable = { 36ndpopularity = -4 }
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+}
+Min_funding_iowa_decisions = {		#ID of category
+    Min_funding_iowa_decisions2 = {
+
+        icon = GFX_decision_revolt
+
+        available = {
+        }
+        complete_effect = {
+        }
+        visible = {
+            has_country_flag = min_funding_iowa_flag
+            IWA = {
+                exists = yes
+            }
+        }
+
+        fire_only_once = no
+
+        days_remove = 30
+        days_re_enable = 60
+
+        custom_cost_trigger = {
+            has_equipment = { infantry_equipment > 49 }
+        }
+        custom_cost_text = 50_infantry_equipment_1
+
+        remove_effect = {
+            hidden_effect = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment_1
+                    amount = -100
+                } 
+                IWA = {
+                    add_stability = 0.02
+                }
+            }
+            IWA = {
+                add_stability = -0.02
+                country_event = {
+                    days = 7
+                    id = min.7
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 0
+        }
+    }
+    Min_funding_iowa_decisions1 = {
+
+        icon = GFX_decision_generic_prepare_civil_war
+
+        available = {
+        }
+        complete_effect = {
+        }
+        visible = {
+            has_country_flag = min_funding_iowa_flag
+            DIA = {
+                exists = yes
+            }
+        }
+
+        fire_only_once = no
+
+        days_remove = 30
+        #days_re_enable = 1
+
+        custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 99 }
+		}
+        custom_cost_text = 100_infantry_equipment_1
+
+        remove_effect = {
+            send_equipment = { target = DIA type = infantry_equipment amount = 100 }  
+        }
+
+        ai_will_do = {
+            base = 0
+        }
+    }
+    Min_funding_iowa_decisions3 = {
+
+        icon = GFX_decision_infiltrate_state
+
+        available = {
+        }
+        complete_effect = {
+        }
+        visible = {
+            has_country_flag = min_funding_iowa_flag
+            DIA = { exists = yes }
+        }
+
+        fire_only_once = yes
+
+        days_remove = 5
+
+        cost = 0
+
+        remove_effect = {
+            add_ideas = IWA_volunteer_idea
+		    set_country_flag = may_send_volunteers_to_DIA
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    funding_iowa_BUT_WDC_MWAHAHA = {
+
+        icon = GFX_decision_infiltrate_state
+
+        available = {
+        }
+        complete_effect = {
+        }
+        visible = {
+           IWA = {
+            has_war_with = DBQ
+            has_war_with = DIA
+           }
+           tag = WDC
+        }
+
+        fire_only_once = yes
+
+        days_remove = 5
+
+        cost = 0
+
+        remove_effect = {
+            add_ideas = IWA_volunteer_idea
+		    set_country_flag = may_send_volunteers_to_IWA
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+}

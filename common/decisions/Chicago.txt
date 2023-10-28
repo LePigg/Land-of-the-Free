@@ -1,0 +1,2454 @@
+min_invasion2 = {
+	shid1 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied 
+			}
+			visible = {
+				has_country_flag = COM_unification1
+				has_country_flag = hostile_to_min
+				MIN = { 	
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				declare_war_on = { type = annex_everything    target = MIN }
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+		coolguy1 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied 
+			}
+			visible = {
+				has_country_flag = COM_unification1
+				has_country_flag = friendly_to_min
+				MIN = { 	
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				MIN = {
+					country_event = {
+						id = COM.29
+						days = 4
+					}
+				}
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+	shid2 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				is_neighbor_of = BMK
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+
+			visible = {
+				has_country_flag = COM_unification1			
+				BMK = { 	
+					exists = yes 
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				declare_war_on = { type = annex_everything    target = BMK }
+				clr_country_flag = war_occupied
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}		
+	shid3 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+			visible = {
+				has_country_flag = COM_unification1			
+				DBQ = { exists = yes }
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				DBQ = {
+					country_event = {
+						id = COM.32
+						days = 3
+					}
+				}
+				clr_country_flag = war_occupied 
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+		shid4 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+			visible = {
+				AND = {
+				has_country_flag = COM_unification1			
+				OR = {
+					IWA = {
+						exists = yes
+					}
+					DIA = {
+						exists = yes
+						}
+					}
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				declare_war_on = { type = annex_everything    target = IWA }
+				declare_war_on = { type = annex_everything    target = DIA }
+				clr_country_flag = war_occupied 
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+		shid5 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				NOT = {
+					has_country_flag = war_occupied
+				}
+				is_neighbor_of = OJB
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+			visible = {
+				has_country_flag = COM_unification1			
+				OJB = { exists = yes }
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				declare_war_on = {
+					target = OJB
+					type = annex_everything
+				}
+				clr_country_flag = war_occupied 
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+		shid4 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				NOT = {
+					has_country_flag = war_occupied
+				}
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+			visible = {
+				AND = {
+				has_country_flag = COM_unification1			
+				OR = {
+					IWA = {
+						exists = yes
+					}
+					DIA = {
+						exists = yes
+						}
+					}
+				}
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				declare_war_on = { type = annex_everything    target = IWA }
+				declare_war_on = { type = annex_everything    target = DIA }
+				clr_country_flag = war_occupied 
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}
+		shid6 = {
+
+			icon = generic_prepare_civil_war
+
+			available = {
+				has_war = no
+				NOT = {
+					has_country_flag = war_occupied
+				}
+				is_neighbor_of = NDA
+			}
+			complete_effect = {
+				set_country_flag = war_occupied
+			}
+			visible = {
+				has_country_flag = COM_unification1			
+				NDA = { exists = yes }
+			}
+
+			fire_only_once = no
+
+			days_remove = 7
+			days_re_enable = 180
+
+			cost = 5
+
+
+			remove_effect = {
+				declare_war_on = {
+					target = NDA
+					type = annex_everything
+				}
+				clr_country_flag = war_occupied 
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+		}						
+	}
+COM_funding_iowa_decisions = {		#ID of category
+    COM_funding_iowa_decisions1 = {
+
+        icon = GFX_decision_generic_prepare_civil_war
+
+        available = {
+        }
+        complete_effect = {
+        }
+        visible = {
+            has_country_flag = com_funding_iowa_flag
+			DBQ = { exists = yes }
+		}
+
+        fire_only_once = no
+
+        days_remove = 5
+        days_re_enable = 300
+
+        custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 99 }
+		}
+        custom_cost_text = 100_infantry_equipment_1
+
+        remove_effect = {
+            send_equipment = { target = DBQ type = infantry_equipment amount = 100 }  
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    COM_funding_iowa_decisions2 = {
+
+        icon = GFX_decision_revolt
+
+        available = {
+        }
+        complete_effect = {
+        }
+        visible = {
+            has_country_flag = com_funding_iowa_flag
+			DBQ = { exists = yes }
+        }
+
+        fire_only_once = yes
+
+        days_remove = 30
+        days_re_enable = 60
+
+        custom_cost_trigger = {
+			has_army_experience > 15
+		}
+		custom_cost_text = 15_xp_equipment_1 
+
+        remove_effect = {
+			custom_effect_tooltip = senddbqequipment
+			hidden_effect = {
+				army_experience = -5
+				DBQ = {
+					load_oob = DBQ_1938
+				}
+			}
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+	COM_funding_iowa_decisions3 = {
+
+        icon = GFX_decision_eng_blackshirt_march
+
+        available = {
+        }
+        complete_effect = {
+        }
+        visible = {
+            has_country_flag = com_funding_iowa_flag
+			DBQ = { exists = yes }
+        }
+
+        fire_only_once = yes
+
+        days_remove = 30
+        days_re_enable = 60
+
+        custom_cost_trigger = {
+			has_manpower > 4999
+		}
+		custom_cost_text = 5000_manpower_equipment_1
+
+        remove_effect = {
+			hidden_effect = {
+				add_manpower = -5000
+			}
+			DBQ = { add_manpower = 5000 }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+	COM_funding_iowa_decisions4 = {
+
+        icon = GFX_decision_infiltrate_state
+
+        available = {
+        }
+        complete_effect = {
+        }
+        visible = {
+            has_country_flag = com_funding_iowa_flag
+			DBQ = { exists = yes }
+        }
+
+        fire_only_once = yes
+
+        days_remove = 30
+        days_re_enable = 60
+
+
+        remove_effect = {
+			add_ideas = IWA_volunteer_idea1
+		    set_country_flag = may_send_volunteers_to_DBQ
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+}	
+com_purchases = {
+	com_weapons1 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_industry		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			has_country_flag = com_purchase
+		}		
+
+		cost = 50		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 60
+
+		days_re_enable = 1
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1500
+			}
+		}
+		modifier = {
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}
+	com_weapons2 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_industry		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			has_country_flag = com_purchase
+		}		
+
+		cost = 50		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 60
+
+		days_re_enable = 1
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 250
+			}
+		}
+		modifier = {
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}	
+	com_weapons3 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_industry		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			has_country_flag = com_purchase
+		}		
+
+		cost = 50		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 60
+
+		days_re_enable = 1
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 300
+			}
+		}
+		modifier = {
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}	
+	com_weapons4 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_industry		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			has_country_flag = com_purchase1
+		}		
+
+		cost = 75		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 60
+
+		days_re_enable = 1
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 300
+			}
+		}
+		modifier = {
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}	
+	com_weapons5 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_industry		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			has_country_flag = com_purchase1
+		}		
+
+		cost = 75		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 60
+
+		days_re_enable = 1
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment
+				amount = 150
+			}
+		}
+		modifier = {
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}	
+	com_weapons6 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_industry		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			has_country_flag = com_purchase1
+		}		
+
+		cost = 75		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 60
+
+		days_re_enable = 1
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = heavy_tank_equipment
+				amount = 100
+			}
+		}
+		modifier = {
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}		
+	com_weapons7 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_industry		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			has_country_flag = com_purchase2
+		}		
+
+		cost = 75		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 60
+
+		days_re_enable = 1
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 100
+			}
+		}
+		modifier = {
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}	
+	com_weapons8 = {		#ID of the decision, must not contain spaces!
+
+		icon = generic_industry		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			has_country_flag = com_purchase2
+		}		
+
+		cost = 75		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 60
+
+		days_re_enable = 1
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = cas_equipment
+				amount = 100
+			}
+		}
+		modifier = {
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0			
+		}
+	}	
+}
+
+COM_army_reform_decisions = {
+	COM_training_exercise = {
+		icon = GFX_decision_generic_prepare_civil_war
+
+		available = {
+			command_power > 19
+			has_war = no
+		}
+
+		visible = {
+			original_tag = COM
+			has_country_flag = COM_reform
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		days_remove = 7
+
+		days_re_enable = 200
+		complete_effect = {
+			add_command_power = -20
+		}
+
+		remove_effect = {
+			army_experience = 10
+		}
+		ai_will_do = {
+			base = 800
+		}
+	}
+	COM_convene_army = {
+		icon = GFX_decision_generic_prepare_civil_war
+
+		available = {
+			has_army_experience > 14
+		}
+
+		visible = {
+			original_tag = COM
+			has_country_flag = COM_reform
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		days_remove = 7
+
+		custom_cost_trigger = {
+			has_army_experience > 15
+		}
+		custom_cost_text = 15_xp_equipment_1 
+
+		days_re_enable = 200
+		complete_effect = {
+			army_experience = -15
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = COM_army_reform_points
+				value = 1
+				tooltip = COM_reform_point_added
+			}
+		}
+		ai_will_do = {
+			base = 800
+		}
+	}
+	COM_army_reform_stage1a = {
+
+		icon = GFX_decision_category_army_reform
+
+		available = {
+			NOT = {
+				has_country_flag = COM_already_reforming
+			}
+			check_variable = {
+			COM_army_reform_points > 0
+			}
+		}
+
+		visible = {
+			original_tag = COM
+			has_country_flag = COM_reform
+		}
+
+		custom_cost_trigger = {
+			COM_army_reform_points > 0
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 14
+
+		days_re_enable = 30
+
+		complete_effect = {
+			set_country_flag = COM_already_reforming
+			add_to_variable = {
+				var = COM_army_reform_points
+				value = -1
+				tooltip = COM_reform_point_added
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = COM_improving_red_army
+			add_to_variable = {  
+			var = COM_army_reform_org 
+			value = 0.05 
+			tooltip = org_modify
+			}
+			add_to_variable = { 
+			var = COM_army_reform_training_time 
+			value = 0.05 
+			tooltip = training_time_modify
+			}
+			add_to_variable = { 
+			var = COM_army_reform_experience_loss
+			value = -0.05
+			tooltip = losses_modify
+			}
+			clr_country_flag = COM_already_reforming
+		}
+
+		ai_will_do = {
+			base = 700
+		}
+	}
+	COM_army_reform_stage1b = {
+	
+	icon = GFX_decision_generic_decision
+	
+	available = {
+			NOT = {
+				has_country_flag = COM_already_reforming
+			}
+			check_variable = {
+				COM_army_reform_points > 0
+				}
+		}
+	
+		visible = {
+		original_tag = COM
+		has_country_flag = COM_reform
+		}
+	
+		custom_cost_trigger = {
+			COM_army_reform_points > 0
+		}
+	
+		cost = 0
+	
+		fire_only_once = yes
+	
+		days_remove = 14
+	
+		days_re_enable = 30
+	
+		complete_effect = {
+			set_country_flag = COM_already_reforming
+			add_to_variable = {
+				var = COM_army_reform_points
+				value = -1
+				tooltip = COM_reform_point_added
+			}
+		}
+	
+		remove_effect = {
+			custom_effect_tooltip = COM_improving_red_army
+			add_to_variable = {  
+			var = COM_army_reform_experience_gain_div
+			value = 0.05 
+			tooltip = experience_modify
+			}
+			add_to_variable = { 
+			var = COM_army_reform_max_planning
+			value = 0.05 
+			tooltip = max_planning_modify
+			}
+			add_to_variable = { 
+			var = COM_army_reform_experience_loss
+			value = -0.05
+			tooltip = losses_modify
+			}
+			clr_country_flag = COM_already_reforming
+		}
+	
+		ai_will_do = {
+			base = 700
+			}
+		}
+	COM_army_reform_desegregation = {
+	
+	icon = GFX_decision_generic_political_discourse
+	
+	available = {
+			NOT = {
+				has_country_flag = COM_already_reforming
+			}
+			check_variable = {
+				COM_army_reform_points > 0
+				}
+		}
+	
+		visible = {
+		original_tag = COM
+		has_country_flag = COM_reform
+		}
+	
+		custom_cost_trigger = {
+			COM_army_reform_points > 0
+		}
+	
+		cost = 10
+
+		fire_only_once = yes
+	
+		days_remove = 14
+	
+		days_re_enable = 30
+	
+		complete_effect = {
+			set_country_flag = COM_already_reforming
+			add_to_variable = {
+				var = COM_army_reform_points
+				value = -1
+				tooltip = COM_reform_point_added
+			}
+		}
+	
+		remove_effect = {
+			custom_effect_tooltip = COM_improving_red_army
+			add_to_variable = {  
+			var = COM_army_reform_political_power 
+			value = -0.05 
+			tooltip = political_power_modify
+			}
+			add_to_variable = { 
+			var = COM_army_reform_conscription_factor
+			value = 0.07
+			tooltip = conscription_factor_modify
+			}
+			add_to_variable = { 
+			var = COM_army_reform_morale
+			value = 0.02
+			tooltip = morale_modify
+			}
+			add_stability = 0.03
+			add_war_support = 0.1
+			clr_country_flag = COM_already_reforming
+		}
+	
+		ai_will_do = {
+			base = 700
+			}
+		}
+	COM_army_reform_commissars = {
+	
+		icon = GFX_decision_generic_political_discourse
+		
+		available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+					has_government = democratic_socialism
+				}
+				AND = {
+					has_completed_focus = COM_dealing_with_the_unrest
+					check_variable = {
+						COM_army_reform_points > 0
+						}
+				}
+			}
+		
+			visible = {
+			original_tag = COM
+			has_country_flag = COM_reform
+			}
+		
+			custom_cost_trigger = {
+				COM_army_reform_points > 0
+			}
+		
+			cost = 20
+		
+			fire_only_once = yes
+		
+			days_remove = 14
+		
+			days_re_enable = 30
+		
+			complete_effect = {
+				set_country_flag = COM_already_reforming
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+			}
+		
+			remove_effect = {
+				custom_effect_tooltip = COM_improving_red_army
+				add_to_variable = {  
+				var = COM_army_reform_political_power 
+				value = 0.1
+				tooltip = political_power_modify
+				}
+				add_to_variable = { 
+				var = COM_army_reform_reinforce_rate
+				value = 0.02
+				tooltip = reinforce_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_org
+					value = -0.02
+					tooltip = org_modify
+				}
+				add_to_variable = { 
+				var = COM_army_reform_morale
+				value = 0.05
+				tooltip = morale_modify
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_corps_commander_role = {
+					character = COM_john_gates
+					skill = 1
+					traits = {
+						politically_connected
+						militia_leader
+						harsh_leader
+					}
+					attack_skill = 2
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+				}
+				clr_country_flag = COM_already_reforming
+				hidden_effect = {
+					load_oob = COM_police
+				}
+			}
+		
+			ai_will_do = {
+				base = 700
+				modifier = { has_government = communism factor = 1000 }
+				}
+		}
+	COM_army_reform_stage2a = {
+		icon = GFX_decision_generic_army_support
+
+		available = {
+			NOT = {
+				has_country_flag = COM_already_reforming
+			}
+			AND = {
+			check_variable = {
+				COM_army_reform_points > 0
+			}
+			command_power > 19	
+			}
+		}
+
+		visible = {
+			tag = COM
+			has_country_flag = COM_reform_stage2
+		}
+
+		fire_only_once = yes
+
+		days_remove = 14
+		
+		days_re_enable = 30
+
+		complete_effect = {
+			add_to_variable = {
+				var = COM_army_reform_points
+				value = -1
+				tooltip = COM_reform_point_added
+			}
+			add_command_power = -20
+			set_country_flag = COM_already_reforming
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = COM_improving_red_army
+			add_to_variable = {
+				var = COM_army_reform_experience_gain_leader 
+				value = 0.05
+				tooltip = leader_experience_modify
+			}
+			add_to_variable = {
+				var = COM_army_reform_experience_gain_div
+				value = 0.05
+				tooltip = experience_modify
+			}
+			add_to_variable = {
+				var = COM_army_reform_planning_speed
+				value = 0.05
+				tooltip = planning_speed_modify
+			}
+			add_to_variable = {
+				var = COM_army_reform_max_planning
+				value = 0.05
+				tooltip = max_planning_modify
+				}
+			clr_country_flag = COM_already_reforming	
+			}
+			ai_will_do = {
+				base = 700
+			}
+		}
+		COM_army_reform_stage2b = {
+			icon = GFX_decision_oppression
+	
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				AND = {
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+			}
+			}
+	
+			visible = {
+				tag = COM
+				has_country_flag = COM_reform_stage2
+			}
+			custom_cost_trigger = {
+				manpower > 1000
+			}
+	
+			fire_only_once = yes
+	
+			days_remove = 14
+			
+			days_re_enable = 30
+	
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				add_manpower = -9451
+				set_country_flag = COM_already_reforming
+			}
+	
+			remove_effect = {
+				custom_effect_tooltip = COM_improving_red_army
+				add_to_variable = {
+					var = COM_army_reform_org
+					value = 0.05
+					tooltip = org_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_defence
+					value = 0.05
+					tooltip = defense_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_attack
+					value = 0.05
+					tooltip = attack_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_experience_loss
+					value = -0.05
+					tooltip = losses_modify
+					}
+				add_to_variable = {
+					var = COM_army_reform_training_time
+					value = 0.05
+					tooltip = training_time_modify
+				}
+				clr_country_flag = COM_already_reforming	
+				}
+				ai_will_do = {
+					base = 700
+				}
+		}
+		COM_army_reform_irregular1a = {
+			icon = GFX_decision_generic_civil_support
+
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_irregular1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 30
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				custom_effect_tooltip = COM_improving_red_army
+				add_to_variable = {
+					var = COM_army_reform_org
+					value = -0.02
+					tooltip = org_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_morale
+					value = 0.03
+					tooltip = morale_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_conscription_factor
+					value = 0.02
+					tooltip = conscription_factor_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_training_time
+					value = -0.05
+					tooltip = training_time_modify
+				}
+			}
+			ai_will_do = {
+				base = 700
+			}
+		}
+		COM_army_reform_irregular1b = {
+			icon = GFX_decision_eng_trade_unions_demand
+
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_irregular1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 10
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				custom_effect_tooltip = COM_improving_red_army
+				add_to_variable = {
+					var = COM_army_reform_conscription
+					value = 0.002
+					tooltip = conscription_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_political_power
+					value = 0.05
+					tooltip = political_power_modify
+				}
+				IF = {
+					limit = {
+						NOT = {
+							has_idea = COM_local_initiatives
+						}
+					}
+					add_ideas = COM_local_initiatives1
+				}
+				IF = {
+					limit = {
+						has_idea = COM_local_initiatives
+					}
+					swap_ideas = {
+						remove_idea = COM_local_initiatives
+						add_idea = COM_local_initiatives2
+					}
+				}
+				add_stability = -0.1
+				add_war_support = 0.15
+			}
+			ai_will_do = {
+				base = 700
+			}
+		}
+		COM_army_reform_irregular1c = {
+			icon = GFX_decision_generic_industry
+
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_irregular1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 0
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				IF = {
+					limit = {
+						NOT = {
+							OR = {
+							has_idea = COM_local_initiatives
+							has_idea = COM_local_initiatives1
+							}
+						}
+					}
+					add_ideas = COM_local_initiatives
+				}
+				IF = {
+					limit = {
+						has_idea = COM_local_initiatives1
+					}
+					swap_ideas = {
+						remove_idea = COM_local_initiatives1
+						add_idea = COM_local_initiatives2
+					}
+				}
+			}
+			ai_will_do = {
+				base = 700
+			}
+		}
+		COM_army_reform_irregular1d = {
+			icon = GFX_decision_generic_prepare_civil_war
+
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+				command_power > 19
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_irregular1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 0
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				add_command_power = -20
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				custom_effect_tooltip = COM_improving_red_army
+				add_to_variable = {
+					var = COM_army_reform_attack
+					value = 0.03
+					tooltip = attack_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_defence
+					value = 0.03
+					tooltip = defense_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_speed
+					value = 0.05
+					tooltip = speed_modify
+				}
+				add_war_support = 0.10
+				add_popularity = {
+					ideology = ROOT
+					popularity = 0.1
+				}
+			}
+			ai_will_do = {
+				base = 700
+			}
+		}
+		COM_army_reform_irregular1e = {
+			icon = GFX_decision_generic_prepare_civil_war
+
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_irregular1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 0
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				add_command_power = -20
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				custom_effect_tooltip = COM_improving_red_army
+				add_to_variable = {
+					var = COM_army_reform_infantry_attack
+					value = 0.04
+					tooltip = inf_attack_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_infantry_defence
+					value = 0.04
+					tooltip = inf_defense_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_experience_gain_div
+					value = 0.1
+					tooltip = experience_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_experience_loss
+					value = -0.1
+					tooltip = losses_modify
+				}
+			}
+			ai_will_do = {
+				base = 700
+			}
+		}
+		COM_army_reform_professional1b = {
+			icon = GFX_decision_generic_army_support
+
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_professional1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 50
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				add_command_power = -50
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				custom_effect_tooltip = COM_improving_red_army
+				add_to_variable = {
+					var = COM_army_reform_experience_loss 
+					value = -0.1
+					tooltip = losses_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_conscription_factor
+					value = 0.02
+					tooltip = conscription_factor_modify
+				}
+				add_ideas = COM_women
+				add_war_support = 0.05
+			}
+			ai_will_do = {
+				base = 700
+			}
+		}
+		COM_army_reform_professional1a = {
+			icon = GFX_decision_generic_army_support
+
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+				command_power > 19
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_professional1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 0
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				add_command_power = -20
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				custom_effect_tooltip = COM_improving_red_army
+				add_to_variable = {
+					var = COM_army_reform_experience_gain_leader
+					value = 0.05
+					tooltip = leader_experience_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_experience_gain_div
+					value = 0.05
+					tooltip = experience_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_planning_speed
+					value = 0.1
+					tooltip = planning_speed_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_max_planning
+					value = 0.1
+					tooltip = max_planning_modify
+				}
+			}
+			ai_will_do = {
+				base = 700
+			}
+		}
+		COM_army_reform_professional1c = {
+			icon = GFX_decision_generic_operation
+
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_professional1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 0
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				custom_effect_tooltip = COM_improving_red_army
+				add_to_variable = {
+					var = COM_army_reform_supply_consumption
+					value = -0.1
+					tooltip = supply_consum_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_out_supply
+					value = -0.1
+					tooltip = out_supply_modify
+				}
+			}
+			ai_will_do = {
+				base = 700
+			}
+		}
+		COM_army_reform_professional1d = {
+			icon = GFX_decision_generic_nationalism
+
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_professional1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 0
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				custom_effect_tooltip = COM_improving_red_army
+				add_to_variable = {
+					var = COM_army_reform_org
+					value = 0.1
+					tooltip = org_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_experience_gain_div
+					value = 0.05
+					tooltip = experience_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_training_time
+					value = 0.1
+					tooltip = training_time_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_conscription_factor
+					value = -0.05
+					tooltip = conscription_factor_modify
+				}
+			}
+			ai_will_do = {
+				base = 700
+			}
+		}
+		COM_army_reform_professional1e = {
+			icon = GFX_decision_eng_puppet_usa
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_professional1
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 0
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				custom_effect_tooltip = COM_improving_red_army
+				load_oob = COM_1937
+				add_ideas = COM_air
+			}
+			ai_will_do = {
+				base = 700
+			}
+		}
+		COM_army_reform_irregular2a = {
+			icon = GFX_decision_generic_police_action
+
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+				ai_will_do = {
+					base = 700
+				}
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_irregular2
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 10
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				custom_effect_tooltip = COM_improving_red_army
+				add_to_variable = {
+					var = COM_army_reform_morale
+					value = 0.02
+					tooltip = morale_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_political_power
+					value = 0.05
+					tooltip = political_power_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_command_power
+					value = 0.05
+					tooltip = command_power_gain_modify
+				}
+				IF = {
+					limit = {
+						has_dlc = "La Resistance"
+					}
+					add_ideas = COM_CIA_lar
+				}
+				IF = {
+					limit = {
+						NOT = {
+							has_dlc = "La Resistance"
+						}
+						add_ideas = COM_poor_mans_CIA
+					}
+				}
+				add_popularity = {
+					ideology =  communism
+					popularity = 0.10
+				}
+			}
+			ai_will_do = {
+				base = 700
+			}
+		}
+		COM_army_reform_irregular2b = {
+			icon = GFX_decision_generic_ignite_civil_war
+
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+				command_power > 19
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_irregular2
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 50
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				add_command_power = -20
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				custom_effect_tooltip = COM_improving_red_army
+				add_to_variable = {
+					var = COM_army_reform_special_attack
+					value = 0.08
+					tooltip = special_attack_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_special_defence
+					value = 0.08
+					tooltip = special_defense_modify
+				}
+				set_technology = {
+					marines = 1
+				}
+				hidden_effect = {
+					load_oob = COM_1938
+				}
+			}
+			ai_will_do = {
+				base = 750
+			}
+		}
+		COM_army_reform_irregular2c = {
+			icon = GFX_decision_generic_scorched_earth
+
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_irregular2
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 10
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				add_to_variable = {
+					var = COM_army_reform_supply_grace
+					value = 48
+					tooltip = supply_grace_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_supply_consumption
+					value = -0.05
+					tooltip = supply_consum_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_defence
+					value = 0.05
+					tooltip = defense_modify
+				}
+				add_ideas = COM_guerilla
+			}
+			ai_will_do = {
+				base = 700
+			}
+		}
+		COM_army_reform_irregular2d = {
+			icon = GFX_decision_eng_blackshirt_march
+
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+				command_power > 19
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_irregular2
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 0
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				add_command_power = -20
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				custom_effect_tooltip = COM_improving_red_army
+				add_to_variable = {
+					var = COM_army_reform_training_time
+					value = -0.1
+					tooltip = training_time_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_conscription_factor
+					value = 0.05
+					tooltip = conscription_factor_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_reinforce_rate
+					value = 0.02
+					tooltip = reinforce_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_morale
+					value = 0.02
+					tooltip = morale_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_org
+					value = -0.03
+					tooltip = org_modify
+				}
+				add_manpower = 16000
+				add_war_support = -0.10
+			}
+			ai_will_do = {
+				base = 700
+			}
+		}
+		COM_army_reform_professional2a = {
+			icon = GFX_decision_generic_tank
+
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+				command_power > 9
+				DBQ_jacob_devers = {
+					is_unit_leader = yes
+				}
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_professional2
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 10
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				add_command_power = -10
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				custom_effect_tooltip = COM_improving_red_army
+				add_to_variable = {
+					var = COM_army_reform_attack
+					value = 0.05
+					tooltip = attack_modify
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_equipment
+					amount = 100
+				}
+				load_oob = COM_1939
+				add_tech_bonus = {
+					bonus = 1
+					uses = 2
+					category = armor
+				}
+			}
+			ai_will_do = {
+				base = 750
+			}
+		}
+		COM_army_reform_professional2b = {
+			icon = GFX_decision_generic_ignite_civil_war
+
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_professional2
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 0
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				custom_effect_tooltip = COM_improving_red_army
+				add_to_variable = {
+					var = COM_army_reform_attack
+					value = 0.03
+					tooltip = attack_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_training_time
+					value = 0.05
+					tooltip = training_time_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_org
+					value = 0.03
+					tooltip = org_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_max_planning
+					value = 0.10
+					tooltip = max_planning_modify
+				}
+				add_tech_bonus = {
+					bonus = 2
+					uses = 2
+					category = artillery
+				}
+				IF = {
+					limit = {
+						has_idea = COM_air
+					}
+					swap_ideas = {
+						remove_idea = COM_air
+						add_idea = COM_air2
+					}
+				}
+			}
+			ai_will_do = {
+				base = 700
+			}
+		}
+		COM_army_reform_professional2c = {
+			icon = GFX_decision_generic_wreckers
+
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_professional2
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 0
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				custom_effect_tooltip = COM_improving_red_army
+				add_to_variable = {
+					var = COM_army_reform_conscription_factor
+					value = -0.02
+					tooltip = conscription_factor_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_speed
+					value = 0.05
+					tooltip = speed_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_reinforce_rate
+					value = 0.02
+					tooltip = reinforce_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_motorized
+					value = 0.05
+					tooltip = mot_attack_modify
+				}
+				add_to_variable = {
+					var = COM_army_reform_planning_speed
+					value = 0.05
+					tooltip = planning_speed_modify
+				}
+			}
+			ai_will_do = {
+				base = 700
+			}
+		}
+		COM_army_reform_professional2d = {
+			icon = GFX_decision_eng_propaganda_campaigns
+
+			available = {
+				NOT = {
+					has_country_flag = COM_already_reforming
+				}
+				check_variable = {
+					COM_army_reform_points > 0
+				}
+			}
+
+			visible = {
+				original_tag = COM
+				has_country_flag = COM_professional2
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+
+			days_re_enable = 30
+			
+			cost = 50
+
+			complete_effect = {
+				add_to_variable = {
+					var = COM_army_reform_points
+					value = -1
+					tooltip = COM_reform_point_added
+				}
+				set_country_flag = COM_already_reforming
+			}
+
+			remove_effect = {
+				clr_country_flag = COM_already_reforming
+				custom_effect_tooltip = COM_improving_red_army
+				add_to_variable = {
+					var = COM_army_reform_morale
+					value = 0.05
+					tooltip = morale_modify
+				}
+				add_stability = 0.10
+				add_war_support = 0.15
+				add_ideas = COM_propaganda
+			}
+			ai_will_do = {
+				base = 700
+			}	
+		}				
+	}
+	chicago_unrest = {                               # This is our category                            # This is our category
+     destroy_fed = {                           # This is our mission id       # This mission is only allowed for Poland. Other countries will not be able to see it or activate it. Checks ONLY at the game's start and when loading a save, meant for optimisation.
+    	  available = {	
+           OR = {             # Available here means as much as goal because:             # Available here means as much as goal because:
+		  divisions_in_state = {
+			 type = infantry
+			 size > 5
+			 state = 164
+		 	}
+			is_ai = yes
+			}		
+		}    
+		highlight_states = {
+			state = 164
+		} 
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		fire_only_once = yes
+
+		activation = {
+			has_completed_focus = COM_hunting_down_the_resistance
+		}	# we can only finish this mission if we control state 64 (Berlin)
+          is_good = yes          
+		  days_mission_timeout = 30             # This mission is color coded to be a positive thing (not a crisis)
+          selectable_mission = yes              # This mission will complete when the player selects the mission rather than completing automatically
+          complete_effect = {             # How many days before the mission fails?                 # What happens when we fail the mission?
+            custom_effect_tooltip = COM_insurgency_greatly_weakened
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = COM_frequent_sabotage
+					add_idea = COM_frequent_sabotage2
+				}
+			}             # Lose 50 PP
+          }
+          timeout_effect = {                 # What happens when we activate the mission i.e. mission success?
+            add_stability = -0.05
+			add_manpower = -500
+			activate_mission = destroy_fed                  # Gain 50 PP
+          }
+     }
+}		
+

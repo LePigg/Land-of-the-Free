@@ -1,0 +1,187 @@
+stl_alcoholism_decisions = {
+    stl_alcoholism_decisions_1 = {		#ID of the decision, must not contain spaces!
+
+    icon = GFX_decision_hol_draw_up_staff_plans		#The left side icon to show for this decision.
+    
+    # CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+    
+    available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+        has_idea = alcoholism
+    }
+    
+    fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+    days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+    visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+        has_country_flag = unlock_alcoholism_decisions
+        OR = {
+            has_idea = alcoholism
+            has_idea = alcoholism2
+            has_idea = alcoholism3
+        }
+    }		
+    modifier = {
+        political_power_factor = -0.05
+    }
+    allowed = {
+        OR = {
+            tag = TXL
+            tag = GPS
+            #tag = SEQ
+            tag = KAN
+            tag = STL
+            tag = MSS
+        }
+    }
+
+    cost = 10		#The cost to execute the decision, by default its political power.
+    
+    days_remove = 30
+
+    days_re_enable = 70
+    # EFFECTS OF THIS DECISION/MISSION
+
+    complete_effect = {		#The effects to execute once the envelope icon is clicked.
+        random_list = {
+            50 = {
+                country_event = stl.7 
+            }
+            50 = {
+                remove_ideas = alcoholism
+                add_stability = 0.05
+            }
+        }
+        
+    }
+    
+
+    ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+        factor = 100000			
+    }
+}    
+    stl_alcoholism_decisions_2 = {		#ID of the decision, must not contain spaces!
+
+    icon = GFX_decision_hol_draw_up_staff_plans		#The left side icon to show for this decision.
+    
+    # CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+    
+    available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+        has_idea = alcoholism2
+    }
+    
+    fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+    days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+    visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+        has_country_flag = unlock_alcoholism_decisions
+        OR = {
+            has_idea = alcoholism
+            has_idea = alcoholism2
+            has_idea = alcoholism3
+        }
+    }		
+    modifier = {
+        political_power_factor = -0.05
+    }
+    allowed = {
+        OR = {
+            tag = TXL
+            tag = GPS
+            #tag = SEQ
+            tag = KAN
+            tag = STL
+            tag = MSS
+        }
+    }
+
+    cost = 10		#The cost to execute the decision, by default its political power.
+    
+    days_remove = 30
+
+    days_re_enable = 70
+    # EFFECTS OF THIS DECISION/MISSION
+
+    complete_effect = {		#The effects to execute once the envelope icon is clicked.
+        random_list = {
+            50 = {
+                country_event = stl.7 
+            }
+            50 = {
+                swap_ideas = {
+                    remove_idea = alcoholism2
+                    add_idea = alcoholism
+                }
+            }
+        }
+        
+    }
+    
+
+    ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+        factor = 100000			
+    }
+}    
+	stl_alcoholism_decisions_3 = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_hol_draw_up_staff_plans		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			has_idea = alcoholism3
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			has_country_flag = unlock_alcoholism_decisions
+            OR = {
+                has_idea = alcoholism
+                has_idea = alcoholism2
+                has_idea = alcoholism3
+            }
+		}		
+		modifier = {
+			political_power_factor = -0.05
+		}
+		allowed = {
+			OR = {
+				tag = TXL
+				tag = GPS
+				#tag = SEQ
+				tag = KAN
+				tag = STL
+				tag = MSS
+			}
+		}
+
+		cost = 10		#The cost to execute the decision, by default its political power.
+		
+		days_remove = 30
+
+		days_re_enable = 70
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+            random_list = {
+                50 = {
+                    country_event = stl.7 
+                }
+                50 = {
+                    swap_ideas = {
+                        remove_idea = alcoholism3
+                        add_idea = alcoholism2
+                    }
+                }
+            }
+			
+		}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 100000			
+		}
+	}
+    
+}

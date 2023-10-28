@@ -1,0 +1,341 @@
+elk_panic_category = {
+	elk_panic_category1 = {
+
+			icon = GFX_decision_hol_exchange_intelligence_data
+
+			available = {
+				#check_variable = { ARARebellionPreparedness > 29.99 }
+			}
+			complete_effect = {
+				
+			}
+			visible = {
+			}
+
+			fire_only_once = yes
+
+			days_remove = 14
+			#days_re_enable = 1
+
+			cost = 30
+
+
+			remove_effect = {
+                add_to_variable = { elk_bruh = 1 }
+			}
+
+			ai_will_do = {
+				base = 1000
+			}
+	}
+    elk_panic_category2 = {
+
+        icon = GFX_decision_generic_army_support
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+        }
+
+        fire_only_once = yes
+
+        days_remove = 14
+        #days_re_enable = 1
+
+        custom_cost_trigger = {
+            has_manpower > 4999
+        }
+
+        custom_cost_text = 5000_manpower_equipment_1
+
+        remove_effect = {
+            add_to_variable = { elk_bruh = 1 }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+}
+    elk_panic_category_ca = {
+
+        icon = GFX_decision_infiltrate_state
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            814 = {
+                is_demilitarized_zone = yes
+            }
+        }
+
+        fire_only_once = no
+
+        days_remove = 14
+        days_re_enable = 7
+
+        custom_cost_trigger = {
+            command_power > 14.99
+        }
+        custom_cost_text = 15_cp_equipment_1
+
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+        }
+        remove_effect = {
+            random_list = {
+                80 = {
+                    country_event = { days = 1 id = elk.13 }
+                }
+                20 = {
+                    country_event = { days = 1 id = elk.12 }
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    elk_panic_category_or = {
+
+        icon = GFX_decision_infiltrate_state
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            385 = {
+                is_demilitarized_zone = yes
+            }
+        }
+
+        fire_only_once = no
+
+        days_remove = 14
+        days_re_enable = 7
+
+        custom_cost_trigger = {
+            command_power > 14.99
+        }
+        custom_cost_text = 15_cp_equipment_1
+
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+        }
+        remove_effect = {
+            random_list = {
+                60 = {
+                    country_event = { days = 1 id = elk.14 }
+                }
+                40 = {
+                    country_event = { days = 1 id = elk.12 }
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    elk_panic_category_wa = {
+
+        icon = GFX_decision_infiltrate_state
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            828 = {
+                is_demilitarized_zone = yes
+            }
+        }
+
+        fire_only_once = no
+
+        days_remove = 14
+        days_re_enable = 7
+
+        custom_cost_trigger = {
+            command_power > 14.99
+        }
+        custom_cost_text = 15_cp_equipment_1
+
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+        }
+        remove_effect = {
+            random_list = {
+                25 = {
+                    country_event = { days = 1 id = elk.15 }
+                }
+                75 = {
+                    country_event = { days = 1 id = elk.12 }
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    elk_panic_category_id = {
+
+        icon = GFX_decision_infiltrate_state
+
+        available = {
+            #check_variable = { ARARebellionPreparedness > 29.99 }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            387 = {
+                is_demilitarized_zone = yes
+            }
+        }
+
+        fire_only_once = no
+
+        days_remove = 14
+        days_re_enable = 7
+
+        custom_cost_trigger = {
+            command_power > 14.99
+        }
+        custom_cost_text = 15_cp_equipment_1
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+        }
+
+        remove_effect = {
+            
+            random_list = {
+                50 = {
+                    country_event = { days = 1 id = elk.16 }
+                }
+                50 = {
+                    country_event = { days = 1 id = elk.12 }
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    elk_panic_category_death = {		#ID of the mission, must not contain spaces!
+
+		icon = GFX_decision_icon_default		#The left side icon to show for this mission.
+		days_mission_timeout = 130	#The amount of days remaining until the mission is removed.
+		is_good = no		#Determines if the timeout bar will be red or green, cosmetic setting only, has no actual impact on the mission
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		available = {
+            custom_trigger_tooltip = {
+                tooltip = elk_secureshit
+                387 = {
+                    is_demilitarized_zone = no
+                }
+                828 = {
+                    is_demilitarized_zone = no
+                }
+                385 = {
+                    is_demilitarized_zone = no
+                }
+                814 = {
+                    is_demilitarized_zone = no
+                }
+            }
+            custom_trigger_tooltip = {
+                tooltip = elk_secureshit1
+                check_variable = { elk_bruh > 1.99 }    
+            }
+        }
+		visible = {
+            
+        }
+        activation = {
+            has_country_flag = elk_crisis
+        }
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		
+		# EFFECTS OF THIS DECISION/MISSION
+
+		timeout_effect = {		#The effects to execute once the mission timer expires.
+			custom_effect_tooltip = elk_gameover
+            clr_country_flag = elk_crisis
+            hidden_effect = {
+                country_event = { days = 5 id = elk.9 }
+                813 = {
+                    set_demilitarized_zone = no
+                }
+                814 = {
+                    set_demilitarized_zone = no
+                }
+                844 = {
+                    set_demilitarized_zone = no
+                }
+                379 = {
+                    set_demilitarized_zone = no
+                }
+                827 = {
+                    set_demilitarized_zone = no
+                }
+                385 = {
+                    set_demilitarized_zone = no
+                }
+                387 = {
+                    set_demilitarized_zone = no
+                }
+                386 = {
+                    set_demilitarized_zone = no
+                }
+                829 = {
+                    set_demilitarized_zone = no
+                }
+                828 = {
+                    set_demilitarized_zone = no
+                }
+                845 = {
+                    set_demilitarized_zone = no
+                }
+            }
+		}
+		complete_effect  = {
+            custom_effect_tooltip = elk_gamenotover
+			clr_country_flag = elk_crisis
+            add_stability = 0.1
+            country_event = { id = elk.17 }
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the mission.
+			factor = 100
+		}
+	}
+}
+

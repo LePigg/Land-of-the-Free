@@ -1,0 +1,293 @@
+
+IEF_invasion1 = {	
+	IEF_attack_decisions1 = {
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_war = no
+			is_neighbor_of = MIN
+			NOT = {
+				has_country_flag = war_occupied
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = war_occupied 
+		}
+
+		visible = {
+			has_country_flag = IEF_invasion_flag1
+			MIN = { 	
+				exists = yes 
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 14
+
+		days_re_enable = 180
+
+		cost = 5
+
+
+		remove_effect = {
+			will_lead_to_war_with = MIN
+			declare_war_on = { type = annex_everything    target = MIN }
+			clr_country_flag = war_occupied
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+	}	
+	IEF_attack_decisions2 = {
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_war = no
+			is_neighbor_of = OJB
+			NOT = {
+				has_country_flag = war_occupied
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = war_occupied 
+		}
+
+		visible = {
+			has_country_flag = IEF_invasion_flag1
+			OJB = { 	
+				exists = yes 
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 14
+
+		days_re_enable = 180
+
+		cost = 5
+
+
+		remove_effect = {
+			will_lead_to_war_with = OJB
+			declare_war_on = { type = annex_everything    target = OJB }
+			clr_country_flag = war_occupied
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	IEF_attack_decisions3 = {
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_war = no
+			is_neighbor_of = BMK
+			NOT = {
+				has_country_flag = war_occupied
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = war_occupied 
+		}
+
+		visible = {
+			has_country_flag = IEF_invasion_flag1
+			BMK = { 	
+				exists = yes 
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 14
+
+		days_re_enable = 180
+
+		cost = 5
+
+
+		remove_effect = {
+			will_lead_to_war_with = BMK
+			declare_war_on = { type = annex_everything    target = BMK }
+			clr_country_flag = war_occupied
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	IEF_attack_decisions4 = {
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_war = no
+			is_neighbor_of = NDA
+			NOT = {
+				has_country_flag = war_occupied
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = war_occupied 
+		}
+
+		visible = {
+			has_country_flag = IEF_invasion_flag1
+			NDA = { 	
+				exists = yes 
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 14
+
+		days_re_enable = 180
+
+		cost = 5
+
+
+		remove_effect = {
+			will_lead_to_war_with = NDA
+			declare_war_on = { type = annex_everything    target = NDA }
+			clr_country_flag = war_occupied
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	IEF_attack_decisions5 = {
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_war = no
+			is_neighbor_of = IWA
+			NOT = {
+				has_country_flag = war_occupied
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = war_occupied 
+		}
+
+		visible = {
+			has_country_flag = IEF_invasion_flag1
+			IWA = { 	
+				exists = yes 
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 14
+
+		days_re_enable = 180
+
+		cost = 5
+
+
+		remove_effect = {
+			IWA = {
+				country_event = {
+					id = IEF.28
+					days = 3
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	IEF_attack_decisions6 = {
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_war = no
+			is_neighbor_of = DIA
+			NOT = {
+				has_country_flag = war_occupied
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = war_occupied 
+		}
+
+		visible = {
+			has_country_flag = IEF_invasion_flag1
+			DIA = { 	
+				exists = yes 
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 14
+
+		days_re_enable = 180
+
+		cost = 5
+
+
+		remove_effect = {
+			will_lead_to_war_with = DIA
+			declare_war_on = { type = annex_everything    target = DIA }
+			clr_country_flag = war_occupied
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	IEF_attack_decisions7 = {
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_war = no
+			is_neighbor_of = DBQ
+			NOT = {
+				has_country_flag = war_occupied
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = war_occupied 
+		}
+
+		visible = {
+			has_country_flag = IEF_invasion_flag1
+			DBQ = { 	
+				exists = yes 
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 14
+
+		days_re_enable = 180
+
+		cost = 5
+
+
+		remove_effect = {
+			will_lead_to_war_with = DBQ
+			declare_war_on = { type = annex_everything    target = DBQ }
+			clr_country_flag = war_occupied
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+	}
+}

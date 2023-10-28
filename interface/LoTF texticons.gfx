@@ -1,0 +1,19 @@
+#GOD BLESS KAISERREICH 
+#THIS MAY OR MAY NOT HAVE BEEN STOLEN FROM KAISERREICH
+spriteTypes = {
+	spriteType = {
+		name = "GFX_rifle_texticon"
+		texturefile = "gfx/texticons/infequip_small.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_support_texticon"
+		texturefile = "gfx/texticons/support_texticon.png"
+		legacy_lazy_load = no
+	}
+    spriteType = {
+		name = "GFX_capital_texticon"
+		texturefile = "gfx/texticons/capital.png"
+		legacy_lazy_load = no
+	}
+}

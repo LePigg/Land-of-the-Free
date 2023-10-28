@@ -1,0 +1,379 @@
+reunification_category = {
+
+	total_reunification = {
+		icon = generic_form_nation
+		available = {
+			
+		}
+		fire_only_once = yes
+		visible = {	
+            or = {
+			original_tag = SRR
+			original_tag = EUR
+			original_tag = BMK
+			original_tag = MIN
+			original_tag = IWA
+			original_tag = COM
+			original_tag = ERR
+			original_tag = KAN
+			original_tag = TXL
+			original_tag = ANR
+			original_tag = SRT
+			original_tag = CHR
+			original_tag = MSS
+			original_tag = GPS
+			original_tag = ELK
+			original_tag = SEA
+			original_tag = ARA
+			original_tag = CAL
+			original_tag = LAC
+			original_tag = SKN
+			original_tag = MIL
+            }
+		}		
+		allowed = {
+			OR = {
+			original_tag = SRR
+			original_tag = EUR
+			original_tag = BMK
+			original_tag = MIN
+			original_tag = IWA
+			original_tag = COM
+			original_tag = ERR
+			original_tag = KAN
+			original_tag = TXL
+			original_tag = ANR
+			original_tag = SRT
+			original_tag = CHR
+			original_tag = MSS
+			original_tag = GPS
+			original_tag = ELK
+			original_tag = SEA
+			original_tag = ARA
+			original_tag = CAL
+			original_tag = LAC
+			original_tag = SKN
+			original_tag = MIL
+			}
+		}
+		ai_will_do = {
+			factor = 200
+		}
+		fire_only_once = yes
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = SRR
+				}
+				set_cosmetic_tag = SRR_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = EUR
+				}
+				set_cosmetic_tag = EUR_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = BMK
+				}
+				set_cosmetic_tag = BMK_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = MIN
+				}
+				set_cosmetic_tag = MIN_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = IWA
+				}
+				set_cosmetic_tag = IWA_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = COM
+				}
+				set_cosmetic_tag = COM_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = ERR
+				}
+				set_cosmetic_tag = ERR_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = KAN
+				}
+				set_cosmetic_tag = KAN_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = TXL
+				}
+				set_cosmetic_tag = TXL_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = ANR
+				}
+				set_cosmetic_tag = ANR_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = SRT
+				}
+				set_cosmetic_tag = SRT_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = CHR
+				}
+				set_cosmetic_tag = CHR_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = MSS
+				}
+				set_cosmetic_tag = MSS_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = GPS
+				}
+				set_cosmetic_tag = GPS_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = ELK
+				}
+				set_cosmetic_tag = ELK_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = SEA
+				}
+				set_cosmetic_tag = SEA_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = ARA
+				}
+				set_cosmetic_tag = ARA_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = CAL
+				}
+				set_cosmetic_tag = CAL_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = LAC
+				}
+				set_cosmetic_tag = LAC_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = SKN
+				}
+				set_cosmetic_tag = SKN_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					original_tag = MIL
+				}
+				set_cosmetic_tag = MIL_unify2
+				hidden_effect = {
+					every_country  = {
+						news_event = {
+							id = news.48
+						}
+					}
+				}
+			}
+		}
+	}
+}

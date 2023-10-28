@@ -1,0 +1,577 @@
+mex_snd_decisions = { 
+    mex_snd_decisions1 = {
+
+        icon = GFX_decision_eng_blackshirt_march
+
+        available = {
+            
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            
+        }
+
+        fire_only_once = no
+
+        days_re_enable = 60
+
+        #days_remove = 70
+
+		custom_cost_trigger = {
+			has_manpower > 999
+		}
+        custom_cost_text = 1000_manpower_equipment_1
+
+        remove_effect = {
+            SND = {
+                add_manpower = 1000
+            }
+            hidden_effect = {
+                add_manpower = -1000
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    } 
+    mex_snd_decisions2 = {
+
+        icon = GFX_decision_generic_prepare_civil_war
+
+        available = {
+            
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            
+        }
+
+        fire_only_once = no
+
+        days_re_enable = 60
+
+        #days_remove = 70
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 999 }
+		}
+        custom_cost_text = 1000_infantry_equipment_1
+
+        remove_effect = {
+            send_equipment = { target = SND type = infantry_equipment amount = 1000 }  
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mex_snd_decisions3 = {
+
+        icon = GFX_decision_eng_trade_unions_support
+
+        available = {
+            
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            
+        }
+
+        fire_only_once = no
+
+        days_re_enable = 60
+
+        #days_remove = 70
+        cost = 5 
+		
+
+        remove_effect = {
+            SND = {
+                add_stability = 0.05
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mex_snd_decisions4 = {
+
+        icon = GFX_decision_generic_operation
+
+        available = {
+            
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            
+        }
+
+        fire_only_once = no
+
+        days_re_enable = 60
+
+        #days_remove = 70
+        cost = 5
+		
+
+        remove_effect = {
+            SND = {
+                add_war_support = 0.05
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mex_snd_decisions6 = {
+
+        icon = GFX_decision_hol_draw_up_staff_plans
+
+        available = {
+            
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            
+        }
+
+        fire_only_once = yes
+
+        days_re_enable = 180
+
+        days_remove = 70
+
+        cost = 20
+	
+        remove_effect = {
+            custom_effect_tooltip = SND_fortification
+            hidden_effect = {
+                807 = {
+                    add_building_construction = {
+                        type = bunker
+                        level = 1
+                        province = 1562
+                        instant_build = yes
+                    }
+                
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mex_snd_decisions8 = {
+
+        icon = GFX_decision_generic_construction
+
+        available = {
+            
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            
+        }
+
+        fire_only_once = yes
+
+        days_re_enable = 180
+
+        days_remove = 60
+
+        cost = 10
+		
+
+        remove_effect = {
+            807 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes		
+				}
+			}
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mex_snd_decisions5 = {
+
+        icon = GFX_decision_generic_construction
+
+        available = {
+            807 = {
+                free_building_slots = {
+                    building = dockyard > 0
+                    include_locked = no
+                }
+            }
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            
+        }
+
+        fire_only_once = yes
+
+        days_re_enable = 180
+
+        #days_remove = 70
+        cost = 50
+		
+
+        remove_effect = {
+            807 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes		
+				}
+			}
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mex_snd_decisions7 = {
+
+        icon = GFX_decision_generic_research
+
+        available = {
+            
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            
+        }
+
+        fire_only_once = yes
+
+        days_remove = 45
+	
+        remove_effect = {
+            add_research_slot = 1
+            add_popularity = {
+                ideology = ROOT
+                popularity = -0.08
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    
+}
+mex_invasion_decisions = { #AMERICAN IRREDENTISM 
+    mex_invasion_decisions1 = {
+
+        icon = GFX_decision_eng_trade_unions_support
+
+        available = {
+            
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = MEX_beatdowntime
+        }
+
+        fire_only_once = yes
+
+        days_re_enable = 180
+
+        #days_remove = 70
+
+		#cost = 30
+
+        remove_effect = {
+            MEX = {
+                country_event = { days = 7 id = mexico.2 }
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    } 
+    mex_invasion_decisions2 = {
+
+        icon = GFX_decision_generic_ignite_civil_war
+
+        available = {
+            
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = MEX_deniedrequest
+        }
+
+        fire_only_once = yes
+
+        #days_re_enable = 180
+
+        #days_remove = 70
+
+		cost = 5
+
+        remove_effect = {
+            custom_effect_tooltip = MEX_invasion_decisions2_tooltip
+            MEX = {
+                country_event = { days = 7 id = mexico.4 }
+            }
+            add_to_variable = { MEXWarPreparedness = 10 }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }   
+    mex_invasion_decisions5 = {
+
+        icon = GFX_decision_generic_ignite_civil_war
+
+        available = {
+            
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = MEX_deniedrequest
+        }
+
+        fire_only_once = yes
+
+        days_re_enable = 180
+
+        #days_remove = 70
+
+		cost = 5
+
+        remove_effect = {
+            custom_effect_tooltip = MEX_invasion_decisions5_tooltip
+            MEX = {
+                country_event = { days = 7 id = mexico.5 }
+            }
+            add_to_variable = { MEXWarPreparedness = 10 }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mex_invasion_decisions3 = {
+
+        icon = GFX_decision_revolt
+
+        available = {
+            
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = MEX_deniedrequest
+        }
+
+        fire_only_once = yes
+
+        #days_remove = 30
+
+		custom_cost_trigger = {
+            command_power > 29.99 
+        }
+        custom_cost_text = 30_cp_equipment_1
+
+        remove_effect = {
+            #add_state_claim = 834
+            add_state_claim = 819
+            MEX = {
+                #remove_state_core = 834
+                remove_state_core = 819
+            }
+            hidden_effect = {
+				add_command_power = -30
+			}
+            add_to_variable = { MEXWarPreparedness = 10 }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mex_invasion_decisions4 = {
+
+        icon = GFX_decision_revolt
+
+        available = {
+            
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = MEX_deniedrequest
+        }
+
+        fire_only_once = yes
+
+        #days_remove = 30
+
+		custom_cost_trigger = {
+            command_power > 29.99 
+        }
+        custom_cost_text = 30_cp_equipment_1
+
+        remove_effect = {
+            add_state_claim = 834
+            #add_state_claim = 819
+            MEX = {
+                remove_state_core = 834
+                #remove_state_core = 819
+            }
+            hidden_effect = {
+				add_command_power = -30
+			}
+            add_to_variable = { MEXWarPreparedness = 10 }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mex_invasion_decisions6 = {
+
+        icon = GFX_decision_generic_military
+
+        available = {
+            
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = MEX_deniedrequest
+        }
+
+        fire_only_once = yes
+
+        #days_remove = 30
+
+		custom_cost_trigger = {
+            has_army_experience > 24.99
+        }
+        custom_cost_text = 25_xp_equipment_1
+
+        remove_effect = {
+            custom_effect_tooltip = MEX_invasion_decisions6_tooltip
+            hidden_effect = {
+                load_oob = "MEX_1937"
+				army_experience = -25
+			}
+            add_to_variable = { MEXWarPreparedness = 10 }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mex_invasion_decisions7 = {
+
+        icon = GFX_decision_infiltrate_state
+
+        available = {
+            
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            has_country_flag = MEX_deniedrequest
+            check_variable = { MEXWarPreparedness > 49.99 }
+        }
+
+        fire_only_once = yes
+
+        days_remove = 7
+
+		#cost = 10
+
+        remove_effect = {
+            declare_war_on = { type = take_state_focus    target = MEX }
+            MEX = {
+                country_event = mexico.6
+            }
+            set_country_flag = MEX_enemy
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    mex_invasion_decisions8 = {
+
+        icon = GFX_decision_infiltrate_state
+
+        available = {
+            
+        }
+        complete_effect = {
+            
+        }
+        visible = {
+            MEX = {
+                exists = no 
+            }
+            has_country_flag = MEX_deniedrequest
+            check_variable = { MEXWarPreparedness > 49.99 }
+            has_country_flag = MEX_enemy
+        }
+
+        fire_only_once = yes
+
+        days_remove = 7
+
+		custom_cost_trigger = {
+            has_army_experience > 24.99
+        }
+        custom_cost_text = 25_xp_equipment_1
+
+        remove_effect = {
+            country_event = mexico.21
+            hidden_effect = {
+                army_experience = -25
+            }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+}
