@@ -1,0 +1,23 @@
+ideas = {
+    #Shasta
+	country = {
+		sha_purified = {
+			picture = chi_army_corruption3
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_org_factor = 0.05
+				conscription_factor = -0.2
+			}
+		}
+	}
+	country = {
+		sha_sacrifice = {
+			picture = generic_purge
+			modifier = {
+				stability_factor = 0.05
+				weekly_manpower = -3
+			}
+		}
+	}
+}

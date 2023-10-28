@@ -1,0 +1,118 @@
+add_namespace = AMC
+
+country_event = {
+	id = amc.1
+	title = amc.1.t
+	desc = amc.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = amc.1.a
+		ai_chance = { factor = 100 }
+		add_manpower 100
+	}	
+}
+
+country_event = {
+	id = amc.2
+	title = amc.2.t
+	desc = amc.2.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = amc.2.a
+		ai_chance = { factor = 100 }
+	}
+
+}
+
+country_event = {
+	id = amc.3
+	title = amc.3.t
+	desc = amc.3.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = amc.3.a
+		ai_chance = { factor = 100 }
+		remove_ideas = AMC_foriegn_spys
+	}
+}
+
+country_event = {
+	id = amc.4
+	title = amc.4.t
+	desc = amc.4.d
+	picture = GFX_report_event_generic_read_write
+
+
+	mean_time_to_happen = {days = 1}
+	fire_only_once = yes 
+
+	trigger = {
+		has_war = yes
+		original_tag = AMC
+		country_exists = AMC
+		date > 1937.11.12
+	}
+
+	option = {
+		name = amc.4.a
+		ai_chance = { factor = 100 }
+		AMC = {transfer_state = 856 }
+		white_peace = COM
+		hidden_effect = {
+			AMC = {add_state_core = 856}
+		}
+	}
+}
+
+#country_event = {
+	id = amc.5
+	title = amc.5.t
+	desc = amc.5.d
+	picture = GFX_report_event_generic_read_write
+
+
+	mean_time_to_happen = {days = 1}
+	fire_only_once = yes 
+
+	trigger = {
+		#has_war = yes
+		#original_tag = AMC
+		#country_exists = AMC
+		#date > 1938.4.16
+	}
+
+	option = {
+		name = amc.5.a
+		ai_chance = { factor = 100 }
+		AMC = {transfer_state = 838 }
+	}
+#}
+
+country_event = {
+	id = amc.6
+	title = amc.6.t
+	desc = amc.6.d
+	picture = GFX_report_event_generic_read_write
+
+
+	mean_time_to_happen = {days = 1}
+	is_triggered_only = yes
+	fire_only_once = yes 
+
+
+	option = {
+		name = amc.6.a
+		ai_chance = { factor = 100 }
+	}
+}

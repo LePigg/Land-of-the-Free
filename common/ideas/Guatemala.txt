@@ -1,0 +1,23 @@
+ideas = {
+country = {
+	GUA_economic_anarchy = {
+		picture = usa_great_depression_3
+		modifier = {
+			consumer_goods_factor = 0.40
+			production_speed_buildings_factor = -0.30
+			production_factory_max_efficiency_factor = -0.25
+			industrial_capacity_factory = -0.40
+			industrial_capacity_dockyard = -0.40
+		}
+	}
+
+	GUA_revolution = {
+		picture = chi_war_of_resistance3
+		modifier = {
+			stability_factor = -0.20
+			conscription_factor = -0.65
+			political_power_cost = 0.30
+			}
+		}
+	}
+}

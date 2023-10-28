@@ -1,0 +1,524 @@
+ideas = {
+	segregation = {
+		law = yes
+		use_list_view = yes
+		enforced_segregation = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				research_speed_factor = -0.08
+				production_factory_max_efficiency_factor = -0.08
+				production_factory_efficiency_gain_factor = -0.1
+				army_morale_factor = -0.05
+				conscription_factor = -0.2
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		jim_crow = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				research_speed_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.14
+				army_morale_factor = -0.07
+				conscription_factor = -0.3
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+		non_enforced = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.08
+				war_support_factor = -0.08
+				research_speed_factor = -0.06
+				production_factory_max_efficiency_factor = -0.06
+				production_factory_efficiency_gain_factor = -0.08
+				army_morale_factor = -0.04
+				conscription_factor = -0.15
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+		early_integration = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.04
+				war_support_factor = -0.04
+				research_speed_factor = -0.03
+				production_factory_max_efficiency_factor = -0.04
+				production_factory_efficiency_gain_factor = -0.06
+				army_morale_factor = -0.02
+				conscription_factor = -0.1
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+		total_racial_equality = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				research_speed_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				conscription_factor = 0.05
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+	}
+	religion = {
+		secular = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				research_speed_factor = 0.02
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		strong_church = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.1
+				army_morale_factor = 0.05
+				consumer_goods_factor = 0.05
+				research_speed_factor = -0.05
+				conscription_factor = 0.05
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+		state_religion = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.15
+				army_morale_factor = 0.1
+				conscription_factor = 0.1
+				consumer_goods_factor = 0.1
+				research_speed_factor = -0.1
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+		anti_clerical = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.15
+				research_speed_factor = 0.07
+				consumer_goods_factor = -0.05
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+		state_atheism = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.20
+				research_speed_factor = 0.1
+				consumer_goods_factor = -0.07
+				stability_factor = -0.15
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+	}
+	voting = {
+		universal_suffrage = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.08
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		restricted_voting = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = -0.1
+				drift_defence_factor = 0.15
+				stability_factor = 0.02
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+		elite_voting = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				party_popularity_stability_factor = 0.15
+				drift_defence_factor = 0.2
+				political_power_cost = -0.05
+				stability_factor = -0.02
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+		no_voting = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = -0.15
+				drift_defence_factor = 0.25
+				stability_factor = -0.05
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+	}
+	womens_rights = {
+		nominal_equality = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.02
+				industrial_capacity_factory = 0.1
+				research_speed_factor = 0.05
+				monthly_population = 0.1
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		domesticity = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.07
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+				research_speed_factor = 0.02
+				monthly_population = 0.15
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+		patriachal = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = -0.05
+				monthly_population = 0.2
+				war_support_factor = 0.15
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+		total_equality = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				research_speed_factor = 0.08
+				conscription_factor = 0.1
+				war_support_factor = -0.15
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+	}
+	media = {
+		free_press = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 0.05
+				stability_factor = 0.08
+				drift_defence_factor = -0.1
+				compliance_growth = 0.05
+				resistance_growth = -0.02
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		state_media = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				war_stability_factor = 0.15
+				war_support_factor = 0.1
+				conscription_factor = 0.05
+				army_morale_factor = 0.05
+				resistance_growth = 0.03
+				compliance_growth = -0.05
+				resistance_damage_to_garrison = 0.05
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+		press_censorship = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.15
+				resistance_damage_to_garrison = -0.15
+				resistance_growth = -0.08
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+	}
+	welfare = {
+		basic_welfare = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.05
+				monthly_population = 0.15
+				production_speed_buildings_factor = 0.1
+				global_building_slots_factor = 0.1
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		military_pensions = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.03
+				conscription_factor = 0.07
+				army_morale_factor = 0.1
+				experience_gain_army = 0.08
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+		universal_welfare = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.1
+				consumer_goods_factor = 0.07
+				stability_factor = 0.08
+				monthly_population = 0.2
+				production_speed_buildings_factor = 0.15
+				global_building_slots_factor = 0.15
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+		no_welfare = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.05
+				monthly_population = -0.1
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+		philanthropy = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.07
+				industrial_capacity_factory = 0.07
+				global_building_slots_factor = 0.03
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+	}
+}

@@ -1,0 +1,238 @@
+add_namespace = wonders
+
+country_event = {  #Chicago Industrial Complex
+	id = wonders.1
+	title = wonders.1.t
+	desc = wonders.1.d
+	picture = GFX_report_event_tanks_mexico_city
+
+	fire_only_once = no
+
+    trigger = {
+        controls_state = 182
+		NOT = {
+			has_idea = idea_wonder_chicago_industrial_complex
+		}
+    }
+
+    mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = wonders.1.a
+		ai_chance = { factor = 100 }
+		add_ideas = idea_wonder_chicago_industrial_complex
+	}	
+}
+country_event = { 
+	id = wonders.2
+	title = wonders.2.t
+	desc = wonders.2.d
+	picture = GFX_report_event_tanks_mexico_city
+
+	fire_only_once = no
+
+    trigger = {
+		NOT = {
+        	controls_state = 182
+		}
+		has_idea = idea_wonder_chicago_industrial_complex
+
+    }
+
+    mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = wonders.2.a
+		ai_chance = { factor = 100 }
+		remove_ideas = idea_wonder_chicago_industrial_complex
+	}	
+}
+country_event = {  #GM
+	id = wonders.3
+	title = wonders.3.t
+	desc = wonders.3.d
+	picture = GFX_report_event_tanks_mexico_city
+
+	fire_only_once = no
+
+    trigger = {
+        controls_state = 42
+		NOT = {
+			has_idea = idea_wonder_general_motors
+		}
+    }
+
+    mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = wonders.3.a
+		ai_chance = { factor = 100 }
+		add_ideas = idea_wonder_general_motors
+	}	
+}
+country_event = { 
+	id = wonders.4
+	title = wonders.4.t
+	desc = wonders.4.d
+	picture = GFX_report_event_tanks_mexico_city
+
+	fire_only_once = no
+
+    trigger = {
+		NOT = {
+        	controls_state = 42
+		}
+		has_idea = idea_wonder_general_motors
+
+    }
+
+    mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = wonders.4.a
+		ai_chance = { factor = 100 }
+		remove_ideas = idea_wonder_general_motors
+	}	
+}
+country_event = {  #SPAM
+	id = wonders.5
+	title = wonders.5.t
+	desc = wonders.5.d
+	picture = GFX_report_event_tanks_mexico_city
+
+	fire_only_once = no
+
+    trigger = {
+        controls_state = 159
+		NOT = {
+			has_idea = idea_wonders_spam
+		}
+		has_global_flag = idea_wonders_spam_flag
+    }
+
+    mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = wonders.5.a
+		ai_chance = { factor = 100 }
+		add_ideas = idea_wonders_spam
+	}	
+}
+country_event = { 
+	id = wonders.6
+	title = wonders.6.t
+	desc = wonders.6.d
+	picture = GFX_report_event_tanks_mexico_city
+
+	fire_only_once = no
+
+    trigger = {
+		NOT = {
+        	controls_state = 159
+		}
+		has_idea = idea_wonders_spam
+		has_global_flag = idea_wonders_spam_flag
+    }
+
+    mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = wonders.6.a
+		ai_chance = { factor = 100 }
+		remove_ideas = idea_wonders_spam
+	}	
+}
+country_event = {  #Constitution
+	id = wonders.7
+	title = wonders.7.t
+	desc = wonders.7.d
+	picture = GFX_report_event_tanks_mexico_city
+
+	fire_only_once = no
+
+    trigger = {
+        controls_state = 169
+		NOT = {
+			has_idea = idea_wonders_constitution
+		}
+		has_global_flag = idea_wonders_constitution_flag
+    }
+
+    mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = wonders.7.a
+		ai_chance = { factor = 100 }
+		add_ideas = idea_wonders_constitution
+	}	
+}
+country_event = { 
+	id = wonders.8
+	title = wonders.8.t
+	desc = wonders.8.d
+	picture = GFX_report_event_tanks_mexico_city
+
+	fire_only_once = no
+
+    trigger = {
+		NOT = {
+        	controls_state = 169
+		}
+		has_idea = idea_wonders_constitution
+		has_global_flag = idea_wonders_constitution_flag
+    }
+
+    mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = wonders.8.a
+		ai_chance = { factor = 100 }
+		remove_ideas = idea_wonders_constitution
+	}	
+}
+country_event = {  #Railway
+	id = wonders.9
+	title = wonders.9.t
+	desc = wonders.9.d
+	picture = GFX_report_event_tanks_mexico_city
+
+	fire_only_once = no
+
+    trigger = {
+        controls_state = 46
+		NOT = {
+			has_idea = BMK_railway
+		}
+    }
+
+    mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = wonders.9.a
+		ai_chance = { factor = 100 }
+		add_ideas = BMK_railway
+	}	
+}
+country_event = { 
+	id = wonders.10
+	title = wonders.10.t
+	desc = wonders.10.d
+	picture = GFX_report_event_tanks_mexico_city
+
+	fire_only_once = no
+
+    trigger = {
+		NOT = {
+        	controls_state = 46
+		}
+		has_idea = BMK_railway
+    }
+
+    mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = wonders.10.a
+		ai_chance = { factor = 100 }
+		remove_ideas = BMK_railway
+	}	
+}

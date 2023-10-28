@@ -1,0 +1,406 @@
+ideas = {
+    #Los Angeles
+    country = {
+        LAC_struggle = {
+            picture = generic_volunteer_expedition_bonus
+            modifier = {
+                stability_factor = -0.35
+                #army_org_factor = -0.2
+                #army_morale_factor = -0.2
+                political_power_cost = 0.2
+            }
+        }
+    }	
+    country = {
+        LAC_research = {
+            picture = generic_research_bonus
+            modifier = {
+                political_power_cost = 0.1
+                research_speed_factor = 0.1
+            }
+        }
+    }	
+    country = {
+        LAC_research1 = {
+            picture = generic_research_bonus
+            modifier = {
+                political_power_cost = 0.1
+                research_speed_factor = 0.15
+            }
+        }
+    }	
+    country = {
+        LAC_research2 = {
+            picture = generic_research_bonus
+            modifier = {
+                political_power_cost = 0.1
+                research_speed_factor = 0.2
+            }
+        }
+    }
+    country = {
+        SGV_struggle = {
+            picture = prc_the_long_march
+            modifier = {
+                army_org_factor = -0.3
+                army_morale_factor = -0.2
+                military_factory_donations = 1
+            }
+        }
+    }
+	political_advisor = {
+		LAC_wi = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { war_industrialist }
+		}
+		
+
+		LAC_cg = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { compassionate_gentleman }
+		}
+		
+		LAC_qg = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { quartermaster_general }
+		}
+
+		LAC_bb = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { backroom_backstabber }
+		}
+		
+		LAC_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { prince_of_terror }
+		}
+
+		LAC_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { captain_of_industry }
+		}
+
+		LAC_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		LAC_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = ANR
+			}		
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LAC_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		LAC_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = ANR
+			}
+			
+			traits = { air_chief_reform_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LAC_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		LAC_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = ANR
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LAC_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = ANR
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		LAC_ar = {
+			ledger = army
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		LAC_ai2 = {
+			ledger = army
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LAC_aa2 = {
+			ledger = army
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LAC_acas = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LAC_ncs = {
+			ledger = navy
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = ANR
+			}
+			
+			traits = { navy_capital_ship_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		LAC_mt = {
+			ledger = army
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = ANR
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { military_theorist }
+		}
+		
+		LAC_nt = {
+			ledger = navy
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = ANR
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { naval_theorist }
+		}	
+
+		LAC_awt = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

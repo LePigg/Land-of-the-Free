@@ -1,0 +1,32 @@
+ideas = {
+	country = {
+		ELS_junta = {
+			picture = generic_manpower_bonus
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				stability_factor = -0.10
+			}
+		}
+		ELS_time = {
+			picture = SPR_class_war
+			modifier = {
+				conscription_factor = -0.45
+				communism_drift = 0.05
+				revolutionary_socialist_drift = 0.05
+				political_power_factor = -0.30
+			}
+		}
+		ELS_polarized = {
+			picture = MEX_callistas
+			modifier = {
+				consumer_goods_factor = 0.10
+				industrial_capacity_dockyard = -0.15
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.20
+				production_factory_max_efficiency_factor = -0.20
+				production_speed_buildings_factor = -0.15
+			}
+		}
+	}
+}

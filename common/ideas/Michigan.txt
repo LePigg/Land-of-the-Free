@@ -1,0 +1,376 @@
+ideas = {
+    
+    #Detroit
+    country = {
+        holding_out = {
+			available = {
+				COM = {
+					exists = yes
+				}
+			}
+            picture = generic_democratic_drift_bonus
+            modifier = {
+                stability_weekly = -0.005
+                war_support_weekly = -0.005
+                army_defence_factor = -0.15
+                army_org_factor = -0.1
+            }
+        }
+    }
+
+	political_advisor = {
+		MIC_wi = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { war_industrialist }
+		}
+		
+
+		MIC_cg = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { compassionate_gentleman }
+		}
+		
+		MIC_qg = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { quartermaster_general }
+		}
+
+		MIC_bb = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { backroom_backstabber }
+		}
+		
+		MIC_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { prince_of_terror }
+		}
+
+		MIC_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { captain_of_industry }
+		}
+
+		MIC_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		MIC_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = IWA
+			}		
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MIC_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		MIC_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			
+			traits = { air_chief_reform_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MIC_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		MIC_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = IWA
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MIC_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		MIC_ar = {
+			ledger = army
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		MIC_ai2 = {
+			ledger = army
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MIC_aa2 = {
+			ledger = army
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MIC_acas = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MIC_ncs = {
+			ledger = navy
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = IWA
+			}
+			
+			traits = { navy_capital_ship_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		MIC_mt = {
+			ledger = army
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = IWA
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { military_theorist }
+		}
+		
+		MIC_nt = {
+			ledger = navy
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { naval_theorist }
+		}	
+
+		MIC_awt = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

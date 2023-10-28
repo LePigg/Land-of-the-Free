@@ -1,0 +1,492 @@
+ideas = {
+	#Elko
+	country = {
+		elk_aviation = {
+			picture = generic_fighter_production_diverted
+				equipment_bonus = {
+					fighter_equipment = {
+						build_cost_ic = -0.3 instant = yes
+					}
+					heavy_fighter_equipment = {
+						build_cost_ic = -0.3 instant = yes
+					}
+					CAS_equipment = {
+						build_cost_ic = -0.3 instant = yes
+					}
+					tac_bomber_equipment = {
+						build_cost_ic = -0.3 instant = yes
+					}
+					strat_bomber_equipment = {
+						build_cost_ic = -0.3 instant = yes
+					}
+				}
+		}
+	}
+	country = {
+		elk_desert = {
+			picture = generic_manpower_bonus
+			modifier = {
+				acclimatization_hot_climate_gain_factor = 0.3
+				army_speed_factor = 0.1
+				army_org_factor = 0.05
+			}
+		}
+	}
+    country = {
+		elk_desert1 = {
+			picture = generic_manpower_bonus
+			modifier = {
+                consumer_goods_factor = 0.05
+				acclimatization_hot_climate_gain_factor = 0.3
+				army_speed_factor = 0.1
+				army_org_factor = 0.05
+                army_morale_factor = 0.05
+			}
+		}
+	}
+	country = {
+		elk_fury = {
+			picture = generic_purge
+			targeted_modifier = {
+				tag = SEA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+	}
+	country = {
+		elk_fury1 = {
+			picture = generic_purge
+			targeted_modifier = {
+				tag = SEA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = EUR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+	}	
+    country = {
+		elk_purge = {
+			picture = hol_liberation
+			modifier = {
+                stability_factor = -0.3
+                political_power_factor = 0.3
+                war_stability_factor = -0.5
+                army_org_factor = -0.5
+				industrial_capacity_factory = -0.3
+				training_time_factor = 0.5
+            }
+		}
+	}
+    country = {
+		elk_purge1 = {
+			picture = hol_liberation
+			modifier = {
+                stability_factor = -0.24
+                political_power_factor = 0.3
+                war_stability_factor = -0.4
+                army_org_factor = -0.4
+				industrial_capacity_factory = -0.24
+				training_time_factor = 0.5
+            }
+		}
+	}
+    country = {
+		elk_purge2 = {
+			picture = hol_liberation
+			modifier = {
+                stability_factor = -0.18
+                political_power_factor = 0.3
+                war_stability_factor = -0.3
+                army_org_factor = -0.3
+				industrial_capacity_factory = -0.18
+				training_time_factor = 0.5
+            }
+		}
+	}
+    country = {
+		elk_purge3 = {
+			picture = hol_liberation
+			modifier = {
+                stability_factor = -0.12
+                political_power_factor = 0.3
+                war_stability_factor = -0.2
+                army_org_factor = -0.2
+				industrial_capacity_factory = -0.12
+				training_time_factor = 0.5
+            }
+		}
+	}
+    country = {
+		elk_purge4 = {
+			picture = hol_liberation
+			modifier = {
+                stability_factor = -0.06
+                political_power_factor = 0.3
+                war_stability_factor = -0.1
+                army_org_factor = -0.1
+				industrial_capacity_factory = -0.06
+				training_time_factor = 0.5
+            }
+		}
+	}
+	political_advisor = {
+		ELK_wi = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = ELK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { war_industrialist }
+		}
+		
+
+		ELK_cg = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = ELK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { compassionate_gentleman }
+		}
+		
+		ELK_qg = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = ELK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { quartermaster_general }
+		}
+
+		ELK_bb = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = ELK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { backroom_backstabber }
+		}
+		
+		ELK_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = ELK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { prince_of_terror }
+		}
+
+		ELK_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = ELK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { captain_of_industry }
+		}
+
+		ELK_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = ELK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		ELK_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = ELK
+			}		
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ELK_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = ELK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		ELK_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = ELK
+			}
+			
+			traits = { air_chief_reform_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ELK_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = ELK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		ELK_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = ELK
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ELK_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = ELK
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		ELK_ar = {
+			ledger = army
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = ELK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ELK_ai2 = {
+			ledger = army
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = ELK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ELK_aa2 = {
+			ledger = army
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = ELK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ELK_acas = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = ELK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ELK_ncs = {
+			ledger = navy
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = ELK
+			}
+			
+			traits = { navy_capital_ship_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		ELK_mt = {
+			ledger = army
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = ELK
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { military_theorist }
+		}
+		
+		ELK_nt = {
+			ledger = navy
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = ELK
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { naval_theorist }
+		}	
+
+		ELK_awt = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = ELK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

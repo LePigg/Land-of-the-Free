@@ -1,0 +1,252 @@
+add_namespace = mil
+
+country_event = {
+    id = mil.1
+    title = mil.1.t
+    desc = mil.1.d
+    picture = GFX_report_event_generic_read_write
+    is_triggered_only = yes
+    fire_only_once = yes
+    mean_time_to_happen = {
+        days = 2
+    }
+    option = {
+        name = mil.1.a
+        ai_chance = { factor = 5}
+        add_political_power = 25
+    }
+}
+country_event = {
+    id = mil.2
+    title = mil.2.t
+    desc = mil.2.d
+    picture = GFX_report_event_generic_read_write
+    is_triggered_only = yes
+    fire_only_once = yes
+    mean_time_to_happen = {
+        days = 2
+    }
+    option = {
+        name = mil.2.a
+        ai_chance = { factor = 5}
+		random_list = {
+			30 = {
+				country_event = { id = mil.3 days = 14 }
+			}
+			70 = {
+				country_event = { id = mil.4 days = 14 }
+			}
+		}
+    }
+}
+country_event = {
+    id = mil.3
+    title = mil.3.t
+    desc = mil.3.d
+    picture = GFX_report_event_generic_read_write
+    is_triggered_only = yes
+    fire_only_once = yes
+    mean_time_to_happen = {
+        days = 2
+    }
+    option = {
+        name = mil.3.a
+        ai_chance = { factor = 5}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 700
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 100
+		}
+    }
+}
+country_event = {
+    id = mil.4
+    title = mil.4.t
+    desc = mil.4.d
+    picture = GFX_report_event_generic_read_write
+    is_triggered_only = yes
+    fire_only_once = yes
+    mean_time_to_happen = {
+        days = 2
+    }
+    option = {
+        name = mil.4.a
+        ai_chance = { factor = 5}
+		add_political_power = -15
+    }
+}
+
+country_event = {
+    id = mil.5
+    title = mil.5.t
+    desc = mil.5.d
+    picture = GFX_report_event_tur_kurds_traditionalists_thwarted
+    is_triggered_only = yes
+    fire_only_once = yes
+   
+    option = {
+        name = mil.5.a
+        ai_chance = { factor = 5}
+		add_political_power = 35
+        add_stability = 0.03
+    }
+}
+
+country_event = {
+    id = mil.7
+    title = mil.7.t
+    desc = mil.7.d
+    picture = GFX_report_event_tur_kurds_traditionalists_thwarted
+    is_triggered_only = yes
+    fire_only_once = yes
+   
+    option = {
+        name = mil.7.a
+        ai_chance = { factor = 30}
+        add_stability = -0.05
+    }
+
+    option = {
+        name = mil.7.b
+        ai_chance = { factor = 10}
+        
+        swap_ideas = { 
+            remove_idea = MIL_confused
+            add_idea = MIL_confused2
+         }
+           
+           MIC = { transfer_state = 161}
+           #MIC = { add_state_core = 161 }
+
+            hidden_effect = {
+                MIC = { add_state_core = 161 }
+            }
+
+    }
+
+}
+
+country_event = {
+    id = mil.8
+    title = mil.8.t
+    desc = mil.8.d
+    picture = GFX_report_event_tur_kurds_traditionalists_thwarted
+    is_triggered_only = yes
+    fire_only_once = yes
+   
+
+    option = {
+        name = mil.8.a
+        ai_chance = { factor = 10}
+        add_political_power = 50
+    }
+
+}
+
+country_event = {
+    id = mil.9
+    title = mil.9.t
+    desc = mil.9.d
+    picture = GFX_report_event_tur_kurds_traditionalists_thwarted
+    is_triggered_only = yes
+    fire_only_once = yes
+   
+    option = {
+        name = mil.9.a
+        ai_chance = { factor = 10}
+        
+    }
+
+}
+
+country_event = {
+    id = mil.10
+    title = mil.10.t
+    desc = mil.10.d
+    picture = GFX_report_event_tur_kurds_traditionalists_thwarted
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = mil.10.a
+        ai_chance = { factor = 10}
+        add_stability = 0.03
+    }
+    option = {
+        name = mil.10.b
+        ai_chance = { factor = 10}
+        MIC = {
+            MIC_hugh_drum = {
+                set_nationality = MIL
+            }
+        }
+    }
+
+}
+
+country_event = {
+    id = mil.13
+    title = mil.13.t
+    desc = mil.13.d
+    picture = GFX_report_event_tur_kurds_traditionalists_thwarted
+    is_triggered_only = yes
+    fire_only_once = yes
+   
+    option = {
+        name = mil.11.b
+        ai_chance = { factor = 10}
+        add_war_support = 0.10
+        add_manpower = 25000
+    }
+
+}
+
+country_event = {
+    id = mil.12
+    title = mil.12.t
+    desc = mil.12.d
+    picture = GFX_report_smith
+    is_triggered_only = yes
+    fire_only_once = yes
+   
+    option = {
+        name = mil.12.b
+        ai_chance = { factor = 10}
+        ARA = {
+            retire_character = ARA_charles_lindbergh
+        }
+        add_political_power = 50
+        add_manpower = 42000
+    }
+
+}
+
+country_event = {
+    id = mil.11
+    title = mil.11.t
+    desc = mil.11.d
+    picture = GFX_report_event_tur_kurds_traditionalists_thwarted
+    is_triggered_only = yes
+    fire_only_once = yes
+   
+    option = {
+        name = mil.11.b
+        ai_chance = { factor = 10}
+        IEF = {
+            IEF_lewis_brereton = {
+                set_nationality = MIL
+            }
+            IEF_walter_smith = {
+                set_nationality = MIL
+            }
+            IEF_leland_hobbs = {
+                set_nationality = MIL
+            }
+        }
+        add_war_support = 0.1
+        add_manpower = 15000 
+    }
+
+}

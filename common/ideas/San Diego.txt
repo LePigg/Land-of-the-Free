@@ -1,0 +1,13 @@
+ideas = {
+    #San Diego
+	country = {
+		snd_immigration = {
+			picture = generic_oppression
+			modifier = {
+                stability_factor = -0.15
+                political_power_factor = -0.1
+				monthly_population = 0.35
+			}
+		}
+	}
+}

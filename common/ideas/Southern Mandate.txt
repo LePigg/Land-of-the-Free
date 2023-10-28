@@ -1,0 +1,34 @@
+ideas = {
+
+	#Southern Mandate
+	country = {
+		sdc_insurrectionary = {
+			picture = GFX_idea_sdc_insurrectionary
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.1
+			}
+		}
+		kkk_content = {
+			picture = GFX_idea_kkk_content
+			modifier = {
+				stability_factor = 0.01
+				political_power_gain = 0.05
+			}
+		}
+		byrd_malcontent = {
+			picture = GFX_idea_byrd_malcontent
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.05
+			}
+		}
+		naacp_dead = {
+			picture = GFX_idea_naacp_dead
+			modifier = {
+				stability_factor = 0.2
+				political_power_gain = 0.15
+			}
+		}
+	}	
+}

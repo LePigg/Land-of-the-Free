@@ -1,0 +1,566 @@
+add_namespace = DIX
+country_event = {
+	id = DIX.1
+	title = DIX.1.t
+	desc = DIX.1.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DIX.1.a
+		ai_chance = {
+			factor = 1
+		}
+		add_war_support = 0.15
+		add_political_power = 50
+		add_timed_idea = {
+			idea = TEX_morale
+			days = 60
+		}
+	}
+}
+
+country_event = {
+	id = DIX.2
+	title = DIX.2.t
+	desc = DIX.2.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DIX.2.a
+		CHR = {
+			every_army_leader = {
+				set_nationality = DIX
+			}
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		add_manpower = 5000
+		add_political_power = -50
+	}
+}
+
+country_event = {
+	id = DIX.3
+	title = DIX.3.t
+	desc = DIX.3.d
+	picture = GFX_report_event_ast_army
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DIX.3.a
+		add_timed_idea = {
+			idea = tcw_ownaged1
+			days = 60
+		}
+	}
+	option = {
+		name = DIX.3.b
+		add_timed_idea = {
+			idea = tcw_ownaged2
+			days = 60
+		}
+	}
+	option = {
+		name = DIX.3.c
+		add_timed_idea = {
+			idea = tcw_ownaged3
+			days = 60
+		}
+	}
+	option = {
+		name = DIX.3.b
+		add_timed_idea = {
+			idea = tcw_ownaged4
+			days = 60
+		}
+	}
+}
+
+country_event = {
+	id = DIX.4
+	title = DIX.4.t
+	desc = DIX.4.d
+	picture = GFX_report_event_saf_soldiers_2
+
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DIX.4.a
+		add_war_support = 0.15
+		add_manpower = 1000
+		complete_national_focus = DIX_chickasaw
+		complete_national_focus = DIX_POYO
+	}
+}
+
+country_event = {
+	id = DIX.5
+	title = DIX.5.t
+	desc = DIX.5.d
+	picture = GFX_report_event_generic_factory
+
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DIX.5.a
+		ABQ = {
+			country_event = {
+				id = DIX.6
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = DIX.6
+	title = DIX.6.t
+	desc = DIX.6.d
+	picture = GFX_report_event_generic_factory
+
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DIX.6.a
+		ELP = {
+			country_event = {
+				id = DIX.6
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = DIX.7
+	title = DIX.7.t
+	desc = DIX.7.d
+	picture = GFX_report_event_generic_factory
+
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DIX.7.a
+		ai_chance = {
+			base = 60
+		}
+		custom_effect_tooltip = DEATH_WEAKNESS_DESTRUCTION
+		DIX = {
+			country_event = {
+				id = DIX.7
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = DIX.7.a
+		custom_effect_tooltip = DEATH_WEAKNESS_DESTRUCTION
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = -25
+		DIX = {
+			country_event = {
+				id = DIX.8
+				days = 1
+			}
+		}
+	}	
+}
+
+country_event = {
+	id = DIX.8
+	title = DIX.8.t
+	desc = DIX.8.d
+	picture = GFX_report_event_hitler_handshake
+
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DIX.8.a
+		annex_country = {
+			target = ELP
+		}
+		add_ideas = TEX_payments_to_abq
+	}
+}
+
+country_event = {
+	id = DIX.9
+	title = DIX.9.t
+	desc = DIX.9.d
+	picture = GFX_report_event_soldiers_marching
+
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DIX.9.a
+		declare_war_on = {
+			target = ELP
+			type = annex_everything
+		}
+		set_country_flag = angry_abq
+	}
+}
+
+country_event = {
+	id = DIX.10
+	title = DIX.10.t
+	desc = DIX.10.d
+	picture = GFX_report_event_african_soldiers
+
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DIX.10.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = guided_democracy
+			popularity = 0.1
+		}
+		add_stability = -0.1
+		custom_effect_tooltip = MSS_garvey_stronger
+	}
+}
+
+country_event = {
+	id = DIX.11
+	title = DIX.11.t
+	desc = DIX.11.d
+	picture = GFX_report_event_crowd_in_prague
+
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DIX.11.a
+		add_political_power = 50
+		annex_country = {
+			target = SEQ
+		}
+	}
+}
+
+country_event = {
+	id = DIX.12
+	title = DIX.12.t
+	desc = DIX.12.d
+	picture = GFX_report_event_crowd_in_prague
+
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DIX.12.a
+		ai_chance = {
+			base = 40
+		}
+		IF = {
+			limit = {
+				NOT = {
+					has_idea = DIX_native_autonomy
+				}
+			}
+			add_ideas = DIX_native_autonomy
+			ELSE = {
+				swap_ideas = {
+					remove_idea = DIX_native_autonomy
+					add_idea = DIX_native_autonomy1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = DIX.12.b
+		ai_chance = {
+			base = 30
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = DIX.13
+	title = DIX.13.t
+	desc = DIX.13.d
+	picture = GFX_report_event_crowd_in_prague
+
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DIX.12.a
+		ai_chance = {
+			base = 40
+		}
+		IF = {
+			limit = {
+				NOT = {
+					has_idea = DIX_native_autonomy
+				}
+			}
+			add_ideas = DIX_native_autonomy
+			ELSE = {
+				swap_ideas = {
+					remove_idea = DIX_native_autonomy
+					add_idea = DIX_native_autonomy1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = DIX.13.b
+		ai_chance = {
+			base = 30
+		}
+		add_stability = -0.08
+	}
+}
+
+country_event = {
+	id = DIX.14
+	title = DIX.14.t
+	desc = DIX.14.d
+	picture = GFX_report_event_usa_heavy_cruiser
+
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DIX.14.a
+		ai_chance = {
+			base = 30
+		}
+		custom_effect_tooltip = DIX_navy_ready
+		#hidden_effect = {
+		#	IF = {
+		#		limit = {
+		#		}
+		#		load_oob = DIX_1936_naval_mtg
+		#	}
+		#}
+	}
+}
+
+country_event = {
+	id = DIX.15
+	title = DIX.15.t
+	desc = DIX.15.d	
+	picture = GFX_report_event_fascists_posing
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DIX.15.a
+		ai_chance = {
+			base = 50
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		TXL_samuel_green = {
+			set_nationality = DIX
+		}
+		TXL_wickliffe_draper = {
+			set_nationality = DIX
+		}
+		add_manpower = 2000
+		add_political_power = -50
+	}
+
+	option = {
+		name = DIX.15.b
+		ai_chance = {
+			base = 40
+		}
+		add_popularity = {
+			ideology = guided_democracy
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.05
+		}
+		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = DIX.16
+	title = DIX.16.t
+	desc = DIX.16.d
+	picture = GFX_report_event_african_soldiers
+
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DIX.16.a
+		puppet = MSS
+		MSS = {
+			set_politics = {
+				ruling_party = guided_democracy
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = guided_democracy
+				popularity = 0.4
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.4
+			}
+			add_state_core = 24
+		}
+		IF = {
+			limit = {
+				owns_state = 24
+			}
+			remove_state_core = 24
+			MSS = {
+				transfer_state = 24
+			}
+		}
+	}
+}
+
+country_event = {
+	id = DIX.17
+	title = DIX.17.t
+	desc = DIX.17.d
+	picture = GFX_report_event_usa_funeral
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = DIX.16.a
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.1
+		}
+		add_manpower = 1000
+	}
+}
+
+country_event = {
+	id = DIX.18
+	title = DIX.18.t
+	desc = DIX.18.d
+	picture = GFX_report_event_usa_pearl_harbor_airphoto
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = DIX.18.a
+		277 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+			add_extra_state_shared_building_slots = 1
+			add_manpower = -531
+		}
+		178 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+			add_extra_state_shared_building_slots = 1
+			add_manpower = -341
+		}
+	}
+}
+
+
+country_event = {
+	id = DIX.19
+	title = DIX.19.t
+	desc = DIX.19.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = DIX.19.a
+		ai_chance = {
+			base = 30
+		}
+		add_political_power = -5
+		TEX_claire_chennault = {
+			remove_country_leader_role = {
+				ideology = gen_guided_democracy
+			}
+			set_nationality = DIX
+		}
+	}
+
+	option = {
+		name = DIX.19.b
+		ai_chance = {
+			base = 35
+		}
+		add_political_power = 50
+		add_stability = 0.05
+		TEX = {
+			retire_character = TEX_claire_chennault
+		}
+	}
+}
+
+country_event = {
+	id = DIX.20
+	title = DIX.20.t
+	desc = DIX.20.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = DIX.20.a
+		ai_chance = {
+			base = 30
+		}
+		add_command_power = 50
+	}
+}

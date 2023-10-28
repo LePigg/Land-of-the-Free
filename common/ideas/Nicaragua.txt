@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+		NIC_revolution = {
+			picture = SPR_international_brigades
+			modifier = {
+				war_support_factor = 0.10
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.10
+				conscription_factor = 0.10
+			}
+		}
+		NIC_gringos = {
+			picture = generic_purge
+			modifier = {
+				political_power_factor = -0.15
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.10
+				stability_factor = -0.05
+				army_org_factor = -0.05
+			}
+		}
+	}
+}

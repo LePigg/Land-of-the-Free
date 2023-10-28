@@ -1,0 +1,46 @@
+ideas = {
+
+	country = {
+		CAN_LoTF_great_depression = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.20
+			}
+		}
+
+		CAN_refugee_crisis = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				monthly_population = 0.25
+                political_power_cost = 0.2
+                stability_factor = -0.3
+			}
+		}
+    }
+}

@@ -1,0 +1,19 @@
+ideas = {
+	#Phoenix
+	country = {
+		PHE_navajo = {
+			picture = generic_intel_bonus
+			modifier = {
+				political_power_cost = 0.3
+			}
+		}
+	}
+	country = {
+		PHE_navajo1 = {
+			picture = generic_intel_bonus
+			modifier = {
+				political_power_cost = 0.15
+			}
+		}
+	}
+}

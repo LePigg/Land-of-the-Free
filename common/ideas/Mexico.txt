@@ -1,0 +1,80 @@
+ideas = {
+    country = {
+        MEX_depression = {
+            picture = great_depression
+            modifier = {
+                production_speed_buildings_factor = -0.15
+                consumer_goods_factor = 0.05
+                industrial_capacity_factory = -0.10
+            }
+        }
+        MEX_church_mad = {
+            picture = MEX_church_power_5
+            modifier = {
+                consumer_goods_factor = -0.05
+                conscription_factor = -0.20
+                stability_factor = -0.05
+            }
+        }
+    }
+    country = { 
+            MEX_army_chaos = {
+                picture = MEX_revolutionary_army
+                modifier = {
+                army_org_factor = -0.15
+                army_morale_factor = 0.05
+                max_planning_factor = -0.15
+                drift_defence_factor = -0.15
+                }
+            }
+        }
+    country = {
+        MEX_occupation = {
+            picture = generic_goods_red_bonus
+            modifier = {
+                political_power_cost = 0.10
+                consumer_goods_factor = 0.01
+            }
+        }
+    }
+    country = {
+        MEX_crisis = {
+            picture = HUN_treaty_of_triannon
+            modifier = {
+                political_power_gain = 0.20
+                stability_factor = -0.15
+                war_support_factor = -0.10
+            }
+        }
+    }
+    country = {
+        MEX_investment = {
+            picture = generic_build_infrastructure
+            modifier = {
+                production_speed_buildings_factor = 0.3
+                political_power_factor = 0.1
+                consumer_goods_factor = 0.05
+            }
+        }
+    }
+    country = {
+        MEX_antiamerican = {
+            picture = generic_secret_police
+            modifier = {
+                army_morale_factor = 0.05
+                army_org_Factor = 0.05
+                army_core_defence_factor = 0.05
+            }
+        }
+    }
+    country = {
+        MEX_antiamerican1 = {
+            picture = generic_secret_police
+            modifier = {
+                army_morale_factor = 0.1
+                army_org_Factor = 0.1
+                army_core_defence_factor = 0.1
+            }
+        }
+    }
+}

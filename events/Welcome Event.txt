@@ -1,0 +1,67 @@
+add_namespace = welcome
+
+country_event = {
+	id = welcome.1
+	title = welcome.1.t
+	desc = welcome.1.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	fire_only_once = no 
+	
+	trigger = {
+		date > 1936.1.1
+	}
+	option = {
+		name = welcome.1.a
+		ai_chance = { factor = 100 }
+		country_event = { id = welcome.2 }
+		add_political_power = 1
+	}
+	option = {
+		name = welcome.1.b
+		ai_chance = { factor = 100 }
+        add_political_power = 1
+	}	
+}
+country_event = {
+	id = welcome.2
+	title = welcome.2.t
+	desc = welcome.2.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	fire_only_once = no 
+	
+	option = {
+		name = welcome.2.a
+		ai_chance = { factor = 100 }
+		country_event = { id = welcome.3 }
+	}	
+}
+country_event = {
+	id = welcome.3
+	title = welcome.3.t
+	desc = welcome.3.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	fire_only_once = no 
+	
+	option = {
+		name = welcome.3.a
+		ai_chance = { factor = 100 }
+		country_event = { id = welcome.2 }
+	}	
+	option = {
+		name = welcome.3.b
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = welcometooltiplol
+	}
+}

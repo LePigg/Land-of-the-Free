@@ -1,0 +1,1440 @@
+add_namespace = tma
+add_namespace = tex_civil_war
+add_namespace = TEX_tick
+
+country_event = {
+	id = tex_civil_war.1
+	title = tex_civil_war.1.t
+	desc = tex_civil_war.1.d
+	picture = GFX_report_event_desertion_poster
+	is_triggered_only = yes
+
+	option = {
+		name = tex_civil_war.1.a
+		add_manpower = -3000
+		add_war_support = -0.15
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -200
+		}
+		hidden_effect = {
+			IF = {
+				limit = {
+					tag = TEX
+				}
+				random_list = {
+					20 = {
+						TRG = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						CHR = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						SRT = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						DIX = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						SNA = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+						TEJ = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					tag = TRG
+				}
+				random_list = {
+					20 = {
+						TEX = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						CHR = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						SRT = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						DIX = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						SNA = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+						TEJ = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					tag = SRT
+				}
+				random_list = {
+					20 = {
+						TRG = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						CHR = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						TEX = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						DIX = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						SNA = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+						TEJ = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					tag = CHR
+				}
+				random_list = {
+					20 = {
+						TRG = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						TEX = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						SRT = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						DIX = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						SNA = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+						TEJ = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					tag = DIX
+				}
+				random_list = {
+					20 = {
+						TRG = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						CHR = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						SRT = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						TEX = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						SNA = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+						TEJ = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					OR = {
+						tag = SNA
+						tag = TEJ
+					}
+				}
+				random_list = {
+					20 = {
+						TRG = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						CHR = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						TEX = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						DIX = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+					20 = {
+						SRT = {
+							country_event = { id = tex_civil_war.2 days = 2 }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = tex_civil_war.2
+	title = tex_civil_war.2.t
+	desc = tex_civil_war.2.d
+	picture = GFX_report_event_chinese_soldiers_city_ruin
+	is_triggered_only = yes
+
+	option = {
+		name = tex_civil_war.2.a
+		add_war_support = 0.15
+		add_manpower = 3000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 200
+		}
+	}
+}
+
+country_event = {
+	id = tex_civil_war.3
+	title = tex_civil_war.3.t
+	desc = tex_civil_war.3.d
+	picture = GFX_report_event_generic_peaceful_annexation
+	is_triggered_only = yes
+
+	option = {
+		name = tex_civil_war.3.a
+		add_political_power = 100
+		clr_country_flag = TEX_civilwar_time
+		set_country_flag = TEX_civil_war_over
+	}
+}
+
+country_event = {
+	id = TEX_tick.1
+	title = TEX_tick.1.t
+	desc = TEX_tick.1.d
+	picture = fard
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = TEX_tick.1.a
+		IF = {
+			limit = {
+				has_country_flag = TEX_civilwar_time
+				OR = {
+					AND = {
+						tag = DIX
+						TEX = { exists = no }
+						SRT = { exists = no }
+						CHR = { exists = no }
+						SNA = { exists = no }
+						TRG = { exists = no }
+					}
+					AND = {
+						tag = SRT
+						TEX = { exists = no }
+						DIX = { exists = no }
+						CHR = { exists = no }
+						SNA = { exists = no }
+						TRG = { exists = no }
+					}
+					AND = {
+						tag = TEX
+						DIX = { exists = no }
+						SRT = { exists = no }
+						CHR = { exists = no }
+						SNA = { exists = no }
+						TRG = { exists = no }
+					}
+					AND = {
+						tag = CHR
+						TEX = { exists = no }
+						SRT = { exists = no }
+						DIX = { exists = no }
+						SNA = { exists = no }
+						TRG = { exists = no }
+					}
+					AND = {
+						tag = TRG
+						TEX = { exists = no }
+						SRT = { exists = no }
+						CHR = { exists = no }
+						SNA = { exists = no }
+						DIX = { exists = no }
+					}
+					AND = {
+						tag = SNA
+						TEX = { exists = no }
+						SRT = { exists = no }
+						CHR = { exists = no }
+						DIX = { exists = no }
+						TRG = { exists = no }
+					}
+					AND = {
+						tag = TEX
+						DIX = { exists = no }
+						SRT = { exists = no }
+						CHR = { exists = no }
+						SNA = { exists = no }
+						TRG = { exists = no }
+					}
+				}
+			}
+			country_event = { id = tex_civil_war.3 }
+		}
+		ELSE_IF = {
+			limit = {
+				has_country_flag = TEX_civilwar_time
+			}
+			country_event = {
+				id = TEX_tick.1
+				days = 25
+			}
+		}
+		IF = {
+			limit = {
+				surrender_progress > 0.3
+			}
+			country_event = {
+				id = tex_civil_war.1
+				days = 4
+			}
+		}
+	}
+}
+
+country_event = {
+	id = tma.1
+	title = tma.1.t
+	desc = tma.1.d
+	picture = GFX_report_event_dead_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.1.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texabqpointsremove25
+		add_to_variable = { Texabqpoints = -25 }
+	}
+	option = {
+		name = tma.1.b
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = 40
+	}
+}
+country_event = {
+	id = tma.2
+	title = tma.2.t
+	desc = tma.2.d
+	picture = GFX_report_event_dead_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.2.a
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = -30
+		add_stability = -0.05
+	}
+}
+country_event = {
+	id = tma.3
+	title = tma.3.t
+	desc = tma.3.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.3.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texrangerpointsadd3
+		add_to_variable = { Texrangerpoints = 10 }
+		custom_effect_tooltip = Texgovernmentpointsadd1
+		add_to_variable = { Texgovernmentpoints = -5 }
+	}
+}
+country_event = {
+	id = tma.4
+	title = tma.4.t
+	desc = tma.4.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.4.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texrangerpointsadd21
+		add_to_variable = { Texrangerpoints = 20 }
+	}
+}
+country_event = {
+	id = tma.5
+	title = tma.5.t
+	desc = tma.5.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.5.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texdemocratspoints20
+		add_to_variable = { Texdemocratspoints = 10 }
+		custom_effect_tooltip = Texgovernmentpointsadd1
+		add_to_variable = { Texgovernmentpoints = -5 }
+	}
+}
+country_event = {
+	id = tma.6
+	title = tma.6.t
+	desc = tma.6.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.6.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texchristianpointsadd2
+		add_to_variable = {
+			Texchristianpoints = 20
+		}
+	}
+}
+country_event = {
+	id = tma.7
+	title = tma.7.t
+	desc = tma.7.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.7.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texdemocratspoints201
+		add_to_variable = { Texdemocratspoints = 20 }
+	}
+}
+country_event = {
+	id = tma.8
+	title = tma.8.t
+	desc = tma.8.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.8.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texgovernmentpointsadd1
+		add_to_variable = { Texgovernmentpoints = -5 }
+		custom_effect_tooltip = Texchristianpointsadd3
+		add_to_variable = {
+			Texchristianpoints = 10
+		}
+	}
+}
+country_event = {
+	id = tma.9
+	title = tma.9.t
+	desc = tma.9.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.9.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texdixiecratspoints201
+		add_to_variable = {
+			Texdixiecratspoints = 20
+		}
+	}
+}
+country_event = {
+	id = tma.10
+	title = tma.10.t
+	desc = tma.10.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.10.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texdixiecratspointsadd1
+		add_to_variable = {
+			Texdixiecratspoints = 10
+		}
+		custom_effect_tooltip = Texgovernmentpointsadd1
+		add_to_variable = { Texgovernmentpoints = -5 }
+	}
+}
+country_event = {
+	id = tma.11
+	title = tma.11.t
+	desc = tma.11.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.11.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texabqpointsadd1
+		add_to_variable = { Texabqpoints = 10 }
+		custom_effect_tooltip = Texgovernmentpointsadd2
+		add_to_variable = { Texgovernmentpoints = -10 }
+	}
+}
+country_event = {
+	id = tma.12
+	title = tma.12.t
+	desc = tma.12.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.12.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texcmppointsadd1
+		add_to_variable = {
+			Texcmppoints = 10
+		}
+		custom_effect_tooltip = Texgovernmentpointsadd2
+		add_to_variable = { Texgovernmentpoints = -10 }
+	}
+}
+country_event = {
+	id = tma.13
+	title = tma.13.t
+	desc = tma.13.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.13.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texdemocratspoints20
+		add_to_variable = { Texdemocratspoints = 10 }
+		custom_effect_tooltip = Texgovernmentpointsadd1
+		add_to_variable = { Texgovernmentpoints = -5 }
+	}
+}
+country_event = {
+	id = tma.14
+	title = tma.14.t
+	desc = tma.14.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.14.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texcmppointsadd1
+		add_to_variable = {
+			Texcmppoints = 10
+		}
+		custom_effect_tooltip = Texgovernmentpointsadd2
+		add_to_variable = { Texgovernmentpoints = -10 }
+	}
+}
+country_event = {
+	id = tma.15
+	title = tma.15.t
+	desc = tma.15.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.15.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texgovernmentpointsadd1
+		add_to_variable = { Texgovernmentpoints = -5 }
+		custom_effect_tooltip = Texchristianpointsadd3
+		add_to_variable = {
+			Texchristianpoints = 10
+		}
+	}
+}
+country_event = {
+	id = tma.16
+	title = tma.16.t
+	desc = tma.16.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.16.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texrangerpointsadd3
+		add_to_variable = { Texrangerpoints = 10 }
+		custom_effect_tooltip = Texgovernmentpointsadd1
+		add_to_variable = { Texgovernmentpoints = -5 }
+	}
+}
+country_event = {
+	id = tma.17
+	title = tma.17.t
+	desc = tma.17.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.17.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texabqpointsadd1
+		add_to_variable = { Texabqpoints = 10 }
+		custom_effect_tooltip = Texgovernmentpointsadd2
+		add_to_variable = { Texgovernmentpoints = -10 }
+	}
+}
+country_event = {
+	id = tma.18
+	title = tma.18.t
+	desc = tma.18.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.18.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texdixiecratspointsadd1
+		add_to_variable = {
+			Texdixiecratspoints = 10
+		}
+		custom_effect_tooltip = Texgovernmentpointsadd1
+		add_to_variable = { Texgovernmentpoints = -5 }
+	}
+}
+country_event = {
+	id = tma.19
+	title = tma.19.t
+	desc = tma.19.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.19.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texabqpointsreset1
+		set_variable = { Texgovernmentpoints = 80 }
+		add_to_variable = { TexasRebellionCounter = 1 }
+		add_stability = -0.05
+		add_popularity = {
+			ideology = guided_democracy
+			popularity = -0.08
+		}
+		add_timed_idea = {
+			idea = tex_turmoil
+			days = 90
+		}
+	}
+}
+country_event = {
+	id = tma.20
+	title = tma.20.t
+	desc = tma.20.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.20.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texabqpointsreset
+		set_variable = { Texabqpoints = 80 }
+		add_to_variable = { TexasRebellionCounter = 1 }
+		add_stability = -0.05
+		add_timed_idea = {
+			idea = tex_abq_tied
+			days = 90
+		}
+	}
+}
+country_event = {
+	id = tma.21
+	title = tma.21.t
+	desc = tma.21.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.21.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texabqpointsreset
+		set_variable = { Texcmppoints = 80 }
+		add_to_variable = { TexasRebellionCounter = 1 }
+		add_stability = -0.05  
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = 0.08
+		}
+		SNA = {
+			add_manpower = 5000
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+}
+country_event = {
+	id = tma.22
+	title = tma.22.t
+	desc = tma.22.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.22.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texabqpointsreset
+		set_variable = { Texchristianpoints = 80 }
+		add_to_variable = { TexasRebellionCounter = 1 }
+		add_stability = -0.05
+		IF = {
+			limit = {
+				has_equipment = { infantry_equipment > 249 }
+			}
+			send_equipment = { target = CHR type = infantry_equipment amount = 250 }  
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.08
+		}
+		CHR = {
+			add_manpower = 5000
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+}
+country_event = {
+	id = tma.23
+	title = tma.23.t
+	desc = tma.23.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.23.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texabqpointsreset
+		set_variable = { Texrangerpoints = 80 }
+		add_to_variable = { TexasRebellionCounter = 1 }
+		add_stability = -0.05
+		IF = {
+			limit = {
+				has_equipment = { infantry_equipment > 249 }
+			}
+			send_equipment = { target = TRG type = infantry_equipment amount = 250 }  
+		}
+		add_popularity = {
+			ideology = stratocracy
+			popularity = 0.08
+		}
+		TRG = {
+			add_manpower = 5000
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+}
+country_event = {
+	id = tma.24
+	title = tma.24.t
+	desc = tma.24.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.24.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texabqpointsreset
+		set_variable = { Texdixiecratspoints = 80 }
+		add_to_variable = { TexasRebellionCounter = 1 }
+		add_stability = -0.05
+		IF = {
+			limit = {
+				has_equipment = { infantry_equipment > 249 }
+			}
+			send_equipment = { target = DIX type = infantry_equipment amount = 250 }  
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.08
+		}
+		DIX = {
+			add_manpower = 5000
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+}
+country_event = {
+	id = tma.25
+	title = tma.25.t
+	desc = tma.25.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.25.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texabqpointsreset
+		set_variable = { Texdemocratspoints = 80 }
+		add_to_variable = { TexasRebellionCounter = 1 }
+		add_stability = -0.05
+		IF = {
+			limit = {
+				has_equipment = { infantry_equipment > 249 }
+			}
+			send_equipment = { target = SRT type = infantry_equipment amount = 250 }  
+		} 
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.08
+		}
+		SRT = {
+			add_manpower = 5000
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+}
+country_event = {
+	id = tma.26
+	title = tma.26.t
+	desc = tma.26.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.26.a
+		ai_chance = {
+			base = 10
+		}
+		custom_effect_tooltip = Texchristianpointsadd4
+		add_to_variable = {
+			Texchristianpoints = -30
+		}
+	}
+}
+country_event = {
+	id = tma.27
+	title = tma.27.t
+	desc = tma.27.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_nationality = {
+				target_country = CHR
+				character = CHR_charles_coughlin	
+			}
+			CHR = {
+				retire_country_leader = yes
+				add_state_core = 175
+				add_state_core = 241
+			}
+			remove_state_core = 175
+			remove_state_core = 241
+			CHR = {
+				transfer_state = 175
+				transfer_state = 241
+				load_oob = "CHR_1936"
+			}
+			CHR_joseph_collins = {
+				set_nationality = CHR
+			}
+			CHR_troy_middleton = {
+				set_nationality = CHR
+			}
+			transfer_units_fraction = {
+				target = CHR
+				army_ratio = 0.15
+			}
+		}
+	}
+	
+	option = {
+		name = tma.27.a
+		ai_chance = {
+			base = 10
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.5
+		}
+	}
+	option = {
+		name = tma.27.b
+		ai_chance = {
+			base = 0
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.5
+		}
+		CHR = {
+			change_tag_from = ROOT
+		}
+	}
+}
+country_event = {
+	id = tma.28
+	title = tma.28.t
+	desc = tma.28.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			SRT_miriam_ferguson = {
+				set_nationality = SRT
+			}
+			SRT = {
+				retire_country_leader = yes
+				add_state_core = 285
+				add_state_core = 177
+			}
+			remove_state_core = 285
+			remove_state_core = 177
+			SRT = {
+				transfer_state = 285
+				transfer_state = 177
+				load_oob = "SRT_1936"
+			}
+			SRT_lucian_truscott = {
+				set_nationality = SRT
+			}
+			SRT_henry_hodes = {
+				set_nationality = SRT
+			}
+			SRT_john_odaniel = {
+				set_nationality = SRT
+			}
+			SRT_samuel_williams = {
+				set_nationality = SRT
+			}
+			transfer_units_fraction = {
+				target = SRT
+				army_ratio = 0.2
+			}
+		}
+	}
+	
+	option = {
+		name = tma.28.a
+		ai_chance = {
+			base = 10
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = -0.5
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = -0.25
+		}
+	}
+	option = {
+		name = tma.28.b
+		ai_chance = {
+			base = 0
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = -0.5
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = -0.25
+		}
+		SRT = {
+			change_tag_from = ROOT
+		}
+	}
+}
+country_event = {
+	id = tma.29
+	title = tma.29.t
+	desc = tma.29.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_nationality = {
+				target_country = TRG
+				character = TRG_frank_hamer	
+			}
+			TRG = {
+				retire_country_leader = yes
+				add_state_core = 279
+				add_state_core = 44
+				add_state_core = 181
+				add_state_core = 278
+			}
+			remove_state_core = 279
+			remove_state_core = 44
+			remove_state_core = 181
+			remove_state_core = 278
+			TRG = {
+				transfer_state = 279
+				transfer_state = 44	
+				transfer_state = 181
+				transfer_state = 278
+				load_oob = "TRG_1936"
+			}
+			transfer_units_fraction = {
+				target = TRG
+				army_ratio = 0.33
+			}
+		}
+	}
+	
+	option = {
+		name = tma.29.a
+		ai_chance = {
+			base = 10
+		}
+		add_popularity = {
+			ideology = stratocracy
+			popularity = -0.5
+		}
+	}
+	option = {
+		name = tma.29.b
+		ai_chance = {
+			base = 0
+		}
+		add_popularity = {
+			ideology = stratocracy
+			popularity = -0.5
+		}
+		TRG = {	
+			change_tag_from = ROOT
+		}
+	}
+}
+country_event = {
+	id = tma.30
+	title = tma.30.t
+	desc = tma.30.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			set_capital = {
+				state = 176
+			}
+			remove_country_leader_role = {
+				character = DIX_theodore_bilbo
+				ideology = gen_despotism
+			}
+			add_country_leader_role = {
+				character = DIX_theodore_bilbo
+				promote_leader = yes
+				country_leader = {
+				  ideology = dixiecracy
+				  traits = {
+					white_chief
+				}
+				}
+			}
+			set_nationality = {
+				target_country = DIX
+				character = DIX_theodore_bilbo	
+			}
+			DIX = {
+				retire_country_leader = yes
+				add_state_core = 38
+				add_state_core = 283
+				add_state_core = 282
+			}
+			remove_state_core = 38
+			remove_state_core = 283
+			remove_state_core = 282
+			set_capital = {state = 176}
+			DIX = {
+				transfer_state = 38
+				transfer_state = 283
+				transfer_state = 282	
+				load_oob = "DIX_1936"
+			}
+			DIX_fox_conner = {
+				set_nationality = DIX
+			}
+			DIX_nathan_forrest = {
+				set_nationality = DIX
+			}
+			DIX_william_simpson = {
+				set_nationality = DIX
+			}
+			DIX_simon_buckner = {
+				set_nationality = DIX
+			}
+			transfer_units_fraction = {
+				target = DIX
+				army_ratio = 0.3
+			}
+		}
+	}
+	
+	option = {
+		name = tma.30.a
+		ai_chance = {
+			base = 10
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = -0.5
+		}
+	}
+	option = {
+		name = tma.30.b
+		ai_chance = {
+			base = 0
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = -0.5
+		}
+		DIX = {
+			change_tag_from = ROOT
+		}
+	}
+}
+country_event = {
+	id = tma.31
+	title = tma.31.t
+	desc = tma.31.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tma.31.a
+		ai_chance = {
+			base = 10
+		}
+		
+	}
+}
+country_event = {
+	id = tma.32
+	title = tma.32.t
+	desc = tma.32.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+		set_cosmetic_tag = TMA_warlording
+		set_nationality = {
+			target_country = DIX
+			character = DIX_edwin_walker	
+		}
+		load_oob = "TEX_1937"
+		}
+	}
+	option = {
+		name = tma.32.a
+		ai_chance = {
+			base = 10
+		}
+		swap_ideas = {
+			remove_idea = tex_disloyal_army
+			add_idea = tex_disloyal_army1
+		}
+		remove_ideas = tex_rotten
+		set_stability = 0.45
+		set_war_support = 0.6
+		set_nationality = {
+			target_country = DIX
+			character = DIX_edwin_walker	
+		}
+		TEX_claire_chennault = {
+			promote_leader = yes
+		}
+		DIX = {
+			country_event = { days = 1 id = dix.19 }
+		}
+		hidden_effect = {
+			load_focus_tree = TEX_warlord
+			country_lock_all_division_template = no
+			set_popularities = {
+				guided_democracy = 40
+				stratocracy = 15
+				conservatism = 25
+				liberalism = 10
+				despotism = 10
+			}
+			if = {
+				limit = { has_idea = tex_sabotage }
+				swap_ideas = {
+					remove_idea = tex_sabotage
+					add_idea = tex_devastation
+				}
+			}
+			if = {
+				limit = { has_idea = tex_sabotage1 }
+				swap_ideas = {
+					remove_idea = tex_sabotage1
+					add_idea = tex_devastation
+				}
+			}
+			if = {
+				limit = { has_idea = tex_sabotage2 }
+				swap_ideas = {
+					remove_idea = tex_sabotage2
+					add_idea = tex_devastation
+				}
+			}
+			if = {
+				limit = { has_idea = tex_sabotage3 }
+				swap_ideas = {
+					remove_idea = tex_sabotage3
+					add_idea = tex_devastation
+				}
+			}
+			if = {
+				limit = { has_idea = tex_sabotage4 }
+				swap_ideas = {
+					remove_idea = tex_sabotage4
+					add_idea = tex_devastation
+				}
+			}
+			if = {
+				limit = { has_idea = tex_sabotage5 }
+				swap_ideas = {
+					remove_idea = tex_sabotage5
+					add_idea = tex_devastation
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = tma.33
+	title = tma.33.t
+	desc = tma.33.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			ACA = {
+				add_state_core = 24
+				load_oob = "ACA_1936"
+			}
+			remove_state_core = 24
+			transfer_units_fraction = {
+				target = ACA
+				army_ratio = 0.15
+			}
+			ACA = {
+				transfer_state = 24
+			}
+			TRG = {
+				set_country_flag = TEX_civilwar_time
+				country_event = { id = TEX_tick.1 days = 25 }
+			}
+			TEX = {
+				set_country_flag = TEX_civilwar_time
+				country_event = { id = TEX_tick.1 days = 25 }
+			}
+			CHR = {
+				set_country_flag = TEX_civilwar_time
+				country_event = { id = TEX_tick.1 days = 25 }
+			}
+			SRT = {
+				set_country_flag = TEX_civilwar_time
+				country_event = { id = TEX_tick.1 days = 25 }
+			}
+			DIX = {
+				country_event = { id = TEX_tick.1 days = 25 }
+				set_country_flag = TEX_civilwar_time
+			}
+			activate_mission = TEX_its_texing_time1
+		}
+	}
+	
+	option = {
+		name = tma.33.a
+		ai_chance = {
+			base = 10
+		}
+		hidden_effect = {
+			TEX = {
+				add_popularity = {
+					ideology = guided_democracy
+					popularity = 0.4
+				}
+			}
+		}
+	}
+	option = {
+		name = tma.33.b
+		ai_chance = {
+			base = 10
+		}
+		ACA = {
+			change_tag_from = ROOT
+		}
+		hidden_effect = {
+			TEX = {
+				add_popularity = {
+					ideology = guided_democracy
+					popularity = 0.4
+				}
+			}
+		}
+	}
+}
+news_event = {
+    id = tma.34
+    title = tma.34.t
+    desc = tma.34.d
+    picture = GFX_news_event_047
+
+    is_triggered_only = yes
+    
+    option = {
+        name = tma.34.a
+        ai_chance = { factor = 5}	
+    }
+}

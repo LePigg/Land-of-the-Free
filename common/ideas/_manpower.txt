@@ -11,7 +11,7 @@ ideas = {
 			level = 7
 			
 			available = {
-				#has_manpower_for_recruit_change_to = { value = 0.005 group = mobilization_laws }
+				always = no 
 			}
 
 			modifier = {
@@ -28,7 +28,7 @@ ideas = {
 			level = 6
 			
 			available = {
-				#has_manpower_for_recruit_change_to =  { value = 0.015 group = mobilization_laws }
+				always = no
 				NOT = { has_idea = undisturbed_isolation }
 				NOT = { has_idea = isolation }
 			}
@@ -44,6 +44,9 @@ ideas = {
 
 			modifier = {
 				conscription = 0.015
+				army_org_factor = 0.02
+				army_morale_factor = 0.03
+				training_time_army_factor = -0.05
 			}
 			
 			default = yes
@@ -58,14 +61,14 @@ ideas = {
 			level = 5
 
 			available = {
-				#has_manpower_for_recruit_change_to =  { value = 0.025 group = mobilization_laws }
-				has_war_support > 0.1
+				
 				NOT = { has_idea = undisturbed_isolation }
 				NOT = { has_idea = isolation }
+				always = no
 			}
 
 			modifier = {
-				conscription = 0.025
+				conscription = 0.02
 			}
 
 			ai_will_do = {
@@ -75,6 +78,11 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory <  1000
 				}
+				modifier = {
+					tag = ENG
+					has_idea_with_trait = military_theorist
+					factor = 20
+				}
 			}
 			
 			cancel_if_invalid = no
@@ -83,23 +91,7 @@ ideas = {
 		extensive_conscription = {
 			
 			available = {
-				#has_manpower_for_recruit_change_to = { value = 0.05 group = mobilization_laws }
-				OR = {
-					has_government = fascism
-					has_government = communism
-					AND = {
-						has_war = yes
-						enemies_strength_ratio > 0.5
-						#any_enemy_country = {
-						#	strength_ratio = {
-						#		tag = ROOT 
-						#		ratio > 0.5
-						#	}
-						#}
-					}					
-				}
-				has_war_support > 0.2
-				#Special rules AST in TFV
+				always = no
 			}
 			ai_will_do = {
    				factor = 1
@@ -107,6 +99,19 @@ ideas = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory <  800
+				}
+
+				modifier = {
+					tag = TUR
+					has_dlc = "Battle for the Bosporus"
+					factor = 50
+				}
+
+				modifier = { # china relies a lot on throwing bodies at the enemy
+					factor = 3
+
+					tag = CHI
+					has_manpower < 200000
 				}
 				
 			}
@@ -116,9 +121,11 @@ ideas = {
 			level = 4
 			
 			modifier = {
-				conscription = 0.05
-				#industrial_capacity_factory = -0.1
-				#production_speed_buildings_factor = -0.1
+				conscription = 0.04
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.05
+				army_org_factor = -0.02
+				army_morale_factor = -0.03
 				training_time_factor = 0.1
 			}
 			
@@ -129,25 +136,7 @@ ideas = {
 			
 			
 			available = {
-				#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
-				OR = {
-					has_government = fascism
-					has_government = communism
-					AND = {
-						has_war = yes
-						enemies_strength_ratio > 0.6
-						#any_enemy_country = {
-						#	strength_ratio = {
-						#		tag = ROOT 
-						#		ratio > 0.6
-						#	}
-						#}
-					}
-				}
-				OR = {
-					has_war_support > 0.6
-					surrender_progress > 0
-				}
+					always = no
 			}
 
 			ai_will_do = {
@@ -162,6 +151,33 @@ ideas = {
 					factor = 0.5
 					manpower_per_military_factory >  1000
 				}
+				modifier = {
+					#Block has plenty manpower
+					factor = 0
+					NOT = { tag = CHI }
+					NOT = { tag = SOV }
+					manpower_per_military_factory >  3000
+				}
+
+				modifier = { # china relies a lot on throwing bodies at the enemy
+					factor = 3
+
+					tag = CHI
+					has_manpower < 200000
+				}
+
+				modifier = { # germany needs this before russia, badly
+					factor = 10
+
+					original_tag = GER
+					has_manpower < 2000000
+				}
+				modifier = {
+					factor = 1000
+					original_tag = SOV
+					check_variable = { manpower_k < 3000 }
+				}
+
 			}
 			
 			cost = 150
@@ -169,10 +185,12 @@ ideas = {
 			level = 3
 
 			modifier = {
-				conscription = 0.1
+				conscription = 0.08
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
 				production_speed_buildings_factor = -0.1
+				army_org_factor = -0.04
+				army_morale_factor = -0.06
 				training_time_factor = 0.2
 			}
 			
@@ -183,19 +201,7 @@ ideas = {
 			
 			
 			available = {
-				#has_manpower_for_recruit_change_to =  { value = 0.2 group = mobilization_laws }
-				has_war = yes
-				OR = {
-					has_war_support > 0.7
-					surrender_progress > 0
-				}
-				enemies_strength_ratio > 0.75
-				#any_enemy_country = {
-				#	strength_ratio = {
-				#		tag = ROOT 
-				#		ratio > 0.75
-				#	}
-				#}
+				always = no
 			}
 
 			ai_will_do = {
@@ -216,6 +222,19 @@ ideas = {
 					NOT = { tag = CHI }
 					manpower_per_military_factory >  5000
 				}
+
+				modifier = { # china relies a lot on throwing bodies at the enemy
+					factor = 3
+
+					tag = CHI
+					has_manpower < 200000
+				}
+				modifier = {
+					factor = 10
+					original_tag = SOV
+					date > 1943.1.1
+					has_manpower < 2000000	
+				}
 			}
 		
 			cost = 150
@@ -223,7 +242,9 @@ ideas = {
 			level = 2
 			
 			modifier = {
-				conscription = 0.2
+				conscription = 0.15
+				army_org_factor = -0.06
+				army_morale_factor = -0.08
 				industrial_capacity_factory = -0.3
 				industrial_capacity_dockyard = -0.3
 				production_speed_buildings_factor = -0.3
@@ -238,19 +259,7 @@ ideas = {
 			
 			
 			available = {
-				#has_manpower_for_recruit_change_to =  { value = 0.25 group = mobilization_laws }
-				has_war = yes
-				OR = {
-					has_war_support > 0.85
-					surrender_progress > 0.25
-				}
-				enemies_strength_ratio > 1
-				#any_enemy_country = {
-				#	strength_ratio = {
-				#		tag = ROOT 
-				#		ratio > 1
-				#	}
-				#}
+				always = no
 			}
 
 			ai_will_do = {

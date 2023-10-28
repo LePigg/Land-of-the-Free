@@ -1,0 +1,28 @@
+ideas = {
+    country = {
+        aka_famine = {
+            picture = raj_risk_of_famine
+            modifier = {
+                monthly_population = -0.30
+                conscription_factor = -0.25
+                consumer_goods_factor = 0.10
+                stability_factor = -0.20
+            }
+        }
+        aka_revolt = {
+            picture = FRA_scw_intervention_republicans_focus
+            modifier = {
+               political_power_gain = -0.30
+               stability_factor = -0.10
+               war_support_factor = -0.20
+            }
+        }
+        aka_frontier = {
+            picture = YUG_federal_defense_council
+            modifier = {
+               winter_attrition_factor = -0.20
+               army_core_defence_factor = 0.10
+            }
+        }
+    }
+}

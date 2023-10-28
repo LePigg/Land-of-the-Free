@@ -1,0 +1,11 @@
+ideas = {
+	country = {
+		VEN_oil = {
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				local_resources_factor = 0.25
+				political_power_factor = 0.15
+			}
+		}
+	}
+}

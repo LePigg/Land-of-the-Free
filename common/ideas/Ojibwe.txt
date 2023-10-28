@@ -1,0 +1,13 @@
+ideas = {
+	country = {
+		OJB_partisans = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.15
+				army_morale_factor = -0.1
+				max_planning_factor = -0.15
+			}
+		}
+	}	
+}

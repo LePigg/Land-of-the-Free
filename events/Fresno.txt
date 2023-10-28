@@ -1,0 +1,1024 @@
+add_namespace = eur
+
+country_event = {
+	id = eur.1
+	title = eur.1.t
+	desc = eur.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = eur.1.a
+		ai_chance = { factor = 100 }
+	}	
+}
+country_event = {
+    id = eur.2
+    title = eur.2.t
+    desc = eur.2.d
+    picture = doolittle.dds
+
+    is_triggered_only = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = eur.2.a
+        ai_chance = { factor = 35 }
+        add_stability = -0.05
+        add_political_power = 50
+        add_popularity = {
+            ideology = communism
+            popularity = 0.08
+        }
+        add_popularity = {
+            ideology = revolutionary_socialist
+            popularity = 0.04
+        }
+        add_popularity = {
+            ideology = democratic_socialism
+            popularity = 0.02
+        }
+    }
+    option = {
+        name = eur.2.b
+        ai_chance = { factor = 65 }
+        add_stability = 0.05
+        add_political_power = -50
+        add_popularity = {
+            ideology = conservatism
+            popularity = 0.08
+        }
+        add_popularity = {
+            ideology = liberalism
+            popularity = 0.03
+        }
+        add_popularity = {
+            ideology = democratic_socialism
+            popularity =  0.05
+        }
+    }
+}
+country_event = {
+	id = eur.3
+	title = eur.3.t
+	desc = eur.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = eur.3.a
+		ai_chance = { factor = 100 }
+	}	
+}
+
+country_event = {
+	id = eur.4
+	title = eur.4.t
+	desc = eur.4.d
+	picture = GFX_report_event_generic_communist_congress
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = eur.4.a
+		ai_chance = { factor = 100 }
+		retire_character = EUR_benjamin_gitlow
+        add_popularity = {
+            ideology = revolutionary_socialist
+            popularity = -0.15
+        }
+	}
+}
+
+country_event = {
+	id = eur.5
+	title = eur.5.t
+	desc = eur.5.d
+	picture = GFX_report_event_election_vote
+	
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 5 }
+
+    trigger = {
+        NOT = {
+            has_country_flag = eur.1940
+        }
+        has_country_flag = EUR_cmp_only
+		tag = EUR
+		date > 1940.11.1
+	}
+	
+	option = {
+		name = eur.5.a
+		ai_chance = { factor = 34 }
+        set_politics = {
+            ruling_party = democratic_socialism
+            elections_allowed = yes
+                 }
+            hidden_effect = {
+            set_country_flag = eur.1940
+           
+                     }
+    }	
+    option = {
+		name = eur.5.b
+		ai_chance = { factor = 33 }
+        set_politics = {
+            ruling_party = revolutionary_socialist
+            elections_allowed = yes
+        }
+        hidden_effect = {
+            set_country_flag = eur.1940
+           
+            }
+	}	
+    option = {
+		name = eur.5.c
+		ai_chance = { factor = 33 }
+        set_politics = {
+            ruling_party = communism
+            elections_allowed = yes
+        }
+            hidden_effect = {
+                set_country_flag = eur.1940
+                }
+        
+	}	
+}
+
+country_event = {
+    id = eur.6
+    title = eur.6.t
+    desc = eur.6.d
+    picture = GFX_report_event_election_vote
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 5 }
+
+    trigger = {
+        NOT = {
+            has_country_flag = eur.1940
+        }
+        has_country_flag = EUR_all_party
+		tag = EUR
+		date > 1940.11.1
+	}
+
+
+    option = {
+        name = eur.6.a
+        ai_chance = { factor = 25 }
+        set_politics = {
+            ruling_party = democratic_socialism
+            elections_allowed = yes
+        }
+            hidden_effect = {
+                set_country_flag = eur.1940
+                country_event = { id = eur.19 days = 180 }
+                }
+            }
+    option = {
+        name = eur.6.b
+        ai_chance = { factor = 25 }
+        set_politics = {
+            ruling_party = revolutionary_socialist
+            elections_allowed = yes
+            }
+            hidden_effect = {
+                set_country_flag = eur.1940
+                country_event = { id = eur.19 days = 180 }
+                }
+         }
+    option = {
+        name = eur.6.c
+        ai_chance = { factor = 25 }
+        set_politics = {
+            ruling_party = liberalism
+            elections_allowed = yes
+        }
+            hidden_effect = {
+                set_country_flag = eur.1940
+                country_event = { id = eur.19 days = 180 }
+                }
+                
+    }
+    option = {
+        name = eur.6.e
+        ai_chance = { factor = 25 }
+        set_politics = {
+            ruling_party = conservatism
+            elections_allowed = yes
+        }
+            hidden_effect = {
+                set_country_flag = eur.1940
+                }
+    }
+	
+}
+
+country_event = {
+	id = eur.7
+	title = eur.7.t
+	desc = eur.7.d
+	picture = GFX_report_event_election_vote
+	
+    is_triggered_only = yes
+
+    fire_only_once = yes 
+
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = eur.7.a
+		ai_chance = { factor = 34 }
+        set_politics = {
+            ruling_party = democratic_socialism
+            elections_allowed = yes
+                 }
+            hidden_effect = {
+            set_country_flag = eur.1940
+           
+                     }
+    }	
+    option = {
+		name = eur.7.b
+		ai_chance = { factor = 33 }
+        set_politics = {
+            ruling_party = revolutionary_socialist
+            elections_allowed = yes
+        }
+        hidden_effect = {
+            set_country_flag = eur.1940
+           
+            }
+	}	
+    option = {
+		name = eur.7.c
+		ai_chance = { factor = 33 }
+        set_politics = {
+            ruling_party = communism
+            elections_allowed = yes
+        }
+            hidden_effect = {
+                set_country_flag = eur.1940
+                }
+        
+	}	
+}
+
+country_event = {
+    id = eur.8
+    title = eur.8.t
+    desc = eur.8.d
+    picture = GFX_report_event_election_vote
+
+    is_triggered_only = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = eur.8.a
+        ai_chance = { factor = 25 }
+        set_politics = {
+            ruling_party = democratic_socialism
+            elections_allowed = yes
+        }
+            hidden_effect = {
+                set_country_flag = eur.1940
+                country_event = { id = eur.19 days = 180 }
+                }
+            }
+    option = {
+        name = eur.8.b
+        ai_chance = { factor = 25 }
+        set_politics = {
+            ruling_party = revolutionary_socialist
+            elections_allowed = yes
+            }
+            hidden_effect = {
+                set_country_flag = eur.1940
+                country_event = { id = eur.19 days = 180 }
+                }
+         }
+    option = {
+        name = eur.8.c
+        ai_chance = { factor = 25 }
+        set_politics = {
+            ruling_party = liberalism
+            elections_allowed = yes
+        }
+            hidden_effect = {
+                set_country_flag = eur.1940
+                country_event = { id = eur.19 days = 180 }
+                }
+    }
+    option = {
+        name = eur.8.e
+        ai_chance = { factor = 25 }
+        set_politics = {
+            ruling_party = conservatism
+            elections_allowed = yes
+        }
+            hidden_effect = {
+                set_country_flag = eur.1940
+                }
+    }
+}
+
+country_event = {
+    id = eur.9
+    title = eur.9.t
+    desc = eur.9.d
+    picture = GFX_report_event_tank_factory
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = eur.9.a
+        ai_chance = { factor = 65 }
+        army_experience = -50
+        add_war_support = -0.15
+        add_manpower = -238
+    }
+	option = {
+        name = eur.9.b 
+        ai_chance = { factor = 35 }
+        add_political_power = -30
+        hidden_effect = {
+            country_event = { id = eur.10 days = 5 }
+        }
+    }
+}
+country_event = {
+    id = eur.10
+    title = eur.10.t
+    desc = eur.10.d
+    picture = GFX_report_event_usa_election_generic
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = eur.10.a
+        ai_chance = { factor = 100 }
+        set_politics = {
+            ruling_party = stratocracy
+            elections_allowed = no
+         }
+        add_popularity = {
+            ideology = communism
+            popularity = -0.15
+            }
+        hidden_effect = {
+            clr_country_flag = EUR_cmp_only
+            set_country_flag = EUR_all_party
+            load_focus_tree = EUR_dem
+            country_event = { id = eur.11 days = 10 }
+            }
+        }
+    }
+
+    country_event = {
+        id = eur.11
+        title = eur.11.t
+        desc = eur.11.d
+        picture = GFX_report_event_election_vote
+    
+        is_triggered_only = yes
+    
+        mean_time_to_happen = { days = 1 }
+    
+        option = {
+            name = eur.11.a
+            ai_chance = { factor = 25 }
+            set_politics = {
+                ruling_party = democratic_socialism
+                elections_allowed = yes
+            }
+                hidden_effect = {
+                    set_country_flag = eur.1940
+                    }
+                }
+        option = {
+            name = eur.11.b
+            ai_chance = { factor = 25 }
+            set_politics = {
+                ruling_party = revolutionary_socialist
+                elections_allowed = yes
+                }
+                hidden_effect = {
+                    set_country_flag = eur.1940
+                    }
+        }
+        option = {
+            name = eur.11.c
+            ai_chance = { factor = 25 }
+            set_politics = {
+                ruling_party = liberalism
+                elections_allowed = yes
+            }
+                hidden_effect = {
+                    set_country_flag = eur.1940
+                    }
+        }
+        option = {
+            name = eur.11.e
+            ai_chance = { factor = 25 }
+            set_politics = {
+                ruling_party = conservatism
+                elections_allowed = yes
+            }
+                hidden_effect = {
+                    set_country_flag = eur.1940
+                    }
+        }
+    }
+}
+    country_event = {
+        id = eur.12
+        title = eur.12.t
+        desc = eur.12.d
+        picture = GFX_report_event_soviet_purge_trial
+
+        is_triggered_only = yes
+
+        option = {
+            name = eur.12.a
+            ai_chance = { factor = 10 }
+            add_popularity = {
+                ideology = conservatism
+                popularity = -0.15
+            }
+            add_popularity = {
+                ideology = liberalism
+                popularity = -0.15
+            }
+            add_popularity = {
+                ideology = guided_democracy
+                popularity = -0.15
+            }
+            add_popularity = {
+                ideology = despotism
+                popularity = -0.15
+            }
+            add_popularity = {
+                ideology = democratic_socialism
+                popularity = -0.10
+            }
+            add_popularity = {
+                ideology = revolutionary_socialist
+                popularity = -0.15
+            }
+            add_popularity = {
+                ideology = stratocracy
+                popularity = -0.15
+            }
+    }
+    }
+    country_event = {
+        id = eur.13
+        title = eur.13.t
+        desc = eur.13.d
+        picture = GFX_report_event_african_soldiers
+
+        is_triggered_only = yes
+
+        option = {
+            name = eur.13.a
+            ai_chance = { factor = 10 }
+            add_manpower = 5000
+
+        }
+    }
+    country_event = {
+        id = eur.14
+        title = eur.14.t
+        desc = eur.14.d
+        picture = GFX_report_event_african_soldiers
+
+        is_triggered_only = yes
+
+        option = {
+            name = eur.14.a
+            ai_chance = { factor = 10 }
+            add_ideas = EUR_desegregation
+
+        }
+    }
+    country_event = {
+        id = eur.15
+        title = eur.15.t
+        desc = eur.15.d
+        picture = GFX_report_event_generic_military_parade
+
+        is_triggered_only = yes
+
+        fire_only_once = yes
+
+        option = {
+            name = eur.15.a
+            ai_chance = { factor = 10 }
+            add_popularity = {
+                ideology = ROOT
+                popularity = -0.05
+            }
+            add_political_power = 150
+        }
+        option = {
+            name = eur.15.b
+            ai_chance = { factor = 40 }
+            CAL = { every_unit_leader = { set_nationality = EUR } }
+            add_popularity = {
+                ideology = guided_democracy
+                popularity = 0.10
+            }
+            add_manpower = 5628
+        }
+        option = {
+            name = eur.15.c
+            ai_chance = { factor = 40 }
+            LAC = { every_unit_leader = { set_nationality = EUR } }
+            add_popularity = {
+                ideology = despotism
+                popularity = 0.10
+            }
+            add_manpower = 5701
+        }
+        option = {
+            name = eur.15.e
+            ai_chance = { factor = 10 }
+            CAL = { every_unit_leader = { set_nationality = EUR } }
+            LAC = { every_unit_leader = { set_nationality = EUR } }
+            add_popularity = {
+                ideology = guided_democracy
+                popularity = 0.10
+            }
+            add_popularity = {
+                ideology = despotism
+                popularity = 0.10
+            }
+            add_stability = -0.15
+            add_manpower = 11329
+        }
+    }
+    country_event = {
+        id = eur.16
+        title = eur.16.t
+        desc = eur.16.d
+        is_triggered_only = yes
+
+        option = {
+            name = eur.16.a
+            ai_chance = { factor = 60 }
+            random_list = {
+                30 = {
+                    country_event = { id = bmk.19 days = 3 }
+                }
+                70 = {
+                    country_event = { id = bmk.20 days = 3 }
+                }
+            }
+        }
+        option = {
+            name = eur.16.b
+            ai_chance = { factor = 60 }
+            add_popularity = {
+                ideology = ROOT
+                popularity = -0.15
+            }
+            add_popularity = {
+                ideology = communism
+                popularity = 0.05
+            }
+            random_list = {
+                70 = {
+                    country_event = { id = bmk.19 days = 3 }
+                }
+                30 = {
+                    country_event = { id = bmk.20 days = 3 }
+                }
+            }
+        }
+    }
+    country_event = {
+        id = eur.17
+        title = eur.17.t
+        desc = eur.17.d
+        picture = GFX_report_event_election_vote
+    
+        fire_only_once = yes 
+
+        mean_time_to_happen = { days = 5 }
+
+        trigger = {
+            NOT = {
+                has_country_flag = eur.1944
+                has_government = communism
+            }
+            has_country_flag = EUR_cmp_only
+            tag = EUR
+            date > 1944.11.1
+        }
+        
+        option = {
+            name = eur.17.a
+            ai_chance = { factor = 50 }
+            set_politics = {
+                ruling_party = democratic_socialism
+                elections_allowed = yes
+                     }
+                hidden_effect = {
+                set_country_flag = eur.1944
+                         }
+        }	
+        option = {
+            name = eur.17.b
+            ai_chance = { factor = 50 }
+            set_politics = {
+                ruling_party = revolutionary_socialist
+                elections_allowed = yes
+            }
+            hidden_effect = {
+                set_country_flag = eur.1944
+                
+                }
+        }
+    }
+ 
+    country_event = {
+        id = eur.18
+        title = eur.18.t
+        desc = eur.18.d
+        picture = GFX_report_event_election_vote
+    
+        fire_only_once = yes
+
+        mean_time_to_happen = { days = 5 }
+    
+        trigger = {
+            NOT = {
+                has_country_flag = eur.1944
+            }
+            has_country_flag = EUR_all_party
+            tag = EUR
+            date > 1944.11.1
+        }
+    
+        option = {
+            name = eur.18.a
+            ai_chance = { factor = 25 }
+            set_politics = {
+                ruling_party = democratic_socialism
+                elections_allowed = yes
+            }
+                hidden_effect = {
+                    set_country_flag = eur.1944
+                    }
+                }
+        option = {
+            name = eur.18.b
+            ai_chance = { factor = 25 }
+            set_politics = {
+                ruling_party = revolutionary_socialist
+                elections_allowed = yes
+                }
+                hidden_effect = {
+                    set_country_flag = eur.1944
+                    }
+             }
+        option = {
+            name = eur.18.c
+            ai_chance = { factor = 25 }
+            set_politics = {
+                ruling_party = liberalism
+                elections_allowed = yes
+            }
+                hidden_effect = {
+                    set_country_flag = eur.1944
+                    }
+        }
+        option = {
+            name = eur.18.e
+            ai_chance = { factor = 25 }
+            set_politics = {
+                ruling_party = conservatism
+                elections_allowed = yes
+                }
+            }
+                hidden_effect = {
+                    set_country_flag = eur.1944
+                    set_country_flag = merriam_won
+                    }
+        }   
+    
+country_event = {
+    id = eur.19
+    title = eur.19.t
+    desc = eur.19.d
+    picture = GFX_report_event_usa_election_generic
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = eur.19.a
+        ai_chance = { factor = 10 }
+        add_country_leader_role = {
+            character = EUR_barry_goldwater
+            promote_leader = yes
+            ideology = gen_conservatism
+            traits = {
+                conservative_revolutionary
+            }
+        }
+    }
+
+}
+
+country_event = {
+    id = eur.20 
+    title = eur.20.t
+    desc = eur.20.d
+    picture = GFX_report_event_iww_demonstration
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = eur.20.a
+        ai_chance = { factor = 50 }
+        hidden_effect = {
+            country_event = { id = eur.21 days = 3 }
+        }
+    }
+    option = {
+        name = eur.20.b
+        ai_chance = { factor = 30 }
+        hidden_effect = {
+            country_event = { id = eur.22 days = 3 }
+        }
+    }
+}
+     
+country_event = {
+    id = eur.21 
+    title = eur.21.t
+    desc = eur.21.d
+    picture = GFX_report_event_journalists_speech
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = eur.21.a
+        ai_chance = { factor = 50 }
+        remove_ideas = EUR_strike
+        add_popularity = {
+            ideology = conservatism 
+            popularity = -0.10
+        }
+        add_timed_idea = {
+            idea = EUR_strike2
+            days = 80
+        }
+    }
+}
+
+country_event = {
+    id = eur.22
+    title = eur.22.t
+    desc = eur.22.d
+    picture = GFX_report_event_american_hunger_march
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = eur.22.a
+        ai_chance = { factor = 50 }
+        remove_ideas = EUR_strike
+        add_stability = -0.15
+        add_political_power = -50
+        hidden_effect = {
+            country_event = { id = eur.23 days = 5 }
+        }
+    }
+}
+
+country_event = {
+    id = eur.23
+    title = eur.23.t
+    desc = eur.23.d
+    picture = GFX_report_event_communist_leader
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = eur.23.a
+        ai_chance = { factor = 50 }
+        add_popularity = {
+            ideology = communism
+            popularity = -0.05
+        }
+        add_manpower = -563
+        add_political_power = -20
+        add_stability = -0.05
+    }
+}
+    
+country_event = {
+    id = eur.24
+    title = eur.24.t
+    desc = eur.24.d
+    picture = GFX_report_event_iww_demonstration
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = eur.24.a
+        ai_chance = { factor = 20 }
+        add_ideas = EUR_strike
+    }
+}
+
+country_event = {
+    id = eur.25
+    title = eur.25.t
+    desc = eur.25.d
+    picture = GFX_report_event_election_vote
+
+    fire_only_once = yes 
+
+    mean_time_to_happen = { days = 5 }
+
+    trigger = {
+        NOT = {
+            has_country_flag = eur.1948
+            has_government = communism
+        }
+        has_country_flag = EUR_cmp_only
+        tag = EUR
+        date > 1948.11.1
+    }
+    
+    option = {
+        name = eur.25.a
+        ai_chance = { factor = 50 }
+        set_politics = {
+            ruling_party = democratic_socialism
+            elections_allowed = yes
+                 }
+            add_country_leader_role = {
+                character = EUR_walter_reuther
+                promote_leader = yes
+                ideology = dem_socialism
+                traits = {
+                    defender_of_unions
+                }
+            }
+            hidden_effect = {
+            set_country_flag = eur.1948
+           
+             }
+    }	
+    option = {
+        name = eur.25.b
+        ai_chance = { factor = 50 }
+        set_politics = {
+            ruling_party = revolutionary_socialist
+            elections_allowed = yes
+        }
+        add_country_leader_role = {
+            character = EUR_jay_lovestone
+            promote_leader = yes
+            ideology = gen_revolutionary_socialist
+            traits = {
+                ambitious_union_boss
+            }
+        }
+        hidden_effect = {
+            set_country_flag = eur.1948
+           
+            }
+    }
+}
+country_event = {
+    id = eur.26
+    title = eur.26.t
+    desc = eur.26.d
+    picture = GFX_report_event_election_vote
+
+   fire_only_once = yes
+
+   mean_time_to_happen = { days = 5 }
+
+    trigger = {
+        NOT = {
+            has_country_flag = eur.1948
+        }
+        has_country_flag = EUR_all_party
+        tag = EUR
+        date > 1948.11.1
+    }
+
+    option = {
+        name = eur.26.a
+        ai_chance = { factor = 25 }
+        set_politics = {
+            ruling_party = democratic_socialism
+            elections_allowed = yes
+        }
+        add_country_leader_role = {
+            character = EUR_walter_reuther
+            promote_leader = yes
+            ideology = dem_socialism
+            traits = {
+                defender_of_unions
+            }
+        }
+            hidden_effect = {
+                set_country_flag = eur.1948
+                }
+            }
+    option = {
+        name = eur.26.b
+        ai_chance = { factor = 25 }
+        set_politics = {
+            ruling_party = revolutionary_socialist
+            elections_allowed = yes
+            }
+            add_country_leader_role = {
+                character = EUR_jay_lovestone
+                promote_leader = yes
+                ideology = gen_revolutionary_socialist
+                traits = {
+                    ambitious_union_boss
+                }
+            }
+            hidden_effect = {
+                set_country_flag = eur.1948
+                
+                }
+         }
+    option = {
+        name = eur.26.c
+        ai_chance = { factor = 25 }
+        set_politics = {
+            ruling_party = liberalism
+            elections_allowed = yes
+        }
+        add_country_leader_role = {
+            character = EUR_carl_hayden
+            promote_leader = yes
+            ideology = gen_liberalism
+            traits = {
+                silent_workhorse
+            }
+        }
+            hidden_effect = {
+                set_country_flag = eur.1948
+                }
+    }
+    option = {
+        name = eur.26.e
+        ai_chance = { factor = 25 }
+        set_politics = {
+            ruling_party = conservatism
+            elections_allowed = yes
+            }
+        IF = {
+            limit = {
+                EUR_frank_merriam = {
+                    is_country_leader = yes
+                    }   
+                }
+            add_country_leader_role = {
+                character = EUR_barry_goldwater
+                promote_leader = yes
+                ideology = gen_conservatism
+                traits = {
+                    conservative_revolutionary
+                }
+            }
+            hidden_effect = {
+                set_country_flag = eur.1948
+                }
+        }
+    }   
+
+  

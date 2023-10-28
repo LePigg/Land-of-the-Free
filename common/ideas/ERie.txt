@@ -1,0 +1,554 @@
+ideas = {
+	#Erie 
+	country = {
+		ERR_freedom = {
+            allowed_civil_war = {
+                always = yes
+            }
+			picture = chi_war_of_resistance
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.08
+			}
+		}
+	}
+    country = {
+		ERR_low_legitamacy = {
+            allowed_civil_war = {
+                always = yes
+            }
+			picture = chi_war_of_resistance
+			modifier = {
+				political_power_cost = 0.35
+				stability_factor = -0.25
+			}
+		}
+	}
+	country = {
+		ERR_low_legitamacy2 = {
+            allowed_civil_war = {
+                always = yes
+            }
+			picture = chi_war_of_resistance
+			modifier = {
+				political_power_cost = 0.25
+				stability_factor = -0.20
+			}
+		}
+	}	
+	country = {
+		ERR_low_legitamacy3 = {
+			picture = chi_war_of_resistance
+			modifier = {
+				political_power_cost = 0.15
+				stability_factor = -0.15
+			}
+		}
+	}
+	country = {
+		ERR_low_legitamacy4 = {
+            allowed_civil_war = {
+                always = yes
+            }
+			picture = chi_war_of_resistance
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+	}	
+	country = {
+		ERR_low_legitamacy5 = {
+			picture = chi_war_of_resistance
+			modifier = {
+				political_power_gain = 0.05
+			}
+		}
+	}
+	country = {
+		ERR_low_legitamacy6 = {
+            allowed_civil_war = {
+                always = yes
+            }
+			picture = chi_war_of_resistance
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+			}
+		}
+	}	
+	country = {
+		ERR_disgrunted_army = {
+            allowed_civil_war = {
+                always = yes
+            }
+			picture = tfv_can_conscription_crisis
+			modifier = {
+				army_morale_factor = -0.15
+				army_org_factor = -0.1
+				conscription_factor = -0.08
+				mobilization_speed = -0.15
+			}
+		}
+	}	
+	country = {
+		ERR_disgrunted_army2 = {
+            allowed_civil_war = {
+                always = yes
+            }
+			picture = tfv_can_conscription_crisis
+			modifier = {
+				army_morale_factor = -0.1
+				army_org_factor = -0.05
+				conscription_factor = -0.04
+				mobilization_speed = -0.15
+			}
+		}
+	}
+	country = {
+		ERR_professional_command = {
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = usa_war_department
+			modifier = {
+				experience_gain_army_factor = 0.1
+				planning_speed = 0.1
+				max_planning_factor = 0.1
+				command_power_gain_mult = 0.10
+			}
+		}
+	}	
+	country = {
+		ERR_disgrunted_army3 = {
+            allowed_civil_war = {
+                always = yes
+            }
+			picture = chi_army_corruption3
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+	}	
+	
+	country = {
+		ERR_macarthur = {
+            allowed_civil_war = {
+                always = yes
+            }
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				experience_gain_army = 0.1		
+				conscription_factor = 0.1	
+				war_support_factor = 0.2
+				army_attack_factor = 0.15
+				industrial_capacity_factory = 0.1
+				ai_focus_aggressive_factor = 0.15
+			}
+		}
+	}	
+	country = {
+		ERR_macarthur2 = {
+            allowed_civil_war = {
+                always = yes
+            }
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				experience_gain_army = 0.15			
+				war_support_factor = 0.2
+				conscription_factor = 0.1
+				army_attack_factor = 0.2
+				land_reinforce_rate = 0.02
+				industrial_capacity_factory = 0.15
+				ai_focus_aggressive_factor = 0.15
+			}
+		}
+	}	
+    country = {
+		ERR_macarthur3 = {
+            allowed_civil_war = {
+                always = yes
+            }
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				experience_gain_army = 0.2			
+				war_support_factor = 0.2
+				army_attack_factor = 0.2
+                army_morale_factor = 0.08
+				industrial_capacity_factory = 0.1
+			}
+		}
+	}	
+    country = {
+		ERR_macarthur4 = {
+            allowed_civil_war = {
+                always = yes
+            }
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				experience_gain_army = 0.25		
+				war_support_factor = 0.2
+				army_attack_factor = 0.15
+                army_morale_factor = 0.1
+				industrial_capacity_factory = 0.15
+				conscription_factor = 0.07
+			}
+		}
+	}	
+
+	political_advisor = {
+		ERR_wi = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = ERR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { war_industrialist }
+		}
+		
+
+		ERR_cg = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = ERR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { compassionate_gentleman }
+		}
+		
+		ERR_qg = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = ERR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { quartermaster_general }
+		}
+
+		ERR_bb = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = ERR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { backroom_backstabber }
+		}
+		
+		ERR_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = ERR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { prince_of_terror }
+		}
+
+		ERR_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = ERR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { captain_of_industry }
+		}
+
+		ERR_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = ERR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		ERR_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = ERR
+			}		
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ERR_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = ERR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		ERR_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = ERR
+			}
+			
+			traits = { air_chief_reform_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ERR_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = ERR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		ERR_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = ERR
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ERR_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = ERR
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		ERR_ar = {
+			ledger = army
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = ERR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ERR_ai2 = {
+			ledger = army
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = ERR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ERR_aa2 = {
+			ledger = army
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = ERR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ERR_acas = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = ERR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ERR_ncs = {
+			ledger = navy
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = ERR
+			}
+			
+			traits = { navy_capital_ship_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		ERR_mt = {
+			ledger = army
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = ERR
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { military_theorist }
+		}
+		
+		ERR_nt = {
+			ledger = navy
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = ERR
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { naval_theorist }
+		}	
+
+		ERR_awt = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = ERR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

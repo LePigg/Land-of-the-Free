@@ -1,0 +1,456 @@
+ideas = {
+#Great Plains Society
+    country = {
+        GPS_beloved = {
+            picture = generic_morale_bonus
+            modifier = {
+                stability_factor = 0.05
+                defensive_war_stability_factor = 0.25
+                #consumer_goods_factor = -0.02
+                army_core_defence_factor = 0.15
+            }
+        }
+    }	
+    country = {
+        GPS_beloved1 = {
+            picture = generic_morale_bonus
+            modifier = {
+                stability_factor = 0.05
+                defensive_war_stability_factor = 0.25
+                consumer_goods_factor = -0.05
+                army_core_defence_factor = 0.15				
+            }
+        }
+    }	
+    country = {
+        GPS_refugee = {
+            picture = generic_army_war_college
+            modifier = {
+                weekly_manpower = 50
+                stability_factor = -0.3
+                political_power_cost = 0.5
+            }
+        }
+    }	
+    country = {
+        GPS_refugee1 = {
+            picture = generic_army_war_college
+            modifier = {
+                weekly_manpower = 50
+                stability_factor = -0.3
+                political_power_cost = 0.3
+            }
+        }
+    }	
+    country = {
+        GPS_refugee2 = {
+            picture = generic_army_war_college
+            modifier = {
+                weekly_manpower = 50
+                stability_factor = -0.2
+                political_power_cost = 0.3
+            }
+        }
+    }	
+    country = {
+        GPS_refugee3 = {
+            picture = generic_army_war_college
+            modifier = {
+                weekly_manpower = 50
+                stability_factor = -0.15
+                political_power_cost = 0.25
+            }
+        }
+    }	
+    country = {
+        GPS_cut_lines = {
+            picture = chi_incompetent_officers
+            modifier = {
+                army_org_factor = -0.15
+            }
+        }
+    }		
+    country = {
+        GPS_cut_lines1 = {
+            picture = chi_incompetent_officers
+            modifier = {
+                army_org_factor = -0.1
+            }
+        }
+    }	
+    country = {
+        GPS_cut_lines2 = {
+            picture = chi_incompetent_officers
+            modifier = {
+                army_org_factor = -0.05
+            }
+        }
+    }	
+    country = {
+        GPS_conscription = {
+            picture = eng_imperial_conscription
+            modifier = {
+                conscription_factor = -0.2
+                minimum_training_level = 0.5
+            }
+        }
+    }		
+	
+
+
+	political_advisor = {
+		GPS_wi = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { war_industrialist }
+		}
+		
+
+		GPS_cg = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { compassionate_gentleman }
+		}
+		
+		GPS_qg = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { quartermaster_general }
+		}
+
+		GPS_bb = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { backroom_backstabber }
+		}
+		
+		GPS_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { prince_of_terror }
+		}
+
+		GPS_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { captain_of_industry }
+		}
+
+		GPS_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		GPS_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = IWA
+			}		
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chGPS_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		GPS_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chGPS_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		GPS_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			
+			traits = { air_chGPS_reform_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		GPS_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_chGPS_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		GPS_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = IWA
+			}
+					
+			traits = { navy_chGPS_commerce_raiding_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		GPS_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+					
+			traits = { navy_chGPS_maneuver_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		GPS_ar = {
+			ledger = army
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		GPS_ai2 = {
+			ledger = army
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		GPS_aa2 = {
+			ledger = army
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		GPS_acas = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		GPS_ncs = {
+			ledger = navy
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = IWA
+			}
+			
+			traits = { navy_capital_ship_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		GPS_mt = {
+			ledger = army
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = IWA
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { military_theorist }
+		}
+		
+		GPS_nt = {
+			ledger = navy
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { naval_theorist }
+		}	
+
+		GPS_awt = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

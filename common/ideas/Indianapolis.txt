@@ -1,0 +1,509 @@
+ideas = {
+    country = {
+        ARA_purified = {
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = FRA_army_of_aggression_focus
+            modifier = {
+                stability_factor = -0.1
+                conscription_factor = -0.10
+                army_morale_factor = 0.05
+                army_core_attack_factor = 0.15
+                ai_focus_aggressive_factor = 0.15
+            }
+        }
+    }
+    country = {
+        ARA_gameoverloser = {
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = generic_army_problems
+            modifier = {
+                army_org_factor = -0.9
+                army_attack_factor = -0.75
+                army_defence_factor = -0.75
+                stability_factor = -0.5
+            }
+        }
+        ARA_aviation = {
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = generic_fighter_production_diverted
+            modifier = {
+                experience_gain_air = 0.1
+                air_superiority_bonus_in_combat = 0.1
+                air_cas_present_factor = 0.1
+                war_support_factor = 0.15
+            }
+        }
+        ARA_aviation1 = {
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = generic_fighter_production_diverted
+            modifier = {
+                experience_gain_air = 0.15
+                air_superiority_bonus_in_combat = 0.10
+                air_air_superiority_agility_factor = 0.10
+                air_cas_present_factor = 0.10
+                war_support_factor = 0.15
+            }
+            equipment_bonus = {
+                light_air = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+            }
+        }
+    }
+    country = {
+        ARA_draft = {
+            allowed_civil_war = {
+                always = yes
+            }
+                picture = chi_forced_conscription
+                modifier = {
+                    war_support_factor = -0.1
+                    conscription_factor = 0.15
+                }
+        }
+        ARA_klan = {
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = saf_history_of_segregation_2
+            modifier = {
+                stability_factor = -0.05
+                war_support_factor = 0.05
+                resistance_damage_to_garrison = -0.30
+                political_power_gain = 0.15
+                weekly_manpower = 15
+            }
+        }
+        ARA_shadow = {
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = generic_deal_with_the_devil
+            modifier = {
+                monthly_population = -0.2
+                political_power_gain = 0.20
+                stability_factor = -0.10
+                production_factory_efficiency_gain_factor = -0.05
+            }
+        }
+    }
+    country = {
+        ARA_rebuild = {
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = ford_motor_company
+            modifier = {
+                political_power_cost = 0.2
+                production_factory_max_efficiency_factor = 0.15
+                production_speed_buildings_factor = 0.15
+                fuel_gain_factor = 0.1
+            }
+        }		
+    }
+    country = {
+        ARA_purified2 = {
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = FRA_army_of_aggression_focus
+            modifier = {
+                army_attack_factor = 0.1
+                army_morale_factor = 0.05
+                stability_factor = -0.15
+                conscription_factor = -0.2
+                ai_focus_aggressive_factor = 0.15
+            }
+        }
+    }
+
+    country = {
+        ARA_purified3 = {
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = FRA_army_of_aggression_focus
+            modifier = {
+                stability_factor = -0.1
+                conscription_factor = -0.25
+                army_attack_factor = 0.2
+                army_morale_factor = 0.15
+                ai_focus_aggressive_factor = 0.15
+
+            }
+        }
+    }
+
+    country = {
+        ARA_purified4 = {
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = FRA_army_of_aggression_focus
+            modifier = {
+                stability_factor = -0.1
+                conscription_factor = -0.25
+                army_attack_factor = 0.2	
+                army_morale_factor = 0.15
+                army_org_factor = -0.02
+                land_reinforce_rate = 0.05
+                ai_focus_aggressive_factor = 0.15
+
+            }
+        }
+        ARA_purified5 = {
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = FRA_army_of_aggression_focus
+            modifier = {
+                stability_factor = -0.1
+                conscription_factor = -0.25
+                army_attack_factor = 0.2
+                planning_speed = 0.2
+                army_org_factor = -0.02
+                army_morale_factor = 0.15
+                land_reinforce_rate = 0.05
+                ai_focus_aggressive_factor = 0.15
+
+            }
+        }
+        ARA_mobilized = {
+            picture = generic_fascism_drift_2
+            available = {
+                IEF = {
+                    exists = yes
+                }
+            }
+            picture = generic_fascism_drift_2
+            modifier = {
+                political_power_cost = 0.15
+                stability_weekly = -0.003
+                war_support_weekly = -0.002
+                conscription_factor = 0.2
+                industrial_capacity_factory = 0.15
+                out_of_supply_factor = -0.15
+                offence = 0.1
+            }
+        }
+    }
+
+    country = {
+     
+        ARA_rebuild2 = {
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = ford_motor_company
+            modifier = {
+                political_power_cost = 0.15
+                production_factory_max_efficiency_factor = 0.2
+                production_speed_buildings_factor = 0.2
+                consumer_goods_factor = -0.05
+                fuel_gain_factor = 0.15
+                stability_factor = -0.05
+                production_factory_efficiency_gain_factor = -0.05
+                monthly_population = -0.1
+                
+            }
+        }
+        ARA_rebuild3 = {
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = ford_motor_company
+            modifier = {
+                political_power_cost = 0.2
+                production_factory_max_efficiency_factor = 0.15
+                production_speed_buildings_factor = 0.15
+                industrial_capacity_factory = 0.10
+                fuel_gain_factor = 0.1
+            }
+            equipment_bonus = {
+                infantry_weapons = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+            }
+        }
+        ARA_rebuild4 = {
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = ford_motor_company
+            modifier = {
+                political_power_cost = 0.2
+                production_factory_max_efficiency_factor = 0.2
+                production_speed_buildings_factor = 0.2
+                industrial_capacity_factory = 0.15
+                consumer_goods_factor = -0.05
+                stability_factor = -0.05
+                production_factory_efficiency_gain_factor = -0.05
+                monthly_population = -0.1
+                fuel_gain_factor = 0.15
+            }
+            equipment_bonus = {
+                infantry_weapons = {
+                    build_cost_ic = -0.15
+                    instant = yes
+                }
+            }
+        }
+    }
+	
+    country = {
+     
+		ara_junta = {
+            allowed_civil_war = {
+                always = yes
+            }
+			picture = general_staff
+			modifier = { 
+				political_power_cost = 0.65
+				consumer_goods_factor = 0.35
+				industrial_capacity_factory = -0.3
+				stability_weekly = -0.005
+                army_morale_factor = 0.05
+                war_support_factor = 0.05
+                max_command_power = 10
+			}
+		}
+        ara_junta1 = {
+            allowed_civil_war = {
+                always = yes
+            }
+			picture = general_staff
+			modifier = { 
+				political_power_cost = 0.50
+				consumer_goods_factor = 0.30
+				industrial_capacity_factory = -0.20
+				stability_weekly = -0.005
+                army_morale_factor = 0.05
+                war_support_factor = 0.10
+                max_command_power = 10
+                conscription_factor = 0.05
+
+	        }
+        }
+        ara_junta2 = {
+            allowed_civil_war = {
+                always = yes
+            }
+			picture = general_staff
+			modifier = { 
+				political_power_cost = 0.35
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = -0.10
+				stability_weekly = -0.005
+                army_morale_factor = 0.10
+                war_support_factor = 0.15
+                max_command_power = 10
+                command_power_gain_mult = 0.15
+                conscription_factor = 0.05
+                army_org_factor = 0.05
+                political_advisor_cost_factor = 0.15
+
+	        }
+        }
+        ara_junta3 = {
+            allowed_civil_war = {
+                always = yes
+            }
+			picture = general_staff
+			modifier = { 
+				political_power_cost = 0.20
+				consumer_goods_factor = 0.10
+                army_morale_factor = 0.15
+                war_support_factor = 0.15
+                max_command_power = 0.15
+                command_power_gain_mult = 0.15
+                conscription_factor = 0.05
+                army_org_factor = 0.10
+                political_advisor_cost_factor = 0.15
+
+	        }
+        }
+    
+    ara_chief = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_fascism_drift_2
+        modifier = {
+            political_power_cost = 0.5
+            consumer_goods_factor = 0.30
+            industrial_capacity_factory = -0.3
+            stability_weekly = -0.005
+            conscription_factor = -0.05
+            drift_defence_factor = 0.15
+            party_popularity_stability_factor = 0.10
+
+        }
+    }
+    ara_chief1 = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_fascism_drift_2
+        modifier = {
+            political_power_cost = 0.20
+            consumer_goods_factor = 0.20
+            industrial_capacity_factory = -0.15
+            stability_weekly = -0.005
+            conscription_factor = -0.10
+            production_speed_buildings_factor = 0.05
+            production_factory_efficiency_gain_factor = 0.10
+            monthly_population = -0.10
+            drift_defence_factor = 0.15
+            party_popularity_stability_factor = 0.20
+            
+        }
+    }
+    ara_chief2 = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_fascism_drift_2
+        modifier = {
+            political_power_cost = -0.10
+            consumer_goods_factor = -0.05
+            industrial_capacity_factory = 0.05
+            stability_weekly = -0.005
+            conscription_factor = -0.15
+            production_speed_buildings_factor = 0.15
+            production_factory_efficiency_gain_factor = 0.15
+            monthly_population = -0.20
+            drift_defence_factor = 0.15
+            party_popularity_stability_factor = 0.25
+            military_leader_cost_factor = 0.15
+            army_org_factor = -0.05
+            army_defence_factor = -0.05
+            
+        }
+    }
+    ara_chief3 = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_fascism_drift_2
+        modifier = {
+            political_power_cost = -0.30
+            consumer_goods_factor = -0.10
+            industrial_capacity_factory = 0.10
+            conscription_factor = -0.20
+            production_speed_buildings_factor = 0.2
+            production_factory_efficiency_gain_factor = 0.2
+            monthly_population = -0.30
+            drift_defence_factor = 0.20
+            party_popularity_stability_factor = 0.30
+            military_leader_cost_factor = 0.15
+            army_org_factor = -0.05
+            army_defence_factor = -0.10
+
+        
+         }
+        }
+    ara_stfu = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_oppression
+        modifier = {
+            political_power_factor = -0.25
+            stability_factor = -0.10
+            consumer_goods_factor = 0.10
+            despotism_drift = -0.10
+        }
+    }
+    ara_nope = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_army_problems
+        modifier = {
+            army_org_factor = -0.15
+            war_support_factor = -0.10
+            army_morale_factor = -0.10
+            stratocracy_drift = -0.10
+             }
+        }
+    ara_funds = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = man_five_year_plan_industry
+        modifier = {
+            production_speed_industrial_complex_factor = -0.10
+            production_speed_arms_factory_factor = 0.15
+            industrial_capacity_factory = 0.20
+            }
+        }
+    ara_monies = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = MEX_callistas
+        modifier = {
+            consumer_goods_factor = -0.15
+            stability_factor = -0.10
+            political_power_cost = 0.20
+        }
+    }
+    ara_xenos = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = saf_history_of_segregation
+        modifier = {
+            monthly_population = -0.25
+            political_power_factor = 0.25
+            stability_factor = -0.10
+
+        }
+    }
+    ara_scouts = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_reserve_divisions
+        modifier = {
+            conscription_factor = 0.03
+            experience_gain_army_factor = 0.15
+        }
+    }
+    ara_education = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_research_bonus
+            modifier = {
+            research_speed_factor = -0.03
+            war_support_factor = 0.10
+            political_power_gain = 0.10
+        }
+    }
+    ara_war = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = vittoria_mutilata
+        modifier = {
+            defensive_war_stability_factor = 0.30
+            offensive_war_stability_factor = 0.40
+            war_support_factor = 0.20
+        }
+    }
+}
+}
+    
+
+

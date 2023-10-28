@@ -1,0 +1,41 @@
+ideas = {
+
+    country = {
+		BAS_empire = {
+			picture = stiff_upper_lip
+			modifier = {
+				conscription = 0.5
+				army_org_factor = 0.1
+				weekly_manpower = 800
+				drift_defence_factor = 1
+                special_forces_cap = 0.5
+                political_power_gain = 0.2
+                war_stability_factor = 0.05
+                autonomy_gain = -0.5
+				local_building_slots_factor = 1
+			}
+		}
+	}
+    country = {
+		BAS_great_depression = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+                stability_factor = -0.15
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+			}
+		}
+}

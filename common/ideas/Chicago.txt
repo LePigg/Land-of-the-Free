@@ -1,0 +1,583 @@
+ideas = {
+	# MILITARY
+#Ideas
+country = {
+    COM_revolution = {
+        picture = SOV_factionalism_modifier
+        modifier = {
+			war_support_factor = -0.4
+			production_factory_efficiency_gain_factor = 0.1
+        }
+    }
+	COM_work = {
+		picture = eng_spirit_of_the_industrial_revolution
+		modifier = {
+			political_power_cost = 0.10
+			monthly_population = -0.15
+			production_speed_buildings_factor = 0.15
+		}
+	}
+	COM_agreement = {
+		picture = SPR_relocate_the_gold_reserves
+		modifier = {
+			consumer_goods_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.1
+			political_power_gain = 0.20
+		}
+	}
+}
+country = {
+    COM_revolution2 = {
+        picture = SOV_factionalism_modifier
+        modifier = {
+			war_support_factor = -0.35
+			political_power_gain = 0.1
+			production_factory_efficiency_gain_factor = 0.1
+        }
+    }
+	COM_revolution3 = {
+        picture = SOV_factionalism_modifier
+        modifier = {
+			war_support_factor = -0.30
+			political_power_gain = 0.1
+			production_factory_efficiency_gain_factor = 0.15
+			stability_factor = 0.05
+        }
+    }
+}	
+country = {
+    COM_frequent_sabotage = {
+        picture = ast_classify_aliens
+        modifier = {
+            consumer_goods_factor = 0.15
+            production_speed_buildings_factor = -0.2
+            stability_factor = -0.25
+            weekly_manpower = -80
+        }
+    }
+}	
+country = {
+    COM_frequent_sabotage2 = {
+        picture = ast_classify_aliens
+        modifier = {
+			consumer_goods_factor = 0.15
+            production_speed_buildings_factor = -0.15
+            stability_factor = -0.20
+            weekly_manpower = -40
+        }
+    }
+}
+country = {
+    COM_frequent_sabotage3 = {
+        picture = ast_classify_aliens
+        modifier = {
+            consumer_goods_factor = 0.1
+			production_speed_buildings_factor = -0.05
+            stability_factor = -0.15
+            weekly_manpower = -20
+        }
+    }
+	COM_frequent_sabotage4 = {
+        picture = ast_classify_aliens
+        modifier = {
+            consumer_goods_factor = 0.05
+            stability_factor = -0.1
+            weekly_manpower = -10
+        }
+    }
+	COM_purged = {
+		picture = officers_purged
+		modifier = {
+			political_power_factor = -0.15
+			stability_factor = -0.25
+			industrial_capacity_factory = -0.15
+			weekly_manpower = -100
+			stability_weekly = 0.003
+			army_org_factor = -0.05
+		}
+	}
+}
+country = {
+    COM_frequent_sabotage5 = {
+        picture = ast_classify_aliens
+        modifier = {
+            consumer_goods_factor = 0.05
+            stability_factor = -0.05
+            weekly_manpower = -5
+        }
+    }
+}
+country = {
+	COM_final_stand = {
+		picture = socialist_science_focus
+		available = {
+			OR = {
+				has_war_with = MIL
+				has_war_with = ERR
+				has_war_with = ARA
+				has_war_with = IEF
+			}
+		}
+		modifier = {
+			training_time_factor = -0.15
+			conscription = 0.02
+			mobilization_speed = 0.15
+			war_support_factor = 0.15
+			industrial_capacity_factory = 0.15
+			army_core_defence_factor = 0.05
+		}
+	}
+	COM_women = {
+		picture = jap_the_unthinkable_option
+		modifier = {
+			industrial_capacity_factory = 0.05
+			production_factory_max_efficiency_factor = 0.05
+		}
+	}
+	COM_local_initiatives = {
+		picture = generic_volunteer_expedition_bonus
+		modifier = {
+			industrial_capacity_factory = 0.10
+			production_factory_efficiency_gain_factor = 0.05
+		}
+		equipment_bonus = {
+			infantry_weapons = {
+				build_cost_ic = -0.10
+				instant = yes
+			}
+		}
+	}
+	COM_local_initiatives1 = {
+		picture = generic_volunteer_expedition_bonus
+		modifier = {
+			industrial_capacity_factory = 0.05
+			production_factory_max_efficiency_factor = 0.1
+		}
+	}
+	COM_local_initiatives2 = {
+		picture = generic_volunteer_expedition_bonus
+		modifier = {
+			industrial_capacity_factory = 0.15
+			production_factory_max_efficiency_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.05
+		}
+		equipment_bonus = {
+			infantry_weapons = {
+				build_cost_ic = -0.10
+				instant = yes
+			}
+		}
+	}
+	COM_air = {
+		picture = generic_air_bonus
+		modifier = {
+			air_mission_xp_gain_factor = 0.10
+			ground_attack_factor = 0.10
+		}
+	}
+	COM_air2 = {
+		picture = generic_air_bonus
+		modifier = {
+			air_mission_xp_gain_factor = 0.10
+			ground_attack_factor = 0.15
+			air_strategic_bomber_bombing_factor = 0.10
+		}
+	}
+	COM_CIA_lar = {
+		picture = generic_secret_police
+		modifier = {
+			political_power_gain = -0.20
+			operative_slot = 1
+			resistance_damage_to_garrison = -0.25
+			resistance_growth_on_our_occupied_states = -0.15
+			foreign_subversive_activites = -0.10
+			stability_factor = 0.05
+			war_support_factor = -0.10
+		}
+	}
+	COM_poor_mans_CIA = {
+		picture = generic_secret_police
+		modifier = {
+			political_power_gain = -0.20
+			resistance_damage_to_garrison = -0.30
+			resistance_growth_on_our_occupied_states = -0.20
+			foreign_subversive_activites = -0.10
+			stability_factor = 0.05
+			war_support_factor = -0.10
+		}
+	}
+	COM_guerilla = {
+		picture = chi_army_corruption3
+		modifier = {
+			army_core_defence_factor = 0.10
+			resistance_growth_on_our_occupied_states = 0.15
+		}
+	}
+	COM_propaganda = {
+		picture = jap_supremacy_of_will
+		modifier = {
+			stability_factor = 0.05
+			war_support_factor = 0.05
+			political_power_gain = 0.20
+			command_power_gain_mult = 0.15
+		}
+	}
+}			
+
+
+	political_advisor = {
+		COM_wi = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = COM
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { war_industrialist }
+		}
+		
+
+		COM_cg = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = COM
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { compassionate_gentleman }
+		}
+		
+		COM_qg = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = COM
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { quartermaster_general }
+		}
+
+		COM_bb = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = COM
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { backroom_backstabber }
+		}
+		
+		COM_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = COM
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { prince_of_terror }
+		}
+
+		COM_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = COM
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { captain_of_industry }
+		}
+
+		COM_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = COM
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		COM_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = COM
+			}		
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		COM_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = COM
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		COM_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = COM
+			}
+			
+			traits = { air_chief_reform_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		COM_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = COM
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		COM_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = COM
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		COM_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = COM
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		COM_ar = {
+			ledger = army
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = COM
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		COM_ai2 = {
+			ledger = army
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = COM
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		COM_aa2 = {
+			ledger = army
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = COM
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		COM_acas = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = COM
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		COM_ncs = {
+			ledger = navy
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = COM
+			}
+			
+			traits = { navy_capital_ship_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		COM_mt = {
+			ledger = army
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = COM
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { military_theorist }
+		}
+		
+		COM_nt = {
+			ledger = navy
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = COM
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { naval_theorist }
+		}	
+
+		COM_awt = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = COM
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

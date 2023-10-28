@@ -1,0 +1,424 @@
+ideas = {
+#Lakotah
+    country = {
+        LAK_defence = {
+            picture = chi_war_of_resistance3
+            modifier = {
+                army_core_defence_factor = 0.1
+                army_org_factor = 0.05
+                political_power_cost = 0.75
+                stability_factor = -0.15
+            }
+        }
+    }		
+    country = {
+        LAK_defence2 = {
+            picture = chi_war_of_resistance3
+            modifier = {
+                army_core_defence_factor = 0.1
+                army_org_factor = 0.05
+                political_power_cost = 0.5
+                stability_factor = -0.15
+            }
+        }
+    }	
+    country = {
+        LAK_defence3 = {
+            picture = chi_war_of_resistance3
+            modifier = {
+                army_core_defence_factor = 0.15
+                army_org_factor = 0.05
+                army_speed_factor = 0.05
+                political_power_cost = 0.5
+                stability_factor = -0.15
+            }
+        }
+    }	
+    country = {
+        LAK_defence4 = {
+            picture = chi_war_of_resistance3
+            modifier = {
+                army_core_defence_factor = 0.15
+                army_org_factor = 0.05
+                army_speed_factor = 0.05
+                political_power_cost = 0.5
+                stability_factor = -0.05
+            }
+        }
+    }	
+    country = {
+        LAK_attrition = {
+            picture = generic_deal_with_the_devil2
+                targeted_modifier = {
+                tag = WDC
+                attack_bonus_against = 0.075
+            }
+        }
+    }
+    country = {
+        LAK_strong = {
+            picture = generic_morale_bonus
+            modifier = {
+                conscription_factor = 0.1
+				army_defence_factor = 0.15
+				drift_defence_factor = 0.05		
+            }
+        }
+    }	
+
+	political_advisor = {
+		LAK_wi = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { war_industrialist }
+		}
+		
+
+		LAK_cg = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { compassionate_gentleman }
+		}
+		
+		LAK_qg = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { quartermaster_general }
+		}
+
+		LAK_bb = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { backroom_backstabber }
+		}
+		
+		LAK_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { prince_of_terror }
+		}
+
+		LAK_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { captain_of_industry }
+		}
+
+		LAK_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		LAK_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = ANR
+			}		
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LAK_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		LAK_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = ANR
+			}
+			
+			traits = { air_chief_reform_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LAK_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		LAK_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = ANR
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LAK_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = ANR
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		LAK_ar = {
+			ledger = army
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		LAK_ai2 = {
+			ledger = army
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LAK_aa2 = {
+			ledger = army
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LAK_acas = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LAK_ncs = {
+			ledger = navy
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = ANR
+			}
+			
+			traits = { navy_capital_ship_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		LAK_mt = {
+			ledger = army
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = ANR
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { military_theorist }
+		}
+		
+		LAK_nt = {
+			ledger = navy
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = ANR
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { naval_theorist }
+		}	
+
+		LAK_awt = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

@@ -1,0 +1,29 @@
+ideas = {
+    #Cascadia
+    country = {
+        cas_self = {
+            picture = generic_goods_red_bonus
+            modifier = {
+                min_export = -0.50
+                stability_factor = 0.05
+            }
+        }
+    }
+    country = {
+        cas_control = {
+            picture = chi_wargaming_division
+            modifier = {
+                political_power_cost = 0.30
+                stability_factor = 0.15
+                Anarchism_drift = 0.01
+                revolutionary_socialist_drift = 0.02
+                liberalism_drift = 0.05
+                conservatism_drift = 0.02
+                communism_drift = 0.01
+                guided_democracy_drift = 0.01
+                despotism_drift = 0.01
+                stratocracy_drift = 0.02
+            }
+        }
+    }
+}

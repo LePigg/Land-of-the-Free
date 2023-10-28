@@ -1,0 +1,391 @@
+ideas = {
+
+	#St. Louis
+	country = {
+		STL_corruption = {
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_cost = -0.25
+				stability_factor = -0.3
+				industrial_capacity_factory = -0.35
+				production_speed_buildings_factor = -0.35
+			}
+		}
+	}	
+	country = {
+		STL_corruption2 = {
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_cost = -0.3
+				stability_factor = -0.35
+				industrial_capacity_factory = -0.4
+				production_speed_buildings_factor = -0.4
+			}
+		}
+	}	
+	country = {
+		STL_prepared = {
+			picture = generic_intel_bonus
+			modifier = {
+				army_core_defence_factor = 0.05
+			}
+		}
+	}
+
+
+	political_advisor = {
+		STL_wi = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { war_industrialist }
+		}
+		
+
+		STL_cg = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { compassionate_gentleman }
+		}
+		
+		STL_qg = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { quartermaster_general }
+		}
+
+		STL_bb = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { backroom_backstabber }
+		}
+		
+		STL_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { prince_of_terror }
+		}
+
+		STL_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { captain_of_industry }
+		}
+
+		STL_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		STL_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = IWA
+			}		
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chSTL_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		STL_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chSTL_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		STL_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			
+			traits = { air_chSTL_reform_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		STL_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_chSTL_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		STL_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = IWA
+			}
+					
+			traits = { navy_chSTL_commerce_raiding_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		STL_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+					
+			traits = { navy_chSTL_maneuver_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		STL_ar = {
+			ledger = army
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		STL_ai2 = {
+			ledger = army
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		STL_aa2 = {
+			ledger = army
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		STL_acas = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		STL_ncs = {
+			ledger = navy
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = IWA
+			}
+			
+			traits = { navy_capital_ship_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		STL_mt = {
+			ledger = army
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = IWA
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { military_theorist }
+		}
+		
+		STL_nt = {
+			ledger = navy
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = IWA
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { naval_theorist }
+		}	
+
+		STL_awt = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = IWA
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

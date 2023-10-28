@@ -1,0 +1,186 @@
+add_namespace = pen
+
+
+country_event = {
+	id = pen.1
+	title = pen.1.t
+	desc = pen.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = { #Weakest Pennsylvania
+		name = pen.1.a
+		ai_chance = { factor = 100 }
+        360 = {
+          set_demilitarized_zone = yes
+        }
+        hidden_effect = {
+            MIA = {
+                country_event = { days = 7 id = pen.3 }
+            }
+            country_event = { days = 7 id = pen.2 }
+        }
+	}	
+}
+country_event = {
+	id = pen.2
+	title = pen.2.t
+	desc = pen.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = { #Weakest Pennsylvania
+		name = pen.2.a
+		ai_chance = { factor = 100 }
+        PEN = {
+            transfer_state = 360
+            add_state_core = 360
+            hidden_effect = {
+		        load_oob = "PEN_1936"
+            }
+            declare_war_on = { type = annex_everything    target = MIA }
+        }
+        hidden_effect = {
+            every_country = { 
+                news_event = { hours = 6 id = news.35 } 
+            }
+        }
+	}	
+}
+country_event = {
+	id = pen.3
+	title = pen.3.t
+	desc = pen.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = { #Weakest Pennsylvania
+		name = pen.3.a
+		ai_chance = { factor = 100 }
+        add_political_power = -10
+	}	
+}
+country_event = {
+	id = pen.4
+	title = pen.4.t
+	desc = pen.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = { #Weakest Pennsylvania
+		name = pen.4.a
+		ai_chance = { factor = 100 }
+        360 = {
+          set_demilitarized_zone = yes
+        }
+        848 = {
+            set_demilitarized_zone = yes
+          }
+        hidden_effect = {
+            MIA = {
+                country_event = { days = 7 id = pen.3 }
+            }
+            country_event = { days = 7 id = pen.5 }
+        }
+	}	
+}
+country_event = {
+	id = pen.5
+	title = pen.5.t
+	desc = pen.5.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = { #Moderate Pennsylvania
+		name = pen.5.a
+		ai_chance = { factor = 100 }
+        PEN = {
+            transfer_state = 360
+            transfer_state = 848
+            add_state_core = 360
+            add_state_core = 848
+            hidden_effect = {
+		        load_oob = "PEN_1936"
+                load_oob = "PEN_1937"
+            }
+            declare_war_on = { type = annex_everything    target = MIA }
+        }
+        hidden_effect = {
+            every_country = { 
+                news_event = { hours = 6 id = news.35 } 
+            }
+        }
+	}	
+}
+country_event = {
+	id = pen.6
+	title = pen.6.t
+	desc = pen.6.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = { #Weakest Pennsylvania
+		name = pen.6.a
+		ai_chance = { factor = 100 }
+        360 = {
+          set_demilitarized_zone = yes
+        }
+        848 = {
+            set_demilitarized_zone = yes
+        }
+        855 = {
+            set_demilitarized_zone = yes
+        }
+        hidden_effect = {
+            MIA = {
+                country_event = { days = 7 id = pen.3 }
+            }
+            country_event = { days = 7 id = pen.7 }
+        }
+	}	
+}
+country_event = {
+	id = pen.7
+	title = pen.7.t
+	desc = pen.7.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = { #Moderate Pennsylvania
+		name = pen.7.a
+		ai_chance = { factor = 100 }
+        PEN = {
+            transfer_state = 360
+            transfer_state = 848
+            transfer_state = 855
+            hidden_effect = {
+                add_state_core = 360
+                add_state_core = 848
+                add_state_core = 855
+		        load_oob = "PEN_1936"
+                load_oob = "PEN_1937"
+                load_obb = "PEN_1938"
+            }
+            declare_war_on = { type = annex_everything    target = MIA }
+        }
+        hidden_effect = {
+            every_country = { 
+                news_event = { hours = 6 id = news.35 } 
+            }
+        }
+	}	
+}

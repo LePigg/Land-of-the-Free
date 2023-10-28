@@ -1,0 +1,408 @@
+ideas = {
+  #Republic of Texas
+	country = {
+		srt_ferver = {
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				weekly_manpower = 70
+				stability_factor = 0.1
+			}
+		}
+	} 
+#Coughlin
+	country = {
+		crh_mass = {
+			picture = eng_imperial_conscription
+			modifier = {
+				weekly_manpower = 140
+				army_org_factor = -0.1
+			}
+		}
+	} 
+#Dixie
+	country = {
+		dix_harvested= {
+			picture = generic_morale_bonus
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_org_factor = 0.05
+			}
+		}
+	} 
+#Acadiana
+	country = {
+		aca_nationalism = {
+			picture = generic_political_support
+			modifier = {
+				army_core_defence_factor = 0.2
+				stability_factor = 0.35
+			}
+		}
+	} 
+
+#Matagorda
+	country = {
+		mtg_insurgent = {
+			picture = generic_army_problems
+			modifier = {
+				stability_factor = -0.1
+                war_support_factor = -0.1
+                conservatism_drift = 0.05
+				conscription_factor = -0.5
+			}
+		}
+	} 	  
+#Texas
+country = {
+    tex_fighting = {
+        picture = generic_central_management
+        modifier = {
+            surrender_limit = 0.075
+            army_speed_factor = 0.1
+        }
+    }
+    tej_fighting = {
+        picture = prc_the_long_march2
+        available = {
+            has_war = yes 
+        }
+        modifier = {
+            surrender_limit = 0.2
+        }
+    }
+}
+country = {
+    tex_march = {
+        picture = generic_infantry_bonus
+        modifier = {
+            army_attack_factor = 0.15
+            war_support_factor = 0.15
+        }
+    }
+    tex_bloodbath = {
+        picture = SPR_political_violence
+        modifier = {
+            political_power_gain = -0.3
+            conscription_factor = -0.25
+            consumer_goods_factor = 0.3
+            industrial_capacity_factory = -0.2
+            production_speed_buildings_factor = -0.2
+            stability_weekly = -0.005
+        }
+    }
+    tex_rotten = {
+        picture = SPR_political_violence
+        modifier = {
+            political_power_factor = -0.5
+            stability_weekly = -0.005
+        }
+    }
+    tex_sabotage = {
+        picture = chi_war_of_resistance3
+        modifier = {
+            consumer_goods_factor = 0.3
+            industrial_capacity_factory = -0.5
+            production_speed_buildings_factor = -0.5
+            industry_repair_factor = -0.5
+        }
+    }
+    tex_sabotage1 = {
+        picture = chi_war_of_resistance3
+        modifier = {
+            consumer_goods_factor = 0.28
+            industrial_capacity_factory = -0.40
+            production_speed_buildings_factor = -0.4
+            industry_repair_factor = -0.45
+        }
+    }
+    tex_sabotage2 = {
+        picture = chi_war_of_resistance3
+        modifier = {
+            consumer_goods_factor = 0.26
+            industrial_capacity_factory = -0.3
+            production_speed_buildings_factor = -0.3
+            industry_repair_factor = -0.4
+        }
+    }
+    tex_sabotage3 = {
+        picture = chi_war_of_resistance3
+        modifier = {
+            consumer_goods_factor = 0.24
+            industrial_capacity_factory = -0.2
+            production_speed_buildings_factor = -0.2
+            industry_repair_factor = -0.35
+        }
+    }
+    tex_sabotage4 = {
+        picture = chi_war_of_resistance3
+        modifier = {
+            consumer_goods_factor = 0.22
+            industrial_capacity_factory = -0.15
+            production_speed_buildings_factor = -0.15
+            industry_repair_factor = -0.3
+        }
+    }
+    tex_sabotage5 = {
+        picture = chi_war_of_resistance3
+        modifier = {
+            consumer_goods_factor = 0.2
+            industrial_capacity_factory = -0.1
+            production_speed_buildings_factor = -0.1
+            industry_repair_factor = -0.25
+        }
+    }
+    tex_disloyal_army = {
+        picture = SPR_disbanded_army
+        modifier = {
+            experience_gain_army_factor = -0.25
+            army_morale_factor = -0.2
+            army_org_factor = -0.2
+            military_leader_cost_factor = 2
+            conscription_factor = -0.45
+            custom_modifier_tooltip = SPR_military_disloyalty_tt
+        }
+    }
+    tex_disloyal_army1 = {
+        picture = SPR_disbanded_army
+        modifier = {
+            experience_gain_army_factor = -0.2
+            army_org_factor = -0.1
+            army_morale_factor = -0.1
+        }
+    }
+    tex_air_force_reliance = {
+        picture = generic_aircraft_support
+        modifier = {
+            experience_gain_army_factor = -0.2
+            experience_gain_air_factor = 0.1
+            air_doctrine_cost_factor = -0.15
+            air_agility_factor = 0.05
+            army_org_factor = -0.1
+            army_morale_factor = -0.1
+        }
+    }
+    tex_purge_cmp = {
+        picture = generic_purge
+        modifier = {
+            communism_drift = -0.01
+            revolutionary_socialist_drift = -0.03
+            democratic_socialism_drift = -0.01
+            Anarchism_drift = -0.02
+        }
+    }
+    tex_purge_dem = {
+        picture = generic_purge
+        modifier = {
+            liberalism_drift = -0.01
+            conservatism_drift = -0.03
+            democratic_socialism_drift = -0.01
+        }
+    }
+    tex_abq_tied = {
+        picture = generic_goods_red_bonus
+        available = {
+            ELP = {
+                exists = yes
+            }
+        }
+        targeted_modifier = {
+            tag = ELP
+            cic_to_target_factor = 0.3
+        }
+    }
+    tex_turmoil = {
+        picture = generic_neutrality_drift_bonus
+        modifier = {
+            political_power_gain = -0.3
+        }
+    }
+    tex_bitch_to_abq = {
+        picture = ROM_king_carol_emptied_accounts
+        modifier = {
+            political_power_cost = 0.15
+            consumer_goods_factor = 0.1
+        }
+    }
+    tex_money_talks = {
+        picture = generic_foreign_capital
+        modifier = {
+            consumer_goods_factor = -0.1
+        }
+    }
+}
+
+country = {
+    tex_repair = {
+        picture = great_depression
+        modifier = {
+            industry_repair_factor = 0.25
+        }
+    }
+}
+country = {
+    tex_devastation = {
+        picture = generic_infantry_bonus
+        modifier = {
+            training_time_factor = 0.15
+            political_power_cost = 0.5
+            consumer_goods_factor = 0.20
+            industrial_capacity_factory = -0.25
+            production_speed_buildings_factor = -0.25
+            pocket_penalty = 1
+            army_morale_factor = -0.3
+        }
+    }
+}
+country = {
+    tex_devastation2 = {
+        picture = generic_infantry_bonus
+        modifier = {
+            training_time_factor = 0.15
+            political_power_cost = 0.4
+            consumer_goods_factor = 0.15
+            industrial_capacity_factory = -0.15
+            production_speed_buildings_factor = -0.15
+            pocket_penalty = 1
+            army_morale_factor = -0.3
+        }
+    }
+}
+country = {
+    tex_devastation3 = {
+        picture = generic_infantry_bonus
+        modifier = {
+            training_time_factor = 0.1
+            political_power_cost = 0.3
+            consumer_goods_factor = 0.1
+            industrial_capacity_factory = -0.15
+            production_speed_buildings_factor = -0.15
+            pocket_penalty = 1
+            army_morale_factor = -0.3
+        }
+    }
+}
+country = {
+    tex_devastation4 = {
+        picture = generic_infantry_bonus
+        modifier = {
+            training_time_factor = 0.1
+            political_power_cost = 0.3
+            industrial_capacity_factory = -0.1
+            production_speed_buildings_factor = -0.1
+            pocket_penalty = 1
+            army_morale_factor = -0.3
+        }
+    }
+}
+country = {
+    tex_devastation5 = {
+        picture = generic_infantry_bonus
+        modifier = {
+            political_power_cost = 0.15
+            industrial_capacity_factory = -0.05
+            production_speed_buildings_factor = -0.05
+            pocket_penalty = 1
+            army_morale_factor = -0.3
+        }
+    }
+}
+country = {
+    tex_morale = {
+        picture = generic_war_preparation
+        modifier = {
+            stability_weekly = 0.003
+            political_power_factor = 0.05
+        }
+    }
+}
+country = {
+    tex_morale2 = {
+        picture = generic_war_preparation
+        modifier = {
+            army_attack_factor = 0.1
+            army_defence_factor = 0.1
+            army_org_factor = 0.1
+        }
+    }
+}
+country = {
+    tcw_ownaged1 = {
+        picture = generic_morale_bonus
+        targeted_modifier = {
+            tag = TEJ
+            attack_bonus_against = 0.15
+            defense_bonus_against = 0.15
+        }
+    }
+}
+country = {
+    tcw_ownaged2 = {
+        picture = generic_morale_bonus
+        targeted_modifier = {
+            tag = SRT
+            attack_bonus_against = 0.15
+            defense_bonus_against = 0.15
+        }
+    }
+}
+country = {
+    tcw_ownaged3 = {
+        picture = generic_morale_bonus
+        targeted_modifier = {
+            tag = DIX
+            attack_bonus_against = 0.15
+            defense_bonus_against = 0.15
+        }
+    }
+}
+country = {
+    tcw_ownaged4 = {
+        picture = generic_morale_bonus
+        targeted_modifier = {
+            tag = CHR
+            attack_bonus_against = 0.15
+            defense_bonus_against = 0.15
+        }
+    }
+    tcw_ownaged5 = {
+        picture = generic_morale_bonus
+        targeted_modifier = {
+            tag = TGR
+            attack_bonus_against = 0.15
+            defense_bonus_against = 0.15
+        }
+    }
+}
+
+country = {
+    TEX_payments_to_abq = {
+        picture = generic_goods_red_bonus
+        modifier = {
+            stability_factor = -0.05
+            political_power_gain = -0.1
+            consumer_goods_factor = 0.15
+        }
+    }
+    SRT_I_hate_dixiecrats = {
+        picture = generic_goods_red_bonus
+        available = {
+            DIX = {
+                exists = yes
+            }
+        }
+        targeted_modifier = {
+            tag = DIX
+            attack_bonus_against = 0.05
+            defense_bonus_against = 0.1
+        }
+    }
+    SRT_larping = {
+        picture = generic_democratic_drift_bonus
+        modifier = {
+            army_morale_factor = 0.1
+            army_org_factor = 0.1
+            terrain_penalty_reduction = 0.15
+        }
+    }
+}

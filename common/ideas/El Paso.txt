@@ -1,0 +1,105 @@
+ideas = { 
+	country = { 
+		ABQ_this_sucks = {
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				has_war_with = MEX
+			}
+			picture = prc_low_popular_support3
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.1
+			}
+		}
+		ABQ_this_sucks2 = {
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				has_war_with = MEX
+			}
+			picture = prc_low_popular_support3
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.1
+				army_core_defence_factor = 0.03
+			}
+		}
+		ABQ_this_sucks3 = {
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				has_war_with = MEX
+			}
+			picture = prc_low_popular_support3
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.15
+				army_core_defence_factor = 0.03
+			}
+		}
+		ABQ_second_war_of_independence = {
+			allowed_civil_war = {
+            always = no
+			}
+			available = {
+				has_war_with = MEX
+			}
+			picture = generic_democratic_drift_bonus
+			targeted_modifier = {
+                tag = MEX
+                attack_bonus_against = -0.05
+                defense_bonus_against = 0.05
+		
+			}		
+		}	
+		ABQ_second_war_of_independence1 = {
+			allowed_civil_war = {
+            always = no
+			}
+			available = {
+				has_war_with = MEX
+			}
+			picture = generic_democratic_drift_bonus
+			targeted_modifier = {
+                tag = MEX
+                defense_bonus_against = 0.1
+			}		
+		}
+		ABQ_second_war_of_independence2 = {
+			allowed_civil_war = {
+            always = no
+			}
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				army_speed_factor = 0.05
+			}
+			available = {
+				has_war_with = MEX
+			}
+			targeted_modifier = {
+                tag = MEX
+				attack_bonus_against = 0.05
+                defense_bonus_against = 0.2
+			}		
+		}
+		ABQ_basin_flooded = {
+			allowed_civil_war = {
+            always = no
+			}
+			available = {
+				has_war_with = MEX
+			}
+			picture = prc_the_long_march
+			modifier = {
+				army_speed_factor = -0.1
+				army_org_factor = -0.05
+				army_core_defence_factor = 0.15
+			}	
+		}
+	}	
+
+}	

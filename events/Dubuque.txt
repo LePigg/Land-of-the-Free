@@ -1,0 +1,284 @@
+add_namespace = DBQ
+
+
+country_event = {
+	id = DBQ.1
+	title = DBQ.1.t
+	desc = DBQ.1.d
+	picture = GFX_report_event_soviet_tanks
+
+	trigger = {
+		tag = DBQ
+		COM = {
+			exists = no
+		}
+	}
+
+	mean_time_to_happen = { days = 15 }
+
+	fire_only_once = yes 
+
+	option = {
+		name  = DBQ.1.a
+		ai_will_do = { factor = 100 }
+		custom_effect_tooltip = DBQ_become_cmp
+		hidden_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = democratic_socialism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = Anarchism
+				popularity = 0.05
+			}
+			add_manpower = 50000
+			COM = {
+				COM_david_shoup = {
+					set_nationality = DBQ
+				}
+				COM_herbert_holdridge = {
+					set_nationality = DBQ
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = DBQ.2
+	title = DBQ.2.t
+	desc = DBQ.2.d
+	picture = GFX_olson_spitting_facts_event_image
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = DBQ.2.a
+		ai_chance = {
+			base = 70
+		}
+	 	DBQ_jacob_devers = {
+			remove_country_leader_role = yes
+			ideology = revolutionary_socialist
+		}
+		every_unit_leader = { set_nationality = MIN }
+		MIN = {
+			annex_country = { target = DBQ transfer_troops = yes }
+			change_tag_from = DBQ
+		}
+		COM = {
+			clr_country_flag = friendly_to_min
+			set_country_flag = hostile_to_min
+		}
+		custom_effect_tooltip = COM_MIN_betrayal
+		add_stability = -0.10
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = 0.15
+		}
+	}
+
+	option = {
+		name = DBQ.2.b
+		ai_chance = {
+			factor = 30
+		}
+		DBQ = {
+			country_event = {
+				id = DBQ.3
+				days = 3
+			}
+		}
+		add_war_support = 0.1
+	}
+}	
+
+	country_event = { 
+	id = DBQ.4
+	title = DBQ.4.t
+	desc = DBQ.4.d
+	picture = GFX_report_event_soviet_in_riga
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = DBQ.4.a
+		ai_chance = {
+			base = 70
+		}
+	 	MIC_george_grunert = {
+			remove_country_leader_role = yes
+			ideology = stratocracy
+		}
+		DBQ = {
+			annex_country = { target = MIC transfer_troops = yes }
+			clr_country_flag = war_occupied
+		}
+		MIC = {
+			every_unit_leader = {
+				set_nationality = DBQ
+			}
+		}
+	}
+	
+	option = {
+		name = DBQ.4.b
+		ai_chance = {
+			base = 30
+		}
+		DBQ = {
+			country_event = {
+				id = DBQ.5 days = 3
+			}
+		}
+		add_war_support = -0.1
+	}
+}
+
+country_event = {
+	id = DBQ.3
+	desc = DBQ.3.d
+	title = DBQ.3.t
+	picture = GFX_olson_spitting_facts_event_image
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = DBQ.3.a
+		ai_will_do = {
+			base = 4
+		}
+		set_country_flag = hostile_to_min
+		add_war_support = 0.15
+	}
+}
+
+country_event = {
+	id = DBQ.5
+	desc = DBQ.5.d
+	title = DBQ.5.t
+	picture = GFX_report_event_soviet_in_riga
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = DBQ.5.a
+		ai_will_do = {
+			base = 4
+		}
+		declare_war_on = {
+			target = MIC
+			type = annex_everything
+		}
+		clr_country_flag = war_occupied
+	}
+}
+
+country_event = {
+	id = DBQ.6
+	desc = DBQ.6.d
+	title = DBQ.6.t
+	picture = GFX_report_event_gathering_protest
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = DBQ.6.a
+		ai_will_do = {
+			base = 30
+		}
+		BMK = {
+			retire_character = BMK_gerald_macguire
+		}
+		219 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		add_stability = 0.1
+	}
+}
+
+country_event = {
+	id = DBQ.7
+	desc = DBQ.7.d
+	title = DBQ.7.t
+	picture = GFX_report_event_soviet_in_riga
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = DBQ.7.a
+		ai_will_do = {
+			base = 40
+		}
+		DBQ = {
+			annex_country = {
+				target = NDA
+			}
+		}
+	}
+	option = {
+		name = DBQ.7.b
+		ai_will_do = {
+			base = 60
+		}
+		NDA = {
+			declare_war_on = {
+				target = DBQ
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {
+	id = DBQ.8
+	desc = DBQ.8.d
+	title = DBQ.8.t
+	picture = GFX_report_event_german_advisors_remain
+
+	trigger = {
+		tag = DBQ
+		DIA = {
+			exists = no
+		}
+	}
+
+	mean_time_to_happen = { days = 15 }
+
+	fire_only_once = yes 
+
+	option = {
+		name = DBQ.8.a
+		ai_will_do = {
+			base = 30
+		}
+		DIA = {
+			IWA_wendell_fertig = {
+				set_nationality = DBQ
+			}
+			IWA_william_sharp = {
+				set_nationality = DBQ
+			}
+		}
+		hidden_effect = {
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.05
+			}
+		}
+	}
+}

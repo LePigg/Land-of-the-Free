@@ -1,0 +1,25 @@
+ideas = {
+#Denmark
+    country = {
+        DAN_christianx = {
+            picture = GFX_idea_DAN_christianx
+            #modifier = {
+            #   
+            #}
+        }
+    }
+
+    country = {
+        DAN_homeland = {
+            picture = DAN_wealthyhomeland
+            modifier = {
+		monthly_population = 0.05
+		political_power_gain = 0.05
+		local_factories = 0.1
+		recruitable_population_factor = 0.1
+		weekly_manpower = 50
+            }
+        }
+    }
+
+}

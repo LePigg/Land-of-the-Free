@@ -1,0 +1,491 @@
+add_namespace = minnesota
+
+country_event = {
+	id = minnesota.1
+	title = minnesota.1.t
+	desc = minnesota.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = minnesota.1.a
+		ai_chance = { factor = 100 }
+
+	}
+}
+country_event = {
+	id = minnesota.2
+	title = minnesota.2.t
+	desc = minnesota.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = minnesota.2.a
+		ai_chance = { factor = 100 }
+
+	}
+}
+
+country_event = {
+	id = minnesota.3
+	title = minnesota.3.t
+	desc = minnesota.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = minnesota.3.a
+		ai_chance = { factor = 100 }
+		army_experience = 5
+
+	}
+}
+country_event = {
+	id = minnesota.4
+	title = minnesota.4.t
+	desc = minnesota.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = minnesota.4.a
+		ai_chance = { factor = 50 }
+		add_political_power = -25
+		add_stability = -0.1
+
+	}
+	option = {
+		name = minnesota.4.b
+		ai_chance = { factor = 50 }
+		add_political_power = -100
+		add_stability = -0.05
+
+	}	
+}
+country_event = {
+	id = minnesota.5
+	title = minnesota.5.t
+	desc = minnesota.5.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+		name = minnesota.5.a
+		ai_chance = { factor = 100 }
+			add_political_power = -30
+			hidden_effect ={
+				country_event = { id = minnesota.6 }	
+			}
+	}
+}
+country_event = {
+	id = minnesota.6
+	title = minnesota.6.t
+	desc = minnesota.6.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+		name = minnesota.6.a
+		ai_chance = { factor = 100 }
+			add_popularity = {
+				ideology = democratic_socialism
+				popularity = 0.05
+			}
+		complete_national_focus = MIN_road_to_recovery
+	}
+}
+country_event = {
+	id = minnesota.7
+	title = minnesota.7.t
+	desc = minnesota.7.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+		name = minnesota.7.a
+		ai_chance = { factor = 100 }
+		add_war_support = 0.1
+	}
+}
+country_event = {
+	id = minnesota.8
+	title = minnesota.8.t
+	desc = minnesota.8.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+		name = minnesota.8.a
+		ai_chance = { factor = 100 }
+		add_manpower = 9500
+	}
+}
+country_event = {
+	id = minnesota.9
+	title = minnesota.9.t
+	desc = minnesota.9.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+		name = minnesota.9.a
+		ai_chance = { factor = 100 }
+		OJB = {
+			country_event = { days = 3 id = minnesota.100 }
+		}
+	}
+}
+country_event = {
+	id = minnesota.100
+	title = minnesota.100.t
+	desc = minnesota.100.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+		name = minnesota.100.a
+		ai_chance = { factor = 50 }
+		MIN = {
+			country_event = { days = 3 id = minnesota.10 }
+		}
+	}
+	option = {
+		name = minnesota.100.a
+		ai_chance = { factor = 50 }
+		MIN = {
+			country_event = { days = 3 id = minnesota.11 }
+		}
+	}	
+}
+country_event = {
+	id = minnesota.10
+	title = minnesota.10.t
+	desc = minnesota.10.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+		name = minnesota.10.a
+		ai_chance = { factor = 100 }
+		annex_country = { target = OJB }		
+		complete_national_focus = MIN_ojibwe_reservation
+	}
+}
+country_event = {
+	id = minnesota.11
+	title = minnesota.11.t
+	desc = minnesota.11.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+		name = minnesota.11.a
+		ai_chance = { factor = 100 }
+		complete_national_focus = MIN_operation_homecoming	
+	}
+}
+country_event = {
+	id = minnesota.12
+	title = minnesota.12.t
+	desc = minnesota.12.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+		name = minnesota.12.a
+		ai_chance = { factor = 100 }
+		add_manpower = -314
+	}
+}
+country_event = {
+	id = minnesota.13
+	title = minnesota.13.t
+	desc = minnesota.13.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+		name = minnesota.13.a
+		ai_chance = { factor = 100 }
+		add_manpower = 1820
+	}
+}
+country_event = {
+	id = minnesota.14
+	title = minnesota.14.t
+	desc = minnesota.14.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+		name = minnesota.14.a
+		ai_chance = { factor = 100 }
+		give_guarantee = IWA
+		give_military_access = IWA
+		IWA = {
+			give_guarantee = MIN
+			give_military_access = MIN
+		}
+		add_state_claim = 392
+		hidden_effect = {	
+			country_event = { days = 21 id = minnesota.15 }
+		}
+	}
+}
+country_event = {
+	id = minnesota.15
+	title = minnesota.15.t
+	desc = minnesota.15.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = minnesota.15.a
+		ai_chance = { factor = 100 }
+		IWA = {
+			remove_state_core = 392
+		}		
+		annex_country = { target = IWA}
+	}
+}
+country_event = {
+	id = minnesota.16
+	title = minnesota.16.t
+	desc = minnesota.16.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = minnesota.16.a
+		ai_chance = { factor = 100 }
+		add_popularity = {
+			ideology = democratic_socialism
+			popularity = -0.05
+		}
+		add_stability = 0.05
+	}
+	option = {
+		name = minnesota.16.b
+		ai_chance = { factor = 100 }
+		add_popularity = {
+			ideology = democratic_socialism
+			popularity = 0.05
+		}
+		add_stability = -0.05
+	}	
+}
+country_event = {
+	id = minnesota.17
+	title = minnesota.17.t
+	desc = minnesota.17.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = minnesota.17.a
+		ai_chance = { factor = 100 }
+			swap_ideas = {
+				remove_idea = MIN_xenophobia
+				add_idea = MIN_xenophobia2
+			}	
+			add_state_core = 390
+	}
+}
+country_event = {
+	id = minnesota.18
+	title = minnesota.18.t
+	desc = minnesota.18.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = minnesota.18.a
+		ai_chance = { factor = 100 }
+		add_state_claim = 390
+		NDA = {
+			remove_state_core = 390
+		}
+		annex_country = { target = NDA }		
+	}
+}
+country_event = {
+	id = minnesota.19
+	title = minnesota.19.t
+	desc = minnesota.19.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = minnesota.19.a
+		ai_chance = { factor = 100 }
+		add_political_power = -30
+		remove_ideas = MIN_xenophobia
+	}
+}
+country_event = {
+	id = minnesota.20
+	title = minnesota.20.t
+	desc = minnesota.20.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = minnesota.20.a
+		ai_chance = { factor = 100 }
+		kill_country_leader = yes
+	}
+}
+country_event = {
+	id = minnesota.21
+	title = minnesota.21.t
+	desc = minnesota.21.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = minnesota.21.a
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = DEATH_WEAKNESS_DESTRUCTION
+		IF = {
+			limit = {
+				tag = ERR
+			}
+			MIN = {
+				country_event = { id = minnesota.22 days = 7 }
+			}
+		}
+		IF = {
+			limit = {
+				tag = COM
+			}
+			MIN = {
+				country_event = { id = min.23 days = 7 }
+			}
+		}
+	}
+	option = {
+		name = minnesota.21.b
+		ai_chance = { factor = 100 }
+		IF = {
+			limit = {
+				tag = ERR
+			}
+			MIN = {
+				country_event = { id = minnesota.23 days = 7 }
+			}
+		}
+		IF = {
+			limit = {
+				tag = COM
+			}
+			MIN = {
+				country_event = { id = min.24 days = 7}
+			}
+		}
+	}
+}
+country_event = {
+	id = minnesota.22
+	title = minnesota.22.t
+	desc = minnesota.22.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = minnesota.22.a
+		ai_chance = { factor = 100 }
+		annex_country = { target = ERR }
+		ERR = {
+			 
+			every_unit_leader = { 
+				set_nationality = MIN 
+
+			}
+			ERR_douglas_macarthur = {
+				remove_all_country_leader_roles = yes
+				set_nationality = MIN
+			}
+		}
+		clr_country_flag = war_occupied
+		set_country_flag = annexed_erie
+	}
+}
+country_event = {
+	id = minnesota.23
+	title = minnesota.23.t
+	desc = minnesota.23.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = minnesota.23.a
+		ai_chance = { factor = 100 }
+		declare_war_on = { target = ERR type = annex_everything }
+		clr_country_flag = war_occupied
+	}
+}

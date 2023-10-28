@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+		COS_democracy = {
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = 0.15
+				war_support_factor = 0.10
+				army_core_defence_factor = 0.05
+			}
+		}
+		COS_recession = {
+			picture = usa_great_depression
+			modifier = {
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.08
+				industrial_capacity_dockyard = -0.10
+				industrial_capacity_factory = -0.10
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+	}
+}

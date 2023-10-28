@@ -1,0 +1,800 @@
+ideas = {
+	#Fresno
+	country = {
+		EUR_promises = {
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_neutrality_drift_bonus
+			modifier = {
+				political_power_cost = 0.3
+				stability_factor = -0.3
+				war_support_factor = -0.3
+				surrender_limit = -0.15
+			}
+		}
+	}
+	country = {
+		EUR_promises1 = {
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_neutrality_drift_bonus
+			modifier = {
+				political_power_cost = 0.2
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				surrender_limit = -0.1
+			}
+		}
+	}
+	country = {
+		EUR_promises2 = {
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_neutrality_drift_bonus
+			modifier = {
+				political_power_cost = 0.1
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				surrender_limit = -0.05
+			}
+		}
+	}
+    country = {
+		EUR_promises3 = {
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_neutrality_drift_bonus
+			modifier = {
+				political_power_cost = -0.10
+				stability_factor = 0.10
+			}
+		}
+	}
+ 
+    country = {
+        EUR_rose = {
+            picture = generic_armor
+            modifier = {
+                army_speed_factor = 0.10
+                army_attack_factor = 0.10
+            }
+        }
+        EUR_rose2 = {
+            picture = generic_armor
+            modifier = {
+                army_speed_factor = 0.10
+                army_attack_factor = 0.15
+                planning_speed = 0.10
+            }
+            equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+        }
+        EUR_rose3 = {
+            picture = generic_armor
+            modifier = {
+                army_speed_factor = 0.15
+                army_attack_factor = 0.20
+                planning_speed = 0.15
+                land_reinforce_rate = 0.10
+            }
+            equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+        }
+        EUR_carlson = {
+            picture = generic_secret_police
+            modifier = {
+                attrition = -0.10
+                army_morale_factor = 0.10
+            }
+        }
+        EUR_carlson2 = {
+            picture = generic_secret_police
+            modifier = {
+                attrition = -0.15
+                army_morale_factor = 0.10
+                no_supply_grace = 24
+                special_forces_cap = 0.15
+                
+            }
+        }
+        EUR_carlson3 = {
+            picture = generic_secret_police
+            modifier = {
+                attrition = -0.15
+                army_morale_factor = 0.20
+                no_supply_grace = 48
+                special_forces_cap = 0.15
+                army_defence_factor = 0.15
+            }
+        }
+        EUR_fervor = {
+            picture = chi_war_of_resistance
+            modifier = {
+                army_core_attack_factor = 0.05
+                army_core_defence_factor = 0.05
+                conscription_factor = 0.05
+            }
+        }
+        EUR_tax = {
+            picture = generic_foreign_capital
+            modifier = {
+                consumer_goods_factor = -0.02
+                production_factory_efficiency_gain_factor = 0.10
+            }
+        }
+        EUR_learn = {
+            picture = generic_research_bonus
+            modifier = {
+                research_speed_factor = 0.05
+            }
+        }
+        EUR_ndc = {
+            picture = nkvd_2
+            available = {
+                has_government = communism
+            }
+            modifier = {
+                war_support_factor = -0.10
+                political_power_gain = -0.20
+                resistance_damage_to_garrison = -0.30
+                resistance_growth = -0.20
+                decryption_factor = 0.15
+                encryption_factor = 0.20
+
+            }
+        }
+        EUR_purge = {
+            picture = officers_purged
+            modifier = {
+                stability_factor = -0.60
+                army_org_factor = -0.20
+                research_speed_factor = -0.20
+                consumer_goods_factor = 0.30
+                weekly_manpower = -50
+                industrial_capacity_factory = -0.30
+                stability_weekly = 0.002
+                communism_drift = 0.30
+            }
+        }
+        EUR_collectivization = {
+            picture = eng_spirit_of_the_industrial_revolution
+            modifier = {
+                consumer_goods_factor = -0.15
+                production_factory_efficiency_gain_factor = 0.10
+                stability_factor = -0.10
+                conscription_factor = -0.08
+            }
+        }
+        EUR_collectivization2 = {
+            picture = eng_spirit_of_the_industrial_revolution
+            modifier = {
+                consumer_goods_factor = -0.20
+                production_factory_efficiency_gain_factor = 0.15
+                stability_factor = -0.20
+                conscription_factor = -0.12
+            }
+        }
+        EUR_soc_rev = {
+            picture = socialist_science_focus
+            modifier = {
+                war_support_factor = 0.20
+                political_power_factor = 0.15
+                research_speed_factor = 0.05
+            }
+        }
+        EUR_vanguard = {
+            picture = saf_soviet_advisers
+            modifier = {
+                conscription = 0.025
+            }
+        }
+        EUR_welfare = {
+            available = {
+                has_government = democratic_socialism
+            }
+            picture = hol_the_foundations_of_defense
+            modifier = {
+                political_power_cost = -0.10
+                stability_factor = 0.15
+                consumer_goods_factor = 0.05
+                monthly_population = 0.15
+                conscription_factor = 0.02
+            }
+        }
+        EUR_welfare2 = {
+            available = {
+                has_government = democratic_socialism
+            }
+            picture = hol_the_foundations_of_defense
+            modifier = {
+                stability_factor = 0.20
+                consumer_goods_factor = 0.10
+                monthly_population = 0.25
+                conscription_factor = 0.04
+                production_factory_efficiency_gain_factor = 0.05
+            }
+        }
+        EUR_antiracism = {
+        picture = usa_desegregation_2
+        modifier = {
+            political_power_cost = 0.20
+            war_support_weekly = -0.005
+            }
+        }
+        
+        EUR_desegregation = {
+            picture = usa_desegregation_2
+        modifier = {
+            conscription = 0.01
+            industrial_capacity_factory = 0.10
+            stability_factor = 0.05
+            }
+        }
+
+        EUR_beacon = {
+            available = {
+                has_government = revolutionary_socialist
+            }
+            picture = generic_communist_army
+            modifier = {
+                political_power_gain = 0.15
+                industrial_capacity_factory = 0.10
+                production_factory_max_efficiency_factor = 0.05
+            }
+        }
+        EUR_NEP = {
+            available = {
+                has_government = revolutionary_socialist
+            }
+            picture = hol_haven_of_tolerance
+            modifier = {
+                political_power_gain = 0.10
+                production_speed_buildings_factor = 0.20
+                production_factory_efficiency_gain_factor = 0.10
+            }
+        }
+        EUR_NEP2 = {
+            available = {
+                has_government = revolutionary_socialist
+            }
+            picture = hol_haven_of_tolerance
+            modifier = {
+                political_power_gain = 0.15
+                consumer_goods_factor = -0.05
+                production_factory_efficiency_gain_factor = 0.05
+            }
+        }
+        EUR_beacon2 = {
+            available = {
+                has_government = revolutionary_socialist
+            }
+            picture = generic_communist_army
+            modifier = {
+                political_power_gain = 0.25
+                industrial_capacity_factory = 0.25
+                production_factory_max_efficiency_factor = 0.08
+                line_change_production_efficiency_factor = 0.10
+            }
+        }
+        EUR_wealth = {
+            picture = SPR_relocate_the_gold_reserves
+            modifier = {
+                consumer_goods_factor = -0.15
+                production_factory_efficiency_gain_factor = -0.15
+            }
+        }
+        EUR_immigration = {
+            picture = prc_low_popular_support3
+            modifier = {
+                political_power_cost = 0.20
+                monthly_population = 0.40
+            }
+        }
+        EUR_investments = {
+            picture = generic_goods_red_bonus
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.10
+                consumer_goods_factor = -0.15
+            }
+        }
+        EUR_security = {
+            picture = generic_constitutional_guarantees
+            modifier = {
+            consumer_goods_factor = 0.05
+            political_power_gain = 0.10
+            stability_factor = 0.10
+            }
+        }
+        EUR_restore = {
+            picture = FRA_national_mobilization_focus
+            modifier = {
+                political_power_factor = 0.10
+                conservatism_drift = 0.05
+                liberalism_drift = 0.05
+                communism_drift = -0.03
+                revolutionary_socialist_drift = -0.03
+                democratic_socialism_drift = -0.03
+            }
+        }
+        EUR_strike = {
+            picture = FRA_factory_strikes
+            modifier = {
+                stability_factor = -0.05
+                industrial_capacity_factory = -0.20
+                production_factory_max_efficiency_factor = -0.15
+                production_factory_efficiency_gain_factor = -0.15
+            }
+        }
+        EUR_strike2 = {
+            picture = FRA_factory_strikes
+            modifier = {
+                consumer_goods_factor = 0.10
+                industrial_capacity_factory = -0.15
+                production_factory_max_efficiency_factor = -0.15
+                production_factory_efficiency_gain_factor = -0.10
+                democratic_socialism_drift = 0.05
+                revolutionary_socialist_drift = 0.05
+                communism_drift = 0.05
+            }
+        }
+        EUR_new_deal = {
+            available = {
+                has_government = liberalism
+            }
+            picture = new_deal
+            modifier = { 
+                stability_factor = 0.10
+                political_power_factor = 0.05
+            }
+        }
+        EUR_tax2 = {
+            picture = generic_foreign_capital
+            modifier = {
+                consumer_goods_factor = -0.02
+                production_factory_efficiency_gain_factor = 0.10
+                stability_factor = 0.10
+                line_change_production_efficiency_factor = 0.15
+            }
+        }
+        EUR_epic_reform = {
+            available = {
+                has_government = liberalism
+            }
+            picture = generic_deal_with_the_devil2
+            modifier = {
+                political_power_cost = -0.10
+                consumer_goods_factor = -0.10
+                stability_factor = -0.05
+            }
+        }
+        EUR_security2 = {
+            picture = generic_constitutional_guarantees
+            modifier = {
+            consumer_goods_factor = 0.03
+            political_power_gain = 0.15
+            stability_factor = 0.15
+            monthly_population = 0.15
+            }
+        }
+        EUR_miracle = {
+            picture = generic_economic_increase
+            available = {
+                has_government = liberalism
+            }
+            modifier = {
+                production_speed_buildings_factor = 0.15
+                industrial_capacity_factory = 0.20
+                trade_opinion_factor = 0.15
+            }
+        }
+        EUR_capitalism = {
+            picture = generic_central_management
+            available = {
+                OR = {
+                    has_government = conservatism
+                    has_government = liberalism
+                }
+            }
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.10
+                political_power_gain = 0.20
+                production_factory_max_efficiency_factor = 0.15
+                trade_opinion_factor = 0.15
+            }
+        }
+        EUR_capitalism2 = {
+            picture = generic_central_management
+            available = {
+                OR = {
+                    has_government = conservatism
+                    has_government = liberalism
+                }
+            }
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.10
+                political_power_gain = 0.20
+                production_factory_max_efficiency_factor = 0.15
+                production_speed_buildings_factor = 0.15
+                research_speed_factor = 0.10
+                trade_opinion_factor = 0.15
+            }
+        }
+        EUR_tax3 = {
+            picture = generic_foreign_capital
+            modifier = {
+                consumer_goods_factor = -0.05
+                production_factory_efficiency_gain_factor = 0.15
+            }
+        }
+    }
+
+
+
+	political_advisor = {
+		EUR_wi = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = EUR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { war_industrialist }
+		}
+		
+
+		EUR_cg = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = EUR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { compassionate_gentleman }
+		}
+		
+		EUR_qg = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = EUR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { quartermaster_general }
+		}
+
+		EUR_bb = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = EUR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { backroom_backstabber }
+		}
+		
+		EUR_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = EUR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { prince_of_terror }
+		}
+
+		EUR_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = EUR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { captain_of_industry }
+		}
+
+		EUR_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = EUR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		EUR_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = EUR
+			}		
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		EUR_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = EUR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		EUR_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = EUR
+			}
+			
+			traits = { air_chief_reform_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		EUR_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = EUR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		EUR_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = EUR
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		EUR_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = EUR
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		EUR_ar = {
+			ledger = army
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = EUR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		EUR_ai2 = {
+			ledger = army
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = EUR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		EUR_aa2 = {
+			ledger = army
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = EUR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		EUR_acas = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = EUR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		EUR_ncs = {
+			ledger = navy
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = EUR
+			}
+			
+			traits = { navy_capital_ship_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		EUR_mt = {
+			ledger = army
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = EUR
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { military_theorist }
+		}
+		
+		EUR_nt = {
+			ledger = navy
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = EUR
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { naval_theorist }
+		}	
+
+		EUR_awt = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = EUR
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

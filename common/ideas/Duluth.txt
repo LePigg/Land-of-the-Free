@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		DUL_remnant = {
+			picture = SOV_war_heroes
+			modifier = {
+				conscription = 0.015
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				training_time_factor = 0.2
+			}
+		}
+		DUL_demoralized = {
+			picture = SPR_crush_the_revolution
+			modifier = {
+				political_power_gain = -0.08
+				stability_factor = -0.06
+				war_support_factor = -0.15
+				surrender_limit = -0.1
+			}
+		}
+	}
+}

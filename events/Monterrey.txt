@@ -1,0 +1,366 @@
+
+add_namespace = mty
+
+country_event = {
+	id = mty.1
+	title = mty.1.t
+	desc = mty.1.d
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+
+    mean_time_to_happen = { days = 20 }
+
+	trigger = {
+		tag = MTY
+		date > 1936.12.1
+	}
+	
+	option = {
+		name = mty.1.a
+		ai_chance = {
+			base = 10
+		}
+		every_country = {
+			set_country_flag = MTY_council_decisions1_flag
+		}
+		
+		kill_country_leader = yes
+		add_popularity = {
+			ideology = despotism
+			popularity = -0.35
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		set_politics = {
+			ruling_party = guided_democracy
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = guided_democracy
+			popularity = 0.23
+		}
+	}
+}
+country_event = {
+	id = mty.2
+	title = mty.2.t
+	desc = mty.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = mty.2.a
+		ai_chance = { factor = 100 }
+		set_cosmetic_tag = MTY_EURPuppet
+		EUR = {
+			puppet = MTY
+		}
+		set_politics = {
+			ruling_party = democratic_socialism
+			elections_allowed = yes
+		}
+		EUR = {
+			country_event = { id = mty.8 }
+		}
+		CAL = {
+			country_event = { days = 1 id = mty.7 }
+		}
+		LAC = {
+			country_event = { days = 1 id = mty.7 }
+		}
+	}	
+}
+country_event = {
+	id = mty.3
+	title = mty.3.t
+	desc = mty.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = mty.3.a
+		ai_chance = { factor = 100 }
+		set_cosmetic_tag = MTY_CALPuppet
+		CAL = {
+			puppet = MTY
+			country_event = { id = mty.8 }
+		}
+		EUR = {
+			country_event = { days = 1 id = mty.7 }
+		}
+		LAC = {
+			country_event = { days = 1 id = mty.7 }
+		}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+			remove_state_core = 140
+		}
+	}	
+}
+country_event = {
+	id = mty.4
+	title = mty.4.t
+	desc = mty.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = mty.4.a
+		ai_chance = { factor = 100 }
+		set_cosmetic_tag = MTY_LACPuppet
+		LAC = {
+			puppet = MTY
+			country_event = { id = mty.8 }
+		}
+		EUR = {
+			country_event = { days = 1 id = mty.7 }
+		}
+		CAL = {
+			country_event = { days = 1 id = mty.7 }
+		}
+		set_cosmetic_tag = MTY_LACPuppet
+		set_politics = {
+			ruling_party = stratocracy
+			elections_allowed = no
+		}
+	}	
+}
+country_event = {
+	id = mty.5
+	title = mty.5.t
+	desc = mty.5.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = mty.5.a
+		ai_chance = { factor = 100 }
+		add_political_power = -50
+		MTY = {
+			add_stability = -0.1
+		}
+		if = {
+			limit = {
+				tag = EUR
+			}
+			custom_effect_tooltip = MTYsocialist250L
+			CAL = {
+                add_to_variable = {
+					var = MTYSocialist
+					value = -250
+				}
+            }
+            MTY = {
+                add_to_variable = {
+					var = MTYSocialist
+					value = -250
+				}
+            }
+            EUR = {
+                add_to_variable = {
+					var = MTYSocialist
+					value = -250
+				}
+            }
+            LAC = {
+                add_to_variable = {
+					var = MTYSocialist
+					value = -250
+				}
+            }
+		}
+		if = {
+			limit = {
+				tag = LAC
+			}
+			custom_effect_tooltip = MTYtechnocrat250L
+			CAL = {
+                add_to_variable = {
+					var = MTYTechnocrat
+					value = -250
+				}
+            }
+            MTY = {
+                add_to_variable = {
+					var = MTYTechnocrat
+					value = -250
+				}
+            }
+            EUR = {
+                add_to_variable = {
+					var = MTYTechnocrat
+					value = -250
+				}
+            }
+            LAC = {
+                add_to_variable = {
+					var = MTYTechnocrat
+					value = -250
+				}
+            }
+		}
+		if = {
+			limit = {
+				tag = CAL
+			}
+			custom_effect_tooltip = MTYliberal250L
+			CAL = {
+                add_to_variable = {
+					var = MTYLiberal
+					value = -250
+				}
+            }
+            MTY = {
+                add_to_variable = {
+					var = MTYLiberal
+					value = -250
+				}
+            }
+            EUR = {
+                add_to_variable = {
+					var = MTYLiberal
+					value = -250
+				}
+            }
+            LAC = {
+                add_to_variable = {
+					var = MTYLiberal
+					value = -250
+				}
+            }
+		}
+	}
+}
+country_event = {
+	id = mty.6
+	title = mty.6.t
+	desc = mty.6.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = mty.6.a
+		ai_chance = { factor = 100 }
+		clr_country_flag = MTY_council_decisions1_flag
+		MTY = {
+			set_country_flag = MTY_got_couped
+		}
+		IF = {
+			limit = {
+				tag = LAC
+			}
+			puppet = MTY
+			EUR = {
+				country_event = { days = 1 id = mty.7 }
+			}
+			CAL = {
+				country_event = { days = 1 id = mty.7 }
+			}
+			hidden_effect = {
+				MTY = {
+					set_cosmetic_tag = MTY_LACPuppet
+					set_politics = {
+						ruling_party = stratocracy
+						elections_allowed = no
+					}
+				}
+			}
+		}
+		IF = {
+			limit = {
+				tag = EUR
+			}
+			puppet = MTY
+			LAC = {
+				country_event = { days = 1 id = mty.7 }
+			}
+			CAL = {
+				country_event = { days = 1 id = mty.7 }
+			}
+			hidden_effect = {
+				MTY = {
+					set_cosmetic_tag = MTY_EURPuppet
+					set_politics = {
+						ruling_party = democratic_socialism
+						elections_allowed = yes
+					}
+				}
+			}
+		}
+		IF = {
+			limit = {
+				tag = CAL
+			}
+			puppet = MTY
+			LAC = {
+				country_event = { days = 1 id = mty.7 }
+			}
+			EUR = {
+				country_event = { days = 1 id = mty.7 }
+			}
+			hidden_effect = {
+				MTY = {
+					set_cosmetic_tag = MTY_CALPuppet
+					set_politics = {
+						ruling_party = liberalism
+						elections_allowed = yes
+					}
+					remove_state_core = 140
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = mty.7
+	title = mty.7.t
+	desc = mty.7.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = mty.7.a
+		ai_chance = { factor = 100 }
+		clr_country_flag = MTY_council_decisions1_flag
+	}
+}
+country_event = {
+	id = mty.8
+	title = mty.8.t
+	desc = mty.8.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = mty.8.a
+		ai_chance = { factor = 100 }
+		clr_country_flag = MTY_council_decisions1_flag
+	}
+}

@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+		CUB_destabilize = {
+			picture = generic_oppression
+			modifier = {
+				political_power_factor = -0.4
+				stability_factor = -0.15
+			}
+		}
+		CUB_national = {
+			picture = generic_morale_bonus
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_org_factor = 0.05
+			}
+		}
+	}
+}

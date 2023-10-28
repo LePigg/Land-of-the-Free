@@ -1,0 +1,167 @@
+add_namespace = pan
+
+country_event = {
+	id = pan.1
+	title = pan.1.t
+	desc = pan.1.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	fire_only_once = no 
+	
+	trigger = {
+		date > 1936.1.1
+		tag = pan
+	}
+	option = {
+		name = pan.1.a
+		ai_chance = { factor = 2 }
+		country_event = { days = 47 id = pan.2 }
+		country_event = { days = 160 id = pan.5 }
+	}	
+}
+country_event = {
+	id = pan.2
+	title = pan.2.t
+	desc = pan.2.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	fire_only_once = no 
+
+	option = {
+		name = pan.2.a
+		ai_chance = { factor = 2 }
+		every_country = { 
+			news_event = { hours = 6 id = fillernews.11 } 
+		}
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 3
+				num_provinces = 1
+				on_win = pan.3
+				on_lose = pan.4
+				on_cancel = pan.4
+			}
+			defender = {
+				state = 274
+				num_provinces = 1
+				on_win = min.9
+				on_lose = min.10						
+				on_cancel = min.10
+			}
+		}
+	}	
+}
+country_event = {
+	id = pan.3
+	title = pan.3.t
+	desc = pan.3.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	fire_only_once = no 
+	
+	option = {
+		name = pan.3.a
+		ai_chance = { factor = 2 }
+		set_country_flag = pan_win
+		transfer_state = 274
+		add_stability = 0.15
+		add_popularity = {
+			ideology = guided_democracy
+			popularity = 0.1
+		}
+	}	
+}
+country_event = {
+	id = pan.4
+	title = pan.4.t
+	desc = pan.4.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	fire_only_once = no 
+	
+	option = {
+		name = pan.4.a
+		ai_chance = { factor = 2 }
+		set_country_flag = pan_loss
+		add_stability = -0.15
+		add_popularity = {
+			ideology = guided_democracy
+			popularity = -0.15
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.04
+		}
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = 0.07
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.04
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.12
+		}
+	}	
+}
+country_event = {
+	id = pan.5
+	title = pan.5.t
+	desc = pan.5.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	fire_only_once = no 
+	
+	option = {
+		name = pan.5.a
+		ai_chance = { factor = 2 }
+		trigger = {
+			has_country_flag = pan_win
+		}
+		retire_country_leader = yes
+		every_country = { 
+			news_event = { hours = 6 id = fillernews.13 } 
+		}
+	}	
+	option = {
+		name = pan.5.b
+		ai_chance = { factor = 2 }
+		trigger = {
+			has_country_flag = pan_loss
+		}
+		retire_country_leader = yes
+		set_politics = {
+			ruling_party = liberalism
+			elections_allowed = yes
+		}
+		every_country = { 
+			news_event = { hours = 6 id = fillernews.12 } 
+		}
+	}
+}

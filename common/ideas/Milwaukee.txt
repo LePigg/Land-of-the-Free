@@ -1,0 +1,496 @@
+ideas = {
+    
+	#Milwaukee
+	country = {
+		MIL_mass_survilence = {
+			picture = prc_the_long_march
+			modifier = {
+				stability_factor = 0.08
+				despotism_drift = 0.01
+				political_power_cost = 0.1
+				drift_defence_factor = 0.15
+			}
+		}
+	}
+
+       country = {
+		MIL_regents_plan = {
+			picture = HUN_hungarian_monarchy_habsburg
+			modifier = {
+				political_power_gain = 0.25
+				war_support_weekly = 0.003
+			}
+		}
+		MIL_confused = {
+			picture = ROM_king_carol_ii_handled
+			modifier = {
+				political_power_factor = -0.2
+				stability_factor = -0.15
+				democratic_socialism_drift = 0.02
+			}
+		}
+		MIL_confused2 = {
+			picture = ROM_king_carol_ii_handled
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.08
+				democratic_socialism_drift = 0.01
+			}
+		}
+	}
+
+     country = {
+		MIL_concessions = {
+			picture = generic_goods_red_bonus
+			modifier = {
+				stability_factor = -0.05
+                political_power_cost = 0.3
+
+			}
+		}
+	}
+
+
+	country = {
+		MIL_mandatory_draft = {
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription_factor = 0.07
+				training_time_factor = -0.05
+			}
+		}
+	}
+
+	country = {
+		MIL_royal_military_academy = {
+			picture = MEX_politicised_army
+			modifier = {
+				experience_gain_army_factor = 0.1
+				army_leader_start_attack_level = 1
+				army_leader_start_planning_level = 1 
+			}
+		}
+	}
+
+	country = {
+		MIL_consctructionbonus_idea = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				production_speed_industrial_complex_factor = 0.30
+			}
+		}
+	}
+
+	country = {
+		MIL_milbonus0 = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				production_speed_arms_factory_factor = 0.30
+			}
+		}
+	}
+
+	country = {
+		MIL_king1 = {
+			picture = generic_monarchist_uprising
+			modifier = {
+				coordination_bonus = 0.1
+				army_speed_factor = 0.15
+				land_reinforce_rate = 0.05
+				army_armor_attack_factor = 0.1
+			}
+		}
+	}	
+	country = {
+		MIL_king = {
+			picture = generic_monarchist_uprising
+			modifier = {
+				army_speed_factor = 0.1
+				land_reinforce_rate = 0.05
+			}
+		}
+	}
+
+	country = {
+		MIL_relief = {
+			picture = generic_foreign_capital
+			modifier = {
+				stability_weekly = 0.005
+			}
+		}
+	}
+
+	country = {
+		MIL_reformed_factory = {
+			picture = generic_goods_red_bonus
+			modifier = {
+				industrial_capacity_factory = 0.2
+			}
+		}
+	}
+
+	country = {
+		MIL_railbonus = {
+			picture = generic_build_infrastructure
+			modifier = {
+				production_speed_rail_way_factor = 0.15
+			}
+		}
+	}
+
+	political_advisor = {
+		MIL_wi = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { war_industrialist }
+		}
+		
+
+		MIL_cg = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { compassionate_gentleman }
+		}
+		
+		MIL_qg = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { quartermaster_general }
+		}
+
+		MIL_bb = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { backroom_backstabber }
+		}
+		
+		MIL_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { prince_of_terror }
+		}
+
+		MIL_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { captain_of_industry }
+		}
+
+		MIL_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		MIL_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = BMK
+			}		
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MIL_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		MIL_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = BMK
+			}
+			
+			traits = { air_chief_reform_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MIL_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		MIL_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = BMK
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MIL_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = BMK
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		MIL_ar = {
+			ledger = army
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		MIL_ai2 = {
+			ledger = army
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MIL_aa2 = {
+			ledger = army
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MIL_acas = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MIL_ncs = {
+			ledger = navy
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = BMK
+			}
+			
+			traits = { navy_capital_ship_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		MIL_mt = {
+			ledger = army
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = BMK
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { military_theorist }
+		}
+		
+		MIL_nt = {
+			ledger = navy
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = BMK
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { naval_theorist }
+		}	
+
+		MIL_awt = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

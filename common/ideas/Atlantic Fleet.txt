@@ -1,0 +1,26 @@
+ideas = {
+    country = {
+        MTG_insurgency = {
+            picture = chi_war_of_resistance3
+            modifier = {
+                production_speed_buildings_factor = -0.15
+                industry_repair_factor = -0.15
+                stability_factor = -0.20
+            }
+        }
+        MTG_sugar_baron = {
+            picture = ROM_king_carol_ii_hedonist
+            modifier = {
+                consumer_goods_factor = 0.1
+                political_power_factor = -0.05
+            }
+        }
+        MTG_independence = {
+            picture = FRA_matignon_agreements
+            modifier = {
+                political_power_factor = -0.15
+                drift_defence_factor = -0.3
+            }
+        }
+    }
+}

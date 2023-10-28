@@ -1,0 +1,167 @@
+add_namespace = cuba
+
+country_event = {
+	id = cuba.1
+	title = cuba.1.t
+	desc = cuba.1.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	fire_only_once = no 
+	
+	trigger = {
+		date > 1936.1.1
+		tag = CUB
+	}
+	option = {
+		name = cuba.1.a
+		ai_chance = { factor = 2 }
+		country_event = { days = 410 id = cuba.2 }
+		add_popularity = {
+			ideology = democratic_socialism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = 0.1
+		}
+	}	
+	option = {
+		name = cuba.1.b
+		ai_chance = { factor = 2 }
+	}
+	option = {
+		name = cuba.1.c
+		ai_chance = { factor = 1 }
+		country_event = { days = 410 id = cuba.4 }
+	}
+	option = {
+		name = cuba.1.d
+		ai_chance = { factor = 1 }
+		country_event = { days = 410 id = cuba.5 }
+	}
+}
+country_event = {
+	id = cuba.2
+	title = cuba.2.t
+	desc = cuba.2.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = cuba.2.a
+		ai_chance = { factor = 2 }
+		set_politics = {
+			ruling_party = democratic_socialism
+			last_election = "1932.11.5"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		every_country = { 
+			news_event = { hours = 6 id = fillernews.1 } 
+		}
+	}	
+	option = {
+		name = cuba.2.b
+		ai_chance = { factor = 1 }
+		country_event = { days = 140 id = cuba.3 }
+		set_politics = {
+			ruling_party = democratic_socialism
+			last_election = "1932.11.5"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		every_country = { 
+			news_event = { hours = 6 id = fillernews.1 } 
+		}
+	}	
+}
+country_event = {
+	id = cuba.3
+	title = cuba.3.t
+	desc = cuba.3.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = cuba.3.a
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = revolutionary_socialist
+			last_election = "1932.11.5"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = 0.15
+		}
+		every_country = { 
+			news_event = { hours = 6 id = fillernews.2 } 
+		}
+	}	
+}
+country_event = {
+	id = cuba.4
+	title = cuba.4.t
+	desc = cuba.4.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = cuba.4.a
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = despotism
+			last_election = "1932.11.5"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.05
+		}
+		every_country = { 
+			news_event = { hours = 6 id = fillernews.3 } 
+		}
+	}	
+}
+country_event = {
+	id = cuba.5
+	title = cuba.5.t
+	desc = cuba.5.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = cuba.5.a
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = stratocracy
+			last_election = "1932.11.5"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = stratocracy
+			popularity = 0.05
+		}
+		every_country = { 
+			news_event = { hours = 6 id = fillernews.4 } 
+		}
+	}	
+}

@@ -1,0 +1,279 @@
+add_namespace = ven
+
+country_event = {
+	id = ven.1
+	title = ven.1.t
+	desc = ven.1.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	fire_only_once = no 
+	
+	trigger = {
+		date > 1936.1.1
+		tag = VEN
+	}
+	option = {
+		name = ven.1.a
+		ai_chance = { factor = 2 }
+		country_event = { days = 506 id = ven.2 }
+	}	
+}
+country_event = {
+	id = ven.2
+	title = ven.2.t
+	desc = ven.2.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = ven.2.a
+		ai_chance = { factor = 2 }
+		add_popularity = {
+			ideology = despotism
+			popularity = -0.32
+		}
+		set_politics = {
+			ruling_party = guided_democracy
+			last_election = "1936.4.28"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		every_country = { 
+			news_event = { hours = 6 id = fillernews.5 } 
+		}
+		country_event= { days = 1175 id = ven.3 }
+	}		
+	option = {
+		name = ven.2.b
+		ai_chance = { factor = 2 }
+		add_popularity = {
+			ideology = despotism
+			popularity = -0.32
+		}
+		set_politics = {
+			ruling_party = guided_democracy
+			last_election = "1936.4.28"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		every_country = { 
+			news_event = { hours = 6 id = fillernews.5 } 
+		}
+		country_event = { id = ven.8 }
+	}	
+}
+country_event = {
+	id = ven.3
+	title = ven.3.t
+	desc = ven.3.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = ven.3.a
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = democratic_socialism
+			last_election = "1936.4.28"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = democratic_socialism
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.08
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.15
+		}
+		every_country = { 
+			news_event = { hours = 6 id = fillernews.6 } 
+		}
+		country_event = { days = 264 id = ven.4 }
+	}	
+	option = {
+		name = ven.3.b
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = democratic_socialism
+			last_election = "1936.4.28"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = democratic_socialism
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.08
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.15
+		}
+		every_country = { 
+			news_event = { hours = 6 id = fillernews.6 } 
+		}
+		country_event = { days = 264 id = ven.5 }
+	}	
+}
+country_event = {
+	id = ven.4
+	title = ven.4.t
+	desc = ven.4.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = ven.4.a
+		ai_chance = { factor = 100 }
+		add_popularity = {
+			ideology = democratic_socialism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.04
+		}
+		retire_character = VEN_Rómulo_Betancourt
+		every_country = { 
+			news_event = { hours = 6 id = fillernews.7 } 
+		}
+	}	
+}
+country_event = {
+	id = ven.5
+	title = ven.5.t
+	desc = ven.5.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = ven.5.a
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = conservatism
+			last_election = "1936.4.28"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = democratic_socialism
+			popularity = 0.05
+		}
+		every_country = { 
+			news_event = { hours = 6 id = fillernews.8 } 
+		}
+	}	
+}
+country_event = {
+	id = ven.6
+	title = ven.6.t
+	desc = ven.6.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = ven.6.a
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = stratocracy
+			last_election = "1936.4.28"
+			election_frequency = 60
+			elections_allowed = no
+		}
+		retire_character = VEN_Eleazar_López_Contreras
+		add_popularity = {
+			ideology = stratocracy
+			popularity = 0.1
+		}
+		every_country = { 
+			news_event = { hours = 6 id = fillernews.9 } 
+		}
+	}	
+}
+country_event = {
+	id = ven.7
+	title = ven.7.t
+	desc = ven.7.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = ven.7.a
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = despotism
+			last_election = "1936.4.28"
+			election_frequency = 60
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.1
+		}
+		set_party_name = {
+            ideology = despotism
+			name = VEN_newdespot
+        }
+		every_country = { 
+			news_event = { hours = 6 id = fillernews.10 } 
+		}
+	}	
+}
+country_event = {
+	id = ven.8
+	title = ven.8.t
+	desc = ven.8.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = ven.8.a
+		ai_chance = { factor = 100 }
+		country_event= { days = 1175 id = ven.6 }
+	}	
+	option = {
+		name = ven.8.b
+		ai_chance = { factor = 100 }
+		country_event= { days = 1175 id = ven.7 }
+	}	
+}
+

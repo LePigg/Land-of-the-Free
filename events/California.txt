@@ -1,0 +1,340 @@
+add_namespace = cal
+
+country_event = {
+	id = cal.1
+	title = cal.1.t
+	desc = cal.1.d
+	picture = GFX_report_macarthur
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = cal.1.a
+		ai_chance = { factor = 100 }
+	}	
+}
+country_event = {
+	id = cal.2
+	title = cal.2.t
+	desc = cal.2.d
+	picture = GFX_report_macarthur
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = cal.2.a
+		ai_chance = { factor = 100 }
+	}	
+}
+country_event = {
+	id = cal.3
+	title = cal.3.t
+	desc = cal.3.d
+	picture = GFX_report_macarthur
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = cal.3.a
+		ai_chance = { factor = 100 }
+	}	
+}
+country_event = {
+	id = cal.4
+	title = cal.4.t
+	desc = cal.4.d
+	picture = GFX_report_macarthur
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = cal.4.a
+		ai_chance = { factor = 100 }
+		add_to_variable = {
+			var = cal_collaboration
+			value = 5
+		}
+		custom_effect_tooltip = add_collab_5
+		remove_ideas = {CAL_chinese_exclusion_act}
+	}	
+	option = {
+		name = cal.4.b
+		ai_chance = { factor = 100 }
+		add_to_variable = {
+			var = cal_collaboration
+			value = -10
+		}
+		custom_effect_tooltip = lose_collab_10
+	}
+}
+country_event = {
+	id = cal.5
+	title = cal.5.t
+	desc = cal.5.d
+	picture = GFX_report_macarthur
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = cal.5.a
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_country_flag = CAL_push_placerville
+        }
+		placerville_peace = yes
+	}	
+	option = {
+		name = cal.5.b
+		ai_chance = { factor = 100 }
+		trigger = {
+            NOT = {
+				has_country_flag = CAL_push_placerville
+			}
+        }
+	}
+}
+country_event = {
+	id = cal.6
+	title = cal.6.t
+	desc = cal.6.d
+	picture = GFX_report_macarthur
+	
+	is_triggered_only = yes
+	
+	trigger = {
+    }
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = cal.6.a
+		ai_chance = { factor = 100 }
+		trigger = {
+        }
+		CAL={
+			set_politics = {
+				ruling_party = fascism
+			}
+			CAL_joseph_stilwell = {
+				set_nationality = SRR
+			}
+			CAL_alexander_vandegrift = {
+				set_nationality = SRR
+			}
+			CAL_william_dean = {
+				set_nationality = SRR
+			}
+			CAL_walter_short = {
+				set_nationality = SRR
+			}
+			CAL_delos_emmons = {
+				set_nationality = SRR
+			}
+		}
+		SRR={
+			country_event = {
+				id = cal.7
+				days = 2
+			}
+		}
+		hidden_effect = {
+			hidden_effect = {
+				remove_decision = growing_japanese_influence
+				remove_decision = waning_japanese_collaboration
+				remove_decision = japanese_coup_imminent_1
+				remove_decision = japanese_coup_imminent_2
+				remove_ideas = {
+					CAL_corruption_0
+					CAL_corruption_1
+					CAL_corruption_2
+					CAL_corruption_3
+					CAL_new_deal
+					CAL_new_deal_2
+					CAL_influence_1
+					CAL_influence_2
+					CAL_webb_haney_act
+					CAL_webb_haney_act2
+				}
+			}
+		}
+	}
+	option = {
+		name = cal.6.b
+		ai_chance = { factor = 100 }
+		trigger = {
+			CAL = {
+				is_ai = no
+			}
+        }
+		CAL={
+			set_politics = {
+				ruling_party = fascism
+			}
+		}
+		SRR = {
+			country_event = {
+				id = cal.7
+				days = 2
+			}
+			change_tag_from = CAL 
+		}
+		hidden_effect = {
+			CAL={
+				remove_decision = growing_japanese_influence
+				remove_decision = waning_japanese_collaboration
+				remove_decision = japanese_coup_imminent_1
+				remove_decision = japanese_coup_imminent_2
+				remove_ideas = {
+					CAL_corruption_0
+					CAL_corruption_1
+					CAL_corruption_2
+					CAL_corruption_3
+					CAL_new_deal
+					CAL_new_deal_2
+					CAL_influence_1
+					CAL_influence_2
+					CAL_webb_haney_act
+					CAL_webb_haney_act2
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = cal.7
+	title = cal.7.t
+	desc = cal.7.d
+	picture = GFX_report_macarthur
+	
+	is_triggered_only = yes
+	
+	trigger = {
+    }
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = cal.7.a
+		ai_chance = { factor = 100 }
+		trigger = {
+			SRR = {
+				is_ai = yes
+			}
+        }
+		SRR = {
+			load_focus_tree = SRR_focus.err.1
+		}
+	}
+	option = {
+		name = cal.7.b
+		ai_chance = { factor = 100 }
+		trigger = {
+			SRR = {
+				is_ai = no
+			}
+        }
+		CAL={
+			CAL_joseph_stilwell = {
+				set_nationality = SRR
+			}
+			CAL_alexander_vandegrift = {
+				set_nationality = SRR
+			}
+			CAL_william_dean = {
+				set_nationality = SRR
+			}
+			CAL_walter_short = {
+				set_nationality = SRR
+			}
+			CAL_delos_emmons = {
+				set_nationality = SRR
+			}
+		}
+		SRR = {
+			load_focus_tree = SRR_focus.err.1
+		}
+	}
+}
+
+country_event = {
+	id = cal.8`
+	title = cal.8.t
+	desc = cal.8.d
+	picture = GFX_report_macarthur
+	
+	is_triggered_only = yes
+	
+	trigger = {
+    }
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = cal.8.a
+		ai_chance = { factor = 100 }
+		trigger = {
+        }
+		CAL = {
+			deactivate_advisor = charles_johnson_1
+			activate_advisor = friend_richardson
+			set_country_flag = CAL_corruption_clamped_down
+		}
+	}
+	option = {
+		name = cal.8.b
+		ai_chance = { factor = 100 }
+		trigger = {
+        }
+		CAL = {
+			set_country_flag = CAL_corruption_supported
+		}
+	}
+}
+
+country_event = {
+	id = cal.9`
+	title = cal.9.t
+	desc = cal.9.d
+	picture = GFX_report_macarthur
+	
+	is_triggered_only = yes
+	
+	trigger = {
+    }
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = cal.9.a
+		ai_chance = { factor = 100 }
+		trigger = {
+        }
+		CAL = {
+			set_country_flag = CAL_unions_crushed
+			swap_ideas = {
+			remove_idea = CAL_union_agitation_1
+			add_idea = CAL_union_agitation_0
+		}
+		}
+	}
+	option = {
+		name = cal.9.b
+		ai_chance = { factor = 100 }
+		trigger = {
+        }
+		CAL = {
+			set_country_flag = CAL_unions_coopted
+		}
+	}
+}

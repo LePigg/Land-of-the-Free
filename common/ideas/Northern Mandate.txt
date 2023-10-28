@@ -1,0 +1,496 @@
+ideas = {
+#Administration Zones
+country = {
+    MIA_industrial_complex = {
+        allowed_civil_war = {
+            always = no
+        }
+        picture = generic_foreign_capital
+        modifier = {
+            production_speed_arms_factory_factor = 0.3
+        }
+    }
+    PEN_unstable_front = {
+        allowed_civil_war = {
+            always = no
+        }
+        picture = generic_disjointed_gov
+        modifier = {
+            defensive_war_stability_factor = 0.5
+            stability_factor = -0.15
+            political_power_factor = -0.2
+            army_morale_factor = -0.1
+        }
+    }
+    MIA_pentagon = {
+        allowed_civil_war = {
+            always = no
+        }
+        picture = usa_war_department
+        modifier = {
+            command_power_gain_mult = 0.1
+            experience_gain_army = 0.05
+        }
+    }
+    MIA_pwa = {
+        allowed_civil_war = {
+            always = no
+        }
+        picture = SOV_third_five_year_plan_civilian
+        modifier = {
+            political_power_factor = -0.1
+            #production_speed_industrial_complex_factor = 0.1
+            production_speed_supply_node_factor = 0.1
+            production_speed_infrastructure_factor = 0.1
+            industry_repair_factor = 0.075
+        }
+    }
+    MIA_corruption1 = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_disjointed_gov
+        modifier = {
+            political_power_factor = -0.25
+            stability_factor = -0.15
+            consumer_goods_factor = 0.09
+        }
+    }
+    MIA_corruption2 = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_disjointed_gov
+        modifier = {
+            political_power_factor = -0.2
+            stability_factor = -0.1
+            consumer_goods_factor = 0.06
+        }
+    }
+    MIA_corruption3 = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_disjointed_gov
+        modifier = {
+            political_power_factor = -0.15
+            stability_factor = -0.05
+            consumer_goods_factor = 0.03
+        }
+    }
+}
+country = {
+    MIA_kennedy_merchantmarine_idea = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_coastal_navy
+        modifier = {
+            experience_gain_navy_factor = 0.05
+        }
+        equipment_bonus = {
+            convoy = {
+                build_cost_ic = -0.2 instant = yes
+            }
+        }
+    }
+    MIA_kennedy_nira = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = SOV_third_five_year_plan_civilian
+        modifier = {
+            consumer_goods_factor = 0.15
+            production_speed_arms_factory_factor = 0.1
+            production_speed_industrial_complex_factor = 0.25
+        }
+    }
+    MIA_kennedy_poverty = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = prc_low_popular_support3
+        modifier = {
+            consumer_goods_factor = 0.025
+            political_power_factor = -0.025
+            stability_weekly = 0.002
+        }
+    }
+    MIA_kennedy_fdic = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = man_five_year_plan_industry
+        modifier = {
+            line_change_production_efficiency_factor = 0.1
+            production_factory_efficiency_gain_factor = 0.075
+        }
+    }
+    MIA_kennedy_sec= {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = man_five_year_plan_industry
+        modifier = {
+            production_factory_max_efficiency_factor = 0.1
+        }
+    }
+    MIA_kennedy_war_profit = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_coastal_navy
+        equipment_bonus = {
+            infantry_equipment = {
+                build_cost_ic = -0.05 instant = yes
+            }
+        }
+    }
+}	
+country = {
+    MIA_wadsworth_big_business_idea = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = SOV_scientist_defect
+        modifier = {
+            consumer_goods_factor = -0.04
+            tank_manufacturer_cost_factor = -0.1
+            naval_manufacturer_cost_factor = -0.1
+            aircraft_manufacturer_cost_factor = -0.1
+            industrial_concern_cost_factor = -0.1
+            materiel_manufacturer_cost_factor = -0.1
+        }
+    }
+    MIA_wadsworth_big_business_idea1 = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = SOV_scientist_defect
+        modifier = {
+            consumer_goods_factor = -0.08
+            production_factory_efficiency_gain_factor= 0.1
+            tank_manufacturer_cost_factor = -0.15
+            naval_manufacturer_cost_factor = -0.15
+            aircraft_manufacturer_cost_factor = -0.15
+            industrial_concern_cost_factor = -0.15
+            materiel_manufacturer_cost_factor = -0.15
+        }
+    }
+    MIA_wadsworth_big_business_idea2 = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = SOV_scientist_defect
+        modifier = {
+            consumer_goods_factor = -0.12
+            production_factory_efficiency_gain_factor= 0.15
+            production_factory_max_efficiency_factor = 0.15
+            tank_manufacturer_cost_factor = -0.15
+            naval_manufacturer_cost_factor = -0.15
+            aircraft_manufacturer_cost_factor = -0.15
+            industrial_concern_cost_factor = -0.15
+            materiel_manufacturer_cost_factor = -0.15
+        }
+    }
+    MIA_wadsworth_trimming_fat = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = wilkies_new_deal
+        modifier = {
+            political_power_factor = -0.03
+            consumer_goods_factor = -0.04
+        }
+    }
+    MIA_wadsworth_trimming_fat1 = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = wilkies_new_deal
+        modifier = {
+            political_power_factor = -0.06
+            consumer_goods_factor = -0.08
+        }
+    }
+    MIA_wadsworth_trimming_fat2 = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = wilkies_new_deal
+        modifier = {
+            political_power_factor = -0.09
+            consumer_goods_factor = -0.12
+            operative_slot = -1
+        }
+    }
+    MIA_wadsworth_tariff_reform = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_political_support
+        targeted_modifier = {
+            tag = BAS
+            extra_trade_to_target_factor = 0.3
+            trade_cost_for_target_factor = -0.1
+        }
+        targeted_modifier = {
+            tag = CAN
+            extra_trade_to_target_factor = 0.3
+            trade_cost_for_target_factor = -0.1
+        }
+        targeted_modifier = {
+            tag = MEX
+            extra_trade_to_target_factor = 0.3
+            trade_cost_for_target_factor = -0.1
+        }
+        targeted_modifier = {
+            tag = SOU
+            extra_trade_to_target_factor = 0.3
+            trade_cost_for_target_factor = -0.1
+        }
+    }
+}
+country = {
+    MIA_winant_ship = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_goods_red_bonus
+        modifier = {
+            consumer_goods_factor = -0.05
+        }
+    }
+    MIA_winant_ship_payment = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_goods_red_bonus
+        modifier = {
+            consumer_goods_factor = 0.05
+        }
+    }
+    MIA_winant_france = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_foreign_capital
+        modifier = {
+            production_speed_industrial_complex_factor = 0.1
+            production_speed_arms_factory_factor = 0.1
+            production_speed_naval_base_factor = 0.1
+            
+        }
+    }
+    MIA_winant_pound = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = HUN_treaty_of_triannon
+        modifier = {
+            trade_opinion_factor = 0.25
+            production_speed_buildings_factor = 0.1
+        }
+    }
+    MIA_winant_red_cross_idea = {
+        allowed_civil_war = {
+            always = yes
+        }
+        picture = generic_coastal_navy
+        modifier = {
+            consumer_goods_factor = 0.01
+        }
+        equipment_bonus = {
+            support_equipment = {
+                build_cost_ic = -0.1 instant = yes
+            }
+        }
+    }
+}
+aircraft_manufacturer = { 
+			
+    designer = yes
+    
+    shorts_brothers = {
+        
+        allowed = {
+            original_tag = MIA
+        }
+        
+        research_bonus = {
+            air_equipment = 0.15
+        }
+        
+        traits = { light_aircraft_manufacturer }
+        
+        equipment_bonus = {
+            
+        }
+        
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    boeing = {		
+			
+		allowed = {
+			original_tag = MIA
+		}
+			
+		research_bonus = {
+			air_equipment = 0.15
+		}
+			
+		traits = { heavy_aircraft_manufacturer }
+    }
+}
+materiel_manufacturer = {
+
+    designer = yes
+
+    colt_manufacturing = {
+
+        allowed = {
+            original_tag = MIA
+        }
+        
+        research_bonus = {
+            infantry_weapons = 0.15
+        }
+        
+        traits = { infantry_equipment_manufacturer }
+        
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    watervliet_arsenal = {
+
+        allowed = {
+            original_tag = MIA
+        }
+        
+        research_bonus = {
+            artillery = 0.15
+        }
+        
+        traits = { artillery_manufacturer }
+        
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    abc_motors = {
+			
+        allowed = {
+            original_tag = MIA
+        }
+        
+        research_bonus = {
+            motorized_equipment = 0.15
+        }
+        
+        traits = { motorized_equipment_manufacturer }
+    }
+    willys_motors = {
+
+        allowed = {
+            original_tag = MIA
+        }
+        
+        research_bonus = {
+            motorized_equipment = 0.15
+        }
+        
+        traits = { motorized_equipment_manufacturer1 }
+    }
+}
+industrial_concern = {
+    westinghouse_electric_corporation = {
+			
+        allowed = {
+            original_tag = MIA
+        }
+        
+        research_bonus = {
+            electronics = 0.15
+        }
+        
+        traits = { electronics_concern }
+        
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    us_steels = {
+			
+        allowed = {
+            original_tag = MIA
+        }
+        
+        research_bonus = {
+            industry = 0.10
+        }
+        
+        traits = { industrial_concern_but_more_epic }
+        
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    turner_construction = {
+			
+        allowed = {
+            original_tag = MIA
+        }
+        
+        research_bonus = {
+            industry = 0.15
+        }
+        
+        traits = { construction_company }
+        
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    standard_oil_mia = {
+			
+        allowed = {
+            original_tag = MIA
+        }
+        
+        research_bonus = {
+            industry = 0.05
+            synth_resources = 0.15
+        }
+        
+        traits = { refinery_concern }
+        
+        modifier = {
+        }
+    }
+    briish_petro = { #Quite sad innit
+			
+        allowed = {
+            original_tag = MIA
+        }
+        
+        available = {
+            has_country_leader = {
+                character = MIA_john_winant
+                ruling_only = yes
+            }
+            has_completed_focus = MIA_winant_bp
+        }
+        research_bonus = {
+            industry = 0.10
+            synth_resources = 0.15
+        }
+        
+        traits = { refinery_concern industrial_concern_but_more_epic }
+        
+        modifier = {
+        }
+    }
+}

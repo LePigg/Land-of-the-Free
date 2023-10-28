@@ -1,0 +1,500 @@
+ideas = {
+	#Kansas City
+	country = {
+		KAN_corruption = {
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_cost = -0.2
+				stability_factor = -0.15
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.25
+			}
+		}
+	}	
+	country = {
+		KAN_corruption2 = {
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_cost = -0.15
+				stability_factor = -0.15
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.15
+			}
+		}
+	}		
+	country = {
+		KAN_oblivious = {
+			picture = generic_deal_with_the_devil
+			modifier = {
+				party_popularity_stability_factor = 0.15
+				#neutrality_drift = 0.02
+				despotism_drift = 0.02
+			}
+		}
+	}	
+	country = {
+		KAN_oblivious2 = {
+			picture = generic_deal_with_the_devil
+			modifier = {
+				party_popularity_stability_factor = 0.25
+			}
+		}
+	}		
+	country = {
+		KAN_cronyism = {
+			picture = generic_army_problems
+			modifier = {
+				army_org_factor = -0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				dig_in_speed_factor = -0.2
+			}
+		}
+	}
+	country = {
+		KAN_cronyism2 = {
+			picture = generic_army_problems
+			modifier = {
+				army_org_factor = -0.05
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				dig_in_speed_factor = -0.15
+			}
+		}
+	}	
+	country = {
+		KAN_cronyism3 = {
+			picture = generic_army_problems
+			modifier = {
+				army_org_factor = -0.02
+				army_attack_factor = -0.01
+				army_defence_factor = -0.01
+				dig_in_speed_factor = -0.05
+			}
+		}
+	}	
+	country = {
+		KAN_eager = {
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription_factor = 0.15
+			}
+		}
+	}	
+	country = {
+		KAN_powerstruggle1 = {
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = jap_interservice_rivalry_army_dominant
+			modifier = {
+				political_power_cost = -0.2
+				stability_factor = -0.2
+			}
+		}
+	}
+	country = {
+		KAN_powerstruggle2 = {
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = jap_interservice_rivalry_army_strengthened
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = -0.1
+			}
+		}
+	}	
+	country = {
+		KAN_powerstruggle3 = {
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = jap_interservice_rivalry_balanced				
+			modifier = {
+				#political_power_cost = 0.1
+				#stability_factor = -0.1
+			}
+		}
+	}	
+	country = {
+		KAN_powerstruggle4 = {
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = jap_interservice_rivalry_navy_strengthened
+			modifier = {
+				political_power_cost = 0.1
+				stability_factor = 0.1
+			}
+		}
+	}	
+	country = {
+		KAN_powerstruggle5 = {
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = jap_interservice_rivalry_navy_dominant
+			modifier = {
+				political_power_cost = 0.2
+				stability_factor = 0.2
+			}
+		}
+	}	
+
+	political_advisor = {
+		KAN_wi = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = KAN
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { war_industrialist }
+		}
+		
+
+		KAN_cg = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = KAN
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { compassionate_gentleman }
+		}
+		
+		KAN_qg = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = KAN
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { quartermaster_general }
+		}
+
+		KAN_bb = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = KAN
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { backroom_backstabber }
+		}
+		
+		KAN_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = KAN
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { prince_of_terror }
+		}
+
+		KAN_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = KAN
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { captain_of_industry }
+		}
+
+		KAN_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = KAN
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		KAN_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = KAN
+			}		
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		KAN_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = KAN
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		KAN_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = KAN
+			}
+			
+			traits = { air_chief_reform_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		KAN_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = KAN
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		KAN_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = KAN
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		KAN_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = KAN
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		KAN_ar = {
+			ledger = army
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = KAN
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		KAN_ai2 = {
+			ledger = army
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = KAN
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		KAN_aa2 = {
+			ledger = army
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = KAN
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		KAN_acas = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = KAN
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		KAN_ncs = {
+			ledger = navy
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = KAN
+			}
+			
+			traits = { navy_capital_ship_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		KAN_mt = {
+			ledger = army
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = KAN
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { military_theorist }
+		}
+		
+		KAN_nt = {
+			ledger = navy
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = KAN
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { naval_theorist }
+		}	
+
+		KAN_awt = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = KAN
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

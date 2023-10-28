@@ -1,0 +1,177 @@
+add_namespace = col
+
+country_event = {
+	id = col.1
+	title = col.1.t
+	desc = col.1.d
+	picture = GFX_report_event_COL_news1
+	
+	#is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	fire_only_once = yes 
+	
+	trigger = {
+		date > 1936.1.1
+		tag = col
+	}
+	option = {
+		name = col.1.a
+		ai_chance = { factor = 100 }
+		country_event = { days = 949 id = col.2 }
+	}	
+}
+country_event = {
+	id = col.2
+	title = col.2.t
+	desc = col.2.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	
+	fire_only_once = yes
+
+	
+	option = {
+		name = col.2.a
+		ai_chance = { factor = 2 }
+		country_event = { days = 100 id = col.3 }
+		retire_country_leader = yes
+		set_politics = {
+			ruling_party = guided_democracy
+			last_election = "1932.11.5"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		every_country = { 
+			news_event = { hours = 6 id = news.55 } 
+		}
+	}	
+}
+country_event = {
+	id = col.3
+	title = col.3.t
+	desc = col.3.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	
+	option = {
+		name = col.3.a
+		ai_chance = { factor = 25 }
+		country_event = { days = 888 id = col.4 }		
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.5
+		}
+		set_politics = {
+			ruling_party = liberalism
+			last_election = "1932.11.5"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		every_country = { 
+			news_event = { hours = 6 id = news.56 } 
+		}
+	}			
+	option = {
+		name = col.3.b
+		ai_chance = { factor = 25 }
+		country_event = { days = 888 id = col.4 }		
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.05
+		}
+		set_politics = {
+			ruling_party = conservatism
+			last_election = "1932.11.5"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		every_country = { 
+			news_event = { hours = 6 id = news.59 } 
+		}
+	}	
+	option = {
+		name = col.3.c
+		ai_chance = { factor = 25 }
+		country_event = { days = 888 id = col.4 }
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.5
+		}	
+		set_politics = {
+			ruling_party = fascism
+			last_election = "1932.11.5"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		every_country = { 
+			news_event = { hours = 6 id = news.58 } 
+		}
+	}	
+	option = {
+		name = col.3.e
+		ai_chance = { factor = 25 }
+		country_event = { days = 888 id = col.4 }		
+		add_popularity = {
+			ideology = communism
+			popularity = 0.5
+		}
+		set_politics = {
+			ruling_party = communism
+			last_election = "1932.11.5"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		every_country = { 
+			news_event = { hours = 6 id = news.57 } 
+		}
+	}	
+}	
+country_event = {
+	id = col.4
+	title = col.4.t
+	desc = col.4.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	
+	fire_only_once = yes
+
+	
+	option = {
+		name = col.4.a
+		ai_chance = { factor = 2 }
+		country_event = { days = 15 id = col.5 }
+		every_country = { 
+			news_event = { hours = 6 id = news.60 } 
+		}		
+	}	
+}
+country_event = {
+	id = col.5
+	title = col.5.t
+	desc = col.5.d
+	
+	is_triggered_only = yes
+	
+	
+	fire_only_once = yes
+
+	
+	option = {
+		name = col.5.a
+		ai_chance = { factor = 2 }
+		BAS = {
+		transfer_state = 275
+		}
+		every_country = { 
+			news_event = { hours = 6 id = news.61 } 
+		}		
+	}	
+}

@@ -1,0 +1,170 @@
+ideas = {
+	country = {
+		DIX_klan = {
+			picture = GFX_idea_kkk_content
+			modifier = {
+				conscription_factor = 0.05
+				resistance_damage_to_garrison = -0.15
+				stability_factor = 0.05
+				monthly_population = -0.3
+			} 
+		}
+		DIX_stonewall_idea = {
+			picture = YUG_federal_defense_council
+			modifier = {
+				dig_in_speed_factor = 0.15
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.05
+			}
+		}
+		DIX_stonewall_idea1 = {
+			name = DIX_stonewall_idea
+			picture = YUG_federal_defense_council
+			modifier = {
+				dig_in_speed_factor = 0.15
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.05
+				max_planning_factor = 0.2
+			}
+		}
+		DIX_stonewall_idea2 = {
+			name = DIX_stonewall_idea
+			picture = YUG_federal_defense_council
+			modifier = {
+				dig_in_speed_factor = 0.15
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.05
+				army_speed_factor = 0.05
+				army_org_regain = 0.1
+				recon_factor = 0.15
+			}
+		}
+		DIX_stonewall_idea3 = {
+			name = DIX_stonewall_idea
+			picture = YUG_federal_defense_council
+			modifier = {
+				dig_in_speed_factor = 0.15
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.05
+				army_speed_factor = 0.05
+				army_org_regain = 0.1
+				recon_factor = 0.15
+				max_planning_factor = 0.2
+			}
+		}
+		DIX_stonewall_idea4 = {
+			name = DIX_stonewall_idea
+			picture = YUG_federal_defense_council
+			modifier = {
+				dig_in_speed_factor = 0.15
+				army_defence_factor = 0.15
+				army_core_attack_factor = 0.05
+				army_speed_factor = 0.05
+				army_org_regain = 0.15
+				recon_factor = 0.15
+				max_planning_factor = 0.2
+			}
+		}
+		DIX_lee_idea = {
+			name = DIX_lee_idea
+			picture = HUN_secret_rearmament
+			modifier = {
+				breakthrough_factor = 0.1
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.1
+			}
+		}
+		DIX_lee_idea1 = {
+			name = DIX_lee_idea
+			picture = HUN_secret_rearmament
+			modifier = {
+				breakthrough_factor = 0.1
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.1
+				planning_speed = 0.2
+			}
+		}
+		DIX_lee_idea2 = {
+			name = DIX_lee_idea
+			picture = HUN_secret_rearmament
+			modifier = {
+				breakthrough_factor = 0.1
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.1
+				org_loss_when_moving = -0.15
+				land_reinforce_rate = 0.1
+				coordination_bonus = 0.05
+			}
+		}
+		DIX_lee_idea3 = {
+			name = DIX_lee_idea
+			picture = HUN_secret_rearmament
+			modifier = {
+				breakthrough_factor = 0.1
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.1
+				org_loss_when_moving = -0.15
+				land_reinforce_rate = 0.1
+				planning_speed = 0.2
+				coordination_bonus = 0.05
+			}
+		}
+		DIX_lee_idea4 = {
+			name = DIX_lee_idea
+			picture = HUN_secret_rearmament
+			modifier = {
+				breakthrough_factor = 0.15
+				army_core_defence_factor = 0.05
+				army_attack_factor = 0.15
+				org_loss_when_moving = -0.15
+				land_reinforce_rate = 0.1
+				planning_speed = 0.2
+				coordination_bonus = 0.1
+			}
+		}
+		DIX_second_ammendment = {
+			picture = chi_army_corruption2
+			modifier = {
+				conscription_factor = 0.15
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		DIX_native_autonomy = {
+			picture = prc_low_popular_support2
+			modifier = {
+				political_power_factor = -0.1
+				conscription_factor = -0.04
+				stability_factor = 0.07
+				war_support_factor = 0.07
+			}
+		}
+		DIX_native_autonomy1 = {
+			name = DIX_native_autonomy
+			picture = prc_low_popular_support3
+			modifier = {
+				political_power_factor = -0.15
+				conscription_factor = -0.08
+				stability_factor = 0.15
+				war_support_factor = 0.15
+			}
+		}
+		DIX_inequality = {
+			picture = saf_history_of_segregation
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				resistance_target_on_our_occupied_states = -0.1
+			}
+		}
+		DIX_inequality1 = {
+			picture = saf_history_of_segregation_2
+			name = DIX_inequality
+			modifier = {
+				consumer_goods_factor = -0.075
+				production_speed_buildings_factor = 0.15
+				resistance_target_on_our_occupied_states = -0.15
+			}
+		}
+	}
+}

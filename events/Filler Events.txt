@@ -1,0 +1,146 @@
+add_namespace = fillernews
+#Cuba
+news_event = {
+	id = fillernews.1
+	title = fillernews.1.t
+	desc = fillernews.1.d
+	picture = GFX_report_event_CUB_news1
+	 
+	is_triggered_only = yes
+	option = {
+		name = fillernews.1.a
+	}
+}
+news_event = {
+	id = fillernews.2
+	title = fillernews.2.t
+	desc = fillernews.2.d
+	picture = GFX_report_event_CUB_news2
+	 
+	is_triggered_only = yes
+	option = {
+		name = fillernews.2.a
+	}
+}
+news_event = {
+	id = fillernews.3
+	title = fillernews.3.t
+	desc = fillernews.3.d
+	picture = GFX_report_event_CUB_news3
+	 
+	is_triggered_only = yes
+	option = {
+		name = fillernews.3.a
+	}
+}
+news_event = {
+	id = fillernews.4
+	title = fillernews.4.t
+	desc = fillernews.4.d
+	picture = GFX_report_event_CUB_news4
+	 
+	is_triggered_only = yes
+	option = {
+		name = fillernews.4.a
+	}
+}
+#Venezuela
+news_event = {
+	id = fillernews.5
+	title = fillernews.5.t
+	desc = fillernews.5.d
+	picture = GFX_report_event_VEN_news1
+	 
+	is_triggered_only = yes
+	option = {
+		name = fillernews.5.a
+	}
+}
+news_event = {
+	id = fillernews.6
+	title = fillernews.6.t
+	desc = fillernews.6.d
+	picture = GFX_report_event_VEN_news6
+	 
+	is_triggered_only = yes
+	option = {
+		name = fillernews.6.a
+	}
+}
+news_event = {
+	id = fillernews.7
+	title = fillernews.7.t
+	desc = fillernews.7.d
+	picture = GFX_report_event_VEN_news3
+	 
+	is_triggered_only = yes
+	option = {
+		name = fillernews.7.a
+	}
+}
+news_event = {
+	id = fillernews.8
+	title = fillernews.8.t
+	desc = fillernews.8.d
+	picture = GFX_report_event_VEN_news5
+	 
+	is_triggered_only = yes
+	option = {
+		name = fillernews.8.a
+	}
+}
+news_event = {
+	id = fillernews.9
+	title = fillernews.9.t
+	desc = fillernews.9.d
+	picture = GFX_report_event_VEN_news2
+	 
+	is_triggered_only = yes
+	option = {
+		name = fillernews.9.a
+	}
+}
+news_event = {
+	id = fillernews.10
+	title = fillernews.10.t
+	desc = fillernews.10.d
+	picture = GFX_report_event_VEN_news4
+	 
+	is_triggered_only = yes
+	option = {
+		name = fillernews.10.a
+	}
+}
+news_event = {
+	id = fillernews.11
+	title = fillernews.11.t
+	desc = fillernews.11.d
+	picture = GFX_report_event_PAN_news1
+	 
+	is_triggered_only = yes
+	option = {
+		name = fillernews.11.a
+	}
+}
+news_event = {
+	id = fillernews.12
+	title = fillernews.12.t
+	desc = fillernews.12.d
+	picture = GFX_report_event_PAN_news2
+	 
+	is_triggered_only = yes
+	option = {
+		name = fillernews.12.a
+	}
+}
+news_event = {
+	id = fillernews.13
+	title = fillernews.13.t
+	desc = fillernews.13.d
+	picture = GFX_report_event_PAN_news3
+	 
+	is_triggered_only = yes
+	option = {
+		name = fillernews.13.a
+	}
+}

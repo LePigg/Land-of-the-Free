@@ -1,0 +1,27 @@
+add_namespace = mic
+
+country_event = {
+    id = mic.1
+    title = mic.1.title
+    desc = mic.1.desc
+    picture = GFX_report_event_generic_read_write
+    is_triggered_only = yes
+    fire_only_once = yes
+    mean_time_to_happen = {
+        days = 2
+    }
+    option = {
+        name = mic.1.a
+        ai_chance = { factor = 5}
+		ARA = {
+			country_event = { days = 7 id = ara.9 }
+		}
+    }
+    option = {
+        name = mic.1.b
+        ai_chance = { factor = 4}
+		ARA = {
+			country_event = { days = 7 id = ara.10 }
+		}
+    }
+}

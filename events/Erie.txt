@@ -1,0 +1,884 @@
+add_namespace = err
+
+country_event = {
+	id = err.1
+	title = err.1.t
+	desc = err.1.d
+	picture = GFX_report_macarthur
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.1.a
+		ai_chance = { factor = 100 }
+		add_stability = 0.02
+		#set_country_flag = err_invasion_flag
+	}	
+}
+country_event = {
+	id = err.2
+	title = err.2.t
+	desc = err.2.d
+	picture = GFX_report_macarthur
+
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.2.a
+		ai_chance = { factor = 100 }
+		ERR = {
+			country_event = { days = 7 id = err.3 }
+		}
+	}	
+	#option = {
+	#	name = err.2.b
+	#	ai_chance = { factor = 100 }
+	#	add_political_power = 10
+	#	hidden_effect = {
+	#		ERR = {
+	#			country_event = { days = 2 id = err.27 }
+	#		}
+	#	}
+	#}	
+}
+country_event = {
+	id = err.3
+	title = err.3.t
+	desc = err.3.d
+	picture = GFX_report_macarthur
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.3.a
+		ai_chance = { factor = 100 }
+		ERR = {
+			swap_ideas = {	
+				remove_idea = ERR_low_legitamacy
+				add_idea = ERR_low_legitamacy2
+			}
+			add_ideas = idea_wonders_constitution
+		}
+		set_global_flag = idea_wonders_constitution_flag
+	}	
+}
+country_event = {
+	id = err.4
+	title = err.4.t
+	desc = err.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.4.a
+		ai_chance = { factor = 100 }
+		add_popularity = {
+			ideology = stratocracy
+			popularity = 0.1
+		}
+	}	
+	option = {
+		name = err.4.b
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = guided_democracy
+			elections_allowed = yes
+		}		
+		set_party_name = { 
+			ideology = guided_democracy
+			long_name = ERR_democratic_republican_party
+			name = ERR_democratic_republican_party
+		}		
+		create_country_leader = {
+			name = "Charles Curtis"
+			desc = "POLITICS_KING_ZOG_DESC"
+			picture = "Charles.dds"
+			expire = "1965.1.1"
+			ideology = gen_guided_democracy
+			traits = {
+				#
+			}
+		}		
+		add_popularity = {
+			ideology = guided_democracy
+			popularity = 0.08
+		}		
+	}		
+	option = {
+		name = err.4.c
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = guided_democracy
+			elections_allowed = yes
+		}			
+		set_party_name = { 
+			ideology = democratic
+			long_name = ERR_democratic_democratic_party
+			name = ERR_democratic_democratic_party
+		}		
+		create_country_leader = {
+			name = "John Garner"
+			desc = "POLITICS_KING_ZOG_DESC"
+			picture = "John.dds"
+			expire = "1965.1.1"
+			ideology = gen_guided_democracy
+			traits = {
+				#
+			}
+		}	
+		add_popularity = {
+			ideology = guided_democracy
+			popularity = 0.08
+		}			
+	}	
+}
+country_event = {
+	id = err.5
+	title = err.5.t
+	desc = err.5.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.5.a
+		ai_chance = { factor = 100 }
+			add_stability = 0.02
+		WDC = {
+			add_stability = 0.05
+		}		
+	}	
+}
+country_event = {
+	id = err.6
+	title = err.6.t
+	desc = err.6.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.6.a
+		ai_chance = { factor = 100 }
+			swap_ideas = {	
+				remove_idea = american_warlord
+				add_idea = american_warlord2
+			}				
+	}	
+}
+country_event = {
+	id = err.7
+	title = err.7.t
+	desc = err.7.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.7.a
+		ai_chance = { factor = 100 }
+			declare_war_on = { type = annex_everything    target = AMC }		
+		complete_national_focus = COM_the_race_for_ohio
+	}	
+}
+country_event = {
+	id = err.8
+	title = err.8.t
+	desc = err.8.d
+	picture = GFX_report_macarthur
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.8.a
+		ai_chance = { factor = 100 }
+		annex_country = { 
+			target = MIC 
+			transfer_troops = yes 
+		}
+		remove_country_leader_role = {
+			character = MIC_george_grunert
+			ideology = gen_stratocracy
+		}
+		
+		MIC = {
+			remove_state_core = 42
+			remove_state_core = 164
+			remove_state_core = 185
+			every_unit_leader = { set_nationality = ERR }
+		}
+		add_state_core = 42
+		add_state_core = 164
+		add_state_core = 185
+	}	
+}
+country_event = {
+	id = err.9
+	title = err.9.t
+	desc = err.9.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.9.a
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = DEATH_WEAKNESS_DESTRUCTION
+		ERR = {
+			country_event = { id = err.10 days = 7 }
+		}
+	}	
+	option = {
+		name = err.9.b
+		ai_chance = { factor = 100 }
+		#custom_effect_tooltip = DEATH_WEAKNESS_DESTRUCTION
+		ERR = {
+			country_event = { id = err.11 days = 7 }
+		}
+	}	
+}
+country_event = {
+	id = err.10
+	title = err.10.t
+	desc = err.10.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.10.a
+		ai_chance = { factor = 100 }
+		annex_country = { target = MIN }
+		MIN = { every_unit_leader = { set_nationality = ERR } }
+		clr_country_flag = war_occupied
+		set_country_flag = annexed_min
+	}	
+}
+country_event = {
+	id = err.11
+	title = err.11.t
+	desc = err.11.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.11.a
+		ai_chance = { factor = 100 }
+		declare_war_on = { type = annex_everything    target = MIN }	
+		clr_country_flag = war_occupied
+	}	
+}
+country_event = {
+	id = err.12
+	title = err.12.t
+	desc = err.12.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.12.a
+		ai_chance = { factor = 100 }
+		add_political_power = 30
+	}	
+	option = {
+		name = err.12.b
+		ai_chance = { factor = 100 }
+		set_capital = {state = 182}
+	}	
+	option = {
+		name = err.12.c
+		ai_chance = { factor = 100 }
+		set_capital = {state = 32}
+	}		
+}
+country_event = {
+	id = err.13
+	title = err.13.t
+	desc = err.13.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.13.a
+		ai_chance = { factor = 100 }
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.2
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.2
+		}
+	}		
+}
+country_event = {
+	id = err.14
+	title = err.14.t
+	desc = err.14.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.14.a
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = liberalism
+			elections_allowed = yes
+		}	
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.1
+		}
+        hidden_effect = {
+            set_cosmetic_tag = ERR_unify2  
+            country_event = { days = 1460 id = err.19 }
+        }
+	}
+	option = {
+		name = err.14.b
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = conservatism
+			elections_allowed = yes
+		}	
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.1
+		}
+        hidden_effect = {
+            set_cosmetic_tag = ERR_unify2  
+            country_event = { days = 1460 id = err.19 }
+        }
+	}	
+}
+country_event = {
+	id = err.15
+	title = err.15.t
+	desc = err.15.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.15.a
+		ai_chance = { factor = 100 }
+		add_popularity = {
+			ideology = stratocracy
+			popularity = 0.2
+		}
+        add_popularity = {
+			ideology = despotism
+			popularity = 0.3
+		}
+	}		
+}
+country_event = {
+	id = err.16
+	title = err.16.t
+	desc = err.16.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.16.a
+		ai_chance = { factor = 100 }
+		add_stability = 0.1
+	}		
+}
+country_event = {
+	id = err.17
+	title = err.17.t
+	desc = err.17.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.17.a
+		ai_chance = { factor = 100 }
+		add_stability = 0.1
+        add_popularity = {
+            ideology = stratocracy
+            popularity = 0.1
+        }
+	}		
+}
+country_event = {
+	id = err.18
+	title = err.18.t
+	desc = err.18.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.18.a
+		ai_chance = { factor = 100 }
+		add_stability = 0.05
+        add_popularity = {
+            ideology = despotism
+            popularity = 0.2
+        }
+        set_politics = {
+			ruling_party = despotism
+			elections_allowed = no
+		}
+        set_party_name = {
+            ideology = despotism
+        long_name = ERR_mac_gaming
+        name = ERR_mac_gaming
+        }
+        hidden_effect = {
+            set_cosmetic_tag = ERR_unify2  
+        }	
+	}		
+}
+country_event = { #2nd Election
+	id = err.19
+	title = err.19.t
+	desc = err.19.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.19.a
+		ai_chance = { factor = 100 }
+        trigger = { 
+			ERR_alf_landon = {
+				is_country_leader = yes
+			}
+        }
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+        hidden_effect = {
+            country_event = { days = 1460 id = err.20 }
+        }
+	}
+	option = {
+		name = err.19.b
+		ai_chance = { factor = 100 }
+        trigger = { 
+           ERR_john_garner = {
+			   is_country_leader = yes
+		   }
+        }
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.05
+		}
+        hidden_effect = {
+            country_event = { days = 1460 id = err.20 }
+        }
+	}	
+    option = {
+		name = err.19.c
+		ai_chance = { factor = 100 }
+        trigger = { 
+            ERR_alf_landon = {
+				is_country_leader = yes
+			}
+        }
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.05
+		}
+        hidden_effect = {
+            add_country_leader_role = {
+				character = ERR_alben_barkley
+				promote_character = yes
+				country_leader = {
+				ideology = gen_conservatism
+				traits = {
+					moral_statesman
+				}
+			}
+			}
+            country_event = { days = 1460 id = err.20 }
+        }
+        set_politics = {
+			ruling_party = conservatism
+			elections_allowed = yes
+		}	
+	}
+    option = {
+		name = err.19.dd
+		ai_chance = { factor = 100 }
+        trigger = { 
+            ERR_john_garner = {
+				is_country_leader = yes
+			}
+        }
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+        hidden_effect = {
+            add_country_leader_role = {
+				character = ERR_john_bricker
+				promote_character = yes
+				country_leader = {
+				ideology = gen_liberalism
+				traits = {
+					staunch_constitutionalist
+				}
+				}
+			}
+            country_event = { days = 1460 id = err.20 }
+        }
+        set_politics = {
+			ruling_party = liberalism
+			elections_allowed = yes
+		}	
+	}
+}
+country_event = { #3rd Election
+	id = err.20
+	title = err.20.t
+	desc = err.20.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.20.a
+		ai_chance = { factor = 100 }
+        trigger = { 
+            OR = {
+                ERR_alf_landon = {
+					is_country_leader = yes
+				}
+                ERR_john_garner = {
+					is_country_leader = yes
+				}
+                ERR_alben_barkley = {
+					is_country_leader = yes
+				}
+            }
+        }
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+        set_politics = {
+			ruling_party = liberalism
+			elections_allowed = yes
+		}	
+        hidden_effect = {
+            MIN = {
+				MIN_robert_taft = {
+					set_nationality = ERR
+				}
+			}
+			add_country_leader_role = {
+				character = MIN_robert_taft
+				promote_character = yes
+				country_leader = {
+				ideology = gen_liberalism
+				traits = { isolationist }
+				}
+			}
+        }
+	}
+	option = {
+		name = err.20.b
+		ai_chance = { factor = 100 }
+        trigger = { 
+            OR = {
+                ERR_alf_landon = {
+					is_country_leader = yes
+				}
+                ERR_john_garner = {
+					is_country_leader = yes
+				}
+                ERR_john_bricker = {
+					is_country_leader = yes
+				}
+            }
+        }
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.05
+		}
+        set_politics = {
+			ruling_party = conservatism
+			elections_allowed = yes
+		}	
+        hidden_effect = {
+            add_country_leader_role = {
+				character = ERR_adlai_stevenson
+				promote_character = yes
+				country_leader = {
+				ideology = gen_conservatism
+				traits = {
+					crime_fighter
+				}
+				}
+			}
+        }
+	}	
+    option = {
+		name = err.20.c
+		ai_chance = { factor = 100 }
+        trigger = { 
+            ERR_alben_barkley = {
+				is_country_leader = yes
+			}
+        }
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.05
+        }
+        set_politics = {
+			ruling_party = conservatism
+			elections_allowed = yes
+		}	
+	}
+    option = {
+		name = err.20.dd
+		ai_chance = { factor = 100 }
+        trigger = { 
+            ERR_john_bricker = {
+				is_country_leader = yes
+			}
+        }
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+        set_politics = {
+			ruling_party = liberalism
+			elections_allowed = yes
+		}	
+	}
+}
+country_event = {
+	id = err.21
+	title = err.21.t
+	desc = err.21.d
+	picture = GFX_report_macarthur
+
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.21.a
+		ai_chance = { factor = 100 }
+		add_political_power = 50
+		add_war_support = 0.05
+		add_manpower = -5721
+	}	
+}
+country_event = {
+	id = err.22
+	title = err.22.t
+	desc = err.22.d
+	picture = GFX_report_macarthur
+
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.22.a
+		ai_chance = { factor = 100 }
+		#AMC = {
+		#	every_unit_leader = { set_nationality = ERR }
+		#}
+		add_stability = 0.05
+		add_political_power = -20
+		AMC = {
+			AMC_daniel_voorhis = {
+				set_nationality = ERR
+			}
+			AMC_leo_kreber = {
+				set_nationality = ERR
+			}
+			add_manpower = 5000
+		}
+	}	
+}
+country_event = {
+	id = err.23
+	title = err.23.t
+	desc = err.23.d
+	picture = GFX_report_macarthur
+
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = err.23.a
+		ai_chance = { factor = 100 }
+		add_stability = 0.1
+	}	
+}
+country_event = {
+	id = err.24
+	title = err.24.t
+	desc = err.24.d
+	picture = GFX_report_macarthur
+
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+
+	option = {
+		name = err.24.a
+		ai_chance = { factor = 100 }
+		add_political_power = 30
+	}
+	option = {
+		name = err.24.b
+		ai_chance = { factor = 100 }
+		add_political_power = -30
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.07
+		}
+		ARA = {
+			ARA_joseph_mcnarney = {
+				set_nationality = ERR
+			}
+			ARA_amos_fries = {
+				set_nationality = ERR
+			}
+		}
+	}	
+}
+country_event = {
+	id = err.25
+	title = err.25.t
+	desc = err.25.d
+	picture = GFX_report_macarthur
+
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = err.25.a
+		ai_chance = { factor = 100 }
+		add_political_power = 100
+	}	
+}
+
+country_event = {
+	id = err.26
+	title = err.26.t
+	desc = err.26.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = err.26.a
+		ai_chance = {
+			base = 80
+			modifier = {
+				has_war = yes
+				add = -80
+			}
+		}
+		add_stability = -0.1
+		add_war_support = 0.5
+		remove_ideas = holding_out
+		declare_war_on = {
+			target = COM
+			type = annex_everything
+		}
+	}
+
+	option = {
+		name = err.26.b
+		ai_chance = {
+			base = 20
+			modifier = {
+				has_war = no
+				factor = 40
+			}
+			add_war_support = -0.1
+			add_stability = 0.3
+			remove_ideas = holding_out
+		}
+	}
+}
+
+country_event = {
+	id = err.27
+	title = err.27.t
+	desc = err.27.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = err.27.a
+		ai_chance = { factor = 100 }
+
+	}
+}

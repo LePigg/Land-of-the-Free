@@ -1,0 +1,153 @@
+add_namespace = tej
+
+country_event = { #Matagordan' time
+	id = tej.1
+	title = tej.1.t
+	desc = tej.1.d
+	picture = GFX_Macnider_writing
+
+	fire_only_once = yes
+
+    trigger = {
+        tag = TEJ
+        date > 1936.9.10
+    }
+
+    mean_time_to_happen = { days = 15 }
+
+	immediate = {
+		hidden_effect = {
+			SNA = {
+				transfer_state = 240
+				transfer_state = 276
+				add_state_core = 240
+				add_state_core = 276
+				add_state_core = 179
+				add_state_core = 178
+				add_state_core = 277
+				add_state_core = 284
+				add_state_core = 239
+			}
+			SNA_dennis_chavez = {
+				set_nationality = SNA
+			}
+			SNA_jovita_idar = {
+				set_nationality = SNA
+			}
+			SNA_emma_tenayuca = {
+				set_nationality = SNA
+			}
+			add_country_leader_role = {
+				character = SNA_dennis_chavez
+				country_leader = { ideology = progressivism }
+				promote_leader = yes
+			}
+			add_country_leader_role = {
+				character = SNA_jovita_idar
+				country_leader = { ideology = dem_socialism }
+				promote_leader = yes
+			}
+			add_country_leader_role = {
+				character = SNA_emma_tenayuca
+				country_leader = { ideology = marxist_leninism }
+				promote_leader = yes
+			}
+			SNA = {
+				set_politics = {
+					ruling_party = liberalism
+					election_frequency = 48
+					elections_allowed = no
+				}
+				retire_country_leader = yes
+				set_politics = {
+					ruling_party = democratic_socialism
+					election_frequency = 48
+					elections_allowed = no
+				}
+				retire_country_leader = yes
+				set_politics = {
+					ruling_party = communism
+					election_frequency = 48
+					elections_allowed = no
+				}
+				retire_country_leader = yes
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2000
+				}
+			}
+			transfer_units_fraction = {
+				target = SNA
+				army_ratio = 0
+			}
+		}
+	}
+	option = {
+		name = tej.1.a
+		ai_chance = { factor = 100 }
+		declare_war_on = {
+			target = SNA
+			type = annex_everything
+		}
+		hidden_effect = {
+			add_ideas = tej_fighting
+			load_oob = "TEJ_1937"
+			SNA = {
+				load_oob = "SNA_1936"
+			}
+		}
+	}	
+	option = {
+		name = tej.1.b
+		ai_chance = { factor = 100 }
+		declare_war_on = {
+			target = SNA
+			type = annex_everything
+		}
+		SNA = {
+			change_tag_from = ROOT
+		}
+		hidden_effect = {
+			SNA = {
+				load_oob = "SNA_1936"
+			}
+			add_ideas = tej_fighting
+		}
+	}	
+}
+country_event = { #Paso time
+	id = tej.2
+	title = tej.2.t
+	desc = tej.2.d
+	picture = GFX_Macnider_writing
+
+	fire_only_once = yes
+
+    trigger = {
+        tag = MEX
+        date > 1936.10.05
+    }
+
+    mean_time_to_happen = { days = 15 }
+
+	immediate = {
+		hidden_effect = {
+			180 = {
+				set_demilitarized_zone = no
+			}
+			ABQ = {
+				transfer_state = 180
+				load_oob = "ELP_1936"
+				set_country_flag = TEX_abq_decisions1_flag
+			}
+		}
+	}
+	option = {
+		name = tej.2.a
+		ai_chance = { factor = 100 }
+		declare_war_on = {
+			target = ABQ
+			type = annex_everything
+		}
+	}	
+}

@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+		HON_overfunded = {
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.15
+				production_speed_arms_factory_factor = 0.08
+				research_speed_factor = -0.08
+				production_factory_efficiency_gain_factor = -0.10
+				army_morale_factor = 0.10
+				conscription_factor = 0.20
+				war_support_factor = 0.05
+			} 
+		}
+		HON_agitation = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				stability_factor = -0.10
+				production_factory_max_efficiency_factor = -0.10
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.20
+				political_power_cost = 0.20
+			}
+			targeted_modifier = {
+				tag = NIC
+				defense_bonus_against = -0.10
+			}
+		}
+	}
+}

@@ -1,0 +1,549 @@
+add_namespace = ARA
+
+
+##Event: Courtney's Demise
+country_event = {
+	id = ARA.2
+	title = ARA.2.title
+	desc = ARA.2.desc
+	picture = GFX_report_smith
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ARA.2.a
+		ai_chance = { factor = 1}
+		IEF = {
+			retire_character = IEF_walter_smith
+		}
+		hidden_effect = {
+			load_focus_tree = ara_warlord
+			complete_national_focus = ARA_atraitorsdeath
+			IEF = {
+				set_stability = 0
+				set_war_support = 0
+				set_politics = {
+					ruling_party = Anarchism
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+##Event: The American Redemption Authority
+country_event = {
+	id = ARA.1
+	title = ARA.1.title
+	desc = ARA.1.desc
+	picture = GFX_report_smith
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ARA.1.a
+		ai_chance = { factor = 1 }
+		add_political_power = 15 
+		add_war_support= 0.05
+	}
+}
+##Event: The Oath of Washington
+country_event = {
+	id = ARA.4
+	title = ARA.4.title
+	desc = ARA.4.desc
+	picture = GFX_report_event_us_panay_demands
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = ARA.4.a
+		ai_chance = { factor = 1}
+        add_war_support = 0.15
+        add_political_power = 30
+	}
+}
+##Event: Like the Founding Fathers
+country_event = {
+	id = ARA.5
+	title = ARA.5.title
+	desc = ARA.5.desc
+	picture = GFX_report_event_spr_solidify_the_frontlines
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ARA.5.a
+		ai_chance = { factor = 1}
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.05
+        }
+        add_political_power = 20
+	}
+}
+##Event: The Demons Executed
+country_event = {
+	id = ARA.6
+	title = ARA.6.t
+	desc = ARA.6.d
+	picture = GFX_report_smith
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = ARA.6.a
+		ai_chance = { factor = 1}
+        add_manpower = -3281
+        add_stability = 0.05
+		COM = {
+			retire_character = COM_norman_thomas
+			retire_character = COM_earl_browder
+		}
+	}
+}
+Event: The American Redemption Authority Unites the Great Lakes
+news_event = {
+	id = ARA.7
+	title = ARA.7.title
+	desc = ARA.7.desc
+	picture = GFX_report_event_chinese_soldiers_01
+    is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	mean_time_to_happen = {
+		days = 5
+		option = {
+		name = ARA.7.a
+		ai_chance = { factor = 1}
+		}
+	}
+}
+##Event: An Ultimatum From the Legion
+#country_event = {
+#	id = ARA.8
+#	title = ARA.8.title
+#	desc = ARA.8.desc
+#	picture = GFX_report_event_generic_read_write
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#	mean_time_to_happen = {
+#		days = 2
+#	}
+#	option = {
+#		name = ARA.8.a
+#		ai_chance = { factor = 5}
+#	}
+#	option = {
+#		name = ARA.8.b
+#		ai_chance = { factor = 4}
+#	}
+#}
+##Event: Detroit Complies
+country_event = {
+	id = ARA.9
+	title = ARA.9.title
+	desc = ARA.9.desc
+	picture = GFX_report_smith
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = ARA.9.a
+		ai_chance = { factor = 1}
+		annex_country = { 
+			target = MIC 
+		}
+	}
+}
+##Event: Detroit Defiant
+country_event = {
+	id = ARA.10
+	title = ARA.10.title
+	desc = ARA.10.desc
+	is_triggered_only = yes
+	picture = GFX_report_smith
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = ARA.10.a
+		ai_chance = { factor = 1}
+		declare_war_on = { type = annex_everything    target = MIC }
+	}
+}
+
+country_event = {
+    id = ARA.11
+    title = ARA.11.t
+    desc = ARA.11.d
+	is_triggered_only = yes
+    picture = GFX_report_smith
+    fire_only_once = yes
+    mean_time_to_happen = {
+        days = 2
+    }
+    option = {
+        name = ARA.11.a
+        ai_chance = { factor = 1 }
+        
+    }
+}
+
+country_event = {
+    id = ARA.12
+    title = ARA.12.t
+    desc = ARA.12.d
+    picture = GFX_report_smith
+    fire_only_once = yes
+	is_triggered_only = yes
+    mean_time_to_happen = {
+        days = 2
+    }
+    option = {
+        name = ARA.11.a
+        ai_chance = { factor = 1 }
+        
+    }
+}
+
+country_event = {
+	id = ARA.13
+	title = ARA.13.t
+	desc = ARA.13.d
+	picture = GFX_report_smith
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ARA.13.a
+		ai_chance = {
+			base = 1
+
+			modifier = {
+				factor = 5
+				NOT = {
+					owns_state = 32
+					owns_state = 52
+				}
+			}
+			modifier = {
+				factor = 65
+				owns_state = 32
+			}
+			modifier = {
+				factor = 50
+				owns_state = 52
+			}
+			modifier = {
+				factor = 90
+					owns_state = 32
+					owns_state = 52
+			}
+
+		}
+		
+		ARA = {
+			country_event = { id = ARA.14 days = 7 }
+		}
+	}
+	option = {
+		name = ARA.13.b
+		ai_chance = {
+			factor = 1
+
+			modifier = {
+				factor = 95
+				NOT = {
+					owns_state = 32
+					owns_state = 52
+				}
+			}
+			modifier = {
+				factor = 35
+				owns_state = 32
+			}
+			modifier = {
+				factor = 50
+				owns_state = 52
+			}
+			modifier = {
+				factor = 10
+					owns_state = 32
+					owns_state = 52
+			}
+
+		}
+		custom_effect_tooltip = DEATH_WEAKNESS_DESTRUCTION
+		ARA = {
+			country_event = { id = ARA.15 days = 7 }
+		}
+	}
+}
+
+country_event = {
+	id = ARA.14
+	title = ARA.14.t
+	desc = ARA.14.d
+	picture = GFX_report_event_fascist_militia
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = ARA.14.a
+		ai_chance = { factor = 100 }
+		declare_war_on = { type = annex_everything target = BMK }
+		clr_country_flag = war_occupied
+	}	
+}
+
+country_event = {
+	id = ARA.15
+	title = ARA.15.t
+	desc = ARA.15.d
+	picture = GFX_report_smith
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = ARA.15.a
+		ai_chance = { factor = 100 }
+		annex_country = { target = BMK }
+		BMK = { every_unit_leader = { set_nationality = ARA } }
+		clr_country_flag = war_occupied
+		add_ideas = BMK_businessmen
+	}	
+}
+
+country_event = {
+	id = ARA.16
+	title = ARA.16.t
+	desc = ARA.16.d
+	picture = GFX_report_event_fascist_militia
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {days = 1}
+
+	option = {
+		name = ARA.16.a
+		ai_chance = { factor = 100 }
+		add_manpower = -1472
+		add_political_power = 100
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.10
+		}
+		hidden_effect = {
+			add_ideas = ARA_shadow
+		}
+	}
+}
+
+country_event = {
+	id = ARA.17
+	title = ARA.17.t
+	desc = ARA.17.d
+	picture = GFX_report_event_usa_macarthur_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = ARA.17.a
+		ai_chance = { factor = 70 }
+		give_guarantee = ARA
+		set_country_flag = ERR_said_yes
+		ARA = {
+			give_guarantee = ERR
+			give_military_access = ERR
+		}
+		diplomatic_relation = {
+			country = ARA
+			relation = non_aggression_pact
+		}
+		give_military_access = ARA
+		ARA = {
+			set_country_flag = ERR_said_yes
+			complete_national_focus = ARA_columbus_agreement
+		}
+	}
+	option = {
+		name = ARA.17.b
+		ai_chance = { factor = 30 }
+		ARA = {
+			country_event = {
+				days = 2
+				id = ARA.18
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ARA.18
+	title = ARA.18.t
+	desc = ARA.18.d
+	picture = GFX_report_event_usa_macarthur_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = ARA.18.a
+		ai_chance = { factor = 100 }
+		add_political_power = -50
+		add_popularity = {
+			ideology = stratocracy
+			popularity = -0.05
+		}
+		set_country_flag = ERR_said_no
+	}
+}
+
+country_event = {
+	id = ARA.19
+	title = ARA.19.t
+	desc = ARA.19.d
+	picture = GFX_report_event_eng_mosley_march_on_downing_street
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ARA.19.a
+		ai_chance = {
+			factor = 70
+			modifier = {
+			IF = {
+				limit = {
+					owns_state = 184
+				}
+				factor = 70
+			}
+			}
+		}
+		add_stability = -0.10
+		add_manpower = -325
+		add_war_support = 0.05
+		declare_war_on = {
+			target = ARA
+			type = annex_everything
+		}
+		MIC = {
+			declare_war_on = {
+				target = ARA
+				type = annex_everything
+			}
+		}
+		ARA = {
+			set_country_flag = ERR_resisted
+		}
+	}
+	option = {
+		name = ARA.19.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+			IF = {
+				limit = {
+					NOT = {
+						owns_state = 184
+					}
+				}
+				factor = 70
+				}
+			}
+		}
+		retire_character = ERR_douglas_macarthur
+		ARA = {
+			annex_country = {
+				target = ERR
+			}
+			set_country_flag = ERR_couped
+		}
+		MIC = {
+			country_event = {
+				days = 3
+				id = mic.1
+			}
+		}
+		hidden_effect = {
+			ERR = {
+				set_politics = {
+					ruling_party = guided_democracy
+					last_election = "1933.3.5"
+					election_frequency = 48
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ARA.20
+	title = ARA.20.t
+	desc = ARA.20.d
+	picture = GFX_report_event_fascist_speech
+
+	is_triggered_only = yes
+	option = {
+		name = ARA.20.a
+		ai_chance = {
+			factor = 5
+		}
+		ERR = {
+			retire_character = ERR_douglas_macarthur
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.10
+		}
+		add_stability = 0.03
+		add_war_support = 0.03
+		hidden_effect = {
+			ERR = {
+				set_politics = {
+					ruling_party = guided_democracy
+					last_election = "1933.3.5"
+					election_frequency = 48
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ARA.21
+	title = ARA.21.t
+	desc = ARA.21.d
+	picture = GFX_report_event_french_british_officers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ARA.21.a
+		ai_chance = {
+			factor = 5
+		}
+		retire_character = ARA_gerald_smith
+		retire_character = ARA_charles_lindbergh
+		remove_ideas = ARA_aviation
+		set_politics = {
+			ruling_party = Anarchism
+			elections_allowed = no
+		}
+	}
+}

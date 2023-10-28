@@ -1,0 +1,228 @@
+add_namespace = srt
+country_event = {
+	id = srt.1
+	title = srt.1.t
+	desc = srt.1.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = srt.1.a
+		ai_chance = {
+			factor = 1
+		}
+		SRT = {
+			country_event = { days = 4 id = srt.2 }
+		}
+	}
+}
+country_event = {
+	id = srt.2
+	title = srt.2.t
+	desc = srt.2.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = srt.2.a
+		ai_chance = {
+			factor = 1
+		}
+		puppet = ACA
+	}
+}
+country_event = {
+	id = srt.3
+	title = srt.3.t
+	desc = srt.3.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = srt.3.a
+		ai_chance = {
+			factor = 1
+		}
+		add_timed_idea = {
+			idea = tcw_ownaged3
+			days = 60
+		}
+	}
+	option = {
+		name = srt.3.b
+		ai_chance = {
+			factor = 1
+		}
+		add_timed_idea = {
+			idea = tcw_ownaged4
+			days = 60
+		}
+	}
+	option = {
+		name = srt.3.c
+		ai_chance = {
+			factor = 1
+		}
+		add_timed_idea = {
+			idea = tcw_ownaged1
+			days = 60
+		}
+	}
+}
+country_event = {
+	id = srt.4
+	title = srt.4.t
+	desc = srt.4.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = srt.4.a
+		ai_chance = {
+			factor = 4
+		}
+		trigger = {
+			has_equipment = {
+				infantry_equipment > 249
+			}
+		}
+		add_timed_idea = {
+			idea = tex_money_talks
+			days = 90
+		}
+		FROM = {
+			country_event = { days = 2 id = srt.5 }
+		}
+	}
+	option = {
+		name = srt.4.b
+		ai_chance = {
+			factor = 1
+		}
+		FROM = {
+			country_event = { days = 2 id = srt.6 }
+		}
+	}
+}
+country_event = {
+	id = srt.5
+	title = srt.5.t
+	desc = srt.5.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = srt.5.a
+		ai_chance = {
+			factor = 1
+		}
+		ELP = {
+			send_equipment = { target = ROOT type = infantry_equipment amount = 250 }
+		}
+		
+		add_timed_idea = {
+			idea = tex_bitch_to_abq
+			days = 90
+		}
+		
+	}
+}
+country_event = {
+	id = srt.6
+	title = srt.6.t
+	desc = srt.6.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = srt.6.a
+		ai_chance = {
+			factor = 1
+		}
+		add_political_power = -5
+		
+	}
+}
+country_event = {
+	id = srt.7
+	title = srt.7.t
+	desc = srt.7.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = srt.7.a
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_equipment = {
+				infantry_equipment > 249
+			}
+		}
+		custom_effect_tooltip = SRT_sendgunspls
+		SRT = {
+			country_event = { days = 3 id = srt.8 }
+		}
+	}
+	option = {
+		name = srt.7.b
+		ai_chance = {
+			factor = 1
+		}
+		SRT = {
+			country_event = { days = 3 id = srt.9 }
+		}
+	}
+}
+country_event = {
+	id = srt.8
+	title = srt.8.t
+	desc = srt.8.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = srt.8.a
+		ai_chance = {
+			factor = 1
+		}
+		add_manpower = 1500
+		MSS = {
+			send_equipment = { target = ROOT type = infantry_equipment amount = 250 }
+		}
+	}
+}
+country_event = {
+	id = srt.9
+	title = srt.9.t
+	desc = srt.9.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = srt.9.a
+		ai_chance = {
+			factor = 1
+		}
+		add_political_power = -5
+	}
+}

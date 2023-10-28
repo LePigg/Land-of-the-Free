@@ -1,0 +1,1062 @@
+add_namespace = com
+
+country_event = {
+	id = com.1
+	title = com.1.t
+	desc = com.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = com.1.a
+		ai_chance = { factor = 100 }
+		add_stability = 0.01
+	}	
+}
+
+country_event = {
+	id = com.2
+	title = com.2.t
+	desc = com.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = com.2.a
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = revolutionary_socialist
+			elections_allowed = yes
+		}
+		add_political_power = 50
+	}	
+}
+country_event = {
+	id = com.3
+	title = com.3.t
+	desc = com.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = com.3.a
+		ai_chance = { factor = 100 }
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = 0.05
+		}
+		182 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	164 = {
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		   }
+		}
+	}	
+	option = {
+		name = com.3.b
+		ai_chance = { factor = 100 }
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_stability = -0.1
+		182 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		164 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			   }
+		}
+		add_ideas = COM_work
+	}
+	option = {
+		name = com.3.c
+		ai_chance = { factor = 100 }
+		add_popularity = {
+			ideology = democratic_socialism
+			popularity = 0.05
+		}
+		add_political_power = -100
+		182 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		164 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		add_timed_idea = {
+			idea = COM_agreement
+			days = 180
+		}
+	}	
+}
+country_event = {
+	id = com.4
+	title = com.4.t
+	desc = com.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = com.4.a
+		ai_chance = { factor = 100 }
+			declare_war_on = { type = annex_everything    target = AMC }		
+	}	
+}
+country_event = {
+	id = com.5
+	title = com.5.t
+	desc = com.5.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = com.5.a
+		ai_chance = { factor = 100 }
+			add_popularity = {
+				ideology = revolutionary_socialist
+				popularity = 0.12
+			}
+			complete_national_focus = COM_dealing_with_the_unrest		
+			complete_national_focus = COM_the_second_reconstruction
+	}		
+}
+country_event = {
+	id = com.6
+	title = com.6.t
+	desc = com.6.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = com.6.a
+		ai_chance = { factor = 100 }
+		add_state_core = 396
+		add_state_core = 846
+	}	
+}
+country_event = {
+	id = com.7
+	title = com.7.t
+	desc = com.7.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = com.7.a
+		ai_chance = { factor = 50 }
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.05
+		}
+		add_stability = 0.02
+		country_event = { days = 3 id = COM.27 }
+		add_to_variable = {
+			var = COM_army_reform_points
+			value = 1
+			tooltip = COM_reform_point_added
+		}
+	}
+	option = {
+		name = com.7.b
+		ai_chance = { factor = 50 }
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_political_power = 100
+		MIL = {
+			retire_character = MIL_mark_clark
+		}
+		add_to_variable = {
+			var = COM_army_reform_points
+			value = 1
+			tooltip = COM_reform_point_added
+		}
+	}		
+}
+country_event = {
+	id = com.8
+	title = com.8.t
+	desc = com.8.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+	option = {
+		name = com.8.a
+		ai_chance = { factor = 100 }
+		ERR = {
+			retire_character = ERR_douglas_macarthur
+			hidden_effect = {
+				set_politics = {
+					ruling_party = guided_democracy
+					elections_allowed = no
+				}
+			}
+		}
+		add_to_variable = {
+			var = COM_army_reform_points
+			value = 1
+			tooltip = COM_reform_point_added
+		}
+		add_war_support = 0.15
+		add_political_power = 50		
+		WDC = {
+			add_stability = -0.05
+			add_war_support = -0.15
+		}
+		SRR = {
+			add_stability = -0.05
+			add_war_support = -0.15
+		}
+		IWA = {
+			add_stability = -0.05
+			add_war_support = -0.15
+		}
+		GPS = {
+			add_stability = -0.05
+			add_war_support = -0.15
+		}
+	}	
+}
+
+country_event = {
+	id = COM.9
+	title = COM.9.t
+	desc = COM.9.d
+	picture = GFX_report_event_soviet_tank_parade
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 7 }
+
+	trigger = {
+		AND = {
+			original_tag = COM
+			has_country_flag = DBQ_expedition
+			DBQ = {
+				exists = no
+			}
+		}
+	}
+
+	option = {
+		name = COM.9.a 
+		ai_chance = { factor = 100 }
+		remove_country_leader_role = {
+			character = DBQ_jacob_devers
+			ideology = gen_revolutionary_socialist
+		  }
+	    DBQ_jacob_devers = {
+			set_nationality = COM
+		}
+		DBQ_williston_palmer = {
+			set_nationality = DBQ
+		}
+		add_to_variable = {
+			var = COM_army_reform_points
+			value = 2
+			tooltip = COM_reform_point_added
+		}
+		army_experience = 15
+		clr_country_flag = DBQ_expedition
+	}
+}
+
+country_event = {
+	id = COM.10
+	title = COM.10.t
+	desc = COM.10.d
+	picture = GFX_report_event_generic_rally2
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		#
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = COM.10.a
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = COM_insurgency_greatly_weakened
+		add_political_power = -50
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = COM_frequent_sabotage2
+				add_idea = COM_frequent_sabotage3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = COM.11
+	title = COM.11.t
+	desc = COM.11.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		#
+	}
+
+	option = {
+		name = COM.11.a
+		ai_chance = { factor = 100 }
+		ARA = {
+			retire_character = ARA_charles_lindbergh
+		}
+		add_to_variable = {
+			var = COM_army_reform_points
+			value = 1
+			tooltip = COM_reform_point_added
+		}
+		add_manpower = 5000
+		add_political_power = 50
+		hidden_effect = {
+			ARA = {
+				set_politics = {
+					ruling_party = despotism
+					election_frequency = 48
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = COM.12
+	title = COM.12.t
+	desc = COM.12.d
+	picture = GFX_report_event_usa_funeral
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 4
+	}	
+	trigger = {
+		tag = COM
+		date > 1940.7.22
+	}
+
+	option = {
+		name = COM.12.a
+		ai_chance = { factor = 100 }
+		retire_character = COM_smedley_butler
+		add_political_power = -20
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.03
+		}
+	}
+}
+
+country_event = {
+	id = COM.13
+	title = COM.13.t
+	desc = COM.13.d
+	picture = GFX_report_event_soviet_in_riga
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		#
+	}
+
+	option = {
+		name = COM.13.a
+		ai_chance = { factor = 50 }
+		add_political_power = 100
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		AMC = {
+			retire_character = AMC_robert_beightler
+		}
+	}
+	option = {
+		name = COM.13.b
+		ai_chance = { factor = 50 }
+		add_stability = -0.05
+		add_to_variable = {
+			var = COM_army_reform_points
+			value = 1
+			tooltip = COM_reform_point_added
+		}
+		AMC_leo_kreber = {
+			set_nationality = COM
+		}
+		AMC_daniel_voorhis = {
+			set_nationality = COM
+		}
+		AMC = {
+			retire_character = AMC_robert_beightler
+		}
+		add_popularity = {
+			ideology = democratic_socialism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = {
+	id = COM.14
+	title = COM.14.t
+	desc = COM.14.d
+	picture = GFX_report_event_soviet_purge_politicians
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.14.a
+		ai_chance = { factor = 25 }
+		set_country_flag = browder_path
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		hidden_effect = { country_event = { id = COM.15 days = 8 } }
+	}
+	option = {
+		name = COM.14.b
+		ai_chance = { factor = 25 }
+		set_country_flag = cox_path
+		add_popularity = {
+			ideology = democratic_socialism
+			popularity = 0.1
+		}
+		hidden_effect = { country_event = { id = COM.19 days = 8 } }
+	}
+	option = {
+		name = COM.14.c
+		ai_chance = { factor = 25 }
+		set_country_flag = norman_path
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = 0.1
+		}
+		hidden_effect = { country_event = { id = COM.23 days = 8 } }
+	}
+}
+
+country_event = {
+	id = COM.15
+	title = COM.15.t
+	desc = COM.15.d
+	picture = GFX_report_event_soviet_purge_trial
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.15.a
+		ai_chance = { factor = 20 }
+		add_popularity = {
+			ideology = liberalism 
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = guided_democracy 
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = democratic_socialism 
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = communism 
+			popularity = 0.05
+		}
+		hidden_effect = { country_event = { id = COM.16 days = 10 } }
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = COM.16
+	title = COM.16.t
+	desc = COM.16.d
+	picture = GFX_report_event_soviet_purge_officers_01
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.16.a
+		ai_chance = { factor = 20 }
+		add_popularity = {
+			ideology = communism 
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = democratic_socialism
+			popularity = -0.10
+		}
+		add_stability = -0.05
+		add_political_power = 50
+		hidden_effect = { country_event = { id = COM.17 days = 23 } }
+	}
+}
+
+country_event = {
+	id = COM.17
+	title = COM.17.t
+	desc = COM.17.d
+	picture = GFX_report_event_soviet_purge_officers_01
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.17.a
+		ai_chance = { factor = 20 }
+		add_popularity = {
+			ideology = communism 
+			popularity = 0.05
+		}
+		add_manpower = -5000
+		add_political_power = 50
+		add_war_support = -0.15
+		army_experience = -10
+		hidden_effect = { country_event = { id = COM.18 days = 25 } }
+	}
+}
+
+country_event = {
+	id = COM.18
+	title = COM.18.t
+	desc = COM.18.d
+	picture = GFX_report_event_soviet_purge_officers_01
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.18.a
+		ai_chance = { factor = 20 }
+		add_popularity = {
+			ideology = communism 
+			popularity = 0.05
+		}
+		remove_ideas = COM_frequent_sabotage3
+		add_timed_idea = {
+			idea = COM_purged
+			days = 200
+		}
+	}
+}
+
+country_event = {
+	id = COM.19
+	title = COM.19.t
+	desc = COM.19.d
+	picture = GFX_report_event_soviet_tank_parade
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.19.a
+		ai_chance = { factor = 20 }
+		add_popularity = {
+			ideology = democratic_socialism
+			popularity = 0.05
+		}
+		add_political_power = -50
+		hidden_effect = { country_event = { id = COM.20 days = 10 } }
+	}
+}
+
+
+country_event = {
+	id = COM.20
+	title = COM.20.t
+	desc = COM.20.d
+	picture = GFX_report_event_soviet_purge_speech
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.20.a
+		ai_chance = { factor = 20 }
+		add_popularity = {
+			ideology = democratic_socialism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.10
+		}
+		add_war_support = -0.05
+		add_political_power = -30
+		hidden_effect = { country_event = { days = 25 id = COM.21 } }
+	}
+}
+
+country_event = {
+	id = COM.21
+	title = COM.21.t
+	desc = COM.21.d
+	picture = GFX_report_event_generic_rally_3
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.21.a
+		ai_chance = { factor = 20 }
+		add_popularity = {
+			ideology = democratic_socialism
+			popularity = 0.05
+		}
+		hidden_effect = { country_event = { days = 30 id = COM.22 } }
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = COM.22
+	title = COM.22.t
+	desc = COM.22.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+	option = {
+		name = COM.22.a
+		ai_chance = { factor = 20 }
+		add_popularity = {
+			ideology = democratic_socialism
+			popularity = 0.05
+		}
+		swap_ideas = {
+			remove_idea = COM_frequent_sabotage3
+			add_idea = COM_frequent_sabotage4
+		}
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = COM.23
+	title = COM.23.t
+	desc = COM.23.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.23.a
+		ai_chance = { factor = 20 }
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = 0.05
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -500
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = -30
+		}
+		hidden_effect = { country_event = { days = 25 id = COM.24 } }
+		add_political_power = -50
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = COM.24
+	title = COM.24.t
+	desc = COM.24.d
+	picture = GFX_report_event_soviet_tanks
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.24.a
+		ai_chance = { factor = 20 }
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = -0.15
+		}
+		add_manpower = -500
+		add_stability = -0.10
+		add_war_support = 0.15
+		hidden_effect = { country_event = { days = 30 id = COM.25 } }
+	}
+}
+country_event = {
+	id = COM.25
+	title = COM.25.t
+	desc = COM.25.d
+	picture = GFX_report_event_usa_macarthur_speech
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.25.a
+		ai_chance = { factor = 20 }
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = stratocracy
+			popularity = 0.05
+		}
+		add_political_power = -50
+		add_stability = -0.10
+		add_command_power = -0.30
+		hidden_effect = { country_event = { days = 14 id = COM.26 } }
+	}
+}
+country_event = {
+	id = COM.26
+	title = COM.26.t
+	desc = COM.26.d
+	picture = GFX_report_event_soviet_purge_officers_02
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.26.a
+		ai_chance = { factor = 20 }
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = stratocracy
+			popularity = 0.05
+		}
+		remove_ideas = COM_frequent_sabotage3
+		add_timed_idea = {
+			idea = COM_frequent_sabotage4
+			days = 300
+		}
+		add_command_power = -0.20
+		add_manpower = -500
+	}
+}
+
+country_event = {
+	id = COM.27
+	title = COM.27.t
+	desc = COM.27.d
+	picture = GFX_report_event_british_inspect_troops
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.27.a
+		ai_chance = { factor = 40 }
+		MIL = {
+			MIL_oscar_koch = {
+				set_nationality = COM
+			}
+			MIL_merrit_edson = {
+				set_nationality = COM
+			}
+			MIL_george_shaw = {
+				set_nationality = COM
+			}
+		}
+		add_manpower = 5000
+		add_political_power = -50
+		add_war_support = 0.10
+		add_stability = -0.05
+		add_to_variable = {
+			var = COM_army_reform_points
+			value = 1
+			tooltip = COM_reform_point_added
+		}
+	}
+	option = {
+		name = COM.27.b
+		ai_chance = { factor = 30 }
+		MIL = {
+			MIL_george_shaw = {
+				set_nationality = COM
+			}
+		}
+		add_war_support = 0.05
+		add_manpower = 2500
+		add_political_power = 25
+		add_to_variable = {
+			var = COM_army_reform_points
+			value = 1
+			tooltip = COM_reform_point_added
+		}
+	}
+	option = {
+		name = COM.27.c 
+		ai_chance = { factor = 30 }
+		add_political_power = 50
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.15
+		}
+		add_manpower = -500
+		add_war_support = -0.05
+	}
+}
+
+country_event = {
+	id = COM.28
+	title = COM.28.t
+	desc = COM.28.d
+	picture = GFX_report_event_crowd_in_prague
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.28.a
+		ai_chance = { factor = 20 }
+		add_war_support = 0.15
+		add_political_power = 20
+		add_to_variable = {
+			var = COM_army_reform_points
+			value = 1
+			tooltip = COM_reform_point_added
+		}
+		53 = { add_extra_state_shared_building_slots = 2 }
+		IEF = {
+			retire_character = IEF_walter_smith
+		}
+	}
+}
+
+country_event = { #Mineapolis Talks
+	id = COM.29
+	title = COM.29.t
+	desc = COM.29.d
+	picture = GFX_olson_spitting_facts_event_image
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.29.a
+		ai_chance = {
+			factor = 60
+			modifier = {
+				has_government = conservatism factor = 0
+			}
+		}
+		custom_effect_tooltip = DEATH_WEAKNESS_DESTRUCTION
+		COM = { country_event = { id = COM.30 days = 3 } }
+	}
+	option = {
+		name = COM.29.b
+		ai_chance = {
+			factor = 40
+			modifier = {
+				has_government = conservatism factor = 100
+			}
+		}
+		add_war_support = 0.10
+		add_stability = -0.05
+		COM = { country_event = { id = COM.31 days = 5 } }
+	}
+}
+
+country_event = { #Approved
+	id = COM.30
+	title = COM.30.t
+	desc = COM.30.d
+	picture = GFX_olson_spitting_facts_event_image
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.30.a
+		ai_chance = {
+			factor = 60
+		}
+		annex_country = { target = MIN }
+		MIN = {
+			MIN_walter_krueger = { set_nationality = COM }
+			MIN_leslie_mcnair = { set_nationality = COM }
+		}	
+		clr_country_flag = war_occupied
+	}
+}
+
+country_event = { #Denied
+	id = COM.31
+	title = COM.31.t
+	desc = COM.31.d
+	picture = GFX_olson_spitting_facts_event_image
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.31.a
+		ai_chance = {
+			factor = 60
+		}
+		declare_war_on = {
+			type = annex_everything
+			target = MIN
+		}
+		clr_country_flag = war_occupied
+	}
+}
+
+country_event = { #heading back
+	id = COM.32
+	title = COM.32.t
+	desc = COM.32.d
+	picture = GFX_report_event_tank_factory
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = COM.32.a
+		ai_chance = {
+			factor = 60
+		}
+	 	DBQ_jacob_devers = {
+			remove_country_leader_role = yes
+			ideology = gen_revolutionary_socialist
+		}
+		every_unit_leader = { set_nationality = COM }
+		COM = {
+			annex_country = { target = DBQ transfer_troops = yes }
+			change_tag_from = DBQ
+		}
+	}
+}
+
+country_event = {
+	id = COM.33
+	title = COM.33.t
+	desc = COM.33.d
+	picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 8 }
+	trigger = {
+		tag = COM
+		OR = {
+			AND = {
+				has_war_with = ERR
+				has_war_with = ARA
+			}
+			AND = {
+				has_war_with = MIL
+				has_war_with = ARA
+			}
+			AND = {
+				has_war_with = ERR
+				has_war_with = IEF
+			}
+			AND = {
+				has_war_with = MIL
+				has_war_with = IEF
+			}
+		}
+	}
+	option = {
+		name = COM.33.a
+		ai_chance = {
+			factor = 60
+		}
+		add_ideas = COM_final_stand
+		add_manpower = 15000
+	}
+}
+

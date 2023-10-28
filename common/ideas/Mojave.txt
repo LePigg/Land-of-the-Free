@@ -1,0 +1,53 @@
+ideas = {
+    #Mojave
+	country = {
+		MJV_raids = {
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				army_speed_factor = 0.15
+                army_core_defence_factor = 0.1
+                command_power_gain_mult = 0.75
+                surrender_limit = 0.1
+			}
+		}
+	}
+    country = {
+		MJV_casino = {
+			picture = new_deal
+			modifier = {
+                stability_factor = 0.03
+				political_power_factor = 0.05
+                monthly_population = 0.05
+			}
+		}
+	}	
+    country = {
+		MJV_brutal = {
+			picture = air_war_plans_division_focus
+			modifier = {
+                surrender_limit = 0.05
+                command_power_gain_mult = 0.25
+			}
+		}
+	}	
+    country = {
+		MJV_brutal2 = {
+			picture = air_war_plans_division_focus
+			modifier = {
+                surrender_limit = 0.05
+                command_power_gain_mult = 0.25
+                supply_consumption_factor = -0.15
+			}
+		}
+	}
+    country = {
+		MJV_nowater = {
+			picture = generic_goods_red_bonus
+			modifier = {
+                army_morale_factor = -0.05
+                army_speed_factor = -0.05
+                supply_consumption_factor = 0.05
+			}
+		}
+	}
+}

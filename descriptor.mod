@@ -37,6 +37,6 @@ tags={
 	"Utilities"
 }
 picture="Thumbnail.png"
-name="Edouard_Saladier's North America Map Resource Fix"
+name="Land of the Free Dev"
 supported_version="1.12.11"
 remote_file_id="2956020027"

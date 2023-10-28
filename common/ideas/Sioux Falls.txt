@@ -1,0 +1,542 @@
+ideas = {
+    #Sioux Falls
+	country = {
+		BMK_hatesmin = {
+			picture = generic_purge
+			targeted_modifier = {
+				tag = MIN
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.05
+			}
+		}
+		BMK_businessmen = {
+			picture = generic_central_management
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		BMK_businessmen2 = {
+			picture = generic_central_management
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		BMK_unpopular = {
+			picture = anti_soviet_pact
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = 0.05
+				surrender_limit = -0.1
+			}
+		}
+		BMK_unpopular2 = {
+			picture = anti_soviet_pact
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.1
+			}
+		}		
+		BMK_unpopular3 = {
+			picture = generic_fascism_drift_bonus
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.15
+				war_support_factor = 0.05
+			}
+		}			
+		bmk_corruption1 = {
+			picture = SOV_scientist_defect
+			modifier = {
+				surrender_limit = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				political_power_factor = -0.05
+			}
+		}	
+		bmk_corruption2 = {
+			picture = SOV_scientist_defect
+			modifier = {
+				surrender_limit = -0.1
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				political_power_factor = -0.1
+			}
+		}
+		bmk_corruption3 = {
+			picture = SOV_scientist_defect
+			modifier = {
+				surrender_limit = -0.15
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				political_power_factor = -0.15
+			}
+		}
+		bmk_corruption4 = {
+			picture = SOV_scientist_defect
+			modifier = {
+				surrender_limit = -0.2
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				political_power_factor = -0.2
+			}
+		}
+		BMK_railway = {
+			picture = generic_build_infrastructure
+			modifier = {
+				production_speed_rail_way_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+				supply_node_range = 0.1 
+			}
+		}
+		BMK_assholes = {
+			picture = generic_goods_red_bonus
+			available = {
+				BMK = {
+					exists = yes
+				}
+			}
+			targeted_modifier = {
+				tag = BMK
+				cic_to_target_factor = 0.1
+			}
+		}
+		BMK_assholes1 = {
+			picture = generic_goods_red_bonus
+			available = {
+				BMK = {
+					exists = yes
+				}
+			}
+			targeted_modifier = {
+				tag = BMK
+				cic_to_target_factor = 0.4
+			}
+		}
+		BMK_veterans = {
+			picture = german_advisors
+			modifier = {
+				experience_loss_factor = -0.15
+				conscription_factor = 0.05
+			}
+		}
+		BMK_bonus_bill = {
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				consumer_goods_factor = 0.05
+				army_morale_factor = 0.1
+				stability_factor = 0.1
+			}
+		}
+		BMK_veteran_bill_merge = {
+			picture = german_advisors
+			modifier = {
+				conscription_factor = 0.1
+				experience_gain_army = 0.15
+				army_morale_factor = 0.15
+				consumer_goods_factor = 0.05
+				stability_factor = 0.1
+			}
+		}
+		BMK_pegging = {
+			picture = eng_the_sun_never_sets
+			modifier = {
+				political_power_gain = -0.2
+			}
+		}
+	}
+    country = {
+		cocaine = {
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_pp_unity_bonus
+			modifier = {
+				ai_focus_aggressive_factor = 1
+				consumer_goods_factor = -1
+				attrition = -1
+				army_attack_factor = 1
+				army_morale_factor = 1
+				army_org_factor = 1
+				supply_consumption_factor = -0.9
+				army_org_regain = 1
+				no_supply_grace = 5000000000
+				#army_speed_factor = 1
+				army_defence_factor = 1
+			}
+		}
+	}
+	country = {
+		BreakingBadMeth = {
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_war_preparation
+			modifier = {
+				army_speed_factor = 10
+			}
+		}
+	}	
+	# MILITARY
+
+
+	political_advisor = {
+		BMK_wi = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { war_industrialist }
+		}
+		
+
+		BMK_cg = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { compassionate_gentleman }
+		}
+		
+		BMK_qg = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { quartermaster_general }
+		}
+
+		BMK_bb = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { backroom_backstabber }
+		}
+		
+		BMK_pot = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { prince_of_terror }
+		}
+
+		BMK_coi = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { captain_of_industry }
+		}
+
+		BMK_stc = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	army_chief = {
+
+		BMK_aco2 = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = BMK
+			}		
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BMK_acd2 = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		BMK_acr = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = BMK
+			}
+			
+			traits = { air_chief_reform_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BMK_acgs = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		BMK_nccr = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = BMK
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BMK_ncm = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = BMK
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		BMK_ar = {
+			ledger = army
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		BMK_ai2 = {
+			ledger = army
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BMK_aa2 = {
+			ledger = army
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BMK_acas = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BMK_ncs = {
+			ledger = navy
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = BMK
+			}
+			
+			traits = { navy_capital_ship_2 }
+			available = {
+				has_country_flag = not_warlord4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		BMK_mt = {
+			ledger = army
+			
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = BMK
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { military_theorist }
+		}
+		
+		BMK_nt = {
+			ledger = navy
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = BMK
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			traits = { naval_theorist }
+		}	
+
+		BMK_awt = {
+			ledger = air
+
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = BMK
+			}
+			available = {
+				has_country_flag = not_warlord4
+			}
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}
