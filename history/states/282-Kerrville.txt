@@ -1,0 +1,24 @@
+
+state={
+	id=282
+	name="STATE_282"
+
+	history={
+		owner = TEX
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = TEX
+
+	}
+
+	provinces={
+		20 1812 2216 2465 2811 3567 8276 8296 8316 8326 8376 
+	}
+	manpower=474708
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

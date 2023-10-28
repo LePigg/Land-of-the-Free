@@ -1,0 +1,25 @@
+
+state={
+	id=251
+	name="STATE_251"
+	resources={
+		steel=3.000
+	}
+	history={
+		owner = DAB
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = DAB
+		victory_points = {
+			6771 2
+		}		
+	}
+	provinces={
+		23 481 923 1492 2489 2612 3524 3921 4572 4722 4886 5113 5274 6668 6756 6771 6800 
+	}
+	manpower=41012
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

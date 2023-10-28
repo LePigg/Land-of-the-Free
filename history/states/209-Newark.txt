@@ -1,0 +1,29 @@
+
+state={
+	id=209
+	name="STATE_209"
+	
+	history={
+		owner = MIA
+		victory_points = {
+			7057 5 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 1
+			air_base = 3
+
+		}
+		add_core_of = MIA
+
+	}
+	
+	provinces={
+		5681 5846 7023 7042 7057 
+	}
+	manpower=4423000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

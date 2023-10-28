@@ -1,6 +1,6 @@
 capital = 3
 
-oob = "standard_templates"
+#OOB ="PAN_1936"
 
 # Starting tech
 set_technology = {
@@ -8,16 +8,35 @@ set_technology = {
 }
 
 set_convoys = 20
-
+add_ideas = {
+	limited_conscription
+}
 set_politics = {
-	ruling_party = democratic
-	last_election = "1936.1.1"
+	ruling_party = guided_democracy
+	last_election = "1932.6.2"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 50
-	fascism = 36
-	communism = 10
-	neutrality = 4
+	communism = 1
+	revolutionary_socialist = 2
+	democratic_socialism = 8
+	liberalism = 26
+	conservatism = 14
+	guided_democracy = 32
+	stratocracy = 7 
+	despotism = 10
 }
+add_opinion_modifier = { target = COS modifier = hostile_status }
+recruit_character = PAN_Harmodio_Arias_Madrid
+recruit_character = PAN_Ezequiel_Fernández
+recruit_character = PAN_Juan_Demóstenes_Arosemena
+recruit_character = PAN_Arnulfo_Arias
+recruit_character = PAN_Ricardo_Adolfo_de_la_Guardia_Arango
+recruit_character = PAN_Diogenes_de_la_rosa
+recruit_character = PAN_Diogenes_de_la_rosa
+recruit_character = PAN_Cristóbal_Segundo
+recruit_character = PAN_Enrique_Adolfo_Jiménez
+recruit_character = PAN_Augusto_Samuel_Boyd
+
+

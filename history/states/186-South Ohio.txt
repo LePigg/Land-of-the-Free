@@ -1,0 +1,35 @@
+
+state={
+	id=186
+	name="STATE_186"
+
+	history={
+		owner = AMC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+		}
+		add_core_of = AMC
+		victory_points = {
+			7277 20 
+		}
+		victory_points = {
+			7383 15 
+		}	
+		victory_points = {
+			4795 5
+		}
+		victory_points = {
+			4613 3
+		}
+
+	}
+
+	provinces={
+		1423 3754 4044 4070 4339 4589 4613 4670 4795 4817 5224 5238 5498 5692 5950 7239 7277 7303 7347 7351 7376 7389 7395 7416 7418 7433 7439 7445 
+	}
+	manpower=2985300
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,39 @@
+﻿capital = 219
+
+#OOB ="SIX_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+set_country_flag = great_lakes_country
+set_politics = {
+	ruling_party = guided_democracy
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	guided_democracy = 100
+}
+add_ideas = {
+	american_warlord
+	outdated_tactics
+	limited_conscription
+	SIX_homeland
+}
+set_research_slots = 2
+set_stability = 0.38
+set_war_support = 0.42
+set_convoys = 5
+
+#leaders
+recruit_character = SIX_one_bull
+
+#military staff
+recruit_character = SIX_black_elk
+
+
+

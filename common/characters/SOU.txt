@@ -1,0 +1,110 @@
+characters = {
+	SOU_league_nations = {
+		name = "League of Nations Council"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIA/International.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				provisional_goverment
+			}
+		}
+	}
+	SOU_john_pershing = {
+		name = "John J. Pershing"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOU/John.dds"
+			}
+			army = {
+				large = "gfx/leaders/SOU/John.dds"
+				small = "GFX_idea_USA_generic_land_2"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				great_war_hero
+			}
+		}
+		field_marshal = {
+			skill = 4
+			traits = {
+				old_guard
+				panzer_leader
+				war_hero
+				trait_reckless
+			}
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	SOU_jean_vigier = {
+		name = "Jean Touzet du Vigier"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOU/Portrait_Vigier.dds"
+				small = "GFX_idea_FRA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			traits = {
+				career_officer
+				panzer_leader
+				trickster
+			}
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	SOU_guiseppe_castellano = {
+		name = "Guiseppe Castellano"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOU/Castellano.jpg"
+				small = "GFX_idea_ITA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				politically_connected
+				trait_cautious
+				trickster
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SOU_fox_conner = {
+		name = "Fox Conner"
+		portraits = {
+			army = {
+				large = "gfx/leaders/DIX/conner.jpg"
+				small = "GFX_idea_USA_generic_land_2"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				politically_connected
+				old_guard
+				war_hero
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+}

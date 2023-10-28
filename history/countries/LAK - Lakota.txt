@@ -1,0 +1,55 @@
+﻿capital = 254
+
+#OOB ="LAK_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	tech_support = 1
+	tech_recon = 1
+	basic_train = 1
+}
+set_country_flag = rockies_country
+set_politics = {
+	ruling_party = stratocracy
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	stratocracy = 46
+	fascism = 33
+	guided_democracy = 11
+	conservatism = 10
+}
+add_ideas = {
+	american_warlord3
+	extensive_conscription
+	LAK_defense
+	LAK_strong
+	non_enforced
+	press_censorship
+	no_welfare
+	patriachal
+	state_religion
+	no_voting
+}
+set_convoys = 5
+set_research_slots = 2
+set_stability = 0.26
+set_war_support = 0.65
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 2
+}
+
+#leaders
+recruit_character = LAK_white_bull
+recruit_character = LAK_joseph_cloud
+
+#military staff
+recruit_character = LAK_dewey_beard
+recruit_character = LAK_william_cloud
+
+

@@ -1,0 +1,38 @@
+
+state={
+	id=174
+	name="STATE_174"
+	manpower = 2101592
+	
+	state_category = metropolis
+	
+	resources={
+		oil=33.000 # was: 66
+	}
+
+	history={
+		owner = SOU
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 1
+			air_base = 5
+			8359 = {
+				naval_base = 5
+
+			}
+		}
+		add_core_of = SOU
+		victory_points = {
+			8359 20
+		}
+        victory_points = {
+			5494 10
+		}
+	}
+
+	provinces={
+        2734 8310 8325 4855 8303 1104 3552 8323 5619 8301 5494 2132 8367 8394 2887 8412 8399 8383 2407 8368 2292 8359 2115
+	}
+}
+

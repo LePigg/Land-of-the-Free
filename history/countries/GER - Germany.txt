@@ -1,6 +1,6 @@
-capital = 1
+capital = 287
 
-oob = "standard_templates"
+#OOB =""
 
 # Starting tech
 set_technology = {
@@ -10,14 +10,24 @@ set_technology = {
 set_convoys = 20
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = guided_democracy
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 50
-	fascism = 36
-	communism = 10
-	neutrality = 4
+	anarchism = 1
+	communism = 4
+	revolutionary_socialist = 3
+	democratic_socialism = 12
+	liberalism = 14
+	conservatism = 15
+	guided_democracy = 25
+	stratocracy = 5
+	despotism = 11
+	fascism = 10
 }
+
+recruit_character=GER_wilhelm_ii
+
+

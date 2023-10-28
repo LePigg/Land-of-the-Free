@@ -1,0 +1,24 @@
+characters = {
+	COM_ernest_hemingway = {
+		name = "Ernest Hemingway"
+		portraits = {
+			army = {
+				large = "gfx/leaders/DBQ/Hemingway.jpg"
+				small = "GFX_idea_USA_generic_land_3"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				compassionate_leader
+				politically_connected
+				media_personality
+				militia_leader
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

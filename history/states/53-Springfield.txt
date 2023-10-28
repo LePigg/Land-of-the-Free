@@ -1,0 +1,34 @@
+
+state={
+	id=53
+	name="STATE_53"
+
+	history={
+		owner = IEF
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 1
+		}
+		add_core_of = IEF
+		victory_points = {
+			7336 4 
+		}
+		victory_points = {
+			7452 10 
+		}
+		victory_points = {
+			7429 3
+		}
+
+	}
+
+	provinces={
+		552 1025 1214 1362 1789 2793 3119 4544 5068 5326 5374 5837 7325 7336 7355 7363 7380 7402 7429 7431 7435 7452 7471 7484 7512 
+	}
+	manpower=2239501
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

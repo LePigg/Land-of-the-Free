@@ -1,0 +1,134 @@
+characters = {
+	MIL_mark_clark = {
+		name = "Mark Clark"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIL/Mark.dds"
+			}
+			army = {
+				large = "gfx/leaders/MIL/Mark.dds"
+			}
+			army = {
+				small = "GFX_idea_USA_mark_w_clark"
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+				mad_regent
+			}
+		}
+		field_marshal = {
+			skill = 4
+			traits = {
+				ranger
+				infantry_officer
+				trait_reckless
+			}
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	MIL_phillip_follette = {
+		name = "Phillip La Follette"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIL/Follette.jpg"
+			}
+		}
+		country_leader = {
+			ideology = dem_socialism
+		}
+	}
+	MIL_oscar_koch = {
+		name = "Oscar Koch"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIL/Koch.png"
+			}
+			army = {
+				small = "GFX_idea_USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				panzer_leader
+				brilliant_strategist
+				organizer
+			}
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	MIL_merrit_edson = {
+		name = "Merrit Edson"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIL/Edson.jpg"
+			}
+			army = {
+				small = "GFX_idea_USA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				trickster
+				commando
+			}
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MIL_george_shaw = {
+		name = "George Shaw"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIL/shaw.jpg"
+			}
+			army = {
+				small = "GFX_idea_USA_generic_land_4"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				war_hero
+				old_guard
+				infantry_leader
+			}
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	MIL_hobart_gay = { #not funny, didnt laugh
+		name = "Hobart R. Gay"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIL/Gay.JPG"
+				small = "GFX_idea_USA_generic_land_2"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				armor_officer
+				trait_reckless
+				harsh_leader
+			}
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=287
+	name="STATE_287"
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+			516 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = GER
+		victory_points = {
+			516 3 
+		}
+
+	}
+
+	provinces={
+		516 3066 8946 9626 
+	}
+	manpower=6676
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

@@ -1,0 +1,41 @@
+
+state={
+	id=60
+	name="STATE_60"
+
+	history={
+		owner = MIA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			#arms_factory = 1
+			air_base = 2
+
+		}
+		add_core_of = MIA
+		victory_points = {
+			7460 5 
+		}
+		victory_points = {
+			2992 4
+		}
+		victory_points = {
+			5460 2
+		}
+		victory_points = {
+			5256 1
+		}
+		victory_points = {
+			7390 3
+		}
+
+	}
+
+	provinces={
+		33 1441 2040 2910 2992 3694 4221 4260 4552 5256 5460 7348 7365 7390 7391 7403 7412 7413 7419 7428 7440 7457 7460 7482 7494 7501 7507 7520 
+	}
+	manpower=868000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

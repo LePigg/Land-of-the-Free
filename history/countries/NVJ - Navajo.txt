@@ -1,0 +1,52 @@
+﻿capital = 246
+
+#OOB ="NVJ_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+set_country_flag = rockies_country
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1935.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	conservatism = 100
+}
+add_ideas = {
+	american_warlord
+	SEQ_cavlary
+	extensive_conscription
+}
+set_convoys = 5
+
+
+create_country_leader = {
+	name = "Henry Chee Dodge"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Henry2.dds"
+	expire = "1965.1.1"
+	ideology = gen_conservatism
+	traits = {
+		#
+	}
+}
+
+
+
+create_field_marshal = {
+	name = "Xhemal Aranitasi"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+

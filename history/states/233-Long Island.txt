@@ -1,0 +1,31 @@
+state={
+	id=233
+	name="STATE_233"
+	
+	history={
+		owner = MIA
+		buildings = {
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 7
+			dockyard = 1
+			3979 = {
+				naval_base = 3
+
+			}
+		}
+		add_core_of = MIA
+		victory_points = {
+			3979 50
+		}
+
+	}
+	
+	provinces={
+		3979 
+	}
+	manpower=3588000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

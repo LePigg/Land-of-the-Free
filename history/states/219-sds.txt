@@ -1,0 +1,39 @@
+
+state={
+	id=219
+	name="STATE_219"
+	resources={
+		steel=3.000
+		oil=3.000
+	}
+	
+	history={
+		owner = NDA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = NDA
+		victory_points = {
+			1562 7
+		}
+		victory_points = {
+			1027 1
+		}
+		victory_points = {
+			6910 2
+		}
+		victory_points = {
+			6851 3
+		}
+	}
+	
+	provinces={
+		473 587 744 1027 1550 1562 1651 1670 4454 4706 5790 5893 6828 6851 6867 6910 
+	}
+	manpower=337300
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

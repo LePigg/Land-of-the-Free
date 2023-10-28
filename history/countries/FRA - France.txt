@@ -1,6 +1,6 @@
-capital = 1
+capital = 286
 
-oob = "standard_templates"
+#OOB =""
 
 # Starting tech
 set_technology = {
@@ -10,14 +10,28 @@ set_technology = {
 set_convoys = 20
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = stratocracy
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 50
-	fascism = 36
-	communism = 10
-	neutrality = 4
+	communism = 2
+	revolutionary_socialist = 4
+	democratic_socialism = 2
+	liberalism = 5
+	Anarchism = 1
+	conservatism = 5
+	guided_democracy = 9
+	stratocracy = 30
+	despotism = 21
+	fascism = 21
 }
+
+recruit_character=FRA_philippe_petain
+
+
+
+
+
+

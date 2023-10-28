@@ -1,0 +1,36 @@
+
+state={
+	id=253
+	name="STATE_253"
+
+	history={
+		owner = ABS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = ABS
+		victory_points = {
+			3314 3 
+		}
+		victory_points = {
+			7079 3
+		}
+		victory_points = {
+			1387 2
+		}
+		victory_points = {
+			694 4
+		}
+
+	}
+
+	provinces={
+		554 623 694 1253 1285 1371 1372 1387 1477 1656 2080 2139 2195 2206 2802 2974 3257 3269 3314 3457 3720 4006 4014 4144 4165 4587 4842 4882 5003 5025 5152 5261 5282 5391 5491 5583 5825 6892 6914 6920 6932 6957 6995 6998 7013 7024 7054 7070 7077 7079 7100 
+	}
+	manpower=307024
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,13 @@
+characters = {
+	ITA_benito_mussolini = {
+		name = "Benito Mussolini"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITA/benito_mussolini.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+		}
+	}
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=266
+	name="STATE_266"
+	history={
+		owner = WDC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = WDC
+		victory_points = {
+			2927 3
+		}
+		victory_points = {
+			7659 2
+		}
+	}
+	provinces={
+		529 644 967 1072 1407 1434 1732 1813 1955 2229 2309 2477 2604 2893 2927 3014 3023 3266 3356 3388 3530 3617 3959 4102 4243 4493 5387 7465 7479 7510 7531 7534 7540 7568 7579 7613 7628 7659 7687 7699 7702 7735 
+	}
+	manpower=237248
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

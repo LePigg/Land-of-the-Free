@@ -1,0 +1,97 @@
+characters = {
+	CHR_charles_coughlin = {
+		name = "Charles Coughlin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHR/Charles.dds"
+			}
+		}
+	country_leader = {
+		ideology = esoteric_fascism
+		traits = {
+			national_integralist
+			}
+		}
+	}
+	CHR_joseph_collins = {
+		name = "Joseph Lawton Collins"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHR/Portrait_Collins.dds"
+				small = "GFX_idea_USA_lawton_collins"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				offensive_doctrine
+				trickster
+				infantry_leader
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	CHR_pedro_valle = {
+		name = "Pedro Del Valle"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHR/valle.jpg"
+				small = "GFX_idea_USA_generic_land_3"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				commando
+				harsh_leader
+			}
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	CHR_bonner_fellers = {
+		name = "Bonner F. Fellers"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHR/Fellers.jpg"
+				small = "GFX_idea_USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				trait_cautious
+				trait_engineer
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	CHR_troy_middleton = {
+		name = "Troy H. Middleton"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHR/Troy.jpg"
+				small = "GFX_idea_USA_generic_land_4"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				brilliant_strategist
+				career_officer
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+}

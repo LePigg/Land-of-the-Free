@@ -1,0 +1,269 @@
+characters = {
+	ERR_douglas_macarthur = {
+		name = "Douglas MacArthur"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ERR/Douglas.dds"
+			}
+			army = {
+				large = "gfx/leaders/ERR/Portrait_MacArthur.dds"
+			}
+			army = {
+				small = "GFX_idea_USA_douglas_macarthur"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				american_caesar
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+				american_caesar
+			}
+		}
+		field_marshal = {
+			skill = 4
+			traits = {
+				media_personality
+				war_hero
+				politically_connected
+				brilliant_strategist
+				offensive_doctrine
+			}
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		advisor={
+			cost = 200
+			
+			slot = high_command
+			idea_token = douglas_macarthur
+			ledger = army				
+				traits = {
+					army_chief_morale_2
+				}
+		}
+	}
+	ERR_alf_landon = {
+		name = "Alf Landon"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ERR/Landon.tga"
+			}
+			army = {
+				small = "GFX_idea_ERR_alf_landon_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = alf_landon
+			available  = {
+				NOT  = {
+					has_idea  = john_garner 
+				}
+			}
+			traits  = {
+				republican_federalist_collaborationist 
+			}
+			do_effect  = {
+				NOT  = {
+					has_government  = gen_liberalism 
+				}
+			}
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+			traits = {
+				economic_reformer
+			}
+		}
+	}
+	ERR_john_garner = {
+		name = "John Nance Garner"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ERR/John.dds"
+			}
+			army = {
+				small = "GFX_idea_ERR_john_garner_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = john_garner
+			available  = {
+				NOT  = {
+					has_idea  = alf_landon 
+				}
+			}
+			traits  = {
+				democrat_federalist_collaborationist 
+			}
+			do_effect  = {
+				NOT  = {
+					has_government  = gen_conservatism 
+				}
+			}
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+			traits = {
+				strict_austerity_adherent
+			}
+		}
+	}
+	ERR_dwight_eisenhower = {
+		name = "Dwight D. Eisenhower"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ERR/eisenhower.dds"
+			}
+			army = {
+				large = "gfx/leaders/ERR/eisenhower.dds"
+			}
+			army = {
+				small = "GFX_idea_USA_dwight_d_eisenhower"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				fighting_ike
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				fighting_ike
+			}
+		}
+		corps_commander = {
+			skill = 5
+			traits = {
+				trait_cautious
+				organizer
+				armor_officer
+				career_officer
+			}
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	ERR_league_nations = {
+		name = "Pittsburgh Congress"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIA/International.dds"
+			}
+		}
+	}
+	ERR_edwin_harding = {
+		name = "Edwin F. Harding"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ERR/harding.jpg"
+			}
+			army = {
+				small = "GFX_idea_USA_generic_land_2"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				trait_engineer
+				commando
+				trait_cautious
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	ERR_sla_marshall = {
+		name = "S.L.A Marshall"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ERR/Marshall.jpg"
+				small = "GFX_idea_USA_generic_3"
+			}
+		}
+		advisor={
+			cost = 200
+			
+			slot = theorist
+			idea_token = sla_marshall
+			ledger = army
+				traits = {
+					military_theorist
+				}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				organizer
+				inflexible_strategist
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ERR_oscar_griswold = {
+		name = "Oscar Griswold"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ERR/Griswold.jpg"
+				small = "GFX_idea_USA_oscar_griswold"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				trickster
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ERR_alben_barkley = {
+		name = "Alben Barkley"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ERR/Barkley.tga"
+			}
+		}
+	}
+	ERR_john_bricker = {
+		name = "John W. Bricker"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ERR/Bricker.tga"
+			}
+		}
+	}
+	ERR_adlai_stevenson = {
+		name = "Adlai Stevenson II"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ERR/Stevenson.tga"
+			}
+		} 
+	}
+}

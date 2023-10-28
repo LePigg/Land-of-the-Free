@@ -1,0 +1,33 @@
+
+state={
+	id=245
+	name="STATE_245"
+
+	history={
+		owner = SEQ
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = SEQ
+		victory_points = {
+			7882 3 
+		}
+		victory_points = {
+			7848 5
+		}
+		victory_points = {
+			1632 4
+		}
+
+	}
+
+	provinces={
+		32 656 658 1632 1809 2110 2121 2915 4295 4346 5377 5685 5730 5874 7790 7816 7848 7865 7882 7891 7901 7912 
+	}
+	manpower=612932
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

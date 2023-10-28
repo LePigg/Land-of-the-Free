@@ -1,0 +1,122 @@
+characters = {
+	SRT_miriam_ferguson = {
+		name = "Miriam A. Ferguson"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SRT/Ferguson.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+			traits = {
+				ma
+			}
+		}
+	}
+	SRT_earl_long = {
+		name = "Earl Long"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SRT/Long.jpg"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				new_kingfish
+			}
+		}
+	}
+	SRT_lucian_truscott = {
+		name = "Lucian Truscott"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SRT/Portrait_Truscott.dds"
+			}
+			army = {
+				large = "gfx/leaders/SRT/Portrait_Truscott.dds"
+				small = "GFX_idea_USA_lucian_truscott"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				hawk
+			}
+		}
+		field_marshal = {
+			skill = 4
+			traits = {
+				cavalry_officer
+				trait_engineer
+				commando
+			}
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	SRT_john_odaniel = {
+		name = "John W. O'Daniel"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SRT/ODaniel.png"
+				small = "USA_generic_land_2"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			traits = {
+				war_hero
+				brilliant_strategist
+				trait_reckless
+				infantry_officer
+				infantry_leader
+			}
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	SRT_henry_hodes = {
+		name = "Henry I. Hodes"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SRT/hodes.jfif"
+				small = "GFX_idea_USA_generic_land_3"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				trait_reckless
+				infantry_officer
+			}
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	SRT_samuel_williams = {
+		name = "Samuel T. Williams"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SRT/Williams.jpg"
+				small = "USA_generic_land_4"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				harsh_leader
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

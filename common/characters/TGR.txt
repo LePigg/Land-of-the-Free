@@ -1,0 +1,140 @@
+characters = {
+	TRG_frank_hamer = {
+		name = "Frank Hamer"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRG/Hamer.png"
+			}
+			army = {
+				large = "gfx/leaders/TRG/Hamer.png"
+				small = "USA_generic_land_1"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				old_west_spirit
+			}
+		}
+		field_marshal = {
+			skill = 2
+			traits = {
+				media_personality
+				inspirational_leader
+				harsh_leader
+				infantry_leader
+				trickster
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	TRG_robert_alcorn = {
+		name = "Robert “Fitz” Alcorn"
+		portraits = {
+			army = {
+				large = "gfx/leaders/TRG/Alcorn.jpeg"
+				small = "USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				politically_connected
+				trickster
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TRG_maney_gault = {
+		name = "Maney Gault"
+		portraits = {
+			army = {
+				large = "gfx/leaders/TRG/Gault.png"
+				small = "USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				politically_connected
+				infantry_leader
+				ambusher
+				trickster
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TRG_ted_hinton = {
+		name = "Ted Hinton"
+		portraits = {
+			army = {
+				large = "gfx/leaders/TRG/Hinton.jpg"
+				small = "USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				commando
+				trait_cautious
+				air_force_guy
+				media_personality
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TRG_prentiss_oakley = {
+		name = "Prentiss Oakley"
+		portraits = {
+			army = {
+				large = "gfx/leaders/TRG/Prentiss.jpg"
+				small = "USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				trait_reckless
+				media_personality
+				politically_connected
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TRG_henderson_jordan = {
+		name = "Henderson Jordan"
+		portraits = {
+			army = {
+				large = "gfx/leaders/TRG/Jordan.jpg"
+				small = "USA_generic_land_4"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				trait_reckless
+				organizer
+				cavalry_officer
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

@@ -1,0 +1,39 @@
+﻿capital = 29
+
+#OOB ="SHO_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+set_country_flag = cascadian_country
+set_politics = {
+	ruling_party = stratocracy
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	stratocracy = 82
+	despotism = 18
+}
+add_ideas = {
+	american_warlord
+	outdated_tactics
+	limited_conscription
+	state_religion
+	press_censorship
+	no_welfare
+	no_voting
+	patriachal
+}
+set_convoys = 5
+
+recruit_character = SHO_pocatello
+
+
+
+
+

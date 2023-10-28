@@ -1,0 +1,75 @@
+characters = {
+	SNA_dennis_chavez = {
+		name = "Dennis Chavez"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SNA/Chavez.png"
+			}
+		}
+		country_leader = {
+			ideology = progressivism
+			traits = {
+			}
+		}
+	}
+	SNA_jovita_idar = {
+		name = "Jovita Idar"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SNA/Idar.png"
+			}
+		}
+		country_leader = {
+			ideology = dem_socialism
+			traits = {
+			}
+		}
+	}
+	SNA_emma_tenayuca = {
+		name = "Emma Tenayuca"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SNA/Tenayuca_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxist_leninism 
+			traits = {
+				ambitious_union_boss
+			}
+		}
+		field_marshal = {
+			skill = 1
+			traits = {
+				politically_connected
+				inspirational_leader
+				militia_leader
+				compassionate_leader
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SNA_oliver_law = {
+		name = "Oliver Law"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MSS/Portrait_Law.dds"
+				small = "GFX_idea_generic_army_art_african_2d"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				militia_leader
+				trait_reckless
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

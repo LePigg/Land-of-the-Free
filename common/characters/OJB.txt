@@ -1,0 +1,47 @@
+characters = {
+	OJB_Paul_Buffalo = {
+		name = "Paul Buffalo"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/OJB/Buffalo.dds"
+			}
+		}
+		country_leader = {
+			ideology = provisional_government
+			traits = {
+				our_right_to_survive
+			}
+		}
+	}
+	OJB_farrell_dobbs = {
+		name = "Farrell Dobbs"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/OJB/Dobbs.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxist_leninism
+			traits = {
+				cornered_fox
+			}
+		}
+		country_leader = {
+			ideology = trotskyism
+			traits = {
+				triumphant_revolutionary
+			}
+		}
+		field_marshal = {
+			skill = 1
+			traits = {
+				politically_connected
+				militia_leader
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

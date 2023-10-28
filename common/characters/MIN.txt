@@ -1,0 +1,343 @@
+characters = {
+	MIN_Karl_Emil_Nygard = {
+		name = "Karl Emil Nygard"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/emil.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {
+			}
+		}
+	}
+	MIN_arthur_townley = {
+		name = "Arthur Townley"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/Arthur_townley.dds"
+			}
+		}
+		country_leader = {
+			ideology = agrarian_socialism
+			traits = {
+			}
+		}
+	}
+	MIN_floyd_olson = {
+		name = "Floyd Olson"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/Floyd_Olson.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				olson_gamer
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+				olson_gamer
+			}
+		}
+	}
+	MIN_hjalmar_petersen = {
+		name = "Hjalmar Petersen"
+		portraits = {
+			civilian= {
+				large = "gfx/leaders/MIN/Petersen.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			traits = {
+				new_leaf_for_minnesota
+			}
+		}
+	}
+	MIN_henry_wallace = {
+		name = "Henry Wallace"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/Henry_Wallace.png"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			traits = {
+				tenacious_negotiator
+			}
+		}
+	}
+	MIN_eleanor_roosevelt = {
+		name = "Eleanor Roosevelt"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/Eleanor_Roosevelt.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			traits = {
+			}
+		}
+	}
+	MIN_Rose_Wilder_Lane = {
+		name = "Rose Wilder Lane"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/Rose_Wilder_Lane.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+			traits = {
+			}
+		}
+	}
+	MIN_harold_stassen = {
+		name = "Harold Stassen"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/stessenfinished.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+			traits = {
+				rearmer
+				warmonger
+			}
+		}
+	}
+	MIN_guy_gillete = {
+		name = "Guy Gillete"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/Guy.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_conservatism
+			traits = {
+				reluctant_interventionist
+			}
+		}
+	}
+	MIN_cordell_hull = {
+		name = "Cordell Hull"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/Cordell_hull.dds"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democracy
+			traits = {
+				rearmer
+				warmonger
+			}
+		}
+	}
+	MIN_John_raskob = {
+		name = "John J. Raskob"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/John_raskob.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {
+			}
+		}
+	}
+	MIN_leslie_mcnair = {
+		name = "Leslie McNair"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIN/Portrait_McNair.dds"
+			}
+			army = {
+				small = "GFX_idea_USA_lesley_mcnair"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				organizer
+				career_officer
+				old_guard 
+			}
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	MIN_walter_krueger = {
+		name = "Walter Krueger"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIN/Portrait_Krueger.dds"
+			}
+			army = {
+				small = "GFX_idea_USA_walter_krueger"
+			}
+		}
+		advisor= {
+			slot = high_command
+			idea_token = USA_walter_krueger
+			allowed = {
+				original_tag = MIN
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			skill = 4
+			traits = {
+				brilliant_strategist
+				career_officer
+				panzer_leader
+			}
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	MIN_ben_lear = {
+		name = "Benjamin Lear"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIN/Lear.jpg"
+				small = "GFX_idea_USA_generic_land_3"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				harsh_leader
+				infantry_officer
+			}
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MIN_carlos_brewer = {
+		name = "Carlos Brewer"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIN/Brewer.jpg"
+				small = "GFX_idea_USA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				trait_engineer
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	MIN_ellard_walsh = {
+		name = "Ellard A. Walsh"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIN/Walsh.dds"
+				small = "GFX_idea_USA_generic_land_2"
+			}
+			civilian = {
+				large = "gfx/leaders/MIN/Walsh.dds"
+			}
+		}
+		field_marshal = {
+			skill = 4
+			traits = {
+				politically_connected
+				infantry_leader
+				trickster
+				inflexible_strategist
+			}
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+		country_leader = {
+			ideology = national_conservatism
+			traits = {
+				president_general
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				president_general
+			}
+		}
+	}
+	MIN_robert_follette = {
+		name = "Robert La Follette Jr."
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/Robert.dds"
+			}
+		}
+	}
+	MIN_milton_young = {
+		name = "Milton Young"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/Young.tga"
+			}
+		}
+	}
+	MIN_scott_lucas = {
+		name = "Scott Lucas"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/Lucas.tga"
+			}
+		}
+	}
+	MIN_glen_taylor = {
+		name = "Glen H. Taylor"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/Taylor.tga"
+			}
+		}
+	}
+	MIN_robert_taft = {
+		name = "Robert A. Taft"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/Taft.tga"
+			}
+		}
+	}
+	MIN_hubert_humphrey = {
+		name = "Hubert Humphrey"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/Humphrey.tga"
+			}
+		}
+	}
+}

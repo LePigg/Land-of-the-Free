@@ -1,6 +1,6 @@
 capital = 73
 
-oob = "standard_templates"
+#OOB ="standard_templates"
 
 # Starting tech
 set_technology = {
@@ -10,14 +10,29 @@ set_technology = {
 set_convoys = 20
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = conservatism
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 50
-	fascism = 36
-	communism = 10
-	neutrality = 4
+	conservatism = 32
+	democratic_socialism = 25
+	revolutionary_socialist = 8
+	despotism = 21
+	stratocracy = 14
 }
+add_ideas = {
+	CUB_destabilize
+	CUB_national
+}
+set_stability = 0.34
+set_war_support = 0.08
+recruit_character = CUB_Gerardo_Machado
+recruit_character = CUB_Ramon_Grau
+recruit_character = CUB_Fulgencio_Batista
+recruit_character = CUB_Eduardo_Chibas
+recruit_character = CUB_pentarchy
+
+
+

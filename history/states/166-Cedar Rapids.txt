@@ -1,0 +1,28 @@
+state={
+	id=166
+	name="STATE_166"
+	resources={
+		steel=5
+	}	
+	history={
+		owner = IWA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			1417 4 
+		}
+		victory_points = {
+			363 2
+		}
+		add_core_of = IWA		
+	}
+
+	provinces={
+		4899 7292 1417 4228 2319 7335 363 7341 876 197 2823
+	}
+	manpower=440938
+	state_category=town
+	buildings_max_level_factor=1.000
+}

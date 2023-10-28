@@ -1,0 +1,27 @@
+
+state={
+	id=158
+	name="STATE_158"
+	history={
+		owner = IWA
+		add_core_of = IWA
+		buildings = {
+			arms_factory = 1
+			infrastructure = 1
+		}
+		victory_points = {
+			5795 1
+		}
+		victory_points = {
+			589 1
+		}
+		
+	}
+
+	provinces={
+		 7352 7320 7354 2892 7375 739 4438 2601 3691 7328 7345 589 4149 1688 7400 7406 1209 7411 2658 4499 7417 5795 4624 7528 3452 7476 968 7529 4465 7518 547 4286 7455
+	}
+	manpower=321023
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

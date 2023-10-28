@@ -1,0 +1,16 @@
+characters = {
+	SEQ_alfalfa_bill = {
+		name = "William ”Bill” Murray"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SEQ/Bill.dds" #"Bill"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				alfalfa_bill
+			}
+		}
+	}
+}

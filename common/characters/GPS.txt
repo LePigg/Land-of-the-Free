@@ -1,0 +1,131 @@
+characters = {
+	GPS_orlando_ward = {
+		name = "Orlando Ward"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GPS/Portrait_Ward.dds"
+			}
+			army = {
+				large = "gfx/leaders/GPS/Portrait_Ward.dds"
+				small = "GFX_idea_USA_generic_land_4"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				stout_defender
+			}
+		}
+		field_marshal = {
+			skill = 2
+			traits = {
+				armor_officer
+			}
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	GPS_leonard_gerow = {
+		name = "Leonard Gerow"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GPS/Gerow.jpg"
+			}
+			army = {
+				large = "gfx/leaders/GPS/Gerow.jpg"
+				small = "GFX_idea_USA_leonard_t_gerow"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				#
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				armor_officer
+			}
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	GPS_john_lee = {
+		name = "John C. H. Lee"
+		portraits = {
+			army = {
+				large = "gfx/leaders/GPS/lee.jpg"
+				small = "GFX_idea_USA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				politically_connected
+				trait_engineer
+				career_officer
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	GPS_thomas_larkin = {
+		name = "Thomas B. Larkin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/GPS/Larkin.jpg"
+				small = "GFX_idea_USA_generic_land_4"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				organizer
+				commando
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 4
+		}
+	}
+	GPS_Al_Smith = {
+        name = "Al Smith"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/GPS/Smith.png"
+            }
+        }
+        country_leader = {
+            ideology = gen_conservatism
+            traits = {
+            }
+        }
+    }
+	GPS_clarence_huebner = {
+		name = "Clarence Huebner"
+		portraits = {
+			army = {
+				large = "gfx/leaders/PBL/huebner.jpg"
+				small = "GFX_idea_USA_clarence_huebner"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				harsh_leader
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+}

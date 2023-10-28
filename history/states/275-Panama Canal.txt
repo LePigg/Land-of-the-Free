@@ -1,0 +1,29 @@
+
+state={
+	id=275
+	name="STATE_275"
+
+	history={
+		owner = PAN
+		buildings = {
+			infrastructure = 2
+			5276 = {
+				naval_base = 2
+
+			}
+		}
+		add_core_of = PAN
+		victory_points = {
+			5276 5 
+		}
+
+	}
+
+	provinces={
+		54 5276 5548 
+	}
+	manpower=14230
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

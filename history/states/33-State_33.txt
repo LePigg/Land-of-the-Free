@@ -2,15 +2,31 @@
 state={
 	id=33
 	name="STATE_33"
+	resources={
+		steel=1.000
+		oil=1.000
+	}
+
 	history={
-		owner = USA
-		add_core_of = USA
+		owner = NDA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NDA
+		victory_points = {
+			6741 3
+		}
+		victory_points = {
+			3147 1
+		}
 	}
 
 	provinces={
-		137 207 421 473 642 741 744 788 905 999 1027 1031 1112 1299 1501 1562 1628 1670 1774 2112 2233 2418 2471 2531 2535 2657 3041 3123 3147 3774 4454 4504 4597 4790 5083 5893 6685 6711 6717 6727 6739 6741 6748 6775 6791 6799 6802 6821 6828 6842 6845 6851 6854 6859 6867 6882 14890 14891 14893 
+		137 421 741 905 1031 1299 1501 3041 3147 3774 4169 4504 4597 4790 5083 6685 6711 6717 6718 6727 6739 6741
 	}
-	manpower=1
-	state_category=town
+	manpower=68844
 	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

@@ -1,0 +1,32 @@
+
+state={
+	id=156
+	name="STATE_156"
+
+	history={
+		owner = MJV
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			2875 4 
+		}
+		victory_points = {
+			3573 2
+		}
+		victory_points = {
+			3901 2
+		}
+		add_core_of = MJV
+
+	}
+
+	provinces={
+		2875 3078 3573 3901 4698 4836 7907 7926 
+	}
+	manpower=25160
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=217
+	name="STATE_217"
+	history={
+		owner = BMK
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = BMK
+		victory_points = {
+			5154 2
+		}
+		victory_points = {
+			7061 2
+		}
+		victory_points = {
+			4114 2
+		}
+	}
+
+	provinces={
+		4011 4114 3639 5357 7041 337 7061 1078 4672 862 5154 6979 2914 3926 2081 7029 5466 100 5247 7047
+	}
+	manpower=110933
+	state_category=town
+	buildings_max_level_factor=1.000
+}

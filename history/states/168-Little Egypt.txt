@@ -1,0 +1,34 @@
+state={
+	id=168
+	name="STATE_168"
+	resources={
+		#steel=3.000
+	}
+
+	history={
+		owner = STL
+		buildings = {
+			infrastructure = 2
+			#industrial_complex = 1
+			#arms_factory = 1
+		}
+		victory_points = {
+			2157 2
+		}
+		victory_points = {
+			7615 1
+		}
+		victory_points = {
+			4291 2
+		}
+		add_core_of = STL
+		add_core_of = IEF
+	}
+
+	provinces={
+		7533 7566 2636 7542 3480 5442 5599 3622 4715 2157 5779 3211 7670 4237 1136 7615 3711 4291 7543
+	}
+	manpower=308004
+	buildings_max_level_factor=1.000
+	state_category=town
+}

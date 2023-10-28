@@ -1,0 +1,75 @@
+characters = {
+	AMC_robert_beightler = {
+		name = "Robert Beightler"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AMC/Robert.dds"
+			}
+			army = {
+				large = "gfx/leaders/AMC/Robert.dds"
+				small = "GFX_idea_USA_generic_land_3"
+			}
+		}
+		country_leader = {
+			ideology = provisional_government
+			traits = {
+				#
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				#
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				defensive_doctrine
+				career_officer
+			}
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	AMC_daniel_voorhis = {
+		name = "Daniel Van Voorhis"
+		portraits = {
+			army = {
+				large = "gfx/leaders/AMC/Voorhis.jpg"
+				small = "GFX_idea_USA_generic_land_2"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				commando
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	AMC_leo_kreber = {
+		name = "Leo M. Kreber"
+		portraits = {
+			army = {
+				large = "gfx/leaders/AMC/Kreber.jpg"
+				small = "GFX_idea_USA_generic_land_2"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				infantry_officer
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=187
+	name="STATE_187"
+	resources={
+		steel=36
+	}
+	history={
+		owner = MIL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+		add_core_of = MIL
+		victory_points = {
+			3260 5
+		}
+		victory_points = {
+			6855 2
+		}
+	}
+	
+	provinces={
+		389 936 1801 1879 1988 2061 2649 3260 3519 3568 3742 3972 4034 4584 5010 5114 6819 6838 6849 6852 6855 6863 6866 6885 6908 6921 6927 6933 6951 6974 
+	}
+	manpower=506830
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

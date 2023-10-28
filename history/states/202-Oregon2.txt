@@ -1,0 +1,24 @@
+
+state={
+	id=202
+	name="STATE_202"
+	manpower = 353785
+	
+	state_category = town
+
+	history={
+		owner = CAS
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			7036 2 
+		}	
+		add_core_of = CAS	
+	}
+
+	provinces={
+		1760 7087 1978 5831 7067 1810 7065 7034 7027 2841 817 2836 1046 6991 3373 7036
+	}
+}

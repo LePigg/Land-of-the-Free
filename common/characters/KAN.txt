@@ -1,0 +1,119 @@
+characters = {
+	KAN_tom_pendergast = {
+		name = "Tom J. Pendergast"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KAN/Tom.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+				political_machine
+			}
+		}
+	}
+	KAN_harry_truman = {
+		name = "Harry S. Truman"
+		portraits = {
+			civilian = {
+				large =  "gfx/leaders/KAN/Truman.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+			traits = {
+				conservative_grandee
+			}
+		}
+	}
+	KAN_malin_craig = {
+		name = "Malin Craig"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KAN/Portrait_craig.dds"
+				small = "GFX_idea_ENG_generic_land_1"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				organizer
+				logistics_wizard
+				career_officer
+			}
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	KAN_bruce_clarke = {
+		name = "Bruce C. Clarke"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KAN/clarke.jpg"
+				small = "GFX_idea_USA_generic_land_3"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				harsh_leader
+				panzer_leader
+			}
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill= 2
+			logistics_skill = 2
+		}
+	}
+	KAN_charles_carollo = {
+		name = "Charles Carrollo"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KAN/Carollo.jpg"
+				small = "GFX_idea_ITA_generic_land_1"
+			}
+		}
+	}
+	KAN_maxwell_taylor = {
+		name = "Maxwell D. Taylor"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KAN/Maxwell.jpg"
+				small = "GFX_idea_USA_generic_land_3"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				commando
+				paratrooper
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KAN_ralph_truman = {
+		name = "Ralph E. Truman"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KAN/Ralph.jpg"
+				small = "GFX_idea_USA_generic_land_4"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				politically_connected
+			}
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+}

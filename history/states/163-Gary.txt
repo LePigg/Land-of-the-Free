@@ -1,0 +1,31 @@
+
+state={
+	id=163
+	name="STATE_163"
+
+	history={
+		owner = COM
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+			arms_factory = 1
+		}
+		add_core_of = COM
+		victory_points = {
+			2956 4
+		}
+		victory_points = {
+			7172 2
+		}
+
+	}
+
+	provinces={
+		2508 2956 3420 4128 4996 5892 5945 7172 7203 7204 7222 7264 
+	}
+	manpower=1063000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

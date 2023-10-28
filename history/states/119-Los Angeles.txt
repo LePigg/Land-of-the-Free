@@ -1,0 +1,39 @@
+
+state={
+	id=119
+	name="STATE_119"
+
+	history={
+		owner = LAC
+		buildings = {
+			infrastructure = 4
+			2783 = {
+				naval_base = 5
+			}
+			arms_factory = 1
+			industrial_complex = 3
+			9593 = {
+				naval_base = 1
+			}
+			9594 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = LAC
+		victory_points = {
+			2783 45 
+		}
+		victory_points = {
+			7966 4 
+		}
+
+	}
+
+	provinces={
+		2416 2783 7966 7970 7997 9593 9594 
+	}
+	manpower=838048
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

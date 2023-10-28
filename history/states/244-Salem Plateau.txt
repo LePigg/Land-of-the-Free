@@ -1,0 +1,31 @@
+
+state={
+	id=244
+	name="STATE_244"
+
+	history={
+		owner = STL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = STL
+		victory_points = {
+			7831 3 
+		}
+		victory_points = {
+			3111 2
+		}
+
+	}
+
+	provinces={
+		561 945 1002 2004 2504 3056 3111 3221 3693 4233 4840 4986 5032 5587 5792 7728 7758 7773 7784 7793 7799 7814 7817 7827 7831 7836 7853 7866 
+	}
+	manpower=729122
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=242
+	name="STATE_242"
+	history={
+		owner = KAN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = GPS
+		victory_points = {
+			1917 15 
+		}
+		victory_points = {
+			4601 3
+		}
+
+	}
+	provinces={
+		1493 1679 1740 1917 2826 3696 4601 7730 7811 7826 7845 
+	}
+	manpower=201002
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

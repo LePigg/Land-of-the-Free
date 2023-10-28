@@ -1,0 +1,12 @@
+﻿l_english:
+#DECISIONS
+ abq_guns:0 "Albuqurque Weapons Market"
+ abq_guns_1:0 "Order Small Arms"
+ abq_guns_2:0 "Order Support Equipment"
+ abq_guns_3:0 "Order Artillery" 
+#IDEAS
+ABQ_guns_idea:0 "Deep Profits"
+#EVENTS
+abq.1.t:0 "Complete Victory"
+abq.1.d:0 "Despite all odds, we have triumphed over the entire state of Texas and overthrown their government. As fair compensation for the Ford Company and General Motors, we must allow them to administer some parts of Texas. For now, we can continue to rule supreme knowing that there will be no more threats to our security."
+abq.1.a:0 "Just good business"

@@ -1,0 +1,15 @@
+﻿l_english: 
+#DECISIONS
+CAS_invasion_1:0 "Road to War"
+ CAS_invasion_2:0 "Calling Up Reserves"
+ CAS_invasion_3:0 "Establishing Fallback Lines"
+ CAS_invasion_4:0 "Emergency Equipment Contracts"
+ CAS_invasion_5:0 "Into the Rockies" 
+ CAS1_invasion_1:0 "Road to War"
+ CAS1_invasion_2:0 "Calling Up Reserves"
+ CAS1_invasion_3:0 "Establishing Fallback Lines"
+ CAS1_invasion_4:0 "Emergency Equipment Contracts"
+ CAS1_invasion_5:0 "Into California" 
+#IDEAS
+cas_self:0 "Self-sufficient"
+cas_control:0 "Direct Democracy"

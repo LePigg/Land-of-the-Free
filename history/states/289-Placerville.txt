@@ -1,0 +1,26 @@
+
+state={
+	id=289
+	name="STATE_289"
+
+	history={
+		owner = SRR
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SRR
+		victory_points = {
+			7522 1 
+		}
+
+	}
+
+	provinces={
+		3665 4302 4554 7496 7522 
+	}
+	manpower=11248
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

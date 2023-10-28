@@ -1,0 +1,42 @@
+﻿capital = 120
+
+#OOB ="MTY_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+set_country_flag = california_country
+set_politics = {
+	ruling_party = despotism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 15
+	despotism = 33
+	democratic_socialism = 15
+	liberalism = 20
+	conservatism = 10
+	stratocracy = 7
+}
+add_ideas = {
+	american_warlord
+	STL_corruption
+	limited_conscription
+	press_censorship
+	elite_voting
+	domesticity
+}
+set_convoys = 5
+
+recruit_character = MTY_angelo_rossi
+recruit_character = MTY_city_hall
+recruit_character = MTY_harold_loeb
+recruit_character = MTY_parley_christensen
+recruit_character = MTY_william_stephens
+
+

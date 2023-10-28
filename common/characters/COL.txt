@@ -1,0 +1,68 @@
+characters = {
+	COL_Colombian_Congress = {
+		name = "Colombian Congress"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COL/Colombian_Congress.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+		}
+	}
+	COL_Guillermo_Valencia = {
+		name = "Guillermo Valencia"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COL/Guillermo_Valencia.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+		}
+	}
+	COL_Enrique_Olaya_Herrera = {
+		name = "Enrique Herrera"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COL/Enrique_Olaya_Herrera.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+		}
+	}
+	COL_Jorge_Eliécer_Gaitán = {
+		name = "Jorge Gaitán"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COL/Jorge_Eliécer_Gaitán.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+		}
+	}
+	COL_Laureano_Gómez = {
+		name = "Laureano Gómez"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COL/Laureano_Gómez.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+		}
+	}
+	COL_Miguel_Abadía_Méndez = {
+		name = "Miguel Méndez"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COL/Miguel_Abadía_Méndez.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+		}
+	}
+}

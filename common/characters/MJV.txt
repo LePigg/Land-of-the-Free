@@ -1,0 +1,106 @@
+characters = {
+	MJV_al_capone = {
+		name = "Al Capone"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MJV/MJV_al_capone.dds"
+			}
+			army = {
+				large = "gfx/leaders/MJV/MJV_al_capone.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+				scarface
+			}
+		}
+		field_marshal = {
+			skill = 2
+			traits = {
+				trickster
+				trait_cautious
+				politically_connected
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MJV_fred_burke = {
+		name = "Fred Burke"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MJV/MJV_fred_burke.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				politically_connected
+			}
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	MJV_gus_winkler = {
+		name = "Gus Winkler"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MJV/MJV_gus_winkler.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				politically_connected
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	MJV_jack_mcgurn = {
+		name = "Jack McGurn"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MJV/MJV_jack_mcgurn.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				politically_connected
+			}
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	MJV_louis_campagna = {
+		name = "Louis Campagna"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MJV/MJV_louis_campagna.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				politically_connected
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	MJV_bonnie_parker = {
+		name = "Bonnie Parker"
+	}
+}

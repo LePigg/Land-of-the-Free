@@ -1,0 +1,37 @@
+
+state={
+	id=276
+	name="STATE_276"
+
+	history={
+		owner = TEJ
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			2951 = {
+				naval_base = 1
+
+			}
+		}
+		add_core_of = TEJ
+		add_claim_by = TEX
+		victory_points = {
+			5841 3 
+		}
+		victory_points = {
+			1133 3 
+		}
+		victory_points = {
+			4906 1 
+		}
+
+	}
+
+	provinces={
+		663 849 1133 1293 1826 2951 2975 4129 4773 4906 5841 5870 8520 8534 8542 8546 8547 8548 
+	}
+	manpower=249701
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

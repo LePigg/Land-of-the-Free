@@ -1,0 +1,43 @@
+﻿capital = 219
+
+#OOB ="NDA_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+set_country_flag = great_lakes_country
+set_politics = {
+	ruling_party = liberalism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	liberalism = 49
+	revolutionary_socialist = 20
+	conservatism = 16
+	despotism = 15
+}
+add_ideas = {
+	american_warlord
+	limited_conscription
+	NDA_playground
+	BMK_assholes1
+	press_censorship
+}
+set_research_slots = 2
+set_stability = 0.38
+set_war_support = 0.42
+set_convoys = 5
+
+#leaders
+recruit_character = NDA_William_Langer
+
+#military staff
+
+
+
+

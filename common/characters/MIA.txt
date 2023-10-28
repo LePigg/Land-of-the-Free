@@ -1,0 +1,636 @@
+characters = {
+	MIA_league_nations = {
+		name = "League of Nations Council"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIA/International.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			desc = MIA_league_nations_desc
+			traits = {
+				provisional_goverment
+			}
+		}
+	}
+	MIA_joseph_kennedy = {
+		name = "Joseph Kennedy"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIA/Joseph_Colorized.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+			desc = MIA_joseph_kennedy_desc
+			traits = {
+				pragmatic_statesman
+			}
+		}
+	}
+	MIA_james_wadsworth = {
+		name = "James Wadsworth Jr."
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIA/Wadsworth.tga"
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+			desc = MIA_james_wadsworth_desc
+			traits = {
+				
+			}
+		}
+	}
+	MIA_john_winant = {
+		name = "John Winant"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIA/Winant.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			desc = MIA_john_winant_desc
+			traits = {
+				
+			}
+		}
+	}
+	MIA_george_marshall = {
+		name = "George Marshall"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIA/Portrait_Marshall.dds"
+			}
+			army = {
+				small = "GFX_idea_george_marshall"
+			}	
+		}
+		advisor= {
+			slot = army_chief
+			idea_token = george_marshall
+			allowed = {
+				original_tag = MIA
+			}
+			traits = {
+				army_chief_reform_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			desc = MIA_george_marshall_desc
+			traits = {
+				
+			}
+		}
+		field_marshal = {
+			skill = 4
+			traits = {
+				politically_connected
+				organizer
+				brilliant_strategist
+				logistics_wizard
+				career_officer
+				offensive_doctrine
+			}
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}	
+	MIA_david_stirling = {
+		name = "David Stirling"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIA/Portrait_Stirling.dds"
+				small = "GFX_idea_ENG_david_stirling"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				trickster
+				commando
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			desc = MIA_david_stirling_desc
+			traits = {
+				
+			}
+		}
+	}
+	MIA_john_herr = {
+		name = "John Knowles Herr"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIA/Herr.png"
+				small = "GFX_idea_USA_generic_1"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				career_officer
+				cavalry_officer
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		advisor= {
+			slot = army_chief
+			idea_token = john_herr
+			allowed = {
+				original_tag = MIA
+			}
+			traits = {
+				army_cavalry_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	MIA_maxwell_murray = {
+		name = "Maxwell Murray"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIA/Murray.png"
+				small = "GFX_idea_USA_generic_1"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				career_officer
+				cavalry_officer
+			}
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor= {
+			slot = army_chief
+			idea_token = maxwell_murray
+			allowed = {
+				original_tag = MIA
+			}
+			traits = {
+				army_chief_entrenchment_2 
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	MIA_dietrich_saucken = { #saucken dese nuts
+		name = "Dietrich von Saucken"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIA/Saucken.jpg"
+				small = "GFX_idea_GER_generic_land_3"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				politically_connected
+				cavalry_officer
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	MIA_stanley_embick = { 
+		name = "Stanley D. Embick"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIA/Embick.png"
+				small = "GFX_idea_USA_generic_2"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				career_officer
+				cavalry_officer
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor= {
+			slot = army_chief
+			idea_token = stanley_embick
+			allowed = {
+				original_tag = MIA
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	MIA_bruce_magruder = { 
+		name = "Bruce Magruder"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIA/Magruder.png"
+				small = "GFX_idea_USA_generic_4"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				cavalry_officer
+			}
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MIA_willis_crittenberger = { 
+		name = "Willis D. Crittenberger"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIA/Crittenberger.png"
+				small = "GFX_idea_USA_generic_3"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				career_officer
+				armor_officer
+			}
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+		advisor= {
+			slot = army_chief
+			idea_token = willis_crittenberger
+			allowed = {
+				original_tag = MIA
+			}
+			traits = {
+				army_chief_planning_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	MIA_cortlandt_schuyler = { 
+		name = "Cortlandt V. R. Schuyler"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIA/Schuyler.png"
+				small = "GFX_idea_USA_generic_3"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				politically_connected
+				bearer_of_artillery
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	MIA_cornelius_wickersham = { 
+		name = "Cornelius W. Wickersham"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIA/Wickersham.png"
+				small = "GFX_idea_USA_generic_1"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				infantry_officer
+			}
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	MIA_Harold_Ickes={
+		name= "Harold Ickes"
+		portraits={
+			army={
+				small="GFX_idea_HaroldIckes"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = political_advisor
+			idea_token = MIA_Harold_Ickes
+			allowed  = {
+				original_tag  = MIA
+			}
+			available = {
+				has_completed_focus = MIA_shake_hands_with_ickes
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
+	}
+	MIA_averell_harriman={
+		name= "W. Averell Harriam"
+		portraits={
+			army={
+				small="GFX_idea_warevellharriam"
+			}
+		}
+		advisor={
+			cost = 150 
+			slot = political_advisor
+			idea_token = MIA_averell_harriman
+			allowed  = {
+				original_tag  = MIA
+			}
+			available = {
+				has_government = liberalism
+			}
+			traits  = {
+				propaganda_bungler 
+			}
+		}
+	}
+	MIA_arthur_james={
+		name= "Arthur James"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor={
+			cost = 150 
+			slot = political_advisor
+			idea_token = MIA_arthur_james
+			allowed  = {
+				original_tag  = MIA
+			}
+			available = {
+				has_government = conservatism
+			}
+			traits  = {
+				silent_mule 
+			}
+		}
+	}
+	MIA_ronald_lindsay={
+		name= "Ronald Lindsay"
+		portraits={
+			army={
+				small="GFX_idea_RonaldLindsay"
+			}
+		}
+		advisor={
+			cost = 150 
+			slot = political_advisor
+			idea_token = MIA_ronald_lindsay
+			allowed  = {
+				original_tag  = MIA
+			}
+			available = {
+				
+			}
+			traits  = {
+				financial_expert
+			}
+		}
+	}
+	MIA_walter_teagle={
+		name= "Walter C. Teagle"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor={
+			cost = 150 
+			slot = political_advisor
+			idea_token = MIA_walter_teagle
+			allowed  = {
+				original_tag  = MIA
+			}
+			available = {
+				
+			}
+			traits  = {
+				captain_of_industry 
+			}
+		}
+	}
+	MIA_henry_stimson={
+		name= "Henry Stimson"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor={
+			cost = 150 
+			slot = political_advisor
+			idea_token = MIA_henry_stimson
+			allowed  = {
+				original_tag  = MIA
+			}
+			available = {
+				
+			}
+			traits  = {
+				war_industrialist 
+			}
+		}
+	}
+	########### 
+	#Army Chief
+	MIA_myron_cramer = {
+		name= "Myron C. Cramer"
+		portraits={
+			army={
+				small="GFX_idea_USA_generic_land_5"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = army_chief
+			idea_token = myron_cramer
+			allowed  = {
+				original_tag  = MIA
+			}
+			traits  = {
+				army_chief_organizational_2 
+			}
+		}
+	}
+	#Navy People
+	MIA_oswald_badger ={
+		name= "Oswald C. Badger"
+		portraits={
+			army = {
+				large = "gfx/leaders/MIA/Badger.png"
+				small = "GFX_idea_USA_generic_navy_3"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = oswald_badger
+			allowed = {
+				original_tag = MIA
+			}
+			traits = {
+				navy_screen_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader={
+			traits={ superior_tactician }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=0
+		}
+	}
+	MIA_howard_benson ={
+		name= "Howard H. J. Benson"
+		portraits={
+			army = {
+				large = "gfx/leaders/MIA/Benson.png"
+				small = "GFX_idea_USA_generic_navy_2"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = howard_benson
+			allowed = {
+				original_tag = MIA
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader={
+			traits={ battleship_adherent }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	MIA_carleton_bryant ={
+		name= "Carleton F. Bryant"
+		portraits={
+			army = {
+				large = "gfx/leaders/MIA/Bryant.png"
+				small = "GFX_idea_USA_generic_navy_2"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = carleton_bryant
+			allowed = {
+				original_tag = MIA
+			}
+			traits = {
+				navy_fleet_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader={
+			traits={ gentlemanly superior_tactician }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	MIA_arthur_carpender ={
+		name= "Arthur S. Carpender"
+		portraits={
+			army = {
+				large = "gfx/leaders/MIA/Carpender.png"
+				small = "GFX_idea_USA_generic_navy_2"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = arthur_carpender
+			allowed = {
+				original_tag = MIA
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader={
+			traits={ blockade_runner craven }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
+}

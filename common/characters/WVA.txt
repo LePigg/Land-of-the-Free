@@ -1,0 +1,15 @@
+characters = {
+	WVA_ralph_chaplin = {
+		name = "Ralph Chaplin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/WVA/Chaplin.tga"
+			}
+		}
+		country_leader = {
+			ideology = syndicalism
+			traits = {
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=268
+	name="STATE_268"
+	provinces={
+		1457 2352 2586 3083 3155 3246 3264 3698 3888 4562 5067 5273 5366 5750 7591 7609 7627 7650 7656 7732 7734 7751 
+	}
+	history={
+		owner = DES
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+		add_core_of = DES
+		victory_points = {
+			12699 2 
+		}
+		victory_points = {
+			3888 1
+		}
+
+	}
+	manpower=21435
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=243
+	name="STATE_243"
+	history={
+		owner = KAN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = KAN
+		victory_points = {
+			7840 3
+		}
+		victory_points = {
+			7783 2
+		}
+
+	}
+	provinces={
+		427 633 1310 1453 1547 2076 2456 3096 3224 3463 3650 5278 5440 5732 5931 7780 7783 7797 7840 7868 7869 7874 7878 7887 7888 
+	}
+	manpower=67129
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

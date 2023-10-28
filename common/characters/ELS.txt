@@ -1,0 +1,63 @@
+characters = {
+	ELS_maximiliano_martinez = {
+		name = "Maximiliano Hernandez Martinez"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ELS/Martinez.dds"
+				small = "GFX_idea_ELS_maximiliano_hernandez_martinez"
+			}
+			civilian = {
+				large = "gfx/leaders/ELS/Martinez.dds"
+			}
+		}
+		country_leader = {
+			ideology = ultranationalism
+			traits = {
+				paranoid_megalomaniac
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				career_officer
+				politically_connected
+				inflexible_strategist
+				harsh_leader
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	ELS_osmin_salinas = {
+		name = "Osmín Aguirre y Salinas"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ELS/Salinas.jpg"
+			}
+			army = {
+				civilian = {
+					large = "gfx/leaders/ELS/Salinas.jpg"
+					small = "GFX_idea_south_america_generic_land_2"
+				}
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				cruel_general
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				career_officer
+			}
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+}

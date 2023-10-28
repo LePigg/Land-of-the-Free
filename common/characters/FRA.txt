@@ -1,0 +1,13 @@
+characters = {
+	FRA_philippe_petain = {
+		name = "Philippe Pétain"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/philippe_petain.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+		}
+	}
+}

@@ -1,0 +1,25 @@
+state={
+	id=85
+	name="STATE_85"
+		history={
+		owner = MEX
+		add_core_of = MEX
+		buildings = {
+			infrastructure = 1
+			8731 = {
+			naval_base = 2
+			}
+		}
+		victory_points = {
+			8731 8
+		}
+
+	}
+	provinces={
+		2215 8731 8735 
+	}
+	manpower=9721
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}

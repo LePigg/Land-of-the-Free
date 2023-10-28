@@ -1,0 +1,38 @@
+
+state={
+	id=176
+	name="STATE_176"
+	resources={
+		oil=820.000
+		aluminium=50.000
+	}
+
+	history={
+		owner = TEX
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 3
+
+		}
+		add_core_of = TEX
+		victory_points = {
+			8185 10 
+		}
+		victory_points = {
+			3883 15 
+		}
+		victory_points = {
+			5808 2 
+		}
+	}
+
+	provinces={
+		438 504 890 1687 3306 3883 4175 4194 4502 5139 5270 5808 8051 8076 8082 8092 8097 8098 8118 8119 8128 8144 8150 8151 8160 8185 
+	}
+	manpower=924712
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

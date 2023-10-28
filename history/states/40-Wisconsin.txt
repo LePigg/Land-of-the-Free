@@ -1,0 +1,46 @@
+
+state={
+	id=40
+	name="STATE_40"
+	resources={
+		steel=25
+	}
+	history={
+		owner = MIL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		add_core_of = MIL
+		victory_points = {
+			5205 20
+		}
+		victory_points = {
+			3317 5
+		}
+		victory_points = {
+			6934 5
+		}
+		victory_points = {
+			7085 15
+		}
+		victory_points = {
+			7033 2
+		}
+		victory_points = {
+			461 3
+		}
+		victory_points = {
+			5684 3
+		}
+	}
+
+	provinces={
+		236 461 910 1115 1175 1587 1763 2181 2723 3118 3317 3582 3956 4080 4952 4959 5205 5609 5684 6915 6934 6944 6980 6985 6989 7010 7014 7033 7049 7056 7066 7085 7094 
+	}
+	manpower=2073006	
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

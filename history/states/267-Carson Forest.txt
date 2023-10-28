@@ -1,0 +1,24 @@
+
+state={
+	id=267
+	name="STATE_267"
+	history={
+		owner = NVJ
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = NVJ
+		victory_points = {
+			7763 2
+		}
+	}
+	provinces={
+		157 162 254 879 1413 1657 2280 2375 3785 4647 4792 4930 7753 7763 7779 7910 7951 
+	}
+	manpower=72192
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

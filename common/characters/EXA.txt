@@ -1,0 +1,37 @@
+characters = {
+	EXA_pepsi_man = {
+		name = "Pepsi Man"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BMK/PEPSI_MAN.dds"
+			}
+			army = {
+				large = "gfx/leaders/BMK/PEPSI_MAN.dds"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = {
+				PEPSI_MAN
+			}
+		}
+		field_marshal = {
+			skill = 9
+			traits = {
+				brilliant_strategist
+				inflexible_strategist
+				adaptable
+				infantry_leader
+				cavalry_leader
+				panzer_leader
+				inspirational_leader
+				career_officer
+				war_hero
+			}
+			attack_skill = 9
+			defense_skill = 9
+			planning_skill = 9
+			logistics_skill = 9
+		}
+	}
+}

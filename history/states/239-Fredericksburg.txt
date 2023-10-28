@@ -1,0 +1,30 @@
+
+state={
+	id=239
+	name="STATE_239"
+
+	history={
+		owner = TEJ
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = TEJ
+		add_claim_by = TEX
+		victory_points = {
+			8403 1 
+		}
+		victory_points = {
+			8428 2 
+		}
+
+	}
+
+	provinces={
+		31 558 1048 3081 3184 4107 5008 5055 5828 8308 8309 8331 8349 8387 
+	}
+	manpower=734606
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,36 @@
+
+state={
+	id=169
+	name="STATE_169"
+	resources={
+		steel=10.000
+		oil=1.000
+	}
+
+	history={
+		owner = ERR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = ERR
+		victory_points = {
+			5015 15 
+		}
+		victory_points = {
+			7144 5
+		}
+		victory_points = {
+			7165 10
+		}
+	}
+
+	provinces={
+		565 1097 2017 3029 4379 4539 5015 5712 7016 7105 7122 7144 7165 7170 
+	}
+	manpower=773952
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

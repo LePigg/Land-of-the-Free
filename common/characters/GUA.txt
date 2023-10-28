@@ -1,0 +1,16 @@
+characters = {
+	GUA_junta = {
+		name = "Guatamalan Provisonal Government"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GUA/Guatamala_Junta.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				unstable
+			}
+		}
+	}
+}

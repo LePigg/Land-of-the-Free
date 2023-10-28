@@ -1,0 +1,21 @@
+state={
+	id=88
+	name="STATE_88"
+		history={
+		owner = MEX
+		add_core_of = MEX
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			8768 10
+		}
+	}
+	provinces={
+		1167 1622 1624 1704 2016 2256 3477 3932 4020 4393 4512 4852 5101 5347 5623 5660 5926 5954 8737 8743 8746 8749 8751 8758 8760 8762 8764 8768 8772 8775 8781 8784 8803 
+	}
+	manpower=399780
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=rural
+}

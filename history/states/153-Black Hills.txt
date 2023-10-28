@@ -1,0 +1,33 @@
+
+state={
+	id=153
+	name="STATE_153"
+
+	history={
+		owner = WDC
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = WDC
+		victory_points = {
+			7079 3 
+		}
+		victory_points = {
+			37 1
+		}
+		victory_points = {
+			2327 1
+		}
+
+	}
+
+	provinces={
+		37 50 719 734 1098 1302 1358 1793 1824 1833 1956 2268 2303 2327 2467 2621 3088 3506 3603 3630 3652 3903 3988 4289 4444 4460 4598 4714 4751 4839 5079 5714 7046 7080 7104 7157 7158 7163 7176 7183 7205 7227 7242 7248 
+	}
+	manpower=87248
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=160
+	name="STATE_160"
+	resources={
+		steel=35.000
+	}
+	history={
+		owner = MIN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			5881 5
+		}
+		victory_points = {
+			4916 3
+		}
+		victory_points = {
+			6809 2
+		}
+		add_core_of = MIN
+	}
+
+	provinces={
+		4916 4422 4941 6809 2279 6822 2919 4594 6848 6873 4033 6884 6905 5244 6924 1337 6925 6943 3371 6984 7000 6975 5881 4913 6898 1424
+	}
+	manpower=389100
+	state_category=town
+	buildings_max_level_factor=1.000
+}

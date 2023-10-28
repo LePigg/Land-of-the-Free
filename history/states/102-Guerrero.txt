@@ -1,0 +1,28 @@
+state={
+	id=102
+	name="STATE_102"
+		history={
+		owner = MEX
+		add_core_of = MEX
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			4956 2
+		}
+		victory_points = {
+			3275 5
+		}
+		victory_points = {
+			9085 2
+		}
+
+	}
+	provinces={
+		521 641 1106 1544 2164 2250 2718 3036 3189 3275 3437 3483 3607 3755 4005 4082 4314 4495 4553 4917 4919 4956 5158 5180 5186 5243 5481 5857 8932 8968 8972 8980 8988 8994 9003 9005 9011 9018 9019 9026 9030 9031 9035 9052 9059 9076 9085 9099 9112 9125 9143 
+	}
+	manpower=532770
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=rural
+}

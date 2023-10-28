@@ -1,0 +1,29 @@
+characters = {
+	SHO_pocatello = {
+		name = "Pocatello II"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SHO/Pocatello.dds"
+			}
+			army = {
+				large = "gfx/leaders/SHO/Pocatello.dds" 
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				#
+			}
+		}
+		field_marshal = {
+			skill = 2
+			traits = {
+				old_guard
+			}
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

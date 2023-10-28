@@ -1,0 +1,32 @@
+state={
+	id=95
+	name="STATE_95"
+		history={
+		owner = MEX
+		add_core_of = MEX
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			8898 = {
+				naval_base = 4
+				}
+			}
+			victory_points = {
+				8898 25
+			}
+			victory_points = {
+				8875 10
+			}
+			victory_points = {
+				8823 5
+			}
+
+	}
+	provinces={
+		191 1616 2247 2436 3049 3278 3291 3295 3548 4469 4668 5040 5081 5105 5464 5589 5765 8790 8793 8810 8823 8831 8843 8844 8847 8854 8864 8869 8875 8890 8896 8898 8912 8922 8928 8941 8969 14948 
+	}
+	manpower=1653048
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=metropolis
+}

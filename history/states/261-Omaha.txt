@@ -1,0 +1,33 @@
+
+state={
+	id=261
+	name="STATE_261"
+	history={
+		owner = GPS
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = GPS
+		victory_points = {
+			4541 10
+		}
+		victory_points = {
+			3846 2
+		}
+		victory_points = {
+			2021 3
+		}
+		victory_points = {
+			7377 2
+		}
+	}
+	provinces={
+		873 1116 1277 1342 1766 2021 3609 3846 4299 4541 4643 5329 7198 7217 7218 7228 7260 7263 7267 7307 7367 7377 
+	}
+	manpower=710924
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

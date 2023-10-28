@@ -1,0 +1,33 @@
+
+state={
+	id=254
+	name="STATE_254"
+	resources={
+		tungsten=6
+	}
+
+	history={
+		owner = ABS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = ABS
+		victory_points = {
+			6833 3 
+		}
+		victory_points = {
+			1597 5 
+		}
+
+	}
+
+	provinces={
+		312 706 1160 1475 1597 1885 2152 2160 2445 2715 3406 4032 4530 5650 6833 6950 
+	}
+	manpower=82021
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,37 @@
+
+state={
+	id=150
+	name="STATE_150"
+
+	history={
+		owner = DES
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+		add_core_of = DES
+		victory_points = {
+			12669 2 
+		}
+		victory_points = {
+			2821 6
+		}
+		victory_points = {
+			2986 1
+		}
+		victory_points = {
+			3216 3
+		}
+
+	}
+
+	provinces={
+		412 676 1170 1689 2188 2423 2602 2697 2747 2821 2879 2986 3216 3744 4021 4486 4686 4735 5023 5280 5873 7585 7631 7664 7673 7693 7721 7725 7743 7752 7789 7801 7808 7813 7823 7824 
+	}
+	manpower=137248
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

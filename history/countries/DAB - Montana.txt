@@ -1,0 +1,58 @@
+﻿capital = 31
+
+
+set_technology = {
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	early_bomber = 1
+	base_strike = 1
+	motorised_infantry = 1
+	basic_train = 1
+}
+set_country_flag = rockies_country
+set_politics = {
+	ruling_party = despotism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_research_slots = 2
+set_stability = 0.42
+set_war_support = 0.78
+
+set_popularities = {
+	despotism = 30
+	liberalism = 24
+	conservatism = 20
+	stratocracy = 13
+	fascism = 13
+}
+add_ideas = {
+	american_warlord
+	extensive_conscription
+	DAB_no_state
+	DAB_prussian
+	jim_crow
+	state_media
+	domesticity
+	no_voting
+	military_pensions
+}
+set_convoys = 5
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 3
+}
+#Leaders
+recruit_character = DAB_fritz_kuhn

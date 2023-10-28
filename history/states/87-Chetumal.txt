@@ -1,0 +1,24 @@
+state={
+	id=87
+	name="STATE_87"
+		history={
+		owner = MEX
+		add_core_of = MEX
+		buildings = {
+			infrastructure = 1
+			2731 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			2868 2
+		}
+	}
+	provinces={
+		1156 2731 2868 3996 4025 4137 4396 4568 4622 4685 4991 5073 5249 5371 8742 8750 8812 8825 8829 8830 8833 8838 8840 8849 8850 8853 8856 8860 
+	}
+	manpower=14582
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=pastoral
+}

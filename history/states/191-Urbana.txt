@@ -1,0 +1,23 @@
+
+state={
+	id=191
+	name="STATE_191"
+
+	history={
+		owner = IEF
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = IEF
+
+	}
+
+	provinces={
+		251 3683 3798 3971 5288 5316 5420 5433 7422 7472 7492 7544 
+	}
+	manpower=364300
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

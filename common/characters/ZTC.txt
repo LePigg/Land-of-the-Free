@@ -1,0 +1,33 @@
+characters = {
+	ZTC_pancho_villa = {
+		name = "Pancho Villa"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZTC/Pancho.tga"
+			}
+			army = {
+				large = "gfx/leaders/ZTC/Pancho.tga"
+				small = "GFX_idea_generic_air_south_america_2"
+			}
+		}
+		country_leader = {
+			ideology = gen_revolutionary_socialist
+			traits = {
+				our_right_to_survive
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				trait_reckless
+				war_hero
+				cavalry_leader
+				cavalry_expert
+			}
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

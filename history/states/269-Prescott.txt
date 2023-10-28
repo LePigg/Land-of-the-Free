@@ -1,0 +1,30 @@
+
+state={
+	id=269
+	name="STATE_269"
+	history={
+		owner = PHE
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = PHE
+		victory_points = {
+			8001 3
+		}
+		victory_points = {
+			877 3
+		}
+		victory_points = {
+			4832 1
+		}
+
+	}
+	provinces={
+		205 714 877 1036 1074 1331 2282 2447 2752 4361 4832 5372 5523 7877 7894 7927 7953 7975 7982 8001 8006 8020 
+	}
+	manpower=51209
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

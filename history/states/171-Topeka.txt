@@ -1,0 +1,42 @@
+
+state={
+	id=171
+	name="STATE_171"
+
+	history={
+		owner = KAN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = GPS
+		victory_points = {
+			1917 5 
+		}
+		victory_points = {
+			5906 8
+		}
+		victory_points = {
+			7562 10
+		}
+		victory_points = {
+			4807 3
+		}
+		victory_points = {
+			7723 3
+		}
+		victory_points = {
+			3394 3
+		}
+
+	}
+
+	provinces={
+		1641 1887 2029 2846 3349 3394 3409 4101 4464 4807 5600 5906 7562 7598 7614 7622 7641 7723 7731 
+	}
+	manpower=713952
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,213 @@
+characters = {
+    EUR_upton_sinclair = {
+        name = "Upton Sinclair"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/EUR/Upton.png"
+            }
+        }
+        country_leader = {
+            ideology = dem_socialism
+            traits = { heart_of_gold }
+        }
+    }
+    EUR_sheridan_downey = {
+        name = "Sheridan Downey"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/EUR/downey.jpg"
+            }
+        }
+        country_leader = {
+            ideology = gen_liberalism
+            traits = { tenacious_negotiator }
+        }
+    }
+    EUR_frank_merriam = {
+        name = "Frank Merriam"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/EUR/frank.jpeg"
+            }
+        }
+        country_leader = {
+            ideology = gen_conservatism
+            traits = {
+                strike_crusher
+            }
+        }
+    }
+    EUR_gus_hall = {
+        name = "Gus Hall"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/EUR/Hall.dds"
+            }
+        }
+        country_leader = {
+            ideology = marxism
+            traits = {
+                the_chairman
+            }
+        }
+    }
+    EUR_benjamin_gitlow = {
+        name = "Benjamin Gitlow"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/EUR/Gitlow.dds"
+            }
+        }
+        country_leader = {
+            ideology = gen_revolutionary_socialist
+            traits = { our_right_to_survive }
+        }
+    }
+    EUR_maurice_rose = {
+        name = "Maurice Rose"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/EUR/Portrait_Rose.dds"
+            }
+            army = {
+                large = "gfx/leaders/EUR/Portrait_Rose.dds"
+            }
+            army = {
+                small = "GFX_idea_USA_maurice_rose"
+            }
+        }
+        corps_commander = {
+            skill = 4
+            traits = { trait_reckless panzer_leader brilliant_strategist }
+            attack_skill = 4
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 3
+        }
+        advisor = {
+            slot = army_chief
+            idea_token = USA_maurice_rose
+            allowed = {
+                original_tag = EUR
+            }
+            traits = { 
+                army_chief_offensive_2
+            }
+            cost = 100
+            ai_will_do = {
+                factor = 1.000
+            }
+        }
+    }
+    EUR_evans_carlson = {
+        name = "Evans Carlson"
+        portraits = {
+        army = {
+              large = "gfx/leaders/EUR/Carlson.dds"
+              small = "GFX_idea_USA_generic_land_4"
+            }
+        }
+        corps_commander = {
+            skill = 3
+            traits = { trickster commando war_hero }
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 3
+        }
+    }
+    EUR_robert_merriman = {
+        name = "Robert Hale Merriman"
+        portraits = {
+            army = {
+                large = "gfx/leaders/EUR/merriman.png"
+            }
+            army = {
+                small = "GFX_idea_USA_generic_land_2"
+            }
+        }
+        corps_commander = {
+            skill = 2
+            traits = { trait_reckless militia_leader }
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 1
+            logistics_skill = 2
+        }
+    }
+    EUR_herman_bottcher = {
+        name = "Herman Bottcher"
+        portraits = {
+            army = {
+                large = "gfx/leaders/EUR/bottcher.jfif"
+            }
+            army = {
+                small = "GFX_idea_GER_generic_land_4"
+            }
+        }
+        corps_commander = {
+            skill = 1
+            traits = { trait_reckless inflexible_strategist trickster }
+            attack_skill = 1
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 1
+        }
+    }
+    EUR_james_murphy = {
+		name = "James Patrick Murphy"
+		portraits = {
+			army = {
+				large = "gfx/leaders/EUR/Murphy.jpg"
+				small = "GFX_idea_USA_generic_land_5"
+			}
+			civilian = {
+				large = "gfx/leaders/EUR/Murphy.jpg"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				trait_engineer
+				trait_reckless
+				militia_leader
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+    EUR_walter_reuther = {
+        name = "Walter Reuther"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/EUR/reuther.jpg"
+            }
+        }
+    }
+    EUR_jay_lovestone = {
+        name = "Jay Lovestone"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/EUR/lovestone.jpg"
+            }
+        }
+    }
+    EUR_carl_hayden = {
+        name = "Carl Hayden"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/EUR/hayden.jpg"
+            }
+        }
+    }
+    EUR_barry_goldwater = {
+        name = "Barry Goldwater"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/EUR/barry.jpg"
+            }
+        }
+    }
+}

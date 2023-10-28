@@ -1,0 +1,48 @@
+﻿l_english:	
+ CAL_centralization:0 "Administrative Centralization"
+ CAL_centralization_desc:0 "As the administrators of vast territories with a hostile population, we exert very small control over the lands we occupy. With most power being in the hands of local politicians and law enforcement. However, we slowly gain better and better control over these groups the longer we administer the regions.\n\nThis ongoing process of §CCentralization§! is key to our long term success, as it will be the foundation upon which any future plans for expansion will be laid.\n\n§9Our bureaucratic administration will gain influence in each state by 10% every month. By enacting various decisions we can either speed up the centralization process or use our current Administrative strength to construct valuable industry in the area.§!"
+ cal_increase_centralization_decision:0 "Increase Centralization in [FROM.GetName] - §C[?FROM.centralizationvar]%§!"
+ cal_integration_decision:0 "Integrate [FROM.GetName]"
+ cal_centralization_mission:0 "Local Government Meeting in [FROM.GetName]"
+ #########
+ 
+ 
+ ###Names
+ growing_japanese_influence:0 "Japanese Influence Grows!"
+ waning_japanese_collaboration:0 "Waning Japanese Collaboration"
+ japanese_influence_and_collaboration:0 "Japanese Influence and Collaboration"
+ offer_mining_concessions_decision:0 "Offer Mining Concessions"
+ drag_out_negotiations_decision:0 "Drag Out Negotiations"
+ offer_mining_concessions:0 "Offer Mining Concessions"
+ drag_out_negotiations:0 "Drag Out Negotiations"
+ fund_tokkeitai_raid:0 "Fund Tokkeitai Raid"
+ bring_in_chinese_labor:0 "Import Chinese Labor"
+ give_economic_break:0 "Slacken Japanese Economic Restrictions"
+ japanese_coup_imminent_1:0 "Japanese Coup Imminent"
+ japanese_coup_imminent_2:0 "Japanese Coup Imminent"
+ ###Descriptions
+ CAL_japanese_coup:0 "Japanese Influence has grown too high! To prevent a hostile takeover, lower Japanese influence below 75%!"
+ japanese_influence_and_collaboration_desc:0 "Our 'partnership' with the Japanese comes with certain expectations and demands of us. These expectations are summarized by our current §RInfluence§! and §OCollaboration§! levels. \n\n §RInfluence§! represents the amount of political pressure the Japanese are able to exert on our government. The Japanese expect to have moderate control over our bureaucracy, requiring us to maintain at least §R25% Influence§!. \n\n §OCollaboration§! is both the represented willingness of the government and non-goverment officials, and their genuine efforts to work with the Japanese. As with their Influence, the Japanese expect an appropriate level of cooperation to their overall goals, requiring us to sustain at least §O35% Collaboration§!.  \n\n-------------------------------------------------------------------------------------------------------\n\n Current Level of Influence: (§R[?cal_influence]%§!)  \n\n Current Level of Collaboration: (§O[?cal_collaboration]%§!)   \n\n"
+ 
+ add_5_to_var_cal_collaboration:0 "§OJapanese Collaboration will grow by 5%§!"
+ add_5_to_var_cal_influence:0 "§RJapanese Influence will grow by 5%§!"
+ add_10_to_var_cal_collaboration:0 "§OJapanese Collaboration will grow by 10%§!"
+ add_10_to_var_cal_influence:0 "§RJapanese Influence will grow by 10%§!"
+ japanese_influence_stemmed:0 "§GBy dragging out our monthy negotiation, we will be able to stall Japan's growing influence.§!"
+ japanese_influence_grows:0 "§RJapanese Influence over us grows by 10%!§!"
+ 
+ 
+ nee_bullshit:0 "New England"
+ nee_bullshit_desc:0 "the land of bs"
+ nee_bullshit_ADJ:0 "bullshiter"
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

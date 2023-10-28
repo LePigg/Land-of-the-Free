@@ -1,0 +1,38 @@
+
+state={
+	id=147
+	name="STATE_147"
+	manpower = 553785
+	
+	state_category = city
+
+	history={
+		owner = CAS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 6
+			6923 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = CAS
+		victory_points = {
+			6843 15
+		}
+		victory_points = {
+			6959 5
+		}
+		victory_points = {
+			6881 16
+		}	
+		victory_points = {
+			1888 3	
+		}
+	}
+
+	provinces={
+        1888 4707 4430 6843 3662 6895 6881 2748 1110 6879 4565 2358 6928 102 6923 6940 6959 2838
+	}
+}

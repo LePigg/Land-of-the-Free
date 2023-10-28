@@ -1,0 +1,36 @@
+
+state={
+	id=148
+	name="STATE_148"
+	manpower = 25248
+	
+	state_category = rural
+	
+	resources={
+		#steel=4
+		#oil=5
+	}
+
+	history={
+		owner = ELK
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = ELK
+		victory_points = {
+			5596 2
+		}	
+		victory_points = {
+			133 2
+		}
+		victory_points = {
+			5465 1
+		}
+	}
+
+	provinces={
+        133 3538 2047 5465 5193 7058 3473 2548 4421 3490 5801 7115 7147 3865 7096 2529 296 2241 3027 7166 4132 3550 386 4999 2873 7139 2014 7223 7137 7173
+	}
+}

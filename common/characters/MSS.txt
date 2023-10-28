@@ -1,0 +1,165 @@
+characters = {
+	MSS_william_du_bois = {
+		name = "William Du Bois"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MSS/WEB.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+			traits = {
+				civil_rights_activist
+			}
+		}
+	}
+	MSS_commune_revolt = {
+		name = "Mississippi Syndicalist Council"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MSS/commune.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_Anarchism
+			traits = {
+				#
+			}
+		}
+	}
+	MSS_asa_randolph = {
+		name = "Asa Randolph"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MSS/Asa.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_revolutionary_socialist
+			traits = {
+				defender_of_unions
+			}
+		}
+	}
+	MSS_marcus_garvey = {
+		name = "Marcus Garvey"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MSS/Marcus.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				nationalist_symbol
+			}
+		}
+		country_leader = {
+			ideology = ultranationalism
+			traits = {
+				nationalist_symbol
+			}
+		}
+	}
+	MSS_george_carver = {
+		name = "George Washington Carver"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MSS/George.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+			traits = {
+				technocrat
+			}
+		}
+	}
+	MSS_claude_pringle = { #my goofy ahhh
+		name = "Claude Pringle"
+		portraits = {
+			army = {
+				army = "gfx/leaders/MSS/Pringle.jpg"
+				small = "africa_generic_land_3"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				militia_leader
+				trait_reckless
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	MSS_edward_carter = {
+		name = "Edward Carter Jr."
+		portraits = {
+			army = {
+				large = "gfx/leaders/MSS/carterjr.png"
+				small = "GFX_idea_generic_political_advisor_african_2"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				trait_reckless
+				armor_officer
+			}
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	MSS_harry_haywood = {
+		name = "Harry Haywood"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MSS/Haywood.jfif"
+			}
+			army = {
+				large = "gfx/leaders/MSS/Haywood.jfif"
+				small = "GFX_idea_generic_air_air_combat_trainer_african_2d"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {
+				#
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				media_personality
+				politically_connected
+				militia_leader
+			}
+		}
+	}
+	MSS_james_parsons = {
+		name = "James K. Parsons"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MSS/Parsons.jpg"
+				small = "GFX_idea_USA_generic_land2"
+			}
+		}
+		field_marshal = {
+			skill = 4
+			traits = {
+				trickster
+				brilliant_strategist
+				trait_cautious
+			}
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+}

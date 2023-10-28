@@ -1,0 +1,16 @@
+characters = {
+	COS_leon_castro = {
+		name = "León Cortés Castro"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COS/Castro.jpg"
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+			traits = {
+				captain_of_industry
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=271
+	name="STATE_271"
+	history={
+		owner = TXL
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+
+		}
+		add_core_of = TXL
+		victory_points = {
+			5299 4
+		}
+		victory_points = {
+			2511 2
+		}
+		victory_points = {
+			7928 3
+		}
+
+	}
+	provinces={
+		7 284 976 1401 1447 1549 1742 2064 2155 2221 2381 2511 2569 2828 2854 3296 3556 3631 4703 5299 5759 7771 7928 7940 7962 7971 7990 
+	}
+	manpower=215123
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

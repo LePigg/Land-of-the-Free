@@ -1,0 +1,38 @@
+
+state={
+	id=42
+	name="STATE_42"
+	resources={
+		steel=36.000
+	}
+	history={
+		owner = MIC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 4
+		}
+		add_core_of = MIC
+		victory_points = {
+			3232 3 
+		}
+		victory_points = {
+			6999 4
+		}
+		victory_points = {
+			3079 5 
+		}
+		victory_points = {
+			6969 4
+		}
+
+	}
+
+	provinces={
+		864 1177 1650 2074 2307 2550 3079 3701 4687 4771 5762 6906 6958 6967 6969 6976 6981 6986 6999 7026 7059 
+	}
+	manpower=719400
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

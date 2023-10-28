@@ -1,0 +1,30 @@
+
+state={
+	id=190
+	name="STATE_190"
+
+	history={
+		owner = IEF
+		buildings = {
+			infrastructure = 2
+		    arms_factory = 1
+
+		}
+		add_core_of = IEF
+		victory_points = {
+			5771 4 
+		}
+		victory_points = {
+			7408 2
+		}
+
+	}
+
+	provinces={
+		1602 3751 3831 4868 5479 5771 7308 7339 7350 7379 7408 
+	}
+	manpower=338500
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

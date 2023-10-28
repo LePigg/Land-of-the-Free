@@ -1,0 +1,26 @@
+
+state={
+	id=258
+	name="STATE_258"
+	history={
+		owner = PBL
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+		add_core_of = PBL
+		victory_points = {
+			7569 3
+		}		
+		victory_points = {
+			7688 2
+		}	
+	}
+	provinces={
+		155 496 1540 1581 2184 3581 4755 4933 5346 5370 5409 5690 5896 7569 7583 7607 7621 7688 7707 7711 7722 7754 
+	}
+	manpower=123041
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

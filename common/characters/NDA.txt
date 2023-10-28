@@ -1,0 +1,15 @@
+characters = {
+	NDA_William_Langer = {
+		name = "William Langer"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NDA/real_langer.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+			traits = {
+			}
+		}
+	}
+}

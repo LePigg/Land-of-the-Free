@@ -1,0 +1,124 @@
+characters = {
+	PBL_elizabeth_flynn = {
+		name = "Elizabeth Gurley Flynn"
+		gender = female
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PBL/Flynn.jpg"
+			}
+			army = {
+				large = "gfx/leaders/PBL/Flynn.jpg"
+			}
+		}
+		country_leader = {
+			ideology = syndicalism
+			traits = {
+				anarcho_feminist
+			}
+		}
+	}
+	PBL_nicola_sacco = {
+		name = "Nicola Sacco"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PBL/Nicola.dds"
+			}
+			army = {
+				large = "gfx/leaders/PBL/Nicola.dds"
+				small = "GFX_idea_ITA_generic_land_2"
+			}
+		}
+		country_leader = {
+			ideology = anarcho-communism
+			traits = {
+				anarchist_zeal
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				revolutionary_militant
+			}
+		}
+		field_marshal = {
+			skill = 2
+			traits = {
+				media_personality
+				trait_reckless
+				trickster
+				militia_leader
+			}
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	PBL_george_sossenko = {
+		name = "George Sossenko"
+		portraits = {
+			army = {
+				large = "gfx/leaders/PBL/Sossenko.jpg"
+				small = "GFX_idea_SOV_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				commando
+				trait_engineer
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	PBL_benjamin_katine = {
+		name = "Benjamin Katine"
+		portraits = {
+			army = {
+				large = "gfx/leaders/PBL/Portrait_Katine.dds"
+				small = "GFX_idea_south_america_generic_land_4"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				militia_leader
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	PBL_john_tisa = {
+		name = "John Tisa"
+		portraits = {
+			army = {
+				large = "gfx/leaders/PBL/Portrait_Tisa.dds"
+				small = "gfx_idea_ITA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				commando
+				militia_leader
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	PBL_commune_council = {
+		name = "Supreme Council of the Communes"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PBL/commune.png"
+			}
+		}
+	}
+}

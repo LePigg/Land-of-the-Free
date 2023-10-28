@@ -1,0 +1,29 @@
+
+state={
+	id=140
+	name="STATE_140"
+
+	history={
+		owner = CAL
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = CAL
+		add_core_of = MTY
+		victory_points = {
+			7649 45 
+		}
+
+	}
+
+	provinces={
+		3411 7649 
+	}
+	manpower=737248
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

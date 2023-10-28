@@ -1,0 +1,119 @@
+characters = {
+	DIX_theodore_bilbo = {
+		name = "Theodore G. Bilbo"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DIX/Theodore.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism 
+			traits = {
+				white_chief
+			}
+		}
+	}
+	DIX_commune_revolt = {
+		name = "South Texan Anarchist Council"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DIX/commune.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_Anarchism
+			traits = {
+				#
+			}
+		}
+	}
+	DIX_edwin_walker = {
+		name = "Edwin Walker"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DIX/Walker.jpg"
+			}
+			army = {
+				large = "gfx/leaders/DIX/Walker.jpg"
+				small = "GFX_idea_USA_generic_land_2"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				commando
+				trait_engineer
+				politically_connected
+			}
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2 
+		}
+	}
+	DIX_simon_buckner = {
+		name = "Simon Bolivar Buckner Jr."
+		portraits = {
+			army = {
+				large = "gfx/leaders/DIX/Portrait_Buckner.dds"
+				small = "GFX_idea_USA_generic_land_3"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				trait_reckless
+				winter_specialist
+				infantry_officer
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 4
+		}
+	}
+	DIX_william_simpson = {
+		name = "William Hood Simpson"
+		portraits = {
+			army = {
+				large = "gfx/leaders/DIX/Portrait_Simpson.dds"
+				small = "GFX_idea_USA_william_hood_simpson"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				infantry_officer
+				career_officer
+			}
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	DIX_nathan_forrest = {
+		name = "Nathan Bredford Forrest III"
+		portraits = {
+			army = {
+				large = "gfx/leaders/DIX/forrest.png"
+				small = "GFX_idea_USA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				politically_connected
+				commando
+				air_force_guy
+			}
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+}

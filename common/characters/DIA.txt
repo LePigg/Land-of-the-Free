@@ -1,0 +1,42 @@
+characters = {
+	DIA_willard_wyman = {
+		name = "Willard G. Wyman"
+		portraits = {
+			army = {
+				large = "gfx/leaders/DIA/Wyman.jfif"
+				small = "GFX_idea_USA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				infantry_leader
+				career_officer
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	DIA_william_sharp = {
+		name = "William F. Sharp"
+		portraits = {
+			army = {
+				large = "gfx/leaders/DIA/Sharp.jpg"
+				small = "GFX_idea_USA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				commando
+				infantry_officer
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

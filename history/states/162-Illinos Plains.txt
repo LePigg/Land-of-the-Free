@@ -1,0 +1,34 @@
+
+state={
+	id=162
+	name="STATE_162"
+	resources={
+		steel=12.000
+	}
+
+	history={
+		owner = COM
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = COM
+		victory_points = {
+			7159 5 
+		}
+		victory_points = {
+			4090 2
+		}
+		victory_points = {
+			7116 3
+		}
+	}
+
+	provinces={
+		177 462 856 1089 1267 1312 3287 3758 4090 4713 5390 5597 5891 7091 7116 7120 7132 7138 7151 7159 7207 7252 7276 7279 7285 
+	}
+	manpower=330651
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

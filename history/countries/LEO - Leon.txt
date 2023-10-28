@@ -1,0 +1,57 @@
+﻿capital = 858
+
+#OOB ="LEO_1936"
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	basic_train = 1
+}
+
+
+
+
+
+set_convoys = 5
+set_stability = 0.56
+set_war_support = 0.8
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1934.7.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	guided_democracy = 28
+    fascism = 72
+}
+add_ideas = {
+    MEX_depression
+}
+
+set_convoys = 5
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 3
+}
+
+create_country_leader = {
+	name = "Salvador Absacal"
+	desc = "POLITICS_PLUTARCO_CALLES_DESC"
+	picture = "Absacal.tga"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		#
+	}
+}

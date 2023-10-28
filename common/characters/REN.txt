@@ -1,0 +1,15 @@
+characters = {
+	REN_Edwineroberts = {
+		name = "Edwin E. Roberts"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REN/Edwineroberts.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+			traits = {
+			}
+		}
+	}
+}

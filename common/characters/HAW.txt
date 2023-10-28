@@ -1,0 +1,13 @@
+characters = {
+	HAW_hirohito = {
+		name = "Hirohito" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HAW/hirohito.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+		}
+	}
+}

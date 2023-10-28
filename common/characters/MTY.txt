@@ -1,0 +1,69 @@
+characters = {
+	MTY_angelo_rossi = {
+		name = "Angelo Joseph Rossi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MTY/Angelo.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+			}
+		}
+	}
+	MTY_city_hall = {
+		name = "Municipal Council"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MTY/City Hall.png"
+			}
+		}
+		country_leader = {
+			ideology = provisional_government
+			traits = {
+			}
+		}
+	}
+	MTY_harold_loeb = {
+		name = "Harold Loeb"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MTY/Loeb.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				ruthless_modernizer
+
+			}
+		}
+	}
+	MTY_parley_christensen = {
+		name = "Parley Christensen"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MTY/Christensen.png"
+			}
+		}
+		country_leader = {
+			ideology = dem_socialism
+			traits = {
+			}
+		}
+	}
+	MTY_william_stephens = {
+		name = "William Stephens"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MTY/Stephens.png"
+			}
+		}
+		country_leader = {
+			ideology = progressivism
+			traits = {
+			}
+		}
+	}
+}

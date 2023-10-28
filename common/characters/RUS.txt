@@ -1,0 +1,13 @@
+characters = {
+	RUS_buhkarin = {
+		name = "Nikolai Buhkarin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RUS/buhkarin.dds"
+			}
+		}
+		country_leader = {
+			ideology = bukharinism
+		}
+	}
+}

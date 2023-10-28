@@ -1,0 +1,30 @@
+state={
+	id=167
+	name="STATE_167"
+	resources={
+		steel=5
+	}	
+	history={
+		owner = IWA
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			4419 5
+		}
+		victory_points = {
+			2749 2
+		}
+		victory_points = {
+			7407 2
+		}
+		add_core_of = IWA		
+	}
+
+	provinces={
+		7563 779 3061 795 2749 5729 7516 7488 7464 4427  4419 5478 5384 7407 4813 115
+	}
+	manpower=347938
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

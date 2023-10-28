@@ -1,0 +1,35 @@
+
+state={
+	id=180
+	name="STATE_180"
+	resources={
+		steel=10.000
+		oil=1.000
+	}
+
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+
+		}
+		add_core_of = ABQ
+		victory_points = {
+			1637 5 
+		}
+		victory_points = {
+			396 1 
+		}
+		set_demilitarized_zone = yes
+
+	}
+
+	provinces={
+		12 117 123 396 899 988 1637 1871 2304 2431 2492 2599 2730 2733 3082 3148 3154 3263 3881 4399 4481 4561 4739 4850 5850 5936 8275 8289 8299 8307 8315 8320 8336 8339 8340 8356 8365 8384 8402 8406 8420 8433 
+	}
+	manpower=173029
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

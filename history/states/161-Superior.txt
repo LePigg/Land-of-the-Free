@@ -1,0 +1,31 @@
+
+state={
+	id=161
+	name="STATE_161"
+	resources={
+		steel=36
+	}
+	history={
+		owner = MIL
+		buildings = {
+			infrastructure = 1
+			#industrial_complex = 1	
+			#arms_factory = 1
+			naval_base = 1
+		}
+		add_core_of = MIL
+		victory_points = {
+			6778 1
+		}
+		victory_points = {
+			6769 1
+		}
+	}
+
+	provinces={
+		847 5935 1961 6772 6810 1932 5826 2891 5488 6778 746 6818 3383 2203 6856 6815 6789 1841 5141 6780 6761 5668 1523 6784 6769 9591
+	}
+	manpower=320865
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

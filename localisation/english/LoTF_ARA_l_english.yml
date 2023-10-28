@@ -1,0 +1,22 @@
+﻿l_english: 
+#Spirits
+ARA_purified4:0 "The Purified Army"
+ara_junta:0 "Military Empowered"
+ara_junta1:0 "Military Empowered"
+ara_junta2:0 "Military Dominant"
+ara_junta3:0 "Stratocratic State"
+ara_chief:0 "State Empowered"
+ara_chief1:0 "State Empowered"
+ara_chief2:0 "State Dominant"
+ara_chief3:0 "The Patriot's Regime"
+ara_stfu:0 "Curbed Party Ambitions"
+ara_nope:0 "Weakened Military"
+ara_funds:0 "Military Budget Increased"
+ara_monies:0 "Nationalized Investments"
+ara_xenos:0 "America for Americans"
+ara_scouts:0 "The Legionary Scouts"
+ara_education:0 "Shaping Young Patriots"
+ara_war:0 "Our Blood For the Nation"
+
+#tooltips
+ara_casered:0 "§RWe will begin Case Red, a plan to fund a rebellion against the League of Nations in the Mid Atlantic.§"

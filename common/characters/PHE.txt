@@ -1,0 +1,16 @@
+characters = {
+	PHE_ashurst = {
+		name = "Henry F. Ashurst"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PHE/Henry1.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+			traits = {
+			}
+		}
+	}
+	
+}

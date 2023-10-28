@@ -1,0 +1,32 @@
+
+state={
+	id=238
+	name="STATE_238"
+
+	history={
+		owner = TEX
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = TEX
+		victory_points = {
+			5964 5 
+		}
+		victory_points = {
+			2460 2 
+		}
+		victory_points = {
+			8268 3 
+		}
+
+	}
+
+	provinces={
+		109 502 813 1691 2109 2158 2192 2460 3097 3346 3869 3924 4242 4384 5017 5119 5294 5375 5964 8096 8125 8174 8201 8202 8209 8228 8241 8249 8268 
+	}
+	manpower=121299
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

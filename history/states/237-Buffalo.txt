@@ -1,0 +1,35 @@
+
+state={
+	id=237
+	name="STATE_237"
+	resources={
+		steel=4.000
+	}
+	
+	history={
+		owner = MIA
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 3
+
+		}
+		add_core_of = MIA
+		victory_points = {
+			6935 6
+		}
+		victory_points = {
+			6918 5 
+		}
+
+	}
+	
+	provinces={
+		1526 1565 3682 3723 4583 4809 4926 5161 5362 6911 6918 6926 6931 6935 6936 6961 6962 6965 6971 6983 6988 7006 7007 7019 
+	}
+	manpower=1989600
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

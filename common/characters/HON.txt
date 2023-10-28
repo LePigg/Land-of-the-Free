@@ -1,0 +1,31 @@
+characters = {
+	HON_tiburcio_andino = {
+		name = "Tiburcio Carías Andino"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HON/Andino.png"
+				small = "GFX_idea_HON_tiburcio_carias_andino"
+			}
+			civilian = {
+				large = "gfx/leaders/HON/Andino.png"
+			}
+		}
+		field_marshal = {
+			skill = 2
+			traits = {
+				politically_connected
+				infantry_officer
+			}
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				strike_crusher
+			}
+		}
+	}
+}

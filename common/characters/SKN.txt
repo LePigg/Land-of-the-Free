@@ -1,0 +1,137 @@
+characters = {
+	SKN_homer_bone = {
+		name = "Homer Bone"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SKN/Homer.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_revolutionary_socialist
+			traits = {
+				hawk
+			}
+		}
+		country_leader = {
+			ideology = dem_socialism
+			traits = {
+				appeaser
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+			traits = {
+				hawk
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+			traits = {
+				appeaser
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				hawk
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+				hawk
+			}
+		}
+	}
+	SKN_lester_hunt = {
+		name = "Lester C. Hunt"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SKN/Hunt.tga"
+			}
+		}
+	}
+	SKN_matthew_ridgeway = {
+		name = "Matthew Ridgeway"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SKN/Portrait_Ridgway.dds"
+				small = "GFX_idea_USA_generic_land_1"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				inflexible_strategist
+				commando
+				trait_cautious
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	SKN_isaac_white = {
+		name = "Isaac D. White"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SKN/white.jpg"
+				small = "GFX_idea_USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				panzer_leader
+				trait_cautious
+				career_officer
+			}
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	SKN_robert_eichelberger = {
+		name = "Robert L. Eichelberger"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SKN/Eichelberger.jpg"
+				small = "GFX_idea_USA_generic_land_4"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				commando
+				harsh_leader
+				trait_reckless
+			}
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	SKN_james_gavin = {
+		name = "James M. Gavin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SKN/Gavin.jpg"
+				small = "GFX_idea_USA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				trait_engineer
+				commando
+			}
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+}

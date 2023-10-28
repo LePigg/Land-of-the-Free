@@ -1,0 +1,30 @@
+
+state={
+	id=145
+	name="STATE_145"
+	manpower = 277248
+	
+	state_category = city
+	
+	resources={
+		tungsten = 33
+		aluminium = 3
+	}
+
+	history={
+		owner = SHA
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = SHA
+		victory_points = {
+			2244 3
+		}		
+	}
+
+	provinces={
+        969 2150 7426 5883 7382 7385 5576 1548 5748 868 7362 2244
+	}
+}

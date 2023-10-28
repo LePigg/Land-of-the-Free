@@ -1,0 +1,39 @@
+
+state={
+	id=117
+	name="STATE_117"
+	manpower = 230760
+	
+	state_category = metropolis
+	
+	resources={
+		aluminium = 3
+
+	}
+
+	history={
+		owner = ORC
+		buildings = {
+			infrastructure = 2
+			#arms_factory = 1
+			industrial_complex = 2
+			9596 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = ORC
+		victory_points = {
+			8041 7
+		}
+		victory_points = {
+			2751 2 
+		}		
+		victory_points = {
+			3889 5
+		}
+	}
+
+	provinces={
+        8041 8023 4963 3889 3891 2751 4482 8087 5007 9596
+	}
+}

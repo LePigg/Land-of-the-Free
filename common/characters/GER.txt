@@ -1,0 +1,13 @@
+characters = {
+	GER_wilhelm_ii = {
+		name = "Wilhelm II"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/wilhelm_ii.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+		}
+	}
+}

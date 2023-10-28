@@ -1,0 +1,144 @@
+characters = {
+	IEF_walter_smith = {
+		name = "Walter Bedell Smith"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IEF/Walter.png"
+			}
+			army = {
+				large = "gfx/leaders/IEF/Walter.png"
+				small = "GFX_idea_USA_generic_land_2"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				hated_marshal
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				#
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				organizer
+				infantry_officer
+				career_officer
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	IEF_collapsed_authority = {
+		name = "Collapsed Authority"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IEF/No Authority.png"
+			}
+		}
+		country_leader = {
+			ideology = total_anarchy
+			traits = {
+				collapsed_authority
+			}
+		}
+	}
+	IEF_leland_hobbs = {
+		name = "Leland Hobbs"
+		portraits = {
+			army = {
+				large = "gfx/leaders/IEF/Hobbs.jpg"
+				small = "GFX_idea_USA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				infantry_officer
+			}
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	IEF_roy_urquhart = {
+		name = "Robert Elliot Urquhart"
+		portraits = {
+			army = {
+				large = "gfx/leaders/IEF/Roy.jpg"
+				small = "GFX_idea_ENG_generic_land_1"
+			}
+			civilian = {
+				large = "gfx/leaders/IEF/Roy.jpg"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				commando
+				foreign_officer
+			}
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+				imperial_vanguard
+			}
+		}
+	}
+	IEF_alvin_york = {
+		name = "Alvin York"
+		portraits = {
+			army = {
+				large = "gfx/leaders/IEF/York.jpg"
+				small = "GFX_idea_USA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				old_guard
+				war_hero
+				commando
+				trait_reckless
+				brilliant_strategist
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	IEF_lewis_brereton = {
+		name = "Lewis H. Brereton"
+		portraits = {
+			army = {
+				large = "gfx/leaders/IEF/Brereton.jfif"
+				small = "GFX_idea_USA_generic_land_2"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				career_officer 
+				air_force_guy
+				politically_connected
+			}
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+}

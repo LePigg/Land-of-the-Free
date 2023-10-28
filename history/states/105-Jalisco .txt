@@ -1,0 +1,29 @@
+state={
+	id=105
+	name="STATE_105"
+		history={
+		owner = MEX
+		add_core_of = MEX
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			9627 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			8839 25
+		}
+		victory_points = {
+			3386 1
+		}
+
+	}
+	provinces={
+		690 699 805 1270 1644 1672 1858 2084 2267 2764 2835 3256 3350 3386 3390 3458 3845 3874 3915 4111 4298 4467 4559 5092 5394 5431 5700 5746 5849 5875 8792 8813 8817 8820 8821 8828 8832 8839 8841 8845 8851 8852 8857 8858 8861 8867 8870 8876 8879 8880 8891 8894 8902 8905 8917 9627 14541 
+	}
+	manpower=2037721
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=large_city
+}

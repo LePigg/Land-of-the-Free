@@ -1,0 +1,15 @@
+characters = {
+	DUL_farrell_dobbs = {
+		name = "Farrell Dobbs"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DUL/Dobbs.dds"
+			}
+		}
+		country_leader = {
+			ideology = trotskyism
+			traits = {
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=133
+	name="STATE_133"
+
+	history={
+		owner = CAN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		add_core_of = CAN
+		victory_points = {
+			6722 25
+		}
+	}
+
+	provinces={
+		80 524 850 893 943 1256 1320 1459 1661 1805 2065 2104 2518 2551 2722 2742 3429 3446 3806 4322 4571 4692 4760 5031 5283 5477 5643 6694 6701 6715 6720 6721 6722 6729 6730 6742 6754 6762 6764 6773 6777 6782 6795 6804 6805 6823 6829 
+	}
+	manpower=1210392
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

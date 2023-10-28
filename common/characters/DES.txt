@@ -1,0 +1,58 @@
+characters = {
+    DES_herbert_grant = {
+        name = "Herbert J. Grant"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DES/Heber.png"
+			}
+			army = {
+				large = "gfx/leaders/DES/Heber.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+			traits = {
+				#
+			}
+		}
+    }
+	DES_walter_stewart = {
+		name = "Walter J. Stewart"
+		portraits = {
+			army = {
+				large = "gfx/leaders/DES/Walter.jpeg"
+				small = "GFX_idea_USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				trickster
+				air_force_guy
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	DES_william_willians = {
+		name = "William G. Williams"
+		portraits = {
+			army = {
+				large = "gfx/leaders/DES/Williams.jfif"
+				small = "USA_generic_land_4"
+			}
+		}
+		field_marshal = {
+			skill = 2
+			traits = {
+				desert_fox
+			}
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

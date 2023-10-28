@@ -1,0 +1,40 @@
+
+state={
+	id=149
+	name="STATE_149"
+	manpower = 32057
+	
+	state_category = rural
+	
+	resources={
+		steel=4
+		oil=5
+	}
+
+	history={
+		owner = ELK
+		buildings = {
+			infrastructure = 1
+			#arms_factory = 1
+			#industrial_complex = 1			
+		}
+		add_core_of = ELK
+		#add_core_of = ELK
+		victory_points = {
+			5484 3
+		}		
+		victory_points = {
+			4188 2
+		}		
+		victory_points = {
+			2744 1
+		}
+		victory_points = {
+			7532 2
+		}
+	}
+
+	provinces={
+		7548 3958 237 1733 7392 1726 7552 499 3828 7414 2785 4854 7478 4483 7458 7509 1146 5520 3875 2984 590 4188 3712 7209 4207 3946 2744 7283 2960 7284 4047 7324 2946 440 7323 3637 5484 1830 4529 5769 5179 2310 240 7449 2308 4160 7483 679 1734 1192 7532 7575
+	}
+}

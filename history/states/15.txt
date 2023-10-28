@@ -3,14 +3,23 @@ state={
 	id=15
 	name="STATE_15"
 	history={
-		owner = BLZ
-		add_core_of = BLZ
+		add_core_of = BAS
+		owner = BAS
+		victory_points = {
+			2140 1 
+		}
+		buildings = {
+			infrastructure = 2
+			2140 = {
+				naval_base = 1
+			}
+		}
 	}
 
 	provinces={
 		1655 2140 2575 3194 3337 3848 4224 4783 5013 5100 5373 8893 8914 8952 8976 9007 9038 
 	}
-	manpower=1
-	state_category=town
+	manpower=51000
+	state_category=pastoral
 	buildings_max_level_factor=1.000
 }

@@ -1,0 +1,15 @@
+characters = {
+	DOM_trujillo = {
+		name = "Rafael Trujillo"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOM/Portrait_trujillo.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+			}
+		}
+	}
+}

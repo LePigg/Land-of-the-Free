@@ -1,0 +1,36 @@
+characters = {
+	ELP_john_garand = {
+		name = "John C. Garand"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ELP/John.dds"
+			}
+		}
+		country_leader = {
+			ideology = corporatocracy
+			traits = {
+				master_gunsmith
+			}
+		}
+	}
+	ELP_henry_pratt = {
+		name = "Henry Conger Pratt"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ELP/Pratt.jpg"
+				small = "USA_generic_land_4"
+			}
+		}
+		field_marshal = {
+			skill = 2
+			traits = {
+				air_force_guy
+				infantry_leader
+			}
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

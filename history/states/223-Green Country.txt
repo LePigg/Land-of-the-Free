@@ -1,0 +1,34 @@
+
+state={
+	id=223
+	name="STATE_223"
+	resources={
+		oil=5 # was: 100
+		aluminium=10 # was: 32
+	}
+
+
+	history={
+		owner = SEQ
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SEQ
+		victory_points = {
+			7891 8
+		}
+		victory_points = {
+			7918 2
+		}	
+		victory_points = {
+			8026 2
+		}
+	}
+
+	provinces={
+		8064 8043 1474 7976 7950 3107 2522 5471 8026 8044 4079 1895 300 7934 1738 1018 1730 3893 4476 7992 3645 7918 2933 7902 3052 7963 3259
+	}
+	manpower=696039
+	state_category=town
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=89
+	name="STATE_89"
+		history={
+		owner = MEX
+		add_core_of = MEX
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			1509 5
+		}
+		victory_points = {
+			4639 15
+		}
+		victory_points = {
+			8725 2
+		}
+	}
+	provinces={
+		512 1079 1202 1248 1509 1603 1852 2020 2490 2741 2964 3205 3247 3797 3799 4574 4639 4680 4727 4878 5039 5191 5216 5413 5504 5738 8544 8555 8562 8567 8572 8580 8590 8594 8598 8599 8619 8634 8640 8664 8677 8708 8712 8720 8725 8740 
+	}
+	manpower=1255094
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}

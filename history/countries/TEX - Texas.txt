@@ -1,0 +1,171 @@
+﻿capital = 38
+
+#OOB ="TEX_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	base_strike = 1
+	motorised_infantry = 1
+	basic_train = 1
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_medium_airframe = 1
+			engines_1 = 1
+			engines_2 = 1
+			aa_lmg = 1
+			early_bombs = 1
+			aircraft_construction = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+			cv_naval_bomber1 = 1
+			cv_CAS1 = 1
+			naval_bomber1 = 1
+			CAS1 = 1
+			early_bomber = 1
+		}
+	}
+}
+### Tanks - NSB ###
+if = {
+	limit = { has_dlc = "No Step Back" }
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+	}
+		create_equipment_variant = {
+			name = "M1917A1"
+			type = light_tank_chassis_0
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_heavy_machine_gun
+				turret_type_slot = tank_light_one_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 3
+				tank_nsb_armor_upgrade = 2
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "M1 Combat Car"
+			type = light_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_heavy_machine_gun
+				turret_type_slot = tank_light_two_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+			}
+			upgrades = {
+				tank_nsb_armor_upgrade = 2
+				tank_nsb_engine_upgrade = 5
+			}
+			icon = "GFX_USA_basic_light_tank_medium"
+		}
+		create_equipment_variant = {
+			name = "M2A2"
+			type = light_tank_chassis_1
+			parent_version = 1
+			modules = {
+				main_armament_slot = tank_heavy_machine_gun
+				turret_type_slot = tank_light_one_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = secondary_turret_hmg
+				special_type_slot_2 = tank_radio_1
+			}
+			upgrades = {
+				tank_nsb_armor_upgrade = 2
+				tank_nsb_engine_upgrade = 5
+			}
+			icon = "GFX_USA_basic_light_tank_medium"
+		}
+}
+### Tanks - non NSB ###
+if = {
+	limit = { NOT = { has_dlc = "No Step Back" } }
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+
+set_politics = {
+	ruling_party = guided_democracy
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	Anarchism = 9
+	communism = 3
+	revolutionary_socialist = 10
+	democratic_socialism = 4
+	guided_democracy = 19
+	fascism = 15
+	conservatism = 14
+	liberalism = 6
+	despotism = 12
+	stratocracy = 8
+}
+set_convoys = 5
+add_ideas = {
+	american_warlord
+	limited_conscription
+	tex_rotten
+	tex_sabotage
+	tex_disloyal_army
+	enforced_segregation
+	press_censorship
+	restricted_voting
+	military_pensions
+	domesticity
+}
+
+country_lock_all_division_template = yes
+set_country_flag = texas_country
+
+set_stability = 0.67
+set_war_support = 0.34
+
+recruit_character = DIX_edwin_walker
+recruit_character = TEX_claire_chennault
+
+#######
+recruit_character = CHR_charles_coughlin
+recruit_character = DIX_theodore_bilbo
+recruit_character = SRT_miriam_ferguson
+recruit_character = TRG_frank_hamer
+######
+recruit_character = CHR_joseph_collins
+recruit_character = CHR_troy_middleton
+recruit_character = SRT_lucian_truscott
+recruit_character = TEX_carl_spaatz
+recruit_character = SRT_john_odaniel
+recruit_character = SRT_samuel_williams
+recruit_character = SRT_henry_hodes
+recruit_character = TEX_ira_eaker
+recruit_character = DIX_simon_buckner
+recruit_character = DIX_william_simpson
+

@@ -1,0 +1,31 @@
+
+state={
+	id=142
+	name="STATE_142"
+	resources={
+		aluminium=5.000
+		oil=43.000
+	}
+
+	history={
+		owner = MJV
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MJV
+		add_core_of = MJV
+		victory_points = {
+			3840 1
+		}
+
+	}
+
+	provinces={
+		319 1365 1567 2540 3632 3840 4173 5535 5902 7943 8002 8074 
+	}
+	manpower=14320
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

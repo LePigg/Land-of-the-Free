@@ -1,0 +1,24 @@
+
+state={
+	id=193
+	name="STATE_193"
+
+	history={
+		owner = MJV
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MJV
+		add_core_of = MJV
+
+	}
+
+	provinces={
+		580 1317 2176 2419 4403 5358 5949 7856
+	}
+	manpower=38440
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

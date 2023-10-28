@@ -1,0 +1,31 @@
+characters = {
+	SHA_guy_ballard = {
+		name = "Guy Ballard"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SHA/guyballard.png"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {
+			}
+		}
+	}
+	SHA_Krishna = {
+		name = "Krishna Venta"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SHA/Krishna.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				substance_abuser
+				politically_connected
+				militia_leader
+			}
+		}
+	}
+}

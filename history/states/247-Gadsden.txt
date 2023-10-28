@@ -1,0 +1,35 @@
+
+state={
+	id=247
+	name="STATE_247"
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2				
+		}   
+        add_core_of = MEX
+		victory_points = {
+			8246 8
+		}	
+	    victory_points = {
+			1699 4
+		}
+		victory_points = {
+			8311 3
+		}
+		victory_points = {
+			3092 2
+		}
+		set_demilitarized_zone = yes
+	}
+        
+	provinces={
+		39 140 299 453 711 990 1507 1699 1822 2117 2171 2524 2561 2616 2842 3092 3114 3544 3586 3614 3910 4369 4463 4487 4762 4837 4902 4931 5074 5166 5281 5340 5395 5968 8159 8172 8173 8181 8193 8215 8222 8240 8246 8254 8256 8274 8283 8285 8295 8302 8311 8314 
+	}
+	manpower=67248
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

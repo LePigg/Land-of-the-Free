@@ -1,0 +1,31 @@
+
+state={
+	id=65
+	name="STATE_65"
+	resources={
+		steel=60.000
+	}
+
+	history={
+		owner = SOU
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+
+		}
+		add_core_of = SOU
+		victory_points = {
+			4737 5 
+		}
+
+	}
+
+	provinces={
+		267 678 947 1281 1451 1959 2018 2553 3229 3240 3475 3484 3655 3954 4007 4410 4737 4761 4981 5002 5525 5618 5665 7700 7744 7759 7767 7785 7802 7804 7818 7830 7847 7883 7916 7969 7972 8005 
+	}
+	manpower=916500
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

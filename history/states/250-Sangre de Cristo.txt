@@ -1,0 +1,28 @@
+
+state={
+	id=250
+	name="STATE_250"
+
+	history={
+		owner = ELP
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = ELP
+		victory_points = {
+			2126 10
+		}
+		victory_points = {
+			3815 4
+		}
+	}
+
+	provinces={
+		537 1847 2126 2832 3815 4924 7852 7857 7870 7925 7987 
+	}
+	manpower= 286900 
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

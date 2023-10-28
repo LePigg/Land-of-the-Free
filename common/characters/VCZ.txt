@@ -1,0 +1,72 @@
+characters = {
+	VCZ_ferdinand_schroner = {
+		name = "Ferdinand Schörner"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VCZ/Ferdinand.tga"
+			}
+			army = {
+				large = "gfx/leaders/VCZ/Ferdinand.tga"
+				small = "GFX_idea_ferdinand_schorner"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				cruel_general
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				harsh_leader
+				infantry_officer
+				infantry_leader
+			}
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	VCZ_eduard_dietl = {
+		name = "Eduard Dietl"
+		portraits = {
+			army = {
+				large = "gfx/leaders/VCZ/Dietl.jpg"
+				small = "GFX_idea_GER_generic_land_3"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				trickster
+				trait_reckless
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	VCZ_fritz_bayerlein = {
+		name = "Fritz Bayerlein"
+		portraits = {
+			army = {
+				large = "gfx/leaders/VCZ/Bayerlein.jfif"
+				small = "GFX_idea_GER_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				winter_expert
+				commando
+			}
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+}

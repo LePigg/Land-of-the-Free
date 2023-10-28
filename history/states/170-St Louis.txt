@@ -1,0 +1,39 @@
+
+state={
+	id=170
+	name="STATE_170"
+	resources={
+		aluminium=12.000
+	}
+
+	history={
+		owner = STL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = STL
+		victory_points = {
+			7556 28 
+		}
+		victory_points = {
+			7739 2
+		}
+		victory_points = {
+			7676 4
+		}
+		victory_points = {
+			7741 2
+		}
+	}
+
+	provinces={
+		61 450 472 609 944 1088 1357 1828 2817 3849 4335 4367 4711 5240 5608 5689 7556 7558 7595 7610 7632 7647 7648 7661 7674 7675 7676 7705 7716 7739 7741 
+	}
+	manpower=1429365
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

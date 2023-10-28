@@ -1,0 +1,65 @@
+characters = {
+	MIC_arthur_vandenberg = {
+		name = "Arthur Vandenberg"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIC/Arthur.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+			traits = {
+				#
+			}
+		}
+	}
+	MIC_george_grunert = {
+		name = "George Grunert"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIC/Grunert.dds"
+				small = "GFX_ideaUSA_generic_land_3"
+			}
+			civilian = {
+				large = "gfx/leaders/MIC/Grunert.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				#
+			}
+		}
+		field_marshal = {
+			skill = 2
+			traits = {
+				career_officer
+				cavalry_officer
+			}
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	MIC_hugh_drum = {
+		name = "Hugh A. Drum"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MIC/Drum.jpg"
+				small = "GFX_idea_USA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				commando
+				organizer
+			}
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

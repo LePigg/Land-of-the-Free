@@ -1,0 +1,39 @@
+
+state={
+	id=204
+	name="STATE_204"
+	
+	history={
+		owner = MIA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = MIA
+		victory_points = {
+			2141 2 
+		}
+		victory_points = {
+			7185 10
+		}
+		victory_points = {
+			3142 5
+		}
+		victory_points = {
+			7343 2
+		}
+		victory_points = {
+			2567 3
+		}
+
+	}
+	
+	provinces={
+		2141 2567 3142 3250 3404 3912 5920 7185 7216 7230 7246 7269 7300 7301 7340 7343 
+	}
+	manpower=1992000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

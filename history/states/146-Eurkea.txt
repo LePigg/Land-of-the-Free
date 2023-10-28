@@ -1,0 +1,40 @@
+
+state={
+	id=146
+	name="STATE_146"
+	manpower = 477248
+	
+	state_category = city
+	
+	resources={
+		oil=3
+		chromium=2
+	}
+
+	history={
+		owner = SHA
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1			
+		}
+		add_core_of = SHA
+		victory_points = {
+			3489 10
+		}		
+		
+		victory_points = {
+			7221 2 
+		}	
+        	victory_points = {
+			1268 5 
+		}	
+		victory_points = {
+			4678 3
+		}
+	}
+
+	provinces={
+        3489 7298 7315 1912 933 4678 7275 7240 7196 7213 7231 7201 7221 7084 7114 4543 7136 1268
+	}
+}

@@ -1,0 +1,39 @@
+
+state={
+	id=249
+	name="STATE_249"
+	resources={
+		oil=14.000
+		aluminium=30.000
+		steel=50.000
+	}
+
+	history={
+		owner = ELP
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 3
+
+		}
+		add_core_of = ELP
+		victory_points = {
+			7986 15 
+		}
+		victory_points = {
+			4627 2
+		}
+		victory_points = {
+			8223 4
+		}
+
+	}
+
+	provinces={
+		573 680 2917 3069 3402 4262 4570 4627 5304 7924 7986 8008 8024 8194 8223 
+	}
+	manpower=223316
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

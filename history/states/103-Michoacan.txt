@@ -1,0 +1,26 @@
+state={
+	id=103
+	name="STATE_103"
+		history={
+		owner = MEX
+		add_core_of = MEX
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			8882 8
+		}
+		victory_points = {
+			4314 3
+		}
+
+	}
+	provinces={
+		62 64 451 956 1159 1524 2393 2776 2971 2973 3126 3407 3537 4196 4316 4500 4599 4604 4721 4785 5252 5741 5752 5778 8872 8881 8882 8888 8903 8916 8918 8924 8925 8929 8930 8938 8942 8983 8987 14947 
+	}
+	manpower=1065541
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}

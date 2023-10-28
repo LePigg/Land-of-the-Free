@@ -1,0 +1,166 @@
+characters = {
+	ARA_gerald_smith = {
+		name = "Gerald L. K. Smith"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ARA/Gerald.dds"
+			}
+		}
+		country_leader = {
+			ideology = ultranationalism
+			traits = {
+				figurehead_president
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+				#
+			}
+		}
+	}
+	ARA_collapsed_authority = {
+		name = "Collapsed Authority"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ARA/No Authority.png"
+			}
+		}
+		country_leader = {
+			ideology = total_anarchy
+			traits = {
+				collapsed_authority
+			}
+		}
+	}
+	ARA_charles_lindbergh = {
+		name = "Charles Lindbergh"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ARA/Charles.dds"
+			}
+			army = {
+				large = "gfx/leaders/ARA/Charles.dds"
+				small = "GFX_idea_generic_air_warfare_theorist_commonwealth_2d"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				#
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = generic_air_warfare_theorist_commonwealth_2d
+			allowed = {
+				original_tag = ARA
+			}
+			traits = {
+				air_air_combat_training_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				media_personality
+				politically_connected
+				air_force_guy
+				trickster
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	ARA_joseph_mcnarney = {
+		name = "Joseph McNarney"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ARA/Portrait_McNarney.dds"
+				small = "GFX_idea_USA_generic_land_4"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				infantry_leader
+				infantry_expert
+				career_officer
+			}
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	ARA_edward_almond = {
+		name = "Edward Almond"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ARA/Portrait_Almond.dds"
+				small = "GFX_idea_USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				harsh_leader
+				commando
+				trait_reckless
+			}
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	ARA_amos_fries = {
+		name = "Amos A. Fries"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ARA/Fries.jpg"
+				small = "GFX_idea_generic_navy_south_america_2"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				trait_engineer
+				old_guard
+				swamp_fox
+				war_hero
+			}
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	ARA_robert_wood = {
+		name = "Robert E. Wood"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ARA/Wood.jpg"
+				small = "GFX_idea_USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				old_guard
+				politically_connected
+				organizer
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+}

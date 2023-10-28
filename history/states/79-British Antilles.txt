@@ -4,12 +4,24 @@ state={
 	history={
 		owner = BAS
 		add_core_of = BAS
+		buildings = {
+			infrastructure = 1
+			9615 = {
+				naval_base = 1
+			}
+			9612 = {
+				naval_base = 1
+			}
+			9614 = {
+				naval_base = 1
+			}
+		}
 	}
 
 	provinces={
 		9612 9614 9615 
 	}
-	manpower=1
-	state_category=town
+	manpower=18032
+	state_category=tiny_island
 	buildings_max_level_factor=1.000
 }

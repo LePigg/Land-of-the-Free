@@ -1,3 +1,119 @@
+EXA = "countries/Exile.txt"
+SND = "countries/San Diego.txt"
+ORC = "countries/Orange County.txt"
+LAC = "countries/Los Angeles.txt"
+SGV = "countries/San Gabriel Valley.txt"
+MJV = "countries/Mojave.txt"
+#NorCal
+MTY = "countries/Monterey.txt"
+CAL = "countries/California.txt"
+SHA = "countries/Shasta.txt"
+EUR = "countries/Eureka.txt"
+#Nevada
+REN = "countries/Reno.txt"
+FNV = "countries/Nevada.txt"
+ELK = "countries/Elko.txt"
+SRR = "countries/Sierra.txt"
+#Arizona
+TUC = "countries/Tucson.txt"
+NVJ = "countries/Navajo.txt"
+PHE = "countries/Phoenix.txt"
+#Utah
+DES = "countries/Deseret.txt" 
+WDC = "countries/Western Defense Command.txt" 
+#Oregon
+#PTD = "countries/Portland.txt" 
+ORE = "countries/Oregon.txt"
+CAS = "countries/Cascadia.txt"
+#Washington
+SEA = "countries/Seattle.txt" 
+YAK = "countries/Yakima.txt"
+SKN = "countries/Spokane.txt"
+#Alaska
+AKA = "countries/Alaska.txt"
+
+#Phase 2: The Rockies and On
+#Colorado
+DVR = "countries/Denver.txt"
+PBL = "countries/Pueblo.txt"
+#Idaho/Montana/Wyoming
+SHO = "countries/Shoshone.txt"
+HEL = "countries/Helena.txt"
+ABS = "countries/Absaroka.txt" 
+BIL = "countries/Billings.txt"
+DAB = "countries/Montana.txt"
+#New Mexico
+ABQ = "countries/Albuquerque.txt" 
+#LCR = "countries/Las Cruces.txt"
+#Dakotas
+NDA = "countries/North Dakota.txt"
+BMK = "countries/Bismarck.txt"
+LAK = "countries/Lakota.txt"
+UTE = "countries/Ute.txt"
+SIX = "countries/Sioux.txt"
+MIN = "countries/Minnesota.txt"
+OJB = "countries/Ojibwe.txt"
+IWA = "countries/Iowa.txt"
+DIA = "countries/Democratic Iowa.txt"
+DBQ = "countries/Dubuque"
+GPS = "countries/Great Plains Society.txt"
+
+#Texas
+TXL = "countries/Texlahoma.txt"
+SEQ = "countries/Sequoyah.txt"
+ELP = "countries/El Paso.txt"
+KAN = "countries/Kansas City.txt"
+STL = "countries/Saint Louis.txt"
+MSS = "countries/Mississippi Settlement.txt"
+TEJ = "countries/Tejas.txt"
+SRT = "countries/Dallas.txt"
+CHR = "countries/Coughlin.txt"
+DIX = "countries/Dixie.txt"
+ACA = "countries/Acadiana.txt"
+MTG = "countries/Matagorda.txt"
+ANR = "countries/Anarchist.txt"
+
+
+#Great Lakes
+IEF = "countries/International Expeditionary Force.txt"
+AMC = "countries/Amish Community.txt"
+ERR = "countries/Erie.txt"
+COM = "countries/Commies.txt"
+MIL = "countries/Milwaukee.txt"
+MIC = "countries/Michigan.txt"
+TEX = "countries/Texas.txt"
+SNA = "countries/San Antonio.txt"
+TRG = "countries/Texas Rangers.txt"
+ARA = "countries/Hoosierreich.txt"
+DUL = "countries/Minnesota.txt"
+
+#International Zones
+NEE = "countries/New England.txt"
+MIA = "countries/Middle Atlantic.txt"
+VIR = "countries/Virginia.txt"
+SOU = "countries/Southern.txt"
+#Mandate Rebellions
+MAA = "countries/Maine.txt"
+WVA = "countries/West Virginia.txt"
+PAT = "countries/Patton.txt"
+NYS = "countries/New York.txt"
+PEN = "countries/Pennyslvania.txt"
+KKK = "countries/KKK.txt"
+NAF = "countries/New Arika.txt"
+
+#Canada
+NFL = "countries/Newfoundland.txt"
+#Mexico
+VCZ = "countries/Veracruz.txt"
+GDJ = "countries/Guadalajara.txt"
+ZTC = "countries/Zacatecas.txt"
+TMP = "countries/Tamaulipas.txt"
+MXC = "countries/Mexico City.txt"
+YCT = "countries/Yucatan.txt"
+LEO = "countries/Leon.txt"
+CPG = "countries/Chilpancingo.txt"
+OXC = "countries/Oaxaca.txt"
+#
 JAP	= "countries/Japan.txt"
 GER	= "countries/Germany.txt"
 ENG = "countries/England.txt"
@@ -29,3 +145,6 @@ NIC = "countries/Nicaragua.txt"
 PAN = "countries/Panama.txt"
 RUS	= "countries/Russia.txt"
 VEN = "countries/Venezula.txt"
+HAW = "countries/Hawaii.txt"
+#
+DAN = "countries/Denmark.txt"

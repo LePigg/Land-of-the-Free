@@ -1,0 +1,39 @@
+
+state={
+	id=118
+	name="STATE_118"
+	manpower = 209659
+	
+	state_category = metropolis
+	
+	resources={
+		steel=2
+	}
+
+	history={
+		owner = SND
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 2
+			4546 = {
+				naval_base = 3
+			}
+			9597 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = SND
+		victory_points = {
+			4546 20
+		}
+		victory_points = {
+			8145 2
+		}		
+	}
+
+	provinces={
+		4546 1273 5858 8156 8123 3354 8145 4987 645 8163 9597
+	}
+}

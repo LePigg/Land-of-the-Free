@@ -1,0 +1,35 @@
+
+state={
+	id=83
+	name="STATE_83"
+
+	history={
+		owner = MEX
+		add_core_of = MEX
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			8483 1
+		}
+		victory_points = {
+			1889 5
+		}
+		victory_points = {
+			3026 10
+		}
+		victory_points = {
+			2913 8 
+		}
+
+	}
+
+	provinces={
+		124 1239 1431 1605 1889 2297 2641 2882 2913 3026 3172 3198 3688 3739 3835 4055 4263 4431 4447 4728 4734 4918 4960 5121 5305 5594 5642 5656 8483 8501 8510 8531 8532 8539 8565 8582 8593 8601 8631 8643 8655 8658 8683 8698 8707 8710 8715 9603 
+	}
+	manpower=53801
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

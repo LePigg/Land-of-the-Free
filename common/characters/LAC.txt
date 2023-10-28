@@ -1,0 +1,187 @@
+characters = {
+	LAC_howard_scott = {
+		name = "Howard Scott"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAC/Howard.dds"
+			}
+		}
+		country_leader = {
+			ideology = technocracy
+			traits = {
+				ruthless_modernizer
+			}
+		}
+	}
+	LAC_aldous_huxley = {
+		name = "Aldous Huxley"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAC/Aldous.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+			traits = {
+				editor
+			}
+		}
+	}
+	LAC_earl_long = {
+		name = "Earl C. Long"
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAC/elong.dds"
+			}
+			army = {
+				small = "GFX_idea_USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				commando
+				naval_invader
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	LAC_charles_price = {
+		name = "Charles F. B. Price"
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAC/Price.jpg"
+				small = "USA_generic_land_3"
+			}
+		}
+
+		corps_commander = {
+			skill = 2
+			traits = {
+				trickster
+				commando
+				ambusher
+			}
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	LAC_clayton_vogel = {
+		name = "Clayton Barney Vogel"
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAC/Vogel.jpg"
+				small = "USA_generic_land_5"
+			}
+		}
+
+		corps_commander = {
+			skill = 3
+			traits = {
+				inflexible_strategist
+				commando
+				trait_cautious
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	LAC_holland_smith = {
+		name = "Holland McTyrie Smith"
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAC/Smith.jpg"
+				small = "USA_generic_land_4"
+			}
+		}
+
+		field_marshal = {
+			skill = 3
+			traits = {
+				harsh_leader
+				career_officer
+				commando
+			}
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	LAC_clifton_cates = {
+		name = "Clifton B. Cates"
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAC/Portrait_Cates.dds"
+			}
+			army = {
+				small = "GFX_idea_USA_generic_navy_1"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				trickster
+				trait_reckless
+			}
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LAC_lewis_puller = {
+		name = "Lewis B. Puller"
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAC/Puller.jpg"
+			}
+			army = {
+				small = "GFX_idea_USA_generic_land_3"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				harsh_leader
+				commando
+				career_officer
+			}
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	#LAC_john_russel = {
+		#name = "John H. Russel Jr."
+		#portraits = {
+			#army = {
+			#	large = "gfx/leaders/LAC/Russel.jpg"
+			#	small = "USA_generic_land_4"
+			#}
+		#}
+		#corps_commander = {
+		#	skill = 2
+		#	traits = {
+		#		politically_connected
+		#		commando
+		#	}
+		#	attack_skill = 2
+		#	defense_skill = 3
+		#	planning_skill = 1
+		#	logistics_skill = 1
+		#}
+	#}
+#}

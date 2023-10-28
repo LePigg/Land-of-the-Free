@@ -1,0 +1,93 @@
+characters = {
+	SRR_jimmy_doolittle = {
+		name = "James Doolittle"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SRR/jimmy_doolittle.dds"
+			}
+			army = {
+				large = "gfx/leaders/SRR/jimmy_doolittle.dds"
+			}
+			army = {
+				small = "GFX_idea_USA_jimmy_doolittle"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				#
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				#
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				trickster
+				politically_connected
+				media_personality
+				air_force_guy
+			}
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	SRR_curtis_lemay = {
+		name = "Curtis LeMay"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SRR/curtis_lemay.dds"
+			}
+			army = {
+				large = "gfx/leaders/SRR/curtis_lemay.dds"
+			}
+			army = {
+				small = "GFX_idea_curtis_lemay"
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+				cruel_general
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				politically_connected
+				harsh_leader
+				trait_reckless
+				commando
+				air_force_guy
+			}
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	SRR_george_kenny = {
+		name = "George Kenny"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SRR/george_kenny.dds"
+				small = "GFX_idea_USA_george_kenny"
+			}
+		}
+	}
+	SRR_george_brett = {
+		name = "George Brett"
+		portraits = {
+			army = { 
+			large = "gfx/leaders/SRR/george_brett.dds"
+			small = "gfx_idea_USA_generic_4"
+			}
+		}
+	}
+}

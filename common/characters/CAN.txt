@@ -1,0 +1,16 @@
+characters = {
+	CAN_mackenzie_king = {
+		name = "Mackenzie King"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAN/Portrait_King.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+			traits = {
+				#
+			}
+		}
+	}
+}

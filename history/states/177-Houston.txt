@@ -1,0 +1,41 @@
+
+state={
+	id=177
+	name="STATE_177"
+
+	history={
+		owner = TEX
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			2827 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = TEX
+		victory_points = {
+			2827 25 
+		}
+		victory_points = {
+			8389 4 
+		}
+		victory_points = {
+			3421 8 
+		}
+		victory_points = {
+			8375 5 
+		}
+
+	}
+
+	provinces={
+		 1731 2114 2570 2679 2827 2909 2994 3315 3757 4208 4661 5014 8305 8357 8361 8375 8377 8389 
+	}
+	manpower=803952
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

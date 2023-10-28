@@ -1,0 +1,218 @@
+characters = {
+	AKA_pyotr_wrangel = {
+		name = "Pyotr Wrangel"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AKA/Portrait_Wrangel.png"
+			}
+			army = {
+				large = "gfx/leaders/AKA/Portrait_Wrangel.png"
+				small = "GFX_idea_europe_generic_6"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				black_baron
+			}
+		}
+		corps_commander = {
+			skill = 4
+			traits = {
+				war_hero
+				cavalry_leader
+				cavalry_expert
+				trait_reckless
+				harsh_leader
+			}
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	AKA_kirill_vladimirovich = {
+		name = "Kirill II"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AKA/Krillovich.dds"
+			}
+		}
+	}
+	AKA_alexander_kolchak = {
+		name = "Alexander Kolchak"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AKA/Kolchak.dds"
+			}
+			army = {
+				large = "gfx/leaders/AKA/Kolchak.dds"
+				small = "GFX_idea_SOV_generic_navy_3"
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+				#
+			}
+		}
+		navy_leader = {
+			skill = 3
+			traits = {
+				ironside
+				arctic_water_expert
+			}
+			attack_skill = 2
+			defense_skill = 4
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+	AKA_alexander_kerensky = {
+		name = "Alexander Kerensky"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AKA/Kerensky.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				#
+			}
+		}
+	}
+	AKA_anton_denikin = {
+		name = "Anton Denikin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/AKA/Denikin.png"
+				small = "GFX_idea_SOV_anton_denikin"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				old_guard
+				organizer
+				war_hero
+				inflexible_strategist
+			}
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	AKA_george_parks = {
+		name = "George Parks"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AKA/Parks.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+			traits = {
+				#
+			}
+		}
+	}
+	AKA_john_troy = {
+		name = "John Wier Troy"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AKA/Troy.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+			traits = {
+				#
+			}
+		}
+	}
+	AKA_vasily_boldyrev = {
+		name = "Vasily Boldyrev"
+		portraits = {
+			army = {
+				large = "gfx/leaders/AKA/Boldyrev.jpg"
+				small = "GFX_idea_europe_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				winter_specialist
+				brilliant_strategist
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	AKA_grigory_semyonov = {
+		name = "Grigory Semyonov"
+		portraits = {
+			army = {
+				large = "gfx/leaders/AKA/Semyonov.jpg"
+				small = "GFX_idea_SOV_grigory_semyonov"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				winter_specialist
+				trait_mountaineer
+				cavalry_leader
+				cavalry_expert
+			}
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	AKA_antoly_pepelyayev = {
+		name = "Antoly Pepelyayev"
+		portraits = {
+			army = {
+				large = "gfx/leaders/AKA/Anatoly.jpg"
+				small = "GFX_idea_SOV_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				winter_specialist
+				trickster
+				organizer
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 4
+		}
+	}
+	AKA_viktorin_molchanov = {
+		name = "Viktorin Molvhanov"
+		portraits = {
+			army = {
+				large = "gfx/leaders/AKA/Viktorin.png"
+				small = "GFX_idea_SOV_generic_land_4"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				trait_reckless
+				infantry_leader
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

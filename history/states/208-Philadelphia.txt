@@ -1,0 +1,45 @@
+
+state={
+	id=208
+	name="STATE_208"
+	resources={
+		steel=20.000
+	}
+	
+	history={
+		owner = MIA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 1
+			air_base = 2
+
+
+		}
+		add_core_of = MIA
+		victory_points = {
+			2807 35
+		}
+		victory_points = {
+			7117 10
+		}
+		victory_points = {
+			7133 7
+		}
+		victory_points = {
+			3508 7
+		}
+		victory_points = {
+			578 2
+		}
+
+	}
+	
+	provinces={
+		364 578 1419 2807 3375 3508 3851 4395 5165 7117 7133 7134 7142 7150 7160 7186 7199 7208 7219 
+	}
+	manpower=3389000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

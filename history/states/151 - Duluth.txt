@@ -1,0 +1,33 @@
+state={
+	id=151
+	name="STATE_151"
+	manpower = 350138
+	state_category = rural
+
+	resources={
+		steel = 75
+		oil = 2
+	}
+
+	history={
+		owner = OJB
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = OJB
+		victory_points = {
+			1297 4
+		}
+		victory_points = {
+			6755 2
+		}
+		victory_points = {
+			6743 2
+		}
+	}
+
+	provinces={
+        4516 6698 3191 5231 2804 1674 3400 1297 6788 2246 4513 2729 6797 1151 6743 3347 2695 6786 2346 3606 6704 1478 6697 381 6755 6779 4621 634 1446 781 67 1020 6792
+	}
+}

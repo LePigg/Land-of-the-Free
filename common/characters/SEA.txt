@@ -1,0 +1,124 @@
+characters = {
+	SEA_william_foster = {
+		name = "William Z. Foster"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SEA/William.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxist_leninism
+			traits = { prince_of_terror }
+		}
+	}
+	SEA_eugene_dennis = {
+		name = "Eugene Dennis"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SEA/Dennis.tga"
+			}
+		}
+	}
+	SEA_robert_sharon_allen = {
+		name = "Robert Sharon Allen"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SEA/allen.jpg"
+			}
+			army = {
+				small = "GFX_idea_USA_generic_land_2"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = { trait_cautious panzer_leader armor_officer }
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	SEA_milton_wolff = {
+		name = "Milton Wolff"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SEA/Portrait_Wolff.dds"
+			}
+			army = {
+				small = "GFX_idea_USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = { militia_leader compassionate_leader trickster }
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SEA_george_cannon = {
+		name = "George H. Cannon"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SEA/cannon.jpg"
+			}
+			army = {
+				small = "GFX_idea_europe_generic_land_19"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = { trait_reckless commando }
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	SEA_steve_nelson = {
+		name = "Steve Nelson"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SEA/Nelson.jpeg"
+				small = "GFX_idea_USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				militia_leader
+				politically_connected
+				trait_reckless
+			}
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	SOV_georgy_zhukov = { #Is from the USSR, serves as expeditionary
+		name = "Georgy Zhukov"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SEA/Zhukov.jpg"
+				small = "GFX_idea_SOV_georgy_zhukov"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			traits = {
+				armor_officer
+				brilliant_strategist
+				winter_specialist
+				media_personality
+				war_hero
+				foreign_officer
+			}
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+}

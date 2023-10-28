@@ -1,0 +1,105 @@
+characters = {
+	LAK_white_bull = {
+		name = "White Bull"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAK/Portrait_White_Bull.dds"
+			}
+			army = {
+				large = "gfx/leaders/LAK/Portrait_White_Bull.dds"
+				small = "GFX_idea_LBA_generic_3"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				popular_figurehead
+			}
+		}
+		field_marshal = {
+			skill = 2
+			traits = {
+				old_guard
+				cavalry_leader
+				war_hero
+				defensive_doctrine
+			}
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	LAK_joseph_cloud = {
+		name = "Joseph Horn Cloud"
+		portraits= {
+			civilian = {
+				large = "gfx/leaders/LAK/Joseph.dds"
+			}
+			army = {
+				large = "gfx/leaders/LAK/Joseph.dds"
+				small = "GFX_idea_south_america_generic_land_4"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				headstrong
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				politically_connected
+				infantry_officer
+				compassionate_leader
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	LAK_dewey_beard = {
+		name = "Dewey Beard"
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAK/Dewey.jpg"
+				small = "GFX_idea_SAU_generic_democratic1"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				inflexible_strategist
+				war_hero
+				cavalry_leader
+				old_guard
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	LAK_william_cloud = {
+		name = "William Horn Cloud"
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAK/William.jpg"
+				small = "GFX_idea_south_america_generic_navy_3"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				politically_connected
+				cavalry_officer
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

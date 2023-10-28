@@ -1,0 +1,21 @@
+
+state={
+	id=128
+	name="STATE_128"
+
+	history={
+		owner = BAS
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BAS
+	}
+
+	provinces={
+		393 505 1029 1265 1576 1860 3183 3230 3261 3434 3572 3585 3636 4046 6212 6235 6243 6253 6265 6274 6279 
+	}
+	manpower=1923
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

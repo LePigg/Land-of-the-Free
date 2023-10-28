@@ -1,23 +1,60 @@
-capital = 22
+capital = 133
 
-oob = "standard_templates"
+#OOB ="standard_templates"
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	early_bomber = 1
+	base_strike = 1
+	motorised_infantry = 1
+	basic_train = 1
 }
 
 set_convoys = 20
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 10
+}
 
+add_ideas = { 
+	CAN_LoTF_great_depression
+	CAN_refugee_crisis
+	early_integration
+	export_focus
+	civilian_economy
+}
+
+set_stability = 0.69
+set_war_support = 0.23
 set_politics = {
-	ruling_party = democratic
+	ruling_party = liberalism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
+
+set_cosmetic_tag = CAN_dominion
+
 set_popularities = {
-	democratic = 50
-	fascism = 36
-	communism = 10
-	neutrality = 4
+	liberalism = 45
+	conservatism = 37
+	communism = 1
+    democratic_socialism = 10
+    despotism = 7
 }
+#leaders
+recruit_character = CAN_mackenzie_king
+

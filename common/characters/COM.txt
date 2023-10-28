@@ -1,0 +1,200 @@
+characters = {
+	COM_norman_thomas = {
+		name = "Norman Thomas"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COM/Thomas.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_revolutionary_socialist
+			traits = {
+				exiled_president
+			}
+		}
+	}
+	COM_earl_browder = {
+		name = "Earl Browder"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COM/Earl.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {
+				socialist_patriot
+			}
+		}
+	}
+	COM_james_cox = {
+		name = "James Renshaw Cox"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COM/Cox.jpg"
+			}
+		}
+		country_leader = {
+			ideology = dem_socialism
+			traits = {
+				heart_of_gold
+			}
+		}
+	}
+	DBQ_jacob_devers = {
+		name = "Jacob Devers"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DBQ/Devers.png"
+			}
+			army = {
+				large = "gfx/leaders/DBQ/Devers.png"
+				small = "GFX_ideas_USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				trait_reckless
+				trickster
+				combined_arms_expert
+				panzer_leader
+			}
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		country_leader = {
+			ideology = gen_revolutionary_socialist
+			traits = {
+				crazy_jake
+			}
+		}
+	}
+	DBQ_williston_palmer = {
+		name = "Williston B. Palmer"
+		portraits = {
+			army = {
+				large = "gfx/leaders/COM/Palmer.jpg"
+				small = "GFX_idea_USA_generic_land2"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				armor_officer 
+			}
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	COM_walter_waters = {
+		name = "Walter E. Waters"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COM/Walter.tga"
+			}
+			army = {
+				large = "gfx/leaders/COM/Walter.tga"
+			}
+			army = {
+				small = "GFX_idea_USA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				war_hero
+				compassionate_leader
+				trickster
+				hidden_sympathies
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	COM_david_shoup = {
+		name = "David Monroe Shoup"
+		portraits = {
+			army = {
+				large = "gfx/leaders/COM/David_Shoup.dds"
+			}
+			army = {
+				small = "GFX_idea_USA_generic_land_2"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				adaptable
+				commando
+				urban_assault_specialist
+				ranger
+			}
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	COM_herbert_holdridge = {
+		name = "Herbert C. Holdridge"
+		portraits = {
+			army = {
+				large = "gfx/leaders/COM/Herbert.jpg"
+			}
+			army = {
+				small = "GFX_idea_USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				commando
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	COM_smedley_butler = {
+		name = "Smedley Butler"
+		portraits = {
+			army = {
+				large = "gfx/leaders/COM/Portrait_Buttler.dds"
+			}
+			army = {
+				small = "GFX_idea_USA_generic_land_4"
+			}
+		}
+		field_marshal = {
+			skill = 4
+			traits = {
+				compassionate_leader
+				commando
+				war_hero
+				career_officer
+			}
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	COM_john_gates = {
+		name = "John Gates"
+		portraits = {
+			army = {
+				large = "gfx/leaders/COM/Gates.jpg"
+				small = "GFX_idea_USA_generic_land_1"
+			}
+		}
+	}
+}

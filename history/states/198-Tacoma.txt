@@ -1,0 +1,43 @@
+
+state={
+	id=198
+	name="STATE_198"
+	
+	history={
+		owner = SEA
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = SEA
+
+	}
+	
+	history={
+		owner = SEA
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SEA
+		victory_points = {
+			6738 10
+		}
+		victory_points = {
+			3608 3
+		}
+		victory_points = {
+			2384 3
+		}
+		victory_points = {
+			2208 6
+		}
+	}
+
+	provinces={
+		2208 2384 2750 3608 3936 5399 5899 6738 6770 6812 6834 
+	}
+	manpower=382040
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

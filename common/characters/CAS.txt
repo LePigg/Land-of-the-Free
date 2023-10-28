@@ -1,0 +1,75 @@
+characters = {
+	CAS_h_mencken = {
+		name = "H. L. Mencken"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAS/hlmen.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+			traits = {
+				backroom_backstabber
+			}
+		}
+	}
+	CAS_ayn_rand = {
+		name = "Ayn Rand"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAS/Rand.jpg"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				corporate_shill
+			}
+		}
+	}
+	CAS_leslie_groves = {
+		name = "Leslie Groves"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAS/Groves.jpg"
+			}
+			army = {
+				small = "GFX_idea_USA_generic_land_3"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				politically_connected
+				trait_engineer
+				trickster
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	CAS_cornelius_ryan = {
+		name = "Cornelius Ryan"
+		portraits = {
+			army = {
+				large ="gfx/leaders/CAS/Ryan.jpg"
+			}
+			army = {
+				small = "GFX_idea_USA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				panzer_leader
+				commando
+			}
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+}

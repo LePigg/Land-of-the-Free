@@ -1,0 +1,33 @@
+
+state={
+	id=278
+	name="STATE_278"
+
+	history={
+		owner = TEX
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+
+		}
+		add_core_of = TEX
+		victory_points = {
+			8082 5 
+		}
+		victory_points = {
+			8011 1 
+		}
+		victory_points = {
+			8138 3
+		}
+
+	}
+
+	provinces={
+		132 707 806 1032 1957 1965 2100 2613 2911 3144 3241 3724 5951 8009 8011 8054 8069 8083 8138 
+	}
+	manpower=132069
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

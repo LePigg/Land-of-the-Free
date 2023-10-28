@@ -1,6 +1,6 @@
 capital = 14
 
-oob = "standard_templates"
+#OOB ="standard_templates"
 
 # Starting tech
 set_technology = {
@@ -10,14 +10,29 @@ set_technology = {
 set_convoys = 20
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = despotism
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 50
-	fascism = 36
-	communism = 10
-	neutrality = 4
+	despotism = 40
+	stratocracy = 23
+	guided_democracy = 24
+	democratic_socialism = 7
+	conservatism = 4
+	liberalism = 2
 }
+set_stability = 0.35
+set_war_support = 0.24
+add_ideas = {
+	VEN_oil
+}
+recruit_character = VEN_Carlos_Delgado_Chalbaud
+recruit_character = VEN_Eleazar_López_Contreras
+recruit_character = VEN_Isaías_Medina_Angarita
+recruit_character = VEN_Rafael_Caldera
+recruit_character = VEN_Rómulo_Betancourt
+recruit_character = VEN_Rómulo_Gallegos
+recruit_character = VEN_Germán_Suárez_Flamerich
+

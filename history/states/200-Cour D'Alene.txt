@@ -1,0 +1,40 @@
+
+state={
+	id=200
+	name="STATE_200"
+
+	history={
+		owner = SKN
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = SKN
+		victory_points = {
+			6737 3
+		}
+		victory_points = {
+			2912 1
+		}
+		victory_points = {
+			2254 2
+		}
+		victory_points = {
+			777 3
+		}
+		victory_points = {
+			2756 2
+		}
+
+	}
+
+	provinces={
+		97 777 2254 2686 2756 2912 3113 3151 3882 4176 5303 5404 5710 5869 6716 6737 6798 6816 6865 6891 6897 
+	}
+	manpower=174800
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

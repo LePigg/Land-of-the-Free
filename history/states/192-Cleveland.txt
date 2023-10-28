@@ -1,0 +1,36 @@
+
+state={
+	id=192
+	name="STATE_192"
+	resources={
+		steel=10
+	}
+	history={
+		owner = ERR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 1
+		}
+		add_core_of = ERR
+		victory_points = {
+			2629 20 
+		}
+		victory_points = {
+			4167 5 
+		}
+		victory_points = {
+			7182 5
+		}
+
+	}
+
+	provinces={
+		1229 2543 2629 4167 4644 4674 5228 5351 5443 5546 5821 7182 7215 7232 7257 7262 7274 7295 7296 7313 7326 
+	}
+	manpower=1308300
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

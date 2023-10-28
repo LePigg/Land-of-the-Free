@@ -1,0 +1,15 @@
+characters = {
+	ORC_dorothy_day = {
+		name = "Dorothy Day"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ORC/Day.tga"
+			}
+		}
+		country_leader = {
+			ideology = gen_revolutionary_socialist
+			traits = {
+			}
+		}
+	}
+}

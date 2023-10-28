@@ -1,0 +1,55 @@
+﻿l_english:
+
+###SOUMANDATE LOYALTY TRAITS###
+sdc_insurrectionary:0 "Southern Defence Command Partisans Status: §RInsurrectionary§!"
+sdc_insurrectionary_desc:0 "Federal Partisans under the command of §RGeorge S. Patton§! have been able to properly mobilize troops and materiels in our own territory! As their raids grow larger and evermore daring, most senior officals believe that §Ropen insurrection is meerly weeks away...§!"
+
+kkk_content:0 "Klu Klux Klan Status: §GContent§!"
+kkk_content_desc:0 "With the political status of the §GKKK§! being validated by our administration from the appointing of several party authorities into our bureaucracy, §GHiram Evans§!, the Grand Wizard, has made §Gcollaboration§! a new fundamental policy of the Klan.  As long as we continue on our current course, §Gthe KKK will cease to be a threat at all§!. If we show some §5initiative§!, they may prove to be §5useful allies in the struggles to come...§!"
+
+byrd_malcontent:0 "Byrd Political Machine Status: §YMalcontent§!"
+byrd_malcontent_desc:0 "Dissatisfied with our administration, the §YByrd Political Machine§! has begun making consious efforts to counter our governance. §YFilibustering at every available moment in the Authority Council and organizing local protests throughout our territories§!, their efforts have proven quite effective at making our lives difficult, §Ybut as long as the situation doesnt deteriorate any further we should have nothing to fear....§!"
+
+naacp_dead:0 "NAACP Status: §BSupressed§!"
+naacp_dead_desc:0 "After months of supression ultimately leading to the arrest of their leader §BAdam Powell§!, the §BNAACP Coalition has all but collapsed§!. With one of the serious threats to our administration dealt with, we can now more easily focus on §Ydealing with the other remaining factions...§!"
+
+
+
+
+
+
+
+Minimum Wage
+
+1: 
+2: 
+3: 
+4: 
+
+Workday
+
+1: prodution efficiency gain -50%/ factory output +20%/ resource efficiency +10%/ stability -5%
+2: prodution efficiency gain -25%/ factory output +10%/ stability -5%
+3: stability -5%
+4: factory output -5%/ resource efficiency -5%/ stability +10%/ political power gain +10%
+
+Workweek
+
+1: prodution efficiency gain -10%/ factory output +10%/ stability -5%
+2: stability -5%
+3: prodution efficiency gain +5%/ factory output -5%
+4: prodution efficiency gain +10%/ factory output -5%/  stability +5%
+
+Child Labor
+
+1: research speed -15%/ resource efficiency +10%/ factory output +10%/ consumer goods -8%
+2: research speed -10%/ resource efficiency +5%/ factory output +5%/ consumer goods -4%
+3: research speed +5%/  consumer goods +5%
+4: research speed +10%/  consumer goods +10%
+
+Pensions
+
+1: consumer goods -10%/ stability -10%/ political power gain -10%
+2: consumer goods +2%/ stability +2%/ political power gain +2%
+3: consumer goods +5%/ stability +5%/ political power gain +5%
+4: consumer goods +10%/ stability +10%/ political power gain +10%

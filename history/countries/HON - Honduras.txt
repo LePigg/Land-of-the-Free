@@ -1,6 +1,6 @@
 capital = 10
 
-oob = "standard_templates"
+#OOB ="standard_templates"
 
 # Starting tech
 set_technology = {
@@ -10,14 +10,29 @@ set_technology = {
 set_convoys = 20
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = guided_democracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 50
-	fascism = 36
-	communism = 10
-	neutrality = 4
+	guided_democracy = 25
+	communism = 19
+	liberalism = 20
+	stratocracy = 11
+	revolutionary_socialist = 10
+	despotism = 5
+	fascism = 10
 }
+
+set_stability = 0.40
+set_war_support = 0.10 
+
+
+add_ideas = {
+	HON_overfunded
+	HON_agitation
+}
+#leaders
+recruit_character = HON_tiburcio_andino
+

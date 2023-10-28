@@ -1,0 +1,31 @@
+
+state={
+	id=69
+	name="STATE_69"
+
+	history={
+		owner = SOU
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			air_base = 4
+
+		}
+		add_core_of = SOU
+		victory_points = {
+			2122 5 
+		}
+		victory_points = {
+			2884 2 
+		}
+
+	}
+
+	provinces={
+		60 584 1571 1741 1962 2272 2680 2692 2884 3300 3313 3359 3705 3902 3968 4084 4398 4407 4625 4652 4997 5337 5637 5640 5851 5855 7588 7623 7638 7639 7644 7657 7662 7668 7682 7683 7694 7724 7746 7772 7774 7777 7794 7805 
+	}
+	manpower=2614588
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

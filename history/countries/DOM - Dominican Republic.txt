@@ -1,6 +1,6 @@
 capital = 75
 
-oob = "standard_templates"
+#OOB ="standard_templates"
 
 # Starting tech
 set_technology = {
@@ -10,14 +10,17 @@ set_technology = {
 set_convoys = 20
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = despotism
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 50
-	fascism = 36
-	communism = 10
-	neutrality = 4
+	despotism = 54
+	conservatism = 23
+	liberalism = 15
+	stratocracy = 5
+	fascism = 3
 }
+recruit_character = DOM_trujillo
+

@@ -1,0 +1,38 @@
+
+state={
+	id=290
+	name="STATE_290"
+
+	history={
+		owner = EUR
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 4
+
+		}
+		add_core_of = EUR
+		victory_points = {
+			7678 5 
+		}
+		victory_points = {
+			2362 3 
+		}
+		victory_points = {
+			5365 15 
+		}
+		victory_points = {
+			3321 3 
+		}
+		victory_points = {
+			3884 2 
+		}
+	}
+
+	provinces={
+		2362 3321 3884 4955 5365 5649 7655 7678 7706 
+	}
+	manpower=329618
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

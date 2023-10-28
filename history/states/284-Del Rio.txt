@@ -1,0 +1,24 @@
+
+state={
+	id=284
+	name="STATE_284"
+
+	history={
+		owner = TEJ
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = TEJ
+		add_claim_by = TEX
+
+	}
+
+	provinces={
+		1383 1859 1943 2101 2415 2520 3106 3293 3706 8410 8417 8428 8432 8452 8471 
+	}
+	manpower=326800
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

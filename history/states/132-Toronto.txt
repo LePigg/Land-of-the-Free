@@ -1,0 +1,39 @@
+
+state={
+	id=132
+	name="STATE_132"
+
+	history={
+		owner = CAN
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 4
+			air_base = 5
+		}
+		add_core_of = CAN
+		victory_points = {
+			6887 20
+		}
+		victory_points = {
+			1838 10
+		}
+		victory_points = {
+			1124 8
+		}
+		victory_points = {
+			7090 5
+		}
+		victory_points = {
+			3021 5 
+		}
+	}
+
+	provinces={
+		260 465 659 794 1022 1124 1591 1702 1762 1838 1926 1987 2167 2478 2549 2993 3021 3482 3811 4158 4816 5550 6827 6868 6869 6886 6887 6901 6938 6963 6964 6970 6987 6994 7002 7011 7012 7018 7030 7076 7090 
+	}
+	manpower=2117017
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

@@ -1,0 +1,26 @@
+state={
+	id=96
+	name="STATE_96"
+		history={
+		owner = MEX
+		add_core_of = MEX
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 4
+		}
+		victory_points = {
+			5060 15
+		}
+		victory_points = {
+			8931 3
+		}
+
+	}
+	provinces={
+		1291 1891 2597 2803 2985 3279 3825 4003 4216 5060 5651 8862 8873 8887 8889 8899 8900 8931 8935 8945 8958 8960 8981 
+	}
+	manpower=1415693
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=metropolis
+}

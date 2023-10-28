@@ -1,0 +1,27 @@
+
+state={
+	id=270
+	name="STATE_270"
+
+	history={
+		owner = SRR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = SRR
+		victory_points = {
+			726 4 
+		}
+
+	}
+
+	provinces={
+		726 4523 7513 7564 
+	}
+	manpower=39848
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

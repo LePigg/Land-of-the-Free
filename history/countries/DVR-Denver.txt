@@ -1,0 +1,55 @@
+﻿capital = 265
+
+#OOB ="DVR_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+set_country_flag = texas_country
+set_politics = {
+	ruling_party = guided_democracy
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	guided_democracy = 100
+}
+add_ideas = {
+	american_warlord
+}
+
+set_convoys = 5
+set_research_slots = 2
+set_stability = 0
+set_war_support = 0.05
+
+create_country_leader = {
+	name = "Alfred P. Joan Jr."
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Sloan.tga"
+	expire = "1965.1.1"
+	ideology = gen_despotism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "John Wayne"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Wayne.tga"
+	expire = "1965.1.1"
+	ideology = gen_guided_democracy
+	traits = {
+		#
+	}
+}
+
+
+
+
+
+

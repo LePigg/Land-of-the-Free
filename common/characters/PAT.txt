@@ -1,0 +1,75 @@
+characters = {
+	PAT_george_patton = {
+		name = "George S. Patton"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAT/pattonfinished.png"
+			}
+			army = {
+				large = "gfx/leaders/PAT/pattonfinished.png"
+				small = "GFX_idea_USA_george_s_patton"
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+				blood_and_guts
+			}
+		}
+		field_marshal = {
+			skill = 4
+			traits = {
+				harsh_leader
+				trait_reckless
+				panzer_leader
+				trickster
+				war_hero
+			}
+		attack_skill = 5
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 3
+		}
+	}
+	PAT_geoffrey_keyes = {
+		name = "Geoffrey Keyes"
+		portraits = {
+			army = {
+				large = "gfx/leaders/PAT/Keyes.jpg"
+				small = "GFX_idea_USA_geoffrey_keyes"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				cavalry_officer
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	PAT_john_wood = {
+		name = "John Shirely Wood"
+		portraits = {
+			army = {
+				large = "gfx/leaders/PAT/Wood.jpg"
+				small = "USA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				panzer_leader
+				brilliant_strategist
+				trait_reckless
+				compassionate_leader
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+}

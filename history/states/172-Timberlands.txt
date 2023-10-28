@@ -1,0 +1,25 @@
+
+state={
+	id=172
+	name="STATE_172"
+	manpower = 1854481
+	
+	state_category = town
+	
+	history={
+		owner = MSS
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		add_core_of = MSS
+		victory_points = {
+			2457 1
+		}
+	}
+	provinces={
+		8220 8277 8258 4787 8238 2162 2341 867 3518 4630 2608 2261 8130 8158 5098 4087 8135 2039 47 8168 4905 4200 8101 8070 8126 4426 2457 3900 2693 3961
+	}
+	buildings_max_level_factor=1.000
+}

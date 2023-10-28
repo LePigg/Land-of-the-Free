@@ -1,0 +1,16 @@
+characters = {
+	ACA_paul_cyr = {
+		name = "Paul N. Cyr"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ACA/Cyr.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+			traits = {
+				#
+			}
+		}
+	}
+}

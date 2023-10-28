@@ -1,0 +1,28 @@
+
+state={
+	id=115
+	name="STATE_115"
+		history={
+		owner = MEX
+		add_core_of = MEX
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			9625 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			3467 5
+		}
+		
+
+	}
+	provinces={
+		225 1080 1199 1783 2699 3467 4338 4615 5217 5277 5454 5823 8733 8755 8759 8785 8794 8819 9625 14946 
+	}
+	manpower=363318
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=rural
+}

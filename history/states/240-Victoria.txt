@@ -1,0 +1,35 @@
+
+state={
+	id=240
+	name="STATE_240"
+
+	history={
+		owner = TEJ
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			55 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = TEJ
+		add_claim_by = TEX
+		victory_points = {
+			1213 4 
+		}
+		victory_points = {
+			55 2 
+		}
+
+	}
+
+	provinces={
+		55 1213 3000 3323 3601 3940 4172 4593 4769 5096 5967 8414 8422 8426 8430 8442 8451 8453 8460 
+	}
+	manpower=219200
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

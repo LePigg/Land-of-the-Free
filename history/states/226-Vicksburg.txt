@@ -1,0 +1,28 @@
+
+state={
+	id=226
+	name="STATE_226"
+
+	history={
+		owner = SOU
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = SOU
+		victory_points = {
+			8052 3 
+		}
+
+	}
+
+	provinces={
+		431 684 1735 3302 3462 3635 4846 5429 5803 7993 8022 8027 8031 8052 8057 8077 8085 8108 8120 
+	}
+	manpower=720890
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

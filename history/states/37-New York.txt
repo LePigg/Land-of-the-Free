@@ -1,0 +1,27 @@
+
+state={
+	id=37
+	name="STATE_37"
+	resources={
+		steel=13.000
+	}
+
+	history={
+		owner = MIA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = MIA
+
+	}
+
+	provinces={
+		2719 2757 3127 3385 3922 4248 5606 5919 6723 6757 6759 6796 
+	}
+	manpower=888061
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

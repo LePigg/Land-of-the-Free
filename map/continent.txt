@@ -1,0 +1,4 @@
+continents = {
+	north_america
+	south_america
+}

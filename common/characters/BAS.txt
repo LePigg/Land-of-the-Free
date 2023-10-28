@@ -1,0 +1,99 @@
+characters = {
+	BAS_george_v = {
+		name = "George V"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BAS/GeorgeV.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+			traits = {
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+			traits = {
+			}
+		}
+	}
+	BAS_edward_viii = {
+		name = "Edward VIII"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BAS/edwardVIII.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+			}
+		}
+	}
+	BAS_albert_i = {
+		name = "Albert I"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BAS/albertI.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+			traits = {
+			}
+		}
+	}
+	BAS_ironside = {
+		name = "Edmund Ironside"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BAS/ironside.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+			}
+		}
+	}
+	BAS_brockway = {
+		name = "Fenner Brockway"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BAS/brockway.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_revolutionary_socialist
+			traits = {
+			}
+		}
+	}
+	BAS_dutt = {
+		name = "Palme Dutt"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BAS/dutt.dds"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = {
+			}
+		}
+	}
+	BAS_mosely = {
+		name = "Oswald Mosely"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BAS/mosely.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {
+			}
+		}
+	}
+	
+}

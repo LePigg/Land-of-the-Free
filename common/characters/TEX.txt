@@ -1,0 +1,96 @@
+characters = {
+	TEX_anarchy = {
+		name = "Complete Anarchy"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TEX/anarchy2.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_Anarchism
+			traits = {
+			}
+		}
+	}
+	TEX_claire_chennault = {
+		name = "Claire Lee Chennault"
+		portraits = {
+			army = {
+				large = "gfx/leaders/TEX/Portrait_Chennault.dds"
+				small = "GFX_idea_claire_lee_chennault"
+			}
+			civilian = {
+				large = "gfx/leaders/TEX/Portrait_Chennault.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				generallissimo
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				trait_cautious
+				career_officer
+				air_force_guy
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	TEX_ira_eaker = {
+		name = "Ira C. Eaker"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SRT/Eaker.jpg"
+				small = "GFX_idea_USA_ira_c_eaker"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				air_force_guy
+				media_personality
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TEX_carl_spaatz = {
+		name = "Carl Andrew Spaatz"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SRT/Spaatz.jpg"
+				small = "GFX_idea_USA_carl_andrew_spaatz"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = "USA_carl_andrew_spaatz"
+			allowed = {
+				original_tag = SRT
+			}
+			traits = {
+				air_strategic_bombing_2
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				career_officer 
+				air_force_guy
+				trait_engineer
+			}
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

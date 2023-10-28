@@ -1,0 +1,149 @@
+characters = {
+	ELK_pat_mccarran = {
+		name = "Pat McCarran"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ELK/pattym.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				anti_communist
+			}
+		}
+	}
+	ELK_joseph_mccarthy = {
+		name = "Joseph McCarthy"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ELK/McCarthy.tga"
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+				anti_communist
+				paranoid_megalomaniac
+			}
+		}
+	}
+	ELK_henry_arnold = {
+		name = "Henry Arnold"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ELK/Arnold.dds"
+			}
+			army = {
+				large = "gfx/leaders/ELK/Arnold.dds"
+			}
+			army = {
+				small = "GFX_idea_USA_henry_h_arnold"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				#
+			}
+		}
+		field_marshal = {
+			skill = 4
+			traits = {
+				trickster
+				politically_connected
+				inspirational_leader
+				air_force_guy
+			}
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	ELK_walton_walker = {
+		name = "Walton Walker"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ELK/Portrait_Walton.dds"
+			}
+			army = {
+				small = "GFX_idea_USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				trait_cautious
+				panzer_leader
+				politically_connected
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	ELK_demas_craw = {
+		name = "Demas T. Craw"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ELK/craw.jpg"
+			}
+			army = {
+				small = "GFX_idea_USA_generic_land_3"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				commando
+				trait_reckless
+			}
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	ELK_albert_wedemeyer = {
+		name = "Albert C. Wedemeyer"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ELK/Wedemeyer.jpg"
+				small = "GFX_idea_USA_generic_land_4"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				inflexible_strategist
+				politically_connected
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ELK_laurence_kuter = {
+		name = "Laurence S. Kuter"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ELK/Kuter.jpg"
+				small = "GFX_idea_USA_generic_navy_1"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				air_force_guy
+				trait_engineer
+			}
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+}

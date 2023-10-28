@@ -1,0 +1,124 @@
+characters = {
+	ABS_ar_swickard = {
+		name = "A. R. Swickard" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ABS/AR.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+			traits = {
+				reluctant_interventionist
+			}
+		}
+	}
+	ABS_lloyd_frendendall = {
+		name = "Lloyd Fredendall"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ABS/Portrait_fredendall.dds"
+			}
+			army = {
+				large = "gfx/leaders/ABS/Portrait_fredendall.dds"
+				small = "GFX_idea_USA_lloyd_fredendall"
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+				inept_autocrat
+			}
+		}
+		field_marshal = {
+			skill = 1
+			traits = {
+				old_guard
+				inflexible_strategist
+				infantry_officer
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ABS_edward_brooks = {
+		name = "Edward H. Brooks"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ABS/brooks.jpg"
+				small = "GFX_idea_USA_edward_brooks"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				trait_engineer
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	ABS_russel_hartle = {
+		name = "Russel P. Hartle"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ABS/Hartle.jpg"
+				small = "GFX_idea_USA_russell_p_hartle"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				infantry_officer
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ABS_ernest_harmon = {
+		name = "Ernest N. Harmon"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ABS/Harmon.jpeg"
+				small = "GFX_idea_USA_generic_land_2"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				organizer
+				armor_officer
+			}
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	ABS_melvin_purvis = {
+		name = "Melvin H. Purvis"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ABS/Purvis.jpg"
+				small = "GFX_idea_USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				media_personality
+				trickster
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

@@ -1,0 +1,33 @@
+characters = {
+	PEN_hamilton_fish = {
+		name = "Hamilton Fish III"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PEN/Fish.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+		}
+	}
+	PEN_george_rockwell = {
+		name = "George Lincoln Rockwell"
+		portraits = {
+			army = {
+				large = "gfx/leaders/PEN/Rockwell.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				militia_leader
+				compassionate_leader
+				trait_reckless
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

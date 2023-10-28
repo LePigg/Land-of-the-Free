@@ -1,2 +1,113 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
+3487;3672;impassable;-1;-1;-1;-1;-1;;unitah mountains
+3487;4283;impassable;-1;-1;-1;-1;-1;;unitah mountains
+3487;5962;impassable;-1;-1;-1;-1;-1;;unitah mountains
+4283;5962;impassable;-1;-1;-1;-1;-1;;unitah mountains
+7450;5962;impassable;-1;-1;-1;-1;-1;;unitah mountains
+2725;5962;impassable;-1;-1;-1;-1;-1;;unitah mountains
+1479;5962;impassable;-1;-1;-1;-1;-1;;unitah mountains
+
+2240;468;impassable;-1;-1;-1;-1;-1;;sierra mountains
+2240;5482;impassable;-1;-1;-1;-1;-1;;sierra mountains
+2240;7637;impassable;-1;-1;-1;-1;-1;;sierra mountains
+2240;2924;impassable;-1;-1;-1;-1;-1;;sierra mountains
+2240;7625;impassable;-1;-1;-1;-1;-1;;sierra mountains
+2240;5718;impassable;-1;-1;-1;-1;-1;;sierra mountains
+2655;5718;impassable;-1;-1;-1;-1;-1;;sierra mountains
+2655;7503;impassable;-1;-1;-1;-1;-1;;sierra mountains
+2655;7514;impassable;-1;-1;-1;-1;-1;;sierra mountains
+2655;468;impassable;-1;-1;-1;-1;-1;;sierra mountains
+7503;7549;impassable;-1;-1;-1;-1;-1;;sierra mountains
+7503;1130;impassable;-1;-1;-1;-1;-1;;sierra mountains
+3348;1130;impassable;-1;-1;-1;-1;-1;;sierra mountains
+7549;5718;impassable;-1;-1;-1;-1;-1;;sierra mountains
+7549;2435;impassable;-1;-1;-1;-1;-1;;sierra mountains
+1130;2435;impassable;-1;-1;-1;-1;-1;;sierra mountains
+1130;2527;impassable;-1;-1;-1;-1;-1;;sierra mountains
+
+7486;7430;impassable;-1;-1;-1;-1;-1;;sierra mountains
+7486;3348;impassable;-1;-1;-1;-1;-1;;sierra mountains
+7486;7462;impassable;-1;-1;-1;-1;-1;;sierra mountains
+7486;2527;impassable;-1;-1;-1;-1;-1;;sierra mountains
+
+7332;2567;impassable;-1;-1;-1;-1;-1;;cumberand
+1631;7301;impassable;-1;-1;-1;-1;-1;;cumberland
+1631;2567;impassable;-1;-1;-1;-1;-1;;cumberland
+1631;5920;impassable;-1;-1;-1;-1;-1;;cumberland
+1631;2077;impassable;-1;-1;-1;-1;-1;;cumberland
+7381;2077;impassable;-1;-1;-1;-1;-1;;cumberland
+3748;2077;impassable;-1;-1;-1;-1;-1;;cumberland
+3748;7365;impassable;-1;-1;-1;-1;-1;;cumberland
+3748;7391;impassable;-1;-1;-1;-1;-1;;cumberland
+3748;7419;impassable;-1;-1;-1;-1;-1;;cumberland
+7381;7419;impassable;-1;-1;-1;-1;-1;;cumberland
+7381;2552;impassable;-1;-1;-1;-1;-1;;cumberland
+7440;2552;impassable;-1;-1;-1;-1;-1;;cumberland
+7440;4705;impassable;-1;-1;-1;-1;-1;;cumberland
+7440;7502;impassable;-1;-1;-1;-1;-1;;cumberland
+7457;7440;impassable;-1;-1;-1;-1;-1;;cumberland
+7457;7419;impassable;-1;-1;-1;-1;-1;;cumberland
+7457;7413;impassable;-1;-1;-1;-1;-1;;cumberland
+
+5187;358;impassable;-1;-1;-1;-1;-1;;shanandoah
+5187;7421;impassable;-1;-1;-1;-1;-1;;shanandoah
+7421;7423;impassable;-1;-1;-1;-1;-1;;shanandoah
+3181;4841;impassable;-1;-1;-1;-1;-1;;shanandoah
+3181;855;impassable;-1;-1;-1;-1;-1;;shanandoah
+7338;855;impassable;-1;-1;-1;-1;-1;;shanandoah
+
+
+#Canada
+3570;6482;sea;13439;-1;-1;-1;-1;-1;;pei
+
+#USA
+2798;4607;sea;10899;-1;-1;-1;-1;-1;;md
+4885;9598;sea;12565;-1;-1;-1;-1;-1;;la
+6784;3459;sea;14523;-1;-1;-1;-1;-1;;wi
+9590;5202;sea;14877;-1;-1;-1;-1;-1;;wa
+
+#Mexico
+8439;614;sea;14191;-1;-1;-1;-1;-1;;sonora
+2499;3787;sea;12877;-1;-1;-1;-1;-1;;baja
+4447;9603;sea;11752;-1;-1;-1;-1;-1;;baja
+
+#Central/South America
+2060;9628;sea;10323;-1;-1;-1;-1;-1;;nicaragua
+9272;9628;sea;10323;-1;-1;-1;-1;-1;;nicaragua
+5359;9629;sea;14556;-1;-1;-1;-1;-1;;nicaragua
+5473;9631;sea;9811;-1;-1;-1;-1;-1;;panama
+315;9630;sea;14465;-1;-1;-1;-1;-1;;panama
+9117;2046;sea;13517;-1;-1;-1;-1;-1;;venezuela
+
+#Carribean
+8561;9617;sea;12724;-1;-1;-1;-1;-1;;puertorico
+9617;9618;sea;14249;-1;-1;-1;-1;-1;;puertorico
+1727;9623;sea;14287;-1;-1;-1;-1;-1;;haiti
+1515;9622;sea;14268;-1;-1;-1;-1;-1;;haiti
+3267;9619;sea;13417;-1;-1;-1;-1;-1;;cuba
+8589;9621;sea;13417;-1;-1;-1;-1;-1;;cuba
+5943;4927;sea;12112;-1;-1;-1;-1;-1;;bahamas
+9599;8407;sea;13443;-1;-1;-1;-1;-1;;bahamas
+4726;9604;sea;13572;-1;-1;-1;-1;-1;;bahamas
+9604;9601;sea;14206;-1;-1;-1;-1;-1;;bahamas
+9604;9602;sea;14206;-1;-1;-1;-1;-1;;bahamas
+9601;9602;sea;13196;-1;-1;-1;-1;-1;;bahamas
+9602;9605;sea;10954;-1;-1;-1;-1;-1;;bahamas
+9605;9606;sea;12254;-1;-1;-1;-1;-1;;bahamas
+9611;9609;sea;14231;-1;-1;-1;-1;-1;;bahamas
+9609;9613;sea;14231;-1;-1;-1;-1;-1;;bahamas
+9616;2264;sea;14246;-1;-1;-1;-1;-1;;bahamas
+
+#Bering Sea
+5969;2286;sea;14246;-1;-1;-1;-1;-1;;Sov. Far East
+
+#Hawaii
+4267;4274;sea;14246;-1;-1;-1;-1;-1;;Hw
+4274;9595;sea;14246;-1;-1;-1;-1;-1;;Hw
+5786;9595;sea;14246;-1;-1;-1;-1;-1;;Hw
+5786;2623;sea;14246;-1;-1;-1;-1;-1;;Hw
+9592;2623;sea;14246;-1;-1;-1;-1;-1;;Hw
+3009;9595;sea;14246;-1;-1;-1;-1;-1;;Hw
+3009;4274;sea;14246;-1;-1;-1;-1;-1;;Hw
+
 -1;-1;;-1;-1;-1;-1;-1;-1

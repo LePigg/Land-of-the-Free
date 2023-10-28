@@ -1,0 +1,143 @@
+characters = {
+	WDC_john_dewitt = {
+		name = "John L. DeWitt"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/WDC/dewitt.png"
+			}
+			army = {
+				large = "gfx/leaders/WDC/dewitt.png"
+				small = "GFX_idea_ENG_generic_land_4"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+				cruel_general
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+				cruel_general
+				paranoid_megalomaniac
+			}
+		}
+		field_marshal = {
+			skill = 4
+			traits = {
+				inflexible_strategist
+				trait_cautious
+				defensive_doctrine
+			}
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	WDC_allen_gullion = {
+		name = "Allen W. Gullion"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/WDC/Gullion.jpg"
+			}
+			army = {
+				large = "gfx/leaders/WDC/Gullion.jpg"
+				small = "USA_generic_land_4"
+			}
+		}
+		country_leader = {
+			ideology = national_corporatism
+			traits = {
+				cruel_general
+				paranoid_megalomaniac
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				career_officer
+				politically_connected
+				old_guard
+				harsh_leader
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	WDC_omar_bradley = {
+		name = "Omar Bradley"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/WDC/Portrait_Omar.png"
+			}
+			army = {
+				large = "gfx/leaders/WDC/Portrait_Omar.png"
+				small = "GFX_idea_USA_omar_bradley"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				champion_of_democracy
+			}
+		}
+		corps_commander = {
+			skill = 4
+			traits = {
+				brilliant_strategist
+				trait_engineer
+				trait_cautious
+				harsh_leader
+			}
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	WDC_james_ord = {
+		name = "James Gareche Ord"
+		portraits = {
+			army = {
+				large = "gfx/leaders/WDC/ord.jfif"
+				small = "GFX_idea_USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				trait_reckless
+				armor_officer
+			}
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	WDC_edward_forney = {
+		name = "Edward H. Forney"
+		portraits = {
+			army = {
+				large = "gfx/leaders/WDC/Forney.jpg"
+				small = "GFX_idea_USA_generic_land_4"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				commando
+				trait_cautious
+				organizer
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+}

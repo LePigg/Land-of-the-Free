@@ -1,0 +1,31 @@
+characters = {
+	DAB_fritz_kuhn = {
+		name = "Fritz Julius Kuhn"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DAB/Kuhn.dds"
+			}
+			army = {
+				large = "gfx/leaders/DAB/Kuhn.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+				propaganda_expert
+			}
+		}
+		field_marshal = {
+			skill = 1
+			traits = {
+				politically_connected
+				militia_leader
+				trait_reckless
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

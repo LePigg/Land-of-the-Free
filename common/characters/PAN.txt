@@ -1,0 +1,112 @@
+characters = {
+	PAN_Harmodio_Arias_Madrid = {
+		name = "Harmodio Arias Madrid"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAN/Harmodio_Arias_Madrid.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+		}
+	}
+	PAN_Ezequiel_Fernández = {
+		name = "Ezequiel Fernández"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAN/Ezequiel_Fernández.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+		}
+	}
+	PAN_Juan_Demóstenes_Arosemena = {
+		name = "Juan Arosemena"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAN/Juan_Demóstenes_Arosemena.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+		}
+	}
+	PAN_Arnulfo_Arias = {
+		name = "Arnulfo Arias"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAN/Arnulfo_Arias.dds"
+			}
+		}
+		country_leader = {
+			ideology = ultranationalism
+		}
+	}
+	PAN_Ricardo_Adolfo_de_la_Guardia_Arango = {
+		name = "Ricardo de la Guardia"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAN/Ricardo_Adolfo_de_la_Guardia_Arango.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+		}
+	}
+	PAN_Diogenes_de_la_rosa = {
+		name = "Diógenes de la Rosa"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAN/Diogenes_de_la_rosa.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_revolutionary_socialist
+		}
+	}
+	PAN_Diogenes_de_la_rosa = {
+		name = "Diógenes de la Rosa"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAN/Diogenes_de_la_rosa.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_revolutionary_socialist
+		}
+	}
+	PAN_Cristóbal_Segundo = {
+		name = "Cristóbal Segundo"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAN/Cristóbal_Segundo.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+		}
+	}
+	PAN_Enrique_Adolfo_Jiménez = {
+		name = "Enrique Jiménez"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAN/Enrique_Adolfo_Jiménez.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+		}
+	}
+	PAN_Augusto_Samuel_Boyd = {
+		name = "Augusto Boyd"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAN/Augusto_Samuel_Boyd.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+		}
+	}
+}

@@ -1,0 +1,24 @@
+state={
+	id=98
+	name="STATE_98"
+		history={
+		owner = MEX
+		add_core_of = MEX
+		buildings = {
+			infrastructure = 5
+            industrial_complex = 2
+            arms_factory = 1
+            air_base = 3
+		}
+		victory_points = {
+			4083 40
+		}
+	}
+	provinces={
+		3193 4083 8886 
+	}
+	manpower=1494844
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=megalopolis
+}

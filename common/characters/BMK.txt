@@ -1,0 +1,167 @@
+characters = {
+	BMK_gerald_macguire = {
+		name = "Gerald MacGuire"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BMK/Gerald.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {
+				war_industrialist
+			}
+		}
+	}
+	BMK_prescott_bush = {
+		name = "Prescott Bush"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BMK/Prescott.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {
+				captain_of_industry
+			}
+		}
+	}
+	BMK_george_moseley = {
+		name = "George Van Horn Moseley"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BMK/Portrait_van_horn_moseley.dds"
+			}
+			army = {
+				small = "GFX_idea_ENG_generic_land_4"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				brilliant_strategist
+				politically_connected
+				organizer
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	BMK_hugh_johnson = {
+		name = "Hugh S. Johnson"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BMK/Johnson.jpg"
+				small = "GFX_idea_USA_generic_land_4"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				old_guard
+				inflexible_strategist
+				harsh_leader
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	BMK_archibald_roosevelt = {
+		name = "Archibald B. Roosevelt"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BMK/archibald.jpg"
+			}
+			army = {
+				small = "GFX_idea_europe_generic_land_19"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				war_hero
+				politically_connected
+				trait_reckless
+				trickster
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	BMK_van_moseley_jr = {
+		name = "George V. H. Moseley Jr."
+		portraits = {
+			army = {
+				large = "gfx/leaders/BMK/Hornjr.jpg"
+				small = "GFX_idea_USA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				commando 
+				politically_connected
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BMK_grayson_murphy = {
+		name = "Grayson M. P. Murphy"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BMK/Murphy.jpg"
+				small = "GFX_idea_USA_generic_land_2"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				old_guard
+				politically_connected
+			}
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	BMK_william_dole = {
+		name = "William Doyle"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BMK/Doyle.jpg"
+				small = "GFX_idea_USA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				trait_cautious
+				air_force_guy
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BMK_filler = {
+		name = "Rand Sullivan"
+		country_leader = {
+			ideology = stalinism
+			traits = {
+				#PEPSI_MAN
+			}
+		}
+	}
+}

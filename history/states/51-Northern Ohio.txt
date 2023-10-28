@@ -1,0 +1,40 @@
+
+state={
+	id=51
+	name="STATE_51"
+	resources={
+		steel=28.000
+		aluminium=9.000
+	}
+
+	history={
+		owner = AMC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		add_core_of = AMC
+		victory_points = {
+			2650 6 
+		}
+		victory_points = {
+			7225 2 
+		}
+		victory_points = {
+			4740 2 
+		}
+		victory_points = {
+			7294 4
+		}
+
+	}
+
+	provinces={
+		564 1861 1883 2650 3182 4351 4451 4740 4863 5046 5309 7164 7178 7191 7192 7212 7214 7225 7245 7250 7265 7294 
+	}
+	manpower=1255700
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

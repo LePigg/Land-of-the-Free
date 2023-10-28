@@ -1,0 +1,29 @@
+
+state={
+	id=159
+	name="STATE_159"
+	resources={
+		steel=46
+	}
+	history={
+		owner = MIN
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+		add_core_of = MIN
+		victory_points = {
+			7032 5
+		}	
+		victory_points = {
+			1028 2
+		}
+	}
+
+	provinces={
+		1381 7093 7140 7089 478 7126 4472 7075 5388 3832 4872 1028 1520 7083 4148 7074 7055 7048 4364 7025 7032 5929 4432 3569 1301 4145 7052
+	}
+	manpower=503800
+	state_category=town
+	buildings_max_level_factor=1.000
+}

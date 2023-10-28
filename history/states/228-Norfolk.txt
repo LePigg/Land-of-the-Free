@@ -1,0 +1,36 @@
+
+state={
+	id=228
+	name="STATE_228"
+
+	history={
+		owner = SOU
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 3
+			7590 = {
+				naval_base = 1
+
+			}
+			4694 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = SOU
+		victory_points = {
+			4694 10 
+		}
+
+	}
+
+	provinces={
+		272 1190 1296 1355 2091 2787 2797 3523 4099 4126 4211 4318 4581 4666 4694 5173 5212 5639 7560 7581 7584 7590 7593 7605 7617 7618 7651 7692 7715 
+	}
+	manpower=286900
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

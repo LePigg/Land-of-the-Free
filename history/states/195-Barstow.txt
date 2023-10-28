@@ -1,0 +1,30 @@
+
+state={
+	id=195
+	name="STATE_195"
+	
+	history={
+		owner = MJV
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MJV
+		victory_points = {
+			7923 3
+		}
+		victory_points = {
+			2048 7
+		}
+		add_core_of = MJV
+
+	}
+	
+	provinces={
+		2048 2372 3834 4725 7923 7967 8015 8046 
+	}
+	manpower=136200
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

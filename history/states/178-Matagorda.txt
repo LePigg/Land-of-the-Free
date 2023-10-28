@@ -1,0 +1,25 @@
+
+state={
+	id=178
+	name="STATE_178"
+
+	history={
+		owner = TEJ
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = TEJ
+		add_claim_by = TEX
+
+	}
+
+	provinces={
+		579 1947 2133 2931 3505 3583 5211 5545 8445 8450 8488 
+	}
+	manpower=273700
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

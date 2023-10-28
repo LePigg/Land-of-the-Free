@@ -1,0 +1,79 @@
+characters = {
+	VEN_Carlos_Delgado_Chalbaud = {
+		name = "Carlos Delgado Chalbaud"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VEN/Carlos_Delgado_Chalbaud.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+		}
+	}
+	VEN_Eleazar_López_Contreras = {
+		name = "Eleazar López Contreras"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VEN/Eleazar_López_Contreras.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+		}
+	}
+	VEN_Isaías_Medina_Angarita = {
+		name = "Isaías Medina Angarita"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VEN/Isaías_Medina_Angarita.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+		}
+	}
+	VEN_Rafael_Caldera = {
+		name = "Rafael Caldera"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VEN/Rafael_Caldera.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+		}
+	}
+	VEN_Rómulo_Betancourt = {
+		name = "Rómulo Betancourt"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VEN/Rómulo_Betancourt.dds"
+			}
+		}
+		country_leader = {
+			ideology = dem_socialism
+		}
+	}
+	VEN_Rómulo_Gallegos = {
+		name = "Rómulo Gallegos"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VEN/Rómulo_Gallegos.dds"
+			}
+		}
+		country_leader = {
+			ideology = dem_socialism
+		}
+	}
+	VEN_Germán_Suárez_Flamerich = {
+		name = "Germán Suárez Flamerich"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VEN/Germán_Suárez_Flamerich.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+		}
+	}
+}

@@ -1,0 +1,18 @@
+characters = {
+	DAN_thorvald_stauning = {
+		name = "Thorvald Stauning"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DAN/thorvald.png"
+			}
+		}
+		country_leader = {
+			ideology = dem_socialism
+			traits = {
+		}
+	}	
+	}
+
+
+	
+}

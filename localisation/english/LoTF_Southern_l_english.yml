@@ -1,0 +1,23 @@
+﻿l_english: 
+ #Southern Administration
+ sou.2.t:0 "Byrd Organization"
+ sou.2.d:0 "Harry Byrd is known as the political mob boss of Virginia. We should have allowed him to be state governor of Virginia. Communication has been cut and rumor has spread that he is plotting an open rebellion. We must take down this son of a gun if we want keep order and stability."
+ sou.2.a:0 "Surely this insurrection won't last"
+ sou.1.t:0 "Patton in the Deep South"
+ sou.1.d:0 "News has spread that George Patton, a well-known general, has taken arms in Alabama and Mississippi in the name of retaking the South in the name of American Pride. No one is sure how he mustered men to his call or where he was before this. This mad man must be taken down before he burns down all our cities."
+ sou.1.a:0 "That bastard"
+ sou.3.t:0 "Victory!"
+ sou.3.d:0 "Miracously, our forces have occupied most of the area owned by the Southern Mandate. These past previous days have been complete chaos as the Mandate has withdrawn all troops to only the surrounding areas of Washington D.C. This is a monumental day for our people and all of America."
+ sou.3.a:0 "Wonderful!"
+ sou.4.t:0 "Falling Apart"
+ sou.4.d:0 "Our country and government are at a breaking point. Somehow, the filthy warlord that openly rebelled against us as completely defeated us in war. All our cities are aflame and communications between the frontlines and Washington D.C. have collapsed. We have no choice but to abandon most of the land and retreat back around Washington D.C."
+ sou.4.a:0 "We will be back!" 
+ sou.5.t:0 "Conspiring in the Plains"
+ sou.5.d:0 "Our attempts to pacify the american people but treating them all as equal have been futile. The rural cities of Kentucky and Tennessee have had enough of this and rallied the KKK to the brink of an uprising."
+ sou.5.a:0 "Another rebellion?"
+ sou.6.t:0 "A New Movement"
+ sou.6.d:0 "Nothing we can do can appease the american people. We give more freedom the blacks, the whites get angry. We give more freedom to other minorities, everyone else gets mad. We try to create economic equality, the elites betray us. With the KKK rebelling against us, the black community saw an oppotunity and took it."
+ sou.6.a:0 "Why is everyone so unhappy?"
+ #Ideas
+  LON_sou_gamer:0 "The Southern Ulcer"
+  LON_sou_gamer_desc:0 "Unlike the relative stability of the North, the South is an utter nightmare for international administration. Being denied access to the Northern Mandate, the French State and Italian Empire have turned the Southern Mandate into their playground, but with little to no cultural links to the mandate, any real administrative attempts have failed spectacularly. The complete degeneration of said administrative ettempt, §Rthe Advisory Council§!, has led to local authority all but collapsing and now all across the former southern states insurgencies and mass rebellions are rampant. KKK militias have become emboldened to terrorize the black belt by the French and Italians turning a blind eye. And across the Dixie states, ragtag forces loyal to the Southern Defense Command under Patton continue their fierce resistance to League occupation."

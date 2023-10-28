@@ -1,0 +1,33 @@
+﻿capital = 117
+
+#OOB ="ORC_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+set_country_flag = california_country
+set_politics = {
+	ruling_party = revolutionary_socialist
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	revolutionary_socialist = 80
+	communism = 20
+}
+add_ideas = {
+	american_warlord
+	limited_conscription
+    state_religion
+	universal_welfare
+	total_equality
+	non_enforced
+}
+set_convoys = 5
+
+recruit_character = ORC_dorothy_day
+

@@ -1,0 +1,134 @@
+characters = {
+	MEX_plutarco_calles = {
+		name = "Plutarco Elias Calles"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MEX/calles.png"
+			}
+			army = {
+				large = "gfx/leaders/MEX/calles.png"
+				small = "GFX_idea_south_america_generic_land_3"
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+				el_jefe_maximo
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				organizer
+				politically_connected
+				trait_engineer
+				trait_cautious
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	MEX_lazaro_cardenas = {
+		name = "Lázaro Cárdenas"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MEX/Cardenas.png"
+			}
+			army = {
+				large = "gfx/leaders/MEX/Cardenas.png"
+				small = "GFX_idea_MEX_lazaro_cardenas"
+			}
+		}
+		country_leader = {
+			ideology = dem_socialism
+			traits = {
+				refounder_of_mexico
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+			traits = {
+				tenacious_negotiator
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				politically_connected
+				infantry_officer
+				career_officer
+			}
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MEX_heliodoro_charis = {
+		name = "Heliodoro Charis Castro"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MEX/Charis.jpg"
+				small = "GFX_idea_south_america_generic_navy_3"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				brilliant_strategist
+				war_hero
+				trait_reckless
+			}
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MEX_pablo_garza = {
+		name = "Pablo Gonzalez Garza"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MEX/Pablo.jpg"
+			}
+			army = {
+				large = "gfx/leaders/MEX/Pablo.jpg"
+				small = "GFX_idea_south_america_generic_navy_2"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				politically_connected
+				harsh_leader
+				trait_reckless
+			}
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	MEX_gilardo_magana = {
+		name = "Gildardo Magaña"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MEX/Magana.jpg"
+				small = "GFX_idea_generic_army_south_america_3"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				old_guard
+				trait_engineer
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+}

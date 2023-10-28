@@ -1,0 +1,39 @@
+state={
+	id=263
+	name="STATE_263"
+	history={
+		owner = WDC
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		add_core_of = WDC
+		add_core_of = DES
+		victory_points = {
+			1479 10
+		}
+		victory_points = {
+			3442 5
+		}	
+		victory_points = {
+			1113 7
+		}
+		victory_points = {
+			7319 3
+		}
+		victory_points = {
+			12535 1
+		}		
+		victory_points = {
+			4663 2
+		}
+	}
+	provinces={
+		1113 1461 1479 3442 4663 7319 
+	}
+	manpower=327846
+	buildings_max_level_factor=1.000
+	state_category= city
+	local_supplies=0.000
+}

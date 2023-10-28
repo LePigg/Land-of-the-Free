@@ -1,0 +1,230 @@
+characters = {
+	CAL_hiram_johnson = {
+		name = "Hiram Johnson"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAL/CAL_hiram_johnson.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+			traits = {
+				captain_of_industry
+			}
+		}
+	}
+	CAL_isoroku_yamamoto = {
+		name = "Isoroku Yamamoto"
+		portraits = {
+			civilian = {
+			large = "gfx/leaders/CAL/Isoroku.dds"
+			}
+			army = {
+				large = "gfx/leaders/CAL/Isoroku.dds"
+			}
+			army = {
+				small = "GFX_idea_JAP_isoroku_yamamoto"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {
+				war_industrialist
+			}
+		}
+	}
+	CAL_joseph_stilwell = {
+		name = "Joseph Stilwell"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAL/CAL_joseph_stilwell.png"
+			}
+			army = {
+				small = "gfx/interface/ideas/idea_CAL_joseph_stilwell.png"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				harsh_leader
+				politically_connected
+				trait_reckless
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+		}
+		advisor={
+			cost = 150
+			
+			slot = army_chief
+			idea_token = joseph_stilwell
+			ledger = army				
+				traits = {
+					army_over_agressive
+				}
+		}
+	}
+	CAL_alexander_vandegrift = {
+		name = "Alexander Vandegrift"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAL/CAL_alexander_vandergrift.png"
+			}
+			army = {
+				small = "GFX_idea_USA_alexander_vandegrift"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				trait_cautious
+				trickster
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	CAL_william_dean = {
+		name = "William F. Dean"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAL/CAL_william_dean.png"
+			}
+			army = {
+				small = "gfx/interface/ideas/idea_CAL_william_dean.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				harsh_leader
+				commando
+				trait_reckless
+			}
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		advisor={
+			cost = 150
+			
+			slot = political_advisor
+			idea_token = william_dean_1
+			ledger = civilian				
+				traits = {
+					new_deal_implementer
+				}
+		}
+		advisor={
+			cost = 150
+			
+			slot = high_command
+			idea_token = william_dean_2
+			ledger = military				
+				traits = {
+					field_officer
+				}
+		}
+	}
+	CAL_walter_short = {
+		name = "Walter Short"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAL/CAL_walter_short.png"
+				small = "USA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				career_officer
+				infantry_officer
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor={
+			cost = 150
+			
+			slot = high_command
+			idea_token = walter_short
+			ledger = military				
+				traits = {
+					desk_general
+				}
+		}
+	}
+	CAL_delos_emmons = {
+		name = "Delos C. Emmons"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAL/CAL_delos_emmons.png"
+				small = "USA_generic_land_1"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				air_force_guy
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	CAL_charles_g_johnson = {
+		name = "Charles G. Johnson"
+		desc = "charles_johnson_desc"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/idea_CAL_charles_g_johnson.png"
+			}
+		}
+		advisor={
+			can_be_fired = no
+			cost = 150
+			available = {
+				NOT = {
+					has_country_flag = CAL_corruption_clamped_down
+				}
+			}
+			
+			
+			slot = political_advisor
+			idea_token = charles_johnson_1
+			ledger = civilian				
+				traits = {
+					corrupt_financier
+				}
+		}
+	}
+	CAL_friend_richardson = {
+		name = "Friend Richardson"
+		desc = "friend_richardson_desc"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/idea_CAL_friend_richardson.png"
+			}
+		}
+		advisor={
+			can_be_fired = no
+			cost = 150
+			available = { always = no }
+			
+			slot = political_advisor
+			idea_token = friend_richardson
+			ledger = civilian				
+				traits = {
+					freemason_public_servant
+				}
+		}
+	}
+}

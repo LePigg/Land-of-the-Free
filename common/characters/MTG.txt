@@ -1,0 +1,98 @@
+characters = {
+	MTG_nimwitz = {
+		name = "Chester W. Nimitz"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MTG/nimwitz.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+			}
+		}
+	}
+	MTG_Halsey = {
+		name = "William Halsey Jr."
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MTG/Halsey.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+			traits = {
+			}
+		}
+	}
+	MTG_Albizu_Campos = {
+		name = "Pedro Albizu Campos"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MTG/Campos.png"
+			}
+		}
+		country_leader = {
+			ideology = ultranationalism
+			traits = {
+			}
+		}
+	}
+	MTG_Antonio_Barcelo = {
+		name = "Antonio R. Barceló"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MTG/Barcelo.png"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			traits = {
+			}
+		}
+	}
+	MTG_Santiago_Iglesias = {
+		name = "Santiago Iglesias"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MTG/Iglesias.png"
+			}
+		}
+		country_leader = {
+			ideology = agrarian_socialism
+			traits = {
+			}
+		}
+		country_leader = {
+			ideology = dem_socialism
+			traits = {
+			}
+		}
+	}
+	MTG_Celestino_Miro = {
+		name = "Celestino Iriarte Miró"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MTG/Miro.png"
+			}
+		}
+		country_leader = {
+			ideology = national_conservatism
+			traits = {
+			}
+		}
+	}
+	MTG_rafael_nadal = {
+		name = "Rafael Martinez Nadal"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MTG/Nadal.png"
+			}
+		}
+		country_leader = {
+			ideology = provisional_government
+			traits = {
+			}
+		}
+	}
+}

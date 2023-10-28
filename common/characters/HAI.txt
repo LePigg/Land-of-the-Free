@@ -1,0 +1,16 @@
+characters = {
+	HAI_stenio_king = {
+		name = "Sténio Vincent"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HAI/Stenio.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_guided_democracy
+			traits = {
+				#
+			}
+		}
+	}
+}

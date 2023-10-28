@@ -1,0 +1,91 @@
+characters = {
+	ABQ_robert_thomason = {
+		name = "R. Ewing Thomason"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ABQ/Thomason.jpg"
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+		}
+	}
+	ABQ_terry_allen = {
+		name = "Terry de la Mesa Allen Sr."
+		portraits = {
+			army = {
+				large = "gfx/leaders/ABQ/Portrait_TerryAllen.dds"
+				small = "GFX_idea_USA_generic_land_1"
+			}
+			civilian = {
+				large = "gfx/leaders/ABQ/Portrait_TerryAllen.dds"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				brilliant_strategist
+				offensive_doctrine
+				trait_reckless
+				compassionate_leader
+			}
+			attack_skill = 5
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+		}
+	}
+	ABQ_theodore_roosevelt = {
+		name = "Theodore Roosevelt Jr."
+		portraits = {
+			army = {
+				large = "gfx/leaders/ABQ/Roosevelt.png"
+				small = "GFX_idea_USA_generic_land_5"
+			}
+			civilian = {
+				large = "gfx/leaders/ABQ/Roosevelt.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_liberalism
+			traits = {
+				#
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				politically_connected
+				trait_reckless
+				compassionate_leader
+			}
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	ABQ_fred_walker = {
+		name = "Fred Livingwood Walker"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ABQ/Walker.jpg"
+				small = "GFX_idea_USA_generic_land_4"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				career_officer
+				infantry_leader
+			}
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+}

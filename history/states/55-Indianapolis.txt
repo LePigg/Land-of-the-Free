@@ -1,0 +1,44 @@
+
+state={
+	id=55
+	name="STATE_55"
+
+	history={
+		owner = IEF
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+
+		}
+		victory_points = {
+			5522 18 
+		}
+		victory_points = {
+			214 2 
+		}
+		victory_points = {
+			7444 2 
+		}
+		victory_points = {
+			1011 2 
+		}
+		victory_points = {
+			4108 3
+		}
+		victory_points = {
+			7337 3
+		}
+		add_core_of = ARA
+		add_claim_by = IEF
+	}
+
+	provinces={
+		1011 1145 2125 2299 2901 3180 3417 3820 4108 4446 5195 5502 5522 5667 5767 7254 7256 7287 7293 7317 7329 7331 7337 7360 7364 7432 7448 
+	}
+	manpower=1437000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,35 @@
+
+state={
+	id=152
+	name="STATE_152"
+	resources={
+		steel=3.000
+	}
+
+	history={
+		owner = LAK
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = LAK
+		victory_points = {
+			6845 1 
+		}
+		victory_points = {
+			6814 1
+		}
+		victory_points = {
+			207 1
+		}
+
+	}
+
+	provinces={
+		207 642 788 1112 1292 1321 1585 1710 1774 1929 2112 2233 2531 2533 2535 2820 3123 3877 4031 4334 4828 5341 6748 6775 6791 6802 6814 6842 6845 6850 6876 6882 6909 6913 6929 6949 6996 7028 
+	}
+	manpower=114022
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

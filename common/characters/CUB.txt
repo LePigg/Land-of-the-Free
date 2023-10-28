@@ -1,0 +1,57 @@
+characters = {
+	CUB_Gerardo_Machado = {
+		name = "Gerardo Machado"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CUB/gerardo.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_conservatism
+		}
+	}
+	CUB_Ramon_Grau = {
+		name = "Ramón Grau"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CUB/Ramón_Grau.dds"
+			}
+		}
+		country_leader = {
+			ideology = dem_socialism
+		}
+	}
+	CUB_Fulgencio_Batista = {
+		name = "Fulgencio Batista"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CUB/Fulgencio_Batista.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_despotism
+		}
+	}
+	CUB_Eduardo_Chibas = {
+		name = "Eduardo Chibás"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CUB/Eduardo_Chibás.dds"
+			}
+		}
+		country_leader = {
+			ideology = gen_revolutionary_socialist
+		}
+	}
+	CUB_pentarchy = {
+		name = "Executive Comission"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CUB/cubajunta.png"
+			}
+		}
+		country_leader = {
+			ideology = gen_stratocracy
+		}
+	}
+}

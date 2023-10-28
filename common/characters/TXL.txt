@@ -1,0 +1,116 @@
+characters = {
+	TXL_william_pelley = {
+		name = "William Dudley Pelley"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TXL/William.dds"
+			}
+			army = {
+				large = "gfx/leaders/TXL/William.dds"
+				small = "GFX_idea_william_dudley_pelley"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {
+				the_chief
+			}
+		}
+		field_marshal = {
+			skill = 1
+			traits = {
+				old_guard
+				politically_connected
+				harsh_leader
+				media_personality
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TXL_francis_yockey = {
+		name = "Francis P. Yockey"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TXL/Yockey.jpg"
+			}
+		}
+		country_leader = {
+			ideology = strasserism
+			traits = {
+				imperium
+			}
+		}
+		country_leader = {
+			ideology = national_bolshevism
+			traits = {
+				imperium
+			}
+		}
+	}
+	TXL_virgil_effinger = {
+		name = "Virgil Effinger"
+		portraits = {
+			army = {
+				large = "gfx/leaders/TXL/Portrait_Effinger.dds"
+				small = "GFX_idea_USA_generic_2"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				politically_connected
+				militia_leader
+				harsh_leader
+			}
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TXL_samuel_green = {
+		name = "Samuel Green"
+		portraits = {
+			army = {
+				large = "gfx/leaders/TXL/green.jpg"
+				small = "GFX_idea_USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				trait_cautious
+				politically_connected
+				inflexible_strategist
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TXL_wickliffe_draper = {
+		name = "Wickliffe Draper"
+		portraits = {
+			army = {
+				large = "gfx/leaders/TXL/Draper.jpg"
+				small = "GFX_idea_USA_generic_land_5"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				old_guard
+				trait_engineer
+				trait_reckless
+			}
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+}

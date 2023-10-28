@@ -1,0 +1,28 @@
+
+state={
+	id=157
+	name="STATE_157"
+	history={
+		owner = LAC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+
+		}
+		add_core_of = LAC
+		victory_points = {
+			8000 10
+		}
+		victory_points = {
+			8018 2
+		}
+	}
+	provinces={
+		1119 2556 4425 4480 7974 8000 8018 
+	}
+	manpower=238048
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

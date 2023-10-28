@@ -1,0 +1,31 @@
+characters = {
+	NIC_augusto_sadino = {
+		name = "Augusto Cesar Sadino"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NIC/Sadino.jpg"
+			}
+			army = {
+				large = "gfx/leaders/NIC/Sadino.jpg"
+			}
+		}
+		country_leader = {
+			ideology = gen_revolutionary_socialist
+			traits = {
+				nationalist_symbol
+			}
+		}
+		field_marshal = {
+			skill = 3
+			traits = {
+				trickster
+				guerilla_fighter
+				war_hero
+			}
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+}

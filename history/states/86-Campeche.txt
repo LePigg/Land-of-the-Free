@@ -1,0 +1,22 @@
+
+state={
+	id=86
+	name="STATE_86"
+		history={
+		owner = MEX
+		add_core_of = MEX
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points= {
+			8836 3
+		}
+	}
+	provinces={
+		328 351 375 1126 1716 1787 1832 2170 2907 2966 3065 3492 3759 3876 4253 4256 4634 4814 5052 5332 5510 5563 5895 5932 8806 8815 8816 8824 8836 8837 8859 8863 8871 8874 8877 8878 8885 8901 8904 8906 8907 8908 8909 8915 8949 8954 8962 
+	}
+	manpower=10316
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=pastoral
+}

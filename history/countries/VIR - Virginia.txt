@@ -1,0 +1,45 @@
+﻿capital = 210
+
+#OOB ="VIR_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+set_country_flag = rebellion_country
+set_politics = {
+	ruling_party = despotism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	despotism = 63
+	guided_democracy = 8
+	conservatism = 16
+	fascism = 5
+	stratocracy = 8
+}
+add_ideas = {
+	final_stand
+}
+set_convoys = 5
+
+
+create_country_leader = {
+	name = "Harry Byrd"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "byrd.dds"
+	expire = "1965.1.1"
+	ideology = gen_despotism
+	traits = {
+		#
+	}
+}
+
+
+
+
+

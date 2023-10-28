@@ -1,0 +1,22 @@
+state={
+	id=114
+	name="STATE_114"
+		history={
+		owner = MEX
+		add_core_of = MEX
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			8604 3
+		}
+
+	}
+	provinces={
+		324 470 2263 2402 2869 2905 3197 3908 3974 3999 4505 5328 5547 5617 5709 8526 8549 8554 8558 8571 8575 8584 8604 8638 
+	}
+	manpower=208716
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=rural
+}

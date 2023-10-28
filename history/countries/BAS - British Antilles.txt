@@ -1,6 +1,6 @@
-capital = 79
+capital = 76
 
-oob = "standard_templates"
+#OOB ="standard_templates"
 
 # Starting tech
 set_technology = {
@@ -10,14 +10,50 @@ set_technology = {
 set_convoys = 20
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = conservatism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
-set_popularities = {
-	democratic = 50
-	fascism = 36
-	communism = 10
-	neutrality = 4
+
+add_ideas = {
+	BAS_empire
+	BAS_great_depression
+	civilian_economy
+	early_integration
+	free_trade
 }
+
+
+country_event = { id = BAS.1 days = 1 }
+set_autonomy = {
+	target = CAN
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.4
+}
+
+create_faction = "League of Nations"
+add_to_faction = CAN
+
+
+set_popularities = {
+	fascism = 9
+	despotism = 5
+	stratocracy = 2
+	guided_democracy = 5
+	conservatism = 30
+	Anarchism = 2
+	liberalism = 28
+	democratic_socialism = 8
+	revolutionary_socialist = 4
+	communism = 7
+}
+
+#leaders 
+recruit_character = BAS_george_v
+recruit_character = BAS_edward_viii
+recruit_character = BAS_albert_i
+recruit_character = BAS_ironside
+recruit_character = BAS_brockway
+recruit_character = BAS_dutt
+recruit_character = BAS_mosely

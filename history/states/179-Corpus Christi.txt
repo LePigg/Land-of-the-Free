@@ -1,0 +1,32 @@
+
+state={
+	id=179
+	name="STATE_179"
+
+	history={
+		owner = TEJ
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			3906 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = TEJ
+		add_claim_by = TEX
+		victory_points = {
+			3906 10 
+		}
+
+	}
+
+	provinces={
+		2707 3906 4296 4887 4892 5159 5956 8465 8482 8496 8500 8511 8516 
+	}
+	manpower=654251
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

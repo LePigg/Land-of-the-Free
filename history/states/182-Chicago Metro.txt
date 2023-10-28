@@ -1,0 +1,34 @@
+
+state={
+	id=182
+	name="STATE_182"
+	
+	history={
+		owner = COM
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 3
+			
+		}
+		add_core_of = COM
+		victory_points = {
+			1141 50 
+		}
+		victory_points = {
+			7190 10 
+		}
+		victory_points = {
+			7249 5
+		}
+
+	}
+	
+	provinces={
+		1141 4923 5447 7123 7190 7195 7244 7249 
+	}
+	manpower=3757400
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}
